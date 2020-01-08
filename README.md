@@ -4,7 +4,7 @@ RABET-V is a flexible, risk-based, and cost-effective election system verificati
 
 ## Steering Committee
 The RABET-V Pilot Program is guided by a steering committee comprised of election officials, election technology providers, and other election infrastructure stakeholders.
-[Steering Committee Makeup](Steering Committee.xlsx)
+
 
 ## Pilot Process
 
