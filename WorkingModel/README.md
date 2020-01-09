@@ -49,17 +49,19 @@ The RABET-V Process consist of two phases. A product is either in the Pre-Market
 ### Pre-Market Review
 The following key activities are designed to be done once per product.
 #### Product Submission and Security Claims Review
-See [Product Submission and Security Claims Review Methodology](PreMarket/Product_Submission_and_Security_Claims_Review_Methodology.md)
+See [Product Submission and Security Claims Review Process](PreMarket/Product_Submission_and_Security_Claims_Review_Process.md).
 #### Architecture Review
-See [Architecture Review Methodology](PreMarket/Architecture_Review_Methodology.md)
+See [Architecture Review Methodology](PreMarket/Architecture_Review_Methodology.md).
 #### Process Assessment
-See [Process Assessment Methodology](PreMarket/Process_Assessment_Methodology.md)
+See [Process Assessment Methodology](PreMarket/Process_Assessment_Methodology.md).
 #### Product Test Rules Determination
-See [Product Test Rules Determination](PreMarket/Process_Test_Rules_Determination.md)
+See [Product Test Rules Determination](PreMarket/Process_Test_Rules_Determination.md).
 
 ### Market Operations
 The following key activities will be repeated for each new product version.
 #### Product Version Submission
-
+See [Product Version Submission Process](MarketOps/Product_Version_Submission_Process.md).
 #### Verification
+See [Product Version Verification Process](MarkterOps/Product_Version_Verificatio_Process.md).
 #### Approval
+See [Product Version Approval Methodolody](MarketOps/Product_Version_Approval_Methodology.md).
