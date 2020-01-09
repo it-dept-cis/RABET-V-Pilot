@@ -46,7 +46,7 @@ Technology providers who wish to remain RABET-V registered technology providers 
 ## Process Descriptions
 The RABET-V Process consist of two phases. A product is either in the Pre-Market Review phase or the Market Operation phase. Each phase has Activities. 
 
-### Pre-Market Review
+### [Pre-Market Review](PreMarket/)
 The following key activities are designed to be done once per product.
 #### Product Submission and Security Claims Review
 See [Product Submission and Security Claims Review Process](PreMarket/Product_Submission_and_Security_Claims_Review_Process.md).
@@ -57,7 +57,7 @@ See [Process Assessment Methodology](PreMarket/Process_Assessment_Methodology.md
 #### Product Test Rules Determination
 See [Product Test Rules Determination](PreMarket/Process_Test_Rules_Determination.md).
 
-### Market Operations
+### [Market Operations](MarketOps/)
 The following key activities will be repeated for each new product version.
 #### Product Version Submission
 See [Product Version Submission Process](MarketOps/Product_Version_Submission_Process.md).
