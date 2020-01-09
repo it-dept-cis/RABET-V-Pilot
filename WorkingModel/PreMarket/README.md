@@ -1,6 +1,6 @@
 # RABET-V Pre-Market Review
 
-Products with [Product Testing Rules](/RABET-V_Glossary.md) are considered in the pre-market review phase. This is the case even if the product is current deployed - either because it is a legacy product or becuase a state has authorized the product's use prior to RABET-V Program testing. 
+Products without [Product Testing Rules](/RABET-V_Glossary.md) are considered in the pre-market review phase. This is the case even if the product is current deployed - either because it is a legacy product or becuase a state has authorized the product's use prior to RABET-V Program testing. 
 
 There are 4 activites in the pre-market review. 
 
