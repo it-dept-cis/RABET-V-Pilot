@@ -49,7 +49,7 @@ The RABET-V Process consist of two phases. A product is either in the Pre-Market
 ### Pre-Market Review
 The following key activities are designed to be done once per product.
 #### Product Submission and Security Claims Review
-See [Product Submission and Security Claims Review Methodology](PreMarket/Product Submission and Security Claims Review Methodology.md)
+See [Product Submission and Security Claims Review Methodology](PreMarket/Product_Submission_and_Security_Claims_Review_Methodology.md)
 #### Architecture Review
 See [Architecture Review Methodology](Architecture Review Methodology.md)
 #### Process Assessment
