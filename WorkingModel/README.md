@@ -51,11 +51,11 @@ The following key activities are designed to be done once per product.
 #### Product Submission and Security Claims Review
 See [Product Submission and Security Claims Review Methodology](PreMarket/Product_Submission_and_Security_Claims_Review_Methodology.md)
 #### Architecture Review
-See [Architecture Review Methodology](Architecture Review Methodology.md)
+See [Architecture Review Methodology](PreMarket/Architecture_Review_Methodology.md)
 #### Process Assessment
-See [Process Assessment Methodology](Process Assessment Methodology.md)
+See [Process Assessment Methodology](PreMarket/Process_Assessment_Methodology.md)
 #### Product Test Rules Determination
-See [Product Test Rules Determination](Process Test Rules Determination.md)
+See [Product Test Rules Determination](PreMarket/Process_Test_Rules_Determination.md)
 
 ### Market Operations
 The following key activities will be repeated for each new product version.
