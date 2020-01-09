@@ -4,7 +4,7 @@ This Working Model describes RABET-V Process in detail. Along with this version 
 
 ## Introduction
 ### Program Goal
-The goal is the program is to develop a rapid, reliable, and cost-effective system for verifying the security of non-voting election systems. Verification will provide adequate assurances of reliability, usability,  confidentiality, integrity, and availability . Assurances are evidence-based grounds for confidence that the system’s features are effective in their application
+The goal is the program is to develop a rapid, reliable, and cost-effective system for verifying the security of non-voting election systems. Verification will provide adequate assurances of reliability, usability,  confidentiality, integrity, and availability. Assurances are evidence-based grounds for confidence that the system’s features are effective in their application
 The RABET-V Program is intended to build stakeholder confidence that participating products and organizations have demonstrated capabilities to build, test, monitor, and maintain the reliability, usability, and security of their election technology solution. 
 
 ### Program Vision
@@ -49,12 +49,17 @@ The RABET-V Process consist of two phases. A product is either in the Pre-Market
 ### Pre-Market Review
 The following key activities are designed to be done once per product.
 #### Product Submission and Security Claims Review
+See [Product Submission and Security Claims Review Methodology](Product Submission and Security Claims Review Methodology.md)
 #### Architecture Review
+See [Architecture Review Methodology](Architecture Review Methodology.md)
 #### Process Assessment
-#### Product Testing Process Determination
+See [Process Assessment Methodology](Process Assessment Methodology.md)
+#### Product Test Rules Determination
+See [Product Test Rules Determination](Process Test Rules Determination.md)
 
 ### Market Operations
 The following key activities will be repeated for each new product version.
 #### Product Version Submission
+
 #### Verification
 #### Approval
