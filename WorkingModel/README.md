@@ -18,7 +18,7 @@ RABET-V is designed to harness modern software development, testing, and deploym
 ### Program Scope
 RABET-V is intended for non-voting election technology systems. An election technology system is an information system that supports an elections administration process. There are voting systems and non-voting systems. A “voting system” is defined in the Help American Vote Act (H.R. 3295, Sec 301) as “(1) the total combination of mechanical, electromechanical, or electronic equipment (including the software, firmware, and documentation required to program, control, and support the equipment) that is used—(A) to define ballots; (B) to cast and count votes;(C) to report or display election results; and (D) to maintain and produce any audit trail information; and (2) the practices and associated documentation used—(A) to identify system components and versions of such components;(B) to test the system during its development and maintenance; (C) to maintain records of system errors and defects; (D) to determine specific system changes to be made to a system after the initial qualification of the system; and (E) to make available any materials to the voter (such as notices, instructions, forms, or paper ballots).” A non-voting system is any other information system used during the election. Examples include voter registration databases, electronic pollbooks, or the websites of government election authorities.
 ### Definitions
-
+See [RABET-V Glossary](RABET-V_Glossary.md)
 
 ## Guiding Framework
 This Working Model is one approach to meeting the process described by the Center for Internet Security (CIS) in the RABET-V Framework. 
