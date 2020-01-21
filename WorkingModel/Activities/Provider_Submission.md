@@ -1,4 +1,4 @@
-# Provider Submission and Submission Review Process
+# Provider Submission 
 
 The information required from a Registered Technology Provider (RTP) will vary based on whether this is the RTP's initial submission of a product revision submission. The initial submission will require the most information in order to establish the product in the RABET-V program. Revision submissions will require varying levels of information based on the changes submitted and how those changes impact current [Testing Rules](../RABET-V_Glossary.md). 
 
