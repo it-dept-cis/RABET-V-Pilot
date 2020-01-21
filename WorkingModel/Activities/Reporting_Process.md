@@ -1,4 +1,4 @@
-# Product Version Approval Methodology
+# Reporting Process
 When approval is given by the RABET-V reviewers, the provider is permitted to deploy their updates. It does not mean they have to, or that the customer has given them permission to. These deployments may be a website deploy, or a deployment to clients. 
 
 ## Publishing Report
