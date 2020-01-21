@@ -1,10 +1,10 @@
 # RABET-V Working Model
-RABET-V is a flexible, risk-based, and cost-effective election system verification process that will expedite verification of election systems through providing assurances of reliability, usability, confidentiality, integrity, and availability. The RABET-V Pilot Program is designed to evaluate the RABET-V process and the potential of the process to improve the speed, security assurances, and cost-effectiveness of non-voting election technology verification. 
-This Working Model describes RABET-V Process in detail. Along with this version of the Working Model, CIS is issuing two companion documents: (1) a Test Plan that describes how CIS intends to iterate and confirm that the framework proposed in this Working Model provides a reasonable assurance of security and effectiveness for non-voting election technology products and (2) the Economic Framework for managing RABET-V post pilot.
+RABET-V is a flexible, risk-based, and cost-effective election system verification process that will expedite verification of election systems while providing assurances of reliability, usability, confidentiality, integrity, and availability. The RABET-V Pilot Program is designed to evaluate the RABET-V process and the potential of the process to improve the speed, security assurances, and cost-effectiveness of non-voting election technology verification. 
+This Working Model describes RABET-V Process in detail. Along with this version of the Working Model, CIS is issuing two companion documents: (1) a Test Plan that describes how CIS intends to iterate and confirm that the framework proposed in this Working Model provides assurances of security, reliability, and usability for non-voting election technology products and (2) the Economic Framework for managing RABET-V post pilot.
 
 ## Introduction
 ### Program Goal
-The goal is the program is to develop a rapid, reliable, and cost-effective system for verifying the security of non-voting election systems. Verification will provide adequate assurances of reliability, usability,  confidentiality, integrity, and availability. Assurances are evidence-based grounds for confidence that the system’s features are effective in their application
+The goal is the program is to develop a rapid, reliable, and cost-effective system for verifying the security of non-voting election systems. Verification will provide adequate assurances of reliability, usability, confidentiality, integrity, and availability. Assurances are evidence-based grounds for confidence that the system’s features are effective in their application.
 The RABET-V Program is intended to build stakeholder confidence that participating products and organizations have demonstrated capabilities to build, test, monitor, and maintain the reliability, usability, and security of their election technology solution. 
 
 ### Program Vision
@@ -25,7 +25,7 @@ This Working Model is one approach to meeting the process described by the Cente
 See [RABET-V Framework](RabetVFramework.md).
 
 ## Registered Technology Providers
-The RABET-V Program is a continuous operation with participating technology providers known as Registered Technology Providers (RTPs). To be a RABET-V Registered Technology Provider, the technology provider must submit a complete RTP request, have at least one product verified by RABET-V, and agree to the RABET-V Program Committement. All current Registered Technology Providers will be listed on the RABET-V Program Portal. For the Pilot Program, each pilot participant will be considered an RTP. 
+The RABET-V Program is a continuous operation with participating technology providers known as Registered Technology Providers (RTPs). To be a RABET-V Registered Technology Provider, the technology provider must submit a complete RTP request, have at least one product verified by RABET-V, and agree to the RABET-V Program Committment. All current Registered Technology Providers will be listed on the RABET-V Program Portal. For the Pilot Program, each pilot participant will be considered an RTP. 
 
 ### Registered Technology Provider Request Package
 Technology providers must submit a completed request package to become an RTP. A complete package will contain the following information: 
@@ -37,31 +37,28 @@ Technology providers must submit a completed request package to become an RTP. A
 
 ### Program Committement
 
-Technology providers who wish to remain RABET-V registered technology providers must agree to the RABET-V Program Requirements. These requirements establish the ethical and responsible behavior expected by all program providers. The program requirements are subject to change. They will require the provider to agree to the following:
+Technology providers who wish to remain RABET-V registered technology providers must agree to the RABET-V Program Committment. The committment establishes the ethical and responsible behavior expected by all program providers. The program committment is subject to change. The Committment includes:
 * Accurate representation of the product capabilities and its security provisions to RABET-V reviewers, customers, and other stakeholders
 * Continued education on and inclusion of cyber security best practices as an organization
 * Continuous product maintenance, including the patching of components within reasonable timeframes
 * Agree to transparency of their product expected usage and validated security claims
 
-## Process Descriptions
-The RABET-V Process consist of two phases. A product is either in the Pre-Market Review phase or the Market Operation phase. Each phase has Activities. 
+## Process Activity Descriptions
+The RABET-V Process consist of seven activities, five of which are conditional.  
 
-### [Pre-Market Review](PreMarket/)
-The following key activities are designed to be done once per product.
+
+
 #### Product Submission and Security Claims Review
-See [Product Submission and Security Claims Review Process](PreMarket/Product_Submission_and_Security_Claims_Review_Process.md).
-#### Architecture Review
-See [Architecture Review Methodology](PreMarket/Architecture_Review_Methodology.md).
+See [Provider Submission and Submission Review Process](Activities/Product_Submission_and_Security_Claims_Review_Process.md).
 #### Process Assessment
-See [Process Assessment Methodology](PreMarket/Process_Assessment_Methodology.md).
-#### Product Test Rules Determination
-See [Product Test Rules Determination](PreMarket/Process_Test_Rules_Determination.md).
-
-### [Market Operations](MarketOps/)
-The following key activities will be repeated for each new product version.
-#### Product Version Submission
-See [Product Version Submission Process](MarketOps/Product_Version_Submission_Process.md).
-#### Verification
-See [Product Version Verification Process](MarkterOps/Product_Version_Verificatio_Process.md).
-#### Approval
-See [Product Version Approval Methodolody](MarketOps/Product_Version_Approval_Methodology.md).
+See [Process Assessment Methodology](Activities/Process_Assessment_Methodology.md).
+#### Architecture Review
+See [Architecture Review Methodology](Activities/Architecture_Review_Methodology.md).
+#### Security Claims Validation
+See [Security Claims Validation](Activities/Security_Claims_Validation.md).
+#### Testing Rules Determination
+See [Testing Rules Determination](Activities/Testing_Rules_Determination.md).
+#### Product Verification
+See [Product Verification Process](Activities/Product_Verification_Process.md).
+#### Reporting
+See [Reporting Process](Activities/Reporting_Process.md).
