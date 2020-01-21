@@ -6,9 +6,9 @@ For more information of the Background and Motivation for RABET-V, see CIS' [How
 
 In this repository, you will find three main areas:
 
-* [Working Model] (WorkingModel/). The Working Model defines the RABET-V process details. 
-* [Test Plan] (TestPlan/). The Test Plan discusses how we intend on evaluating RABET-V throughout the Pilot Program.
-* [Economic Model] (EconomicModel/). The Economic Model proposes various methods of deploying and operating a RABET-V process in the United States for non-voting election technology verification.
+* [Working Model](WorkingModel/). The Working Model defines the RABET-V process details. 
+* [Test Plan](TestPlan/). The Test Plan discusses how we intend on evaluating RABET-V throughout the Pilot Program.
+* [Economic Model](EconomicModel/). The Economic Model proposes various methods of deploying and operating a RABET-V process in the United States for non-voting election technology verification.
 
 ## Steering Committee
 The RABET-V Pilot Program is guided by a steering committee comprised of election officials, election technology providers, and other election infrastructure stakeholders.
