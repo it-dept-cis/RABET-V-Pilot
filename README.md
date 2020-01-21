@@ -4,6 +4,12 @@ RABET-V is a flexible, risk-based, and cost-effective election system verificati
 
 For more information of the Background and Motivation for RABET-V, see CIS' [How to Improve Election Technology Verification White Paper](Elections_Tech-Ver-White_Paper-2020-0121.pdf). 
 
+In this repository, you will find three main areas:
+
+* [Working Model] (WorkingModel/). The Working Model defines the RABET-V process details. 
+* [Test Plan] (TestPlan/). The Test Plan discusses how we intend on evaluating RABET-V throughout the Pilot Program.
+* [Economic Model] (EconomicModel/). The Economic Model proposes various methods of deploying and operating a RABET-V process in the United States for non-voting election technology verification.
+
 ## Steering Committee
 The RABET-V Pilot Program is guided by a steering committee comprised of election officials, election technology providers, and other election infrastructure stakeholders.
 See [Steering Committee](Steering%20Committee.xlsx) for a list of participants. 
