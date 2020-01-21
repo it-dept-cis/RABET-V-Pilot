@@ -21,8 +21,7 @@ RABET-V is intended for non-voting election technology systems. An election tech
 See [RABET-V Glossary](RABET-V_Glossary.md)
 
 ## Guiding Framework
-This Working Model is one approach to meeting the process described by the Center for Internet Security (CIS) in the RABET-V Framework. 
-See [RABET-V Framework](RabetVFramework.md).
+This Working Model is one approach to meeting the process described by the Center for Internet Security (CIS) in the [How to Improve Election Technology Verification White Paper ](../Elections_Tech-Ver-White_Paper-2020-0121.pdf).
 
 ## Registered Technology Providers
 The RABET-V Program is a continuous operation with participating technology providers known as Registered Technology Providers (RTPs). To be a RABET-V Registered Technology Provider, the technology provider must submit a complete RTP request, have at least one product verified by RABET-V, and agree to the RABET-V Program Committment. All current Registered Technology Providers will be listed on the RABET-V Program Portal. For the Pilot Program, each pilot participant will be considered an RTP. 
