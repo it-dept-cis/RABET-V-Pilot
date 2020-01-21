@@ -13,7 +13,11 @@ In this repository, you will find three main areas:
 ## Steering Committee
 The RABET-V Pilot Program is guided by a steering committee comprised of election officials, election technology providers, and other election infrastructure stakeholders.
 We will add steering committee member information below as we confirm members:
-* Aaron Wilson, Sr. Director of Election Security at The Center for Internet Security (CIS) - Steering Committee Chair
+* Aaron Wilson, Sr. Director of Election Security at The Center for Internet Security (CIS) - Steering Committee Co-Chair
+* Jerome Lovato, Testing and Certifiation Director at The Election Assistance Commission (EAC) - Steering Committee Co-Chair
+
+## Technology Advisory Council
+The RABET-V Technology Advisory Council is a growing group of experts in relevant subject matter that are volunteering their time to assist in the refinement of the RABET-V process. 
 
 ## Pilot Process
 
