@@ -2,6 +2,8 @@
 
 RABET-V is a flexible, risk-based, and cost-effective election system verification process that will expedite verification of election systems while providing assurances of reliability, usability, confidentiality, integrity, and availability. The RABET-V Pilot Program is designed to evaluate the RABET-V process and the potential of the process to improve the speed, security assurances, and cost-effectiveness of non-voting election technology verification. 
 
+For more information of the Background and Motivation for RABET-V, see CIS' [How to Improve Election Technology Verification White Paper](Elections_Tech-Ver-White_Paper-2020-0121.pdf). 
+
 ## Steering Committee
 The RABET-V Pilot Program is guided by a steering committee comprised of election officials, election technology providers, and other election infrastructure stakeholders.
 See [Steering Committee](Steering%20Committee.xlsx) for a list of participants. 
