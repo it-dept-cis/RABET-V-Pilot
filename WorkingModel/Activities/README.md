@@ -4,6 +4,7 @@ The Rapid Architecture-Based Election Technology Verification (RABET-V) process 
 
 
 1. [Provider Submission and Submission Review Process](Provider_Submission_and_Submission_Review_Process.md).
+2. [Submission Review Process](Submission_Review_Process.md)
 2. [Process Assessment Methodology](Process_Assessment_Methodology.md).
 3. [Architecture Review Methodology](Architecture_Review_Methodology.md).
 4. [Security Claims Validation](Security_Claims_Validation.md).
