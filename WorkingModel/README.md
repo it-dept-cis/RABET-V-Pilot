@@ -48,7 +48,7 @@ The RABET-V Process consist of seven activities, five of which are conditional.
 ![RABET-V Process Model](https://github.com/it-dept-cis/RABET-V-Pilot/blob/master/WorkingModel/election_verification_proc_model-2020-0115.png "RABET-V Process Model")
 
 #### Product Submission 
-See [Provider Submission and Submission Review Process](Activities/Provider_Submission.md).
+See [Provider Submission](Activities/Provider_Submission.md).
 #### Submission Review
 See [Submission Review Process](Activities/Submission_Review_Process.md).
 #### Process Assessment
