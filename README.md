@@ -17,7 +17,7 @@ We will add steering committee member information below as we confirm members:
 
 ## Pilot Process
 
-The RABET-V Pilot Program will first establish a detailed version of the RABET-V process called the [RABET-V Working Model](WorkingModel). TThis version will detail how each activity will be conducted. The Working Model will identify the initial Technical Guidance necessary to perform the Architecture Review and Process Assessment. The Working Model will be iteratively reviewed by the program Steering Committee and modified as necessary.
+The RABET-V Pilot Program will first establish a detailed version of the RABET-V process called the [RABET-V Working Model](WorkingModel). This version will detail how each activity will be conducted. The Working Model will identify the initial Technical Guidance necessary to perform the Architecture Review and Process Assessment. The Working Model will be iteratively reviewed by the program Steering Committee and modified as necessary.
 
 Using the Working Model, the Pilot Program will conduct initial reviews on real products from Pilot Program participants. Each initial review will execute all seven RABET-V activities resulting in the creation of Testing Rules and initial verification results for each product. The Architecture Review and Process Assessments will follow the architecture and process review steps detailed in the
 Working Model, which may be updated as necessary throughout the Pilot Program.
