@@ -46,7 +46,7 @@ Technology providers who wish to remain RABET-V registered technology providers 
 ## Process Activity Descriptions
 The RABET-V Process consist of seven activities, five of which are conditional.  
 
-
+![RABET-V Process Model](https://github.com/it-dept-cis/RABET-V-Pilot/blob/master/WorkingModel/election_verification_proc_model-2020-0115.png "RABET-V Process Model")
 
 #### Product Submission and Security Claims Review
 See [Provider Submission and Submission Review Process](Activities/Product_Submission_and_Security_Claims_Review_Process.md).
