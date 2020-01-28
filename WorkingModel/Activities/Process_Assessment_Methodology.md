@@ -1,9 +1,9 @@
 # Process Assessment Methodology
 
-* Process Descriptions
+
 
 ## Inputs
-
+* Process Descriptions
 ## Outcomes
 
 * Maturity Scores against the OWASP SAM model.
