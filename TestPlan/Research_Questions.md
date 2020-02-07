@@ -21,7 +21,7 @@
 -	Can states and localities accept RABET-V verifications quickly enough to make the process worthwhile?
 -	Will states and localities be willing to adopt new versions at a rate that maintains incentives to put small, more frequent updates through the process?
 ## Pre-Review Assessment Implications
--	Is there a sufficient correlation between process assessment results and verification outcomes to use those assessments to expedite verification and re-verification under RABET-V?
+7)	Is there a sufficient correlation between process assessment results and verification outcomes to use those assessments to expedite verification and re-verification under RABET-V?
 8)	Should process assessments be renewed and, if so, how often or under what circumstances?
 9)	What party is best equipped to conduct process assessments?
 10)	Do architecture reviews provide a sufficient understanding of a given product to determine the impact of:
