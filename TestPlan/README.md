@@ -6,7 +6,11 @@ The RABET-V Test Plan identifies how we will evaluate the RABET-V Process. We ha
 The RABET-V Test Plan begins with a completed version of the RABET-V Working Model. 
 
 ## Record Keeping
-* CIS team members and contractors will record the number of hours per task separated by pilot product
+* CIS team members and contractors will record the number of hours per activity separated by pilot product
+* Pilot participants will keep track of the number of hours spent per activity for each personnel role (i.e. 10 hours from software developer for architecture review)
+* External parties will track the number of hours per activity separated by pilot product
+
+In instances where hour tracking needs to be done on a more granular basis than activity, parties will be notified ahead of time. CIS will request each parties records on a monthly basis. 
 
 ## Initial Interatiion
 
