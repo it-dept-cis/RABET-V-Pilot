@@ -43,3 +43,4 @@ This is also this step where we will begin to understand the capabilities and li
 ### Activity 8. Reporting
 
 ## Revisions
+For the pilot, we assume the revisions will not require the process assessment, architecture review, or security claims validation activities to be performed again. We will conduct iterations of RABET which include only the Submission, Submission Review, Product Verification, and Reporting Activities. 
