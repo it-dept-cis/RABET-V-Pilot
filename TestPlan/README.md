@@ -5,6 +5,9 @@ The RABET-V Test Plan identifies how we will evaluate the RABET-V Process. We ha
 ## Input
 The RABET-V Test Plan begins with a completed version of the RABET-V Working Model. 
 
+## Record Keeping
+* CIS team members and contractors will record the number of hours per task separated by pilot product
+
 ## Initial Interatiion
 
 ### Activity 1. Submission
