@@ -33,6 +33,10 @@ To allow for iterative improvements to the Working Model, architecture reviews w
 ### Activity 5. Security Claims Validation
 
 ### Activity 6. Testing Rules Determination
+The CIS team will work with thenon-vendor Steering Committee members and the Technical Advisory Committee to develop the testing rules for each product once Activities 2-4 are completed. This will be a transparent process for the pilot participant involved. 
+
+This is also this step where we will begin to understand the capabilities and limitations of the process assessment and architeture review to set meaningful rules. 
+
 
 ### Activity 7. Product Verification 
 
