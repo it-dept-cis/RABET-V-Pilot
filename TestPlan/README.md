@@ -2,8 +2,8 @@
 
 The RABET-V Test Plan identifies how we will evaluate the RABET-V Process. We have identified the [research questions](Research_Questions.md) separately and outlined the process below. 
 
-## Input
-The RABET-V Test Plan begins with a completed version of the RABET-V Working Model. 
+## Working Model Input
+The RABET-V Test Plan begins with a completed version of the RABET-V Working Model. All steps will be conducted according to the version of the Working Model which is current at that time. The version will be noted prior to each activitiy. Variations in the Working Model will come from lessons learned throughout the pilot. Comparing results from different versions of the Working Model will assist the team in developing findings and conculsions. 
 
 ## Record Keeping
 Many of the research questions are focused on the time and cost of activities. To answer these questions, we will ask all participants to track their time. We will convert time to cost using industry average rates, not rates from participants. 
