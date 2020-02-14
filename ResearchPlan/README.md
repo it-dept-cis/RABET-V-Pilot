@@ -1,6 +1,6 @@
 # RABET-V Pilot Program Research Plan
 
-The RABET-V Research Test Plan identifies how we will evaluate the RABET-V Process. We have identified the [research questions](Research_Questions.md) separately and outlined the process below.
+The RABET-V Research Plan identifies how we will evaluate the RABET-V Process. We have identified the [research questions](Research_Questions.md) separately and outlined the process below.
 
 ## Working Model Input
 
