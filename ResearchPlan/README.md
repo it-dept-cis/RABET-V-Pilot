@@ -1,10 +1,10 @@
-# RABET-V Pilot Program Test Plan
+# RABET-V Pilot Program Research Plan
 
-The RABET-V Test Plan identifies how we will evaluate the RABET-V Process. We have identified the [research questions](Research_Questions.md) separately and outlined the process below.
+The RABET-V Research Test Plan identifies how we will evaluate the RABET-V Process. We have identified the [research questions](Research_Questions.md) separately and outlined the process below.
 
 ## Working Model Input
 
-The RABET-V Test Plan begins with a completed version of the RABET-V Working Model. All steps will be conducted according to the version of the Working Model which is current at that time. The version will be noted prior to each activity. Variations in the Working Model will come from lessons learned throughout the pilot. Comparing results from different versions of the Working Model will assist the team in developing findings and conclusions.
+The RABET-V Research Plan begins with a completed version of the RABET-V Working Model. All steps will be conducted according to the version of the Working Model which is current at that time. The version will be noted prior to each activity. Variations in the Working Model will come from lessons learned throughout the pilot. Comparing results from different versions of the Working Model will assist the team in developing findings and conclusions.
 
 ## Record Keeping
 
