@@ -3,7 +3,7 @@
 ## Goals
 There are many possible ways to perform an architecture review of a product. In order to constrain the scope and better direct the architecture review for RABET-V, we defined these primary goals for the architecture review.
 
-*Goal 1: Identify and Classify the Architecture* 
+### *Goal 1: Identify and Classify the Architecture* 
 The architecture review will identify significant architectural components, their boundaries, how they interface, and their dependencies with one another and 3rd party components. 
 
 Accomplishing Goal 1 means the architecture review will accomplish:
@@ -23,7 +23,7 @@ Goal 1 Outputs will include details about:
 * Interfaces - how do the components exchange data and control
 * Dependencies - which components depend on each other, which dependencies are third parties
 
-*Goal 2: Develop Assertions from Architecture* 
+### *Goal 2: Develop Assertions from Architecture* 
 The architecture review will assess the architecture design to develop reliable assertions which will be used to determining the testing rules.
 
 Assertions will cover findings such as:
@@ -55,7 +55,7 @@ Goal 2 asked the architecture reviewer to assess the architecture and develop as
 * Is there a specific framework such as J2EE or Microsoft .NET or is there no explicit framework? Is the choice of framework appropriate for the application?
 * Does the architecture provide a way to catch and handle error conditions within components and/or globally?
 * Have boundaries been created to contain the damaging effect of errors and reduce the amount of code that has to be concerned about error processing?
-* Is the user interface modularized so that changes in it won�t affect the rest of the program?
+* Is the user interface modularized so that changes in it won’t affect the rest of the program?
 
 
 third party
@@ -64,7 +64,7 @@ third party
 
 
 ## Inputs
-make sure there is a design representation that is actually reviewable. That doesn’t mean you need 300 pages with inch-perfect UML specifications and mathematical proofs. But it also doesn’t mean a random bunch of box and line pictures with no description of what those boxes and lines are supposed to represent. Identify the views that you need in order to depict the system qualities that are important. Then use a notation that other people understand. UML, Archimate, or whatever.
+make sure there is a design representation that is actually reviewable. That doesnâ€™t mean you need 300 pages with inch-perfect UML specifications and mathematical proofs. But it also doesnâ€™t mean a random bunch of box and line pictures with no description of what those boxes and lines are supposed to represent. Identify the views that you need in order to depict the system qualities that are important. Then use a notation that other people understand. UML, Archimate, or whatever.
 
 
 
