@@ -1,21 +1,21 @@
 # Architecture Review Methodology
 
 ## Goals
-There are many possible ways to perform an architecture review of a product. In order to constrain the scope and better direct the architecture review for RABET-V, we defined these primary goals for the architecture review.
+There are many possible ways to perform a product architecture review. In order to constrain the scope and better direct the RABET-V architecture review, we defined these primary goals for the architecture review.
 
 ### *Goal 1: Identify and Classify the Architecture* 
 The architecture review will identify significant architectural components, their boundaries, how they interface, and their dependencies with one another and 3rd party components. 
 
-Accomplishing Goal 1 means the architecture review will accomplish:
+Accomplishing Goal 1 means the architecture review will perform:
 * Identification of Components and Boundaries
 ** Boundaries between 3rd party components and election technology components
-** Boundaries between components of differing senstivity
+** Boundaries between components of differing sensitivity
 ** Trust boundaries
 * Labeling of Components based on Sensitivity
 ** Each component is given sensitivity labels according to the labeling scheme defined later.
 * Component Interfaces and Dependencies
 ** Identify the dependencies of the critical, security providing modules
-** Identify the interfaces between the components and how well-defined these interfaces are to decouple the implementation details of each component
+** Identify the interfaces between the components and how well-defined these interfaces decouple the implementation details of each component
 
 Goal 1 Outputs will include details about:
 * Components - what function does the component serve, how critical is the function, how critical is the data it uses
@@ -41,6 +41,36 @@ Sensitivity labels are applied to components of the system architecture and used
 2. Data Criticality - a label indicating the senstivity of the data the component is handling. This is measured by the impact of the data being manipulated to an unknown or incorrect value.
 3. Data Sensitivity - a label indicating the senstivity of the data the component is handling. This is measured by the impact of the data being exposed to an unauthorized party. 
 
+## What are Components
+We intentionally use a generic term, component, in our description of the Architecture Review. This allows for flexibility when developing findings but in order to bring some consistency and predictability, but we have defined some conventions for how components are identified. 
+
+### Third Party
+When considering parts of the overall solution which are outside of the software application, each unique version of the following will be considered individual components of the system:
+* Operating System
+* Framework
+* 3rd party API
+* Embedded 3rd Party Library
+* Hosting Software/Service (i.e. IIS, Docker, Elastic Beanstalk, Azure App Service, etc.)
+* Database (database functions and stored procedures will be treated as a part of the software application) 
+* File Storage System/Service
+* Network Appliance (virtual or real)
+* External Device Driver/Firmware
+
+
+RABET-V Architecture Review will not further decompose these elements of the solution. The assumption of the above rule is that any change to these components will be treated a change to the entire component and the version number and change list will reflect the entire component.
+
+### Internal
+When considering parts that are inside the software application(s), the following may be considered individual components of the system based on how the software is constructed:
+* Program Executable
+* Program Library (i.e. DLL)
+* Namespace
+* Class
+* API
+* Service
+
+
+
+
 ## Assessing the Architecture
 
 Goal 2 asked the architecture reviewer to assess the architecture and develop assertions. To do this, we identify a non-inclusive list of questions to ask about the architecture:
@@ -56,42 +86,37 @@ Goal 2 asked the architecture reviewer to assess the architecture and develop as
 * Does the architecture provide a way to catch and handle error conditions within components and/or globally?
 * Have boundaries been created to contain the damaging effect of errors and reduce the amount of code that has to be concerned about error processing?
 * Is the user interface modularized so that changes in it won’t affect the rest of the program?
-
-
-third party
-- trusted v non-trusted 3rd parties
-
+* Does the solution use reputable 3rd party components or are the components from less reliable and known 3rd parties?
 
 
 ## Inputs
-make sure there is a design representation that is actually reviewable. That doesnâ€™t mean you need 300 pages with inch-perfect UML specifications and mathematical proofs. But it also doesnâ€™t mean a random bunch of box and line pictures with no description of what those boxes and lines are supposed to represent. Identify the views that you need in order to depict the system qualities that are important. Then use a notation that other people understand. UML, Archimate, or whatever.
 
-
+The Technology Provider will supply architecture diagrams, architecture descriptions, software source code, and access to a funtioning version of the solution. The architecture review will use the source code and functioning solution to validate or complete missing pieces from the the architecture diagrams and descriptions. For more information about what is expected for the architecture diagrams and description, see the Provider Submission activity. 
 
 
 ## Technical Guidance
 
-As a reviewer you must prepare in advance checklists and scenarios that you want to test for the system qualities that you are interested in.
+Technical guidance is intended to help technology providers prepare for the architecture review. These resources are not conclusive but will help ensure the most optimal outcomes. 
 
-There are a number of good ideas in https://ycnotes.com/2016/10/03/code-complete/
+*Documenting Architecture*
+Views and Beyond: The SEI Approach for Architecture Documentation
+https://resources.sei.cmu.edu/library/asset-view.cfm?assetID=513862
+
+*Building Secure Architectures"
+https://www.owasp.org/images/8/83/Securing_Enterprise_Web_Applications_at_the_Source.pdf
+
+*Code Complete Checklists*
+https://ycnotes.com/2016/10/03/code-complete/
 https://ycnotes.com/2016/10/04/code-complete-checklists/
 
 
 ## Process
-TBD
-Review provider given architecture diagrams
-
-Validate important architecture aspects via inspection of system, code
-
-Identify the critical, security providing code and the modules it is contained in (e.g. access control, data sanitization, input validation, data integrity, etc)
-
-Identify interfaces and dependencies of the critical, security providing modules
-
-Identify the critical data and the modules which handle the data (and their permissions)
-
-Identify the 3rd party services or modules which are trusted
-
-Assign labels of criticality to modules, interfaces, 3rd parties, and data 
-
-Assign labels to trust boundaries (if any)
-
+1. Review provider given architecture diagrams
+2. Validate important architecture aspects via inspection of system, code
+3. Identify the critical, security providing code and the modules it is contained in (e.g. access control, data sanitization, input validation, data integrity, etc)
+4. Identify interfaces and dependencies of the critical, security providing modules
+5. Identify the critical data and the modules which handle the data (and their permissions)
+6. Identify the 3rd party services or modules which are trusted
+7. Assign labels of criticality to modules, interfaces, 3rd parties, and data 
+8. Assign labels to trust boundaries (if any)
+9. ....

@@ -1,6 +1,6 @@
 # Provider Submission 
 
-The information required from a Registered Technology Provider (RTP) will vary based on whether this is the RTP's initial submission of a product revision submission. The initial submission will require the most information in order to establish the product in the RABET-V program. Revision submissions will require varying levels of information based on the changes submitted and how those changes impact current [Testing Rules](../RABET-V_Glossary.md). 
+The Provider Submission activity is conducted by the The information required from a Registered Technology Provider (RTP) will vary based on whether this is the RTP's initial submission of a product revision submission. The initial submission will require the most information in order to establish the product in the RABET-V program. Revision submissions will require varying levels of information based on the changes submitted and how those changes impact current [Testing Rules](../RABET-V_Glossary.md). 
 
 ## Initial Submission
 
@@ -28,6 +28,10 @@ An indication of which security best practices a provider meets based on their v
 ** Etc
 
 *The lack of architecture documentation and diagrams will not exclude a pilot participant from the program. The pilot program will work with the provider to create documentation and diagrams which are missing.* 
+
+
+ 
+make sure there is a design representation that is actually reviewable. That doesnâ€™t mean you need 300 pages with inch-perfect UML specifications and mathematical proofs. But it also doesnâ€™t mean a random bunch of box and line pictures with no description of what those boxes and lines are supposed to represent. Identify the views that you need in order to depict the system qualities that are important. Then use a notation that other people understand. UML, Archimate, or whatever.
 
 ### Process Descriptions
 
