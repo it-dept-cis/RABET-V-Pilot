@@ -16,10 +16,11 @@ We will add steering committee member information below as we confirm members:
 * Aaron Wilson, Sr. Director of Election Security at The Center for Internet Security (CIS) - Steering Committee Chair
 * Jerome Lovato, Testing and Certifiation Director at The Election Assistance Commission (EAC) 
 * Don Palmer, EAC Commissioner
-* David Beirne, FVAP
-* Nikki Charlson - Maryland Elections
-* Spencer Wood, Ohio Elections
-* Richard Rydecki, Wisconsin Elections
+* David Beirne, Federal Voting Assistance Program (FVAP)
+* Nikki Charlson, Maryland State Board of Elections
+* Spencer Wood, Ohio Secretary of State's Office
+* Richard Rydecki, Wisconsin Elections Commission Staff
+* Christina Adkins, Texas Secretary of State's Office
 
 ## Technology Advisory Committee
 
