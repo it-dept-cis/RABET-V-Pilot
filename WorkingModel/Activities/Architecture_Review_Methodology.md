@@ -131,6 +131,8 @@ The output of the Architecture Review is a set of assertions based on the archit
 2. The public facing results portal uses a database account with read-only access and thus changes to the results portal pose no risk to the integrity of the database.
 3. All file imports inherit from a singular file import class which enforces input sanitization and restrictions on the types of files to be stored and processed. Adding new file imports which inherit from this base class pose little risk to file injection attacks. 
 4. The public facing results portal is hosting using Azure App Service which is supporting through on constantly patched Windows 10 operating system. Underlying patches to this infrastructure pose little risk to the reliability and availability of the system and help ensure it's security claims are valid. 
+5. A SQL data access framework called Entity Framework is used to make all data access calls to the database. This framework uniformly enforces SQL injections projections. Therefore, changes to the API and Controllers pose little risk to the SQL injection protections. This assertion assumes Entity Framework is used for every database call. 
 
 
 ### Negative
+1. There is no SQL data access middleware used to make database calls that enforces SQL injection protections. SQL calls are custom built for every application. This means we can ensure future changes will not pose unique SQL injection risks.  
