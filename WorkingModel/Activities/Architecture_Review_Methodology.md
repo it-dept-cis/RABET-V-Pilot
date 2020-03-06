@@ -13,7 +13,7 @@ Accomplishing Goal 1 means the architecture review will perform:
 * Identification of Components and Boundaries
   * Boundaries between 3rd party components and election technology components
   * Boundaries between components of differing sensitivity
-** Trust boundaries
+  * Trust boundaries
 * Labeling of Components based on Sensitivity
   * Each component is given sensitivity labels according to the labeling scheme defined later.
   * Component Interfaces and Dependencies
