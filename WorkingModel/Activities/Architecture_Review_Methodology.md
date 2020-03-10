@@ -96,7 +96,7 @@ Goal 2 asked the architecture reviewer to assess the architecture and develop as
 * Is there a specific framework such as J2EE or Microsoft .NET or is there no explicit framework? Is the choice of framework appropriate for the application?
 * Does the architecture provide a way to catch and handle error conditions within components and/or globally?
 * Have boundaries been created to contain the damaging effect of errors and reduce the amount of code that has to be concerned about error processing?
-* Is the user interface modularized so that changes in it won’t affect the rest of the program?
+* Is the user interface modularized so that changes in it won't affect the rest of the program?
 * Does the solution use reputable 3rd party components or are the components from less reliable and known 3rd parties?
 
 ## Inputs
@@ -138,10 +138,10 @@ The output of the Architecture Review is a set of assertions based on the archit
 
 1. Input sanitization to protect against XSS is done uniformly across the solution using the .NET Framework. Therefore, changes to the API or Controllers components will pose no risk to the XSS protections.
 2. The public facing results portal uses a database account with read-only access and thus changes to the results portal pose low risk to the integrity of the database. This assumes the database is properly patched.
-3. All file imports inherit from a singular file import class which enforces input sanitization and restrictions on the types of files to be stored and processed. Adding new file imports which inherit from this base class pose little risk to file injection attacks. 
-4. The public facing results portal is hosting using Azure App Service which is supporting through on constantly patched Windows 10 operating system. Underlying patches to this infrastructure pose little risk to the reliability and availability of the system and help ensure it's security claims are valid. 
+3. All file imports inherit from a singular file import class which enforces input sanitization and restrictions on the types of files to be stored and processed. Adding new file imports which inherit from this base class pose little risk to file injection attacks.
+4. The public facing results portal is hosting using Azure App Service which is supporting through on constantly patched Windows 10 operating system. Underlying patches to this infrastructure pose little risk to the reliability and availability of the system and help ensure its security claims are valid.
 5. A SQL data access framework called Entity Framework is used to make all data access calls to the database. This framework uniformly enforces SQL injections projections. Therefore, changes to the API and Controllers pose little risk to the SQL injection protections. This assertion assumes Entity Framework is used for every database call.
 
 ### Negative
 
-1. There is no SQL data access middleware used to make database calls that enforces SQL injection protections. SQL calls are custom built for every application. This means we can ensure future changes will not pose unique SQL injection risks.  
+1. There is no SQL data access middleware used to make database calls that enforces SQL injection protections. SQL calls are custom built for every application. This means we can't ensure future changes will not pose unique SQL injection risks.  
