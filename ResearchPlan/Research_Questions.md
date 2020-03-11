@@ -11,7 +11,7 @@
 	-	The re-verification of a product?
 3)	Is there a viable economic model for the RABET-V process? If so:
 	-	Does it require a government agency to drive the program, similar to voting system certification?
-	-	Is there a model in which suppliers in the market can support?
+	-	Is there a model that suppliers in the market can support?
 	-	Is there a model that states and localities can support?
 4)	Will the process be efficient enough to keep costs low enough for vendors to make minor updates?
 
