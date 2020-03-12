@@ -21,6 +21,8 @@ We will add steering committee member information below as we confirm members:
 * Spencer Wood, Ohio Secretary of State's Office
 * Richard Rydecki, Wisconsin Elections Commission Staff
 * Christina Adkins, Texas Secretary of State's Office
+* Jessica Myers, Pennsylvania Secretary of State's Office
+* Mike Moser, Pennsylvania Secretary of State's Office
 
 ## Technology Advisory Committee
 
