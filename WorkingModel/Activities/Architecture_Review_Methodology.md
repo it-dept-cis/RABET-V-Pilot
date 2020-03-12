@@ -43,17 +43,19 @@ Assertions will cover findings such as:
 
 ## Sensitivity Labels
 
-Sensitivity labels are applied to components of the system architecture and used to designate the importance of that component for supporting security services for the election operations.  The relevant security services are robustness, resiliency, confidentiality, integrity, and availability. Well-designed information systems will have modules and layers which will allow labels to precisely identify the most important components. This system understanding should be integrated into an understanding of the essential functions of the election system as a whole, so the aspects of the information system that directly support the essential election functions are clear. The sensitivity of system components is then used to prioritize testing the components. If the architecture is poorly designed, there will be fewer distinguishable components and the precision of testing will be less than desirable. Well-designed architectures will allow fine-tuned labeling with a small of amount of highly sensitive components.  
+Sensitivity labels are applied to components of the system architecture and used to designate the importance of that component for supporting security services for the election operations.  The relevant security services are robustness, resiliency, confidentiality, integrity, and availability. [Well-designed information systems will have modules and layers which will allow labels to precisely identify the most important components]. This system understanding should be integrated into an understanding of the essential functions of the election system as a whole, so the aspects of the information system that directly support the essential election functions are clear. The sensitivity of system components is then used to prioritize their testing. If the architecture is poorly designed, there will be fewer distinguishable components and the precision of testing will be less than desirable. Well-designed architectures will allow fine-tuned labeling with a small amount of highly sensitive components.  
+
+### Example Labels
 
 1. Election Operations Criticality - a label indicating how important this component is for election operations. This may be thought of as an label of "availability". This is measured by the impact of the component ceasing to function.
 
-2. Data Criticality - a label indicating the sensitivity of the data the component is handling. This is measured by the impact of the data being manipulated to an unknown or incorrect value.
+2. Data Criticality - a label indicating the sensitivity of the data the component is handling. This may be thought of as a label of "integrity". This is measured by the impact of the data being manipulated to an unknown or incorrect value. Criticality can be determined by examining a component's exposed interfaces.
 
-3. Data Sensitivity - a label indicating the sensitivity of the data the component is handling. This is measured by the impact of the data being exposed to an unauthorized party.
+3. Data Sensitivity - a label indicating the sensitivity of the data the component is handling. This may be thought of as a label of "confidentiality". This is measured by the impact of the data being exposed to an unauthorized party. Sensitivity can be determined by examining a component's exposed interfaces.
 
 ## What are Components
 
-We intentionally use a generic term, component, in our description of the Architecture Review. This allows for flexibility when developing findings but in order to bring some consistency and predictability, but we have defined some conventions for how components are identified. 
+We intentionally use a generic term, component, in our description of the Architecture Review. This allows for flexibility when developing findings but in order to bring some consistency and predictability, but we have defined some conventions for how components are identified.
 
 ### Third Party
 
@@ -64,7 +66,7 @@ When considering parts of the overall solution which are outside of the software
 * 3rd party API
 * Embedded 3rd Party Library
 * Hosting Software/Service (i.e. IIS, Docker, Elastic Beanstalk, Azure App Service, etc.)
-* Database (database functions and stored procedures will be treated as a part of the software application)
+* Database (database stored functions and procedures will be treated as a part of the software application)
 * File Storage System/Service
 * Network Appliance (virtual or real)
 * External Device Driver/Firmware
@@ -76,7 +78,7 @@ RABET-V Architecture Review will not further decompose these elements of the sol
 When considering parts that are inside the software application(s), the following may be considered individual components of the system based on how the software is constructed:
 
 * Program Executable
-* Program Library (i.e. DLL)
+* Program Library (e.g. DLL)
 * Namespace
 * Class
 * API
