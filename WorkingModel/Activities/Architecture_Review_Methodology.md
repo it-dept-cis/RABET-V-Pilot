@@ -2,7 +2,7 @@
 
 ## Goals
 
-There are many possible ways to perform a product architecture review. In order to constrain the scope and better direct the RABET-V architecture review, we defined these primary goals for the architecture review.
+There are many possible ways to perform a product architecture review. In order to constrain the scope and better direct the RABET-V architecture review, we have defined these primary goals.
 
 ### *Goal 1: Identify and Classify the Architecture*
 
@@ -10,15 +10,14 @@ The architecture review will identify significant architectural components, thei
 
 Accomplishing Goal 1 means the architecture review will perform:
 
-* Identification of Components and Boundaries
+* Identification of components and boundaries
   * Boundaries between 3rd party components and election technology components
   * Boundaries between components of differing sensitivity
   * Trust boundaries
-* Labeling of Components based on Sensitivity
-  * Each component is given sensitivity labels according to the labeling scheme defined later.
-  * Component Interfaces and Dependencies
-* Identify the dependencies of the critical, security providing modules
-* Identify the interfaces between the components and how well-defined these interfaces decouple the implementation details of each component
+* Labeling of components based on sensitivity
+  * Each component is given one or more sensitivity labels according to the labeling scheme defined later.  
+* Identify the dependencies of the critical, security service providing modules
+* Identify the interfaces between the components and how well these interfaces decouple the implementation details of each component
 
 Goal 1 Outputs will include details about:
 
@@ -29,21 +28,18 @@ Goal 1 Outputs will include details about:
 
 ### *Goal 2: Develop Assertions from Architecture*
 
-The architecture review will assess the architecture design to develop reliable assertions which will be used to determining the testing rules.
+The architecture review will assess the architectural design to develop reliable assertions which will be used to determine the testing rules.
 
 Assertions will cover findings such as:
 
 * Identification of components which are significant to the security and/or usability assurances of the system
-
 * Identification of 3rd party components which are significant to the security and/or usability assurances of the system, and how likely changes to these components are to affect the security and/or usability assurances of the system
-
 * Identification of components whose internal implementations can change without posing a significant risk to security and/or usability assurances
-
 * Identification of components which are designed to change and the risk of the likely changes to security and/or usability assurances
 
 ## Sensitivity Labels
 
-Sensitivity labels are applied to components of the system architecture and used to designate the importance of that component for supporting security services for the election operations.  The relevant security services are robustness, resiliency, confidentiality, integrity, and availability. [Well-designed information systems will have modules and layers which will allow labels to precisely identify the most important components]. This system understanding should be integrated into an understanding of the essential functions of the election system as a whole, so the aspects of the information system that directly support the essential election functions are clear. The sensitivity of system components is then used to prioritize their testing. If the architecture is poorly designed, there will be fewer distinguishable components and the precision of testing will be less than desirable. Well-designed architectures will allow fine-tuned labeling with a small amount of highly sensitive components.  
+Sensitivity labels are applied to components of the system architecture and used to designate the importance of that component for supporting security services for election operations. The relevant security services are robustness, resiliency, confidentiality, integrity, and availability. Well-designed information systems will have modules and layers which will allow labels to precisely identify the most important components. This system understanding should be integrated into an understanding of the essential functions of the election system as a whole, so the aspects of the information system that directly support the essential election functions are clear. The sensitivity of system components is then used to prioritize their testing. If the architecture is poorly designed, there will be fewer distinguishable components and the precision of testing will be less than desirable. Well-designed architectures will allow fine-tuned labeling with a small amount of highly sensitive components.  
 
 ### Example Labels
 
@@ -71,7 +67,7 @@ When considering parts of the overall solution which are outside of the software
 * Network Appliance (virtual or real)
 * External Device Driver/Firmware
 
-RABET-V Architecture Review will not further decompose these elements of the solution. The assumption of the above rule is that any change to these components will be treated a change to the entire component and the version number and change list will reflect the entire component.
+RABET-V Architecture Review will not further decompose these elements of the solution. The assumption of the above rule is that any change to these components will be treated a change to the entire component and the version number and change list will describe the entire component.
 
 ### Internal
 
