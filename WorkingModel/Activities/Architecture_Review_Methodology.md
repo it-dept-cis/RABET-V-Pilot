@@ -97,9 +97,37 @@ Goal 2 asked the architecture reviewer to assess the architecture and develop as
 * Is the user interface modularized so that changes in it won't affect the rest of the program?
 * Does the solution use reputable 3rd party components or are the components from less reliable and known 3rd parties?
 
-## Inputs
+### Example Assertions
+
+The output of the Architecture Review is a set of assertions based on the architecture of the solution. These should be statements which are true based on the architecture which is changed less often than individual elements of the solution.
+
+#### Positive
+
+1. Input sanitization to protect against XSS is done uniformly across the solution using the .NET Framework. Therefore, changes to the API or Controllers components will pose no risk to the XSS protections.
+2. The public facing results portal uses a database account with read-only access and thus changes to the results portal pose low risk to the integrity of the database. This assumes the database is properly patched.
+3. All file imports inherit from a singular file import class which enforces input sanitization and restrictions on the types of files to be stored and processed. Adding new file imports which inherit from this base class pose little risk to file injection attacks.
+4. The public facing results portal is hosting using Azure App Service which is supporting through on constantly patched Windows 10 operating system. Underlying patches to this infrastructure pose little risk to the reliability and availability of the system and help ensure its security claims are valid.
+5. A SQL data access framework called Entity Framework is used to make all data access calls to the database. This framework uniformly enforces SQL injections projections. Therefore, changes to the API and Controllers pose little risk to the SQL injection protections. This assertion assumes Entity Framework is used for every database call.
+
+#### Negative
+
+1. There is no SQL data access middleware used to make database calls that enforces SQL injection protections. SQL calls are custom built for every application. This means we can't ensure future changes will not pose unique SQL injection risks.  
+
+## Process Inputs
 
 The Technology Provider will supply architecture diagrams, architecture descriptions, software source code, and access to a functioning version of the solution. The architecture review will use the source code and functioning solution to validate or complete missing pieces from the the architecture diagrams and descriptions. For more information about what is expected for the architecture diagrams and description, see the Provider Submission activity.
+
+## Process
+
+1. Review provider given architecture diagrams
+2. Validate important architecture aspects via inspection of system, code
+3. Identify the critical, security providing code and the modules it is contained in (e.g. access control, data sanitization, input validation, data integrity, etc)
+4. Identify interfaces and dependencies of the critical, security providing modules
+5. Identify the critical data and the modules which handle the data (and their permissions)
+6. Identify the 3rd party services or modules which are trusted
+7. Assign labels of criticality to modules, interfaces, 3rd parties, and data
+8. Assign labels to trust boundaries (if any)
+9. ....
 
 ## Technical Guidance
 
@@ -115,31 +143,3 @@ https://www.owasp.org/images/8/83/Securing_Enterprise_Web_Applications_at_the_So
 *Code Complete Checklists*
 https://ycnotes.com/2016/10/03/code-complete/
 https://ycnotes.com/2016/10/04/code-complete-checklists/
-
-## Process
-
-1. Review provider given architecture diagrams
-2. Validate important architecture aspects via inspection of system, code
-3. Identify the critical, security providing code and the modules it is contained in (e.g. access control, data sanitization, input validation, data integrity, etc)
-4. Identify interfaces and dependencies of the critical, security providing modules
-5. Identify the critical data and the modules which handle the data (and their permissions)
-6. Identify the 3rd party services or modules which are trusted
-7. Assign labels of criticality to modules, interfaces, 3rd parties, and data
-8. Assign labels to trust boundaries (if any)
-9. ....
-
-## Example Assertions
-
-The output of the Architecture Review is a set of assertions based on the architecture of the solution. These should be statements which are true based on the architecture which is changed less often than individual elements of the solution.
-
-### Positive
-
-1. Input sanitization to protect against XSS is done uniformly across the solution using the .NET Framework. Therefore, changes to the API or Controllers components will pose no risk to the XSS protections.
-2. The public facing results portal uses a database account with read-only access and thus changes to the results portal pose low risk to the integrity of the database. This assumes the database is properly patched.
-3. All file imports inherit from a singular file import class which enforces input sanitization and restrictions on the types of files to be stored and processed. Adding new file imports which inherit from this base class pose little risk to file injection attacks.
-4. The public facing results portal is hosting using Azure App Service which is supporting through on constantly patched Windows 10 operating system. Underlying patches to this infrastructure pose little risk to the reliability and availability of the system and help ensure its security claims are valid.
-5. A SQL data access framework called Entity Framework is used to make all data access calls to the database. This framework uniformly enforces SQL injections projections. Therefore, changes to the API and Controllers pose little risk to the SQL injection protections. This assertion assumes Entity Framework is used for every database call.
-
-### Negative
-
-1. There is no SQL data access middleware used to make database calls that enforces SQL injection protections. SQL calls are custom built for every application. This means we can't ensure future changes will not pose unique SQL injection risks.  
