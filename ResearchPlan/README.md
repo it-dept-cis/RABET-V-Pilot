@@ -20,7 +20,7 @@ In instances where hour tracking needs to be done on a more granular basis than 
 
 ### Activity 1. Submission
 
-CIS will work with pilot participant to complete the required documents for the initial submission. See [initial submission)[https://github.com/it-dept-cis/RABET-V-Pilot/blob/master/WorkingModel/Activities/Provider_Submission.md] for more details. Working sessions between CIS and the pilot participant will be done remotely. CIS will provide a way for the participant to send sensitive information securely.
+CIS will work with pilot participant to complete the required documents for the initial submission. See [initial submission](https://github.com/it-dept-cis/RABET-V-Pilot/blob/master/WorkingModel/Activities/Provider_Submission.md) for more details. Working sessions between CIS and the pilot participant will be done remotely. CIS will provide a way for the participant to send sensitive information securely.
 
 ### Activity 2. Submission Review Process
 
