@@ -5,10 +5,12 @@
 - [Annotating Election Technology Architecture](#annotating-election-technology-architecture)
     - [Describing components](#describing-components)
     - [Annotating components](#annotating-components)
-    - [What's sensitive](#whats-sensitive)
-        - [Data criticality](#data-criticality)
-        - [Data sensitivity](#data-sensitivity)
-        - [Election operations criticality](#election-operations-criticality)
+        - [What's sensitive](#whats-sensitive)
+            - [Data criticality](#data-criticality)
+            - [Data sensitivity](#data-sensitivity)
+            - [Election operations criticality](#election-operations-criticality)
+        - [Security Services](#security-services)
+        - [Third Parties](#third-parties)
 
 <!-- /TOC -->
 
@@ -18,7 +20,7 @@ This document describes how a election technology architecture can be annotated 
 
 [Components] are defined broadly within RABET-V. This example uses the industry standard [Unified Modeling Language](https://www.omg.org/spec/UML/) (UML) [component diagrams] to describe them.
 
-Components can be made up of other subcomponents. Ideally, sensitive components can be identified at a highly granular level, allowing the most assumptions to be made about the architecture.
+Components can be made up of other subcomponents (shown as nested inside its containing component). Ideally, sensitive components can be identified at a highly granular level, allowing the most assumptions to be made about the architecture.
 
 ![Subcomponents](./images/subcomponents.svg)
 
@@ -38,11 +40,11 @@ By annotating these aspects, we know which components of the architecture can or
 
 Annotations are accomplished through the use of [UML stereotypes](https://en.wikipedia.org/wiki/Stereotype_(UML)). Two new stereotypes have been developed, «Security Service» and «Sensitive».
 
-## What's sensitive
+### What's sensitive
 
 A sensitive component is one that meets the definition of **data criticality**, **data sensitivity** or **election operations criticality**.
 
-### Data criticality
+#### Data criticality
 
 A component is data critical if any required or provided interfaces contain data that is considered critical.
 
@@ -50,7 +52,7 @@ The data processed by a module can be discovered by inspecting its ports. In the
 
 ![Data Criticality](./images/sensitive_err.svg)
 
-### Data sensitivity
+#### Data sensitivity
 
 A component is data sensitive if any required or provided interfaces contain data that is considered sensitive. In the example below, the **Eligibility Information** interface might contain sensitive data, but it's not clear.
 
@@ -60,6 +62,18 @@ A component is data sensitive if any required or provided interfaces contain dat
 
 ![Eligbility Info Interface Detail](./images/sensitive_epb_class.svg)
 
-### Election operations criticality
+#### Election operations criticality
 
 TBD.
+
+### Security Services
+
+[Security services] are used to secure «Sensitive» components. While sensitivity labels identify the need for security properties (e.g. Confidentiality, Integrity, Availability), a security service provides them. What services are provided by a security service is expressed by the *Services Provided* tag on the «protect» *dependency*. A security service is often provided by a «ThirdParty» (more information below).
+
+![Security Service](./images/security_service.svg)
+
+### Third Parties
+
+A third party components is a component not produced in any part by the election technology provider. Many products rely on third party components to provide common functionality, including security services. A component is indicated by the use of the «ThirdParty» stereotype. A *Vendor* tag is used to indicate the provider.
+
+![Third Parties](./images/third_party.svg)
