@@ -32,10 +32,10 @@ The architecture review will assess the architectural design to develop reliable
 
 Assertions will cover findings such as:
 
-* Identification of components which are significant to the security and/or usability assurances of the system
-* Identification of 3rd party components which are significant to the security and/or usability assurances of the system, and how likely changes to these components are to affect the security and/or usability assurances of the system
-* Identification of components whose internal implementations can change without posing a significant risk to security and/or usability assurances
-* Identification of components which are designed to change and the risk of the likely changes to security and/or usability assurances
+* Identification of components which are significant to the security assurances of the system
+* Identification of 3rd party components which are significant to the security assurances of the system, and how likely changes to these components are to affect the security assurances of the system
+* Identification of components whose internal implementations can change without posing a significant risk to security
+* Identification of components which are designed to change and the risk of the likely changes to security
 
 ## Sensitivity Labels
 
