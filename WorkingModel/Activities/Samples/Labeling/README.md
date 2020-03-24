@@ -11,6 +11,7 @@
             - [Election operations criticality](#election-operations-criticality)
         - [Security Services](#security-services)
         - [Third Parties](#third-parties)
+    - [Importance of Decomposition](#importance-of-decomposition)
 
 <!-- /TOC -->
 
@@ -60,11 +61,13 @@ A component is `data-sensitive` if any required or provided interfaces contain d
 
  Inspecting the interface in more detail shows that it includes PII.
 
-![Eligbility Info Interface Detail](./images/sensitive_epb_class.svg)
+![Eligibility Info Interface Detail](./images/sensitive_epb_class.svg)
 
 #### Election operations criticality
 
-TBD.
+A component is `operations-critical` if a component's degradation of function or ceasure of function would be disruptive to the election operations it supports. This is determined by reviewing the use-cases that the component supports.
+
+![Operations Criticality](./images/operation_criticality.svg)
 
 ### Security Services
 
@@ -77,3 +80,23 @@ TBD.
 A third party component is a component not produced in any part by the election technology provider. Many products rely on third party components to provide common functionality, including security services. A component is indicated by the use of the «ThirdParty» stereotype. A *Vendor* tag is used to indicate the provider.
 
 ![Third Parties](./images/third_party.svg)
+
+## Importance of Decomposition
+
+In order to minimize the amount of testing, annotations should be applied to specific subcomponents.
+
+Consider Foo Election Night Reporting (ENR). The user must be authorized before they can upload a new set of election results. The component diagram does not specify a particular subcomponent as providing this security service, so the entire component (i.e. Foo Admin) must be classified as sensitive.
+
+![Least decomposed diagram](./images/decompose_least.svg)
+
+Suppose the Base Admin Controller provides the authentication services. Then the sensitivity level can be moved "down" into that subcomponent.
+
+![Some decomposition](./images/decompose_mid.svg)
+
+A better architecture would be to isolate the Authorization Module from the other components as shown below.
+
+![More decomposition](./images/decompose_mid_high.svg)
+
+The diagram doesn't show under what circumstances EnrAuth is used. It could be all the time, or just for some of the endpoints / behaviors exposed by the controller. To make that more clear, we create a port called "Upload Results" which exposes an HTTP endpoint and consumes the EnrAuth service. The labels are now narrowed down to the most granular level.
+
+![Most decomposition](./images/decompose_high.svg)
