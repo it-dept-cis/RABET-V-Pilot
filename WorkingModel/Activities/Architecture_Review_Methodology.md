@@ -1,61 +1,37 @@
 # Architecture Review Methodology
 
-## Goals
+The RABET-V Architecture Review is designed to evaluate the solution's architectural support for 10 security services (link to page where these are defined). This evaluation produces an architectural maturity score for each security service and identifies the components which provide the security service. This score does not measure the well the product achieves the security service, just how mature the architecture is that supports the current capability level. The Product Security Capability Maturity level is a separate metric determined in the Security Claims Review and Verification Activities and it indicates how well the product provides the security services. 
 
-There are many possible ways to perform a product architecture review. In order to constrain the scope and better direct the RABET-V architecture review, we have defined these primary goals.
+The Architecture Maturity scores and component mappings are used to help assess the risk that changes to the product will negatively effect the security services. These are used in the Testing Rules Determination Activity to identify how to test the product changes. The higher the maturity scores, the less testing required to validate the security capability scores. 
 
-### *Goal 1: Identify and Classify the Architecture*
+## Outputs
 
-The architecture review will identify significant architectural components, their boundaries, how they interface, and their dependencies with one another and 3rd party components.
+#### 1. Security Service Component Mapping
 
-Accomplishing Goal 1 means the architecture review will perform:
+For each security service, the Architecture Review will identify the product components at the system and software levels which *PROVIDE* and *CONFIGURE* the security service and those components which *USE* the component that provides the security service. The components which *PROVIDE* and/or *CONFIGURE* the security service are referred to as 1st Degree components. The ones which use the 1st Degree components are referred to as 2nd Degree components.  
 
-* Identification of components and boundaries
-  * Boundaries between 3rd party components and election technology components
-  * Boundaries between components of differing sensitivity
-  * Trust boundaries
-* Labeling of components based on sensitivity
-  * Each component is given one or more sensitivity labels according to the labeling scheme defined later.  
-* Identify the dependencies of the critical, security service providing modules
-* Identify the interfaces between the components and how well these interfaces decouple the implementation details of each component
+#### 2. Security Service Architectural Maturity Scores
 
-Goal 1 Outputs will include details about:
+Based on the maturity scoring rubric, the solution architecture will be assigned a score for each security service which corresponds to how well the architecture supports that security service.
 
-* Components - what function does the component serve, how critical is the function, how critical is the data it uses
-* Boundaries - where is the logical divide between this component and another, how well-defined is the boundary, is it a trust boundary
-* Interfaces - how do the components exchange data and control
-* Dependencies - which components depend on each other, which dependencies are third parties
 
-### *Goal 2: Develop Assertions from Architecture*
+## Concepts 
 
-The architecture review will assess the architectural design to develop reliable assertions which will be used to determine the testing rules.
+The following are key concepts used in the RABET-V Architecture Review process.
 
-Assertions will cover findings such as:
+#### System and Software Architecture Levels
 
-* Identification of components which are significant to the security and/or usability assurances of the system
-* Identification of 3rd party components which are significant to the security and/or usability assurances of the system, and how likely changes to these components are to affect the security and/or usability assurances of the system
-* Identification of components whose internal implementations can change without posing a significant risk to security and/or usability assurances
-* Identification of components which are designed to change and the risk of the likely changes to security and/or usability assurances
+The RABET-V Architecture Review considers the system and the software architecture. We define the system architecture as []. We define the software architecture as [].
 
-## Sensitivity Labels
+#### Components 
 
-Sensitivity labels are applied to components of the system architecture and used to designate the importance of that component for supporting security services for election operations. The relevant security services are robustness, resiliency, confidentiality, integrity, and availability. Well-designed information systems will have modules and layers which will allow labels to precisely identify the most important components. This system understanding should be integrated into an understanding of the essential functions of the election system as a whole, so the aspects of the information system that directly support the essential election functions are clear. The sensitivity of system components is then used to prioritize their testing. If the architecture is poorly designed, there will be fewer distinguishable components and the precision of testing will be less than desirable. Well-designed architectures will allow fine-tuned labeling with a small amount of highly sensitive components.  
+The architecture review deconstructs the product solution into components. A component may be a small module with a few lines of code or a larger executable with many lines of code. The architecture review will identify as many components as necessary to identify the components which provide or configure a security service or use a component that does. The goal is to identify the smallest logical unit possible in order to limit the retesting of parts which are not materially involved in providing the security service. For more mature architectures, these will be small, centralized components. For less mature architectures, these will be larger and many in nature.
 
-### Example Labels
-
-1. Election Operations Criticality - a label indicating how important this component is for election operations. This may be thought of as an label of "availability". This is measured by the impact of the component ceasing to function.
-
-2. Data Criticality - a label indicating the sensitivity of the data the component is handling. This may be thought of as a label of "integrity". This is measured by the impact of the data being manipulated to an unknown or incorrect value. Criticality can be determined by examining a component's exposed interfaces.
-
-3. Data Sensitivity - a label indicating the sensitivity of the data the component is handling. This may be thought of as a label of "confidentiality". This is measured by the impact of the data being exposed to an unauthorized party. Sensitivity can be determined by examining a component's exposed interfaces.
-
-## What are Components
-
-We intentionally use a generic term, component, in our description of the Architecture Review. This allows for flexibility when developing findings but in order to bring some consistency and predictability, but we have defined some conventions for how components are identified.
+Here are the guidelines for deconstructing a product solution into components which will be used to map a security services architecture (I like this word "Security Services Architecture POV"...might be worth using elsewhere). This guidance is different for 3rd party components and internally developed components. 
 
 ### Third Party
 
-When considering parts of the overall solution which are outside of the software application, each unique version of the following will be considered individual components of the system:
+When considering parts of the overall solution which are not internally developed, each unique version of the following will be considered individual components of the system:
 
 * Operating System
 * Framework
@@ -69,9 +45,9 @@ When considering parts of the overall solution which are outside of the software
 
 RABET-V Architecture Review will not further decompose these elements of the solution. The assumption of the above rule is that any change to these components will be treated a change to the entire component and the version number and change list will describe the entire component.
 
-### Internal
+### Internally Developed
 
-When considering parts that are inside the software application(s), the following may be considered individual components of the system based on how the software is constructed:
+When considering parts that are internally developed, the following may be considered individual components of the system based on how the software is constructed:
 
 * Program Executable
 * Program Library (e.g. DLL)
@@ -79,10 +55,65 @@ When considering parts that are inside the software application(s), the followin
 * Class
 * API
 * Service
+* Module
 
-## Assessing the Architecture
+[Internal Notes: More is needed here or maybe somewhere else about how these components will be identified. As in, where do we draw the boundaries.]
 
-Goal 2 asked the architecture reviewer to assess the architecture and develop assertions. To do this, we identify a non-inclusive list of questions to ask about the architecture:
+## Workflow
+
+#### 1. Documentation Verification
+
+Internal Notes: Refer to somewhere where we list the documentation that would be ideal. We should develop an example or two of a Security Services Architecture diagram
+Validate important architecture aspects via inspection of system, code
+
+#### 2. Component Identification
+
+The architecture review will identify significant architectural components, their boundaries, how they interface, and their dependencies with one another and 3rd party components.
+
+Component identification will perform:
+
+* Identification of components and boundaries
+  * Boundaries between 3rd party components and election technology components
+  * Boundaries between components of differing sensitivity
+  * Trust boundaries
+* Identify the interfaces between the components and how well these interfaces decouple the implementation details of each component
+
+Outputs will include:
+
+* Components - what function does the component serve, how critical is the function, how critical is the data it uses
+* Boundaries - where is the logical divide between this component and another, how well-defined is the boundary, is it a trust boundary
+* Interfaces - how do the components exchange data and control
+* Dependencies - which components depend on each other, which dependencies are third parties
+
+
+##### 2.1 System Architecture Components Decomposition
+
+##### 2.2 Software Architecture Components Decomposition
+
+
+#### 3. Security Service Component Mapping
+
+* Identification of components which are significant to the security services of the system
+* Identification of 3rd party components which are significant to the security and/or usability assurances of the system, and how likely changes to these components are to affect the security and/or usability assurances of the system
+
+
+##### 3.1 Map 1st Degree Components
+
+Based on the components identified, this step will map the components to the security services starting with the 1st degree components. A 1st degree component is one that *PROVIDES* or *CONFIGURES* a security service.
+For each 1st degree component, we need to identify interfaces and dependencies the component has on other components. These will be represented by *DEPENDS ON* relationships with the 1st degree 
+* Identify the dependencies of the critical, security service providing modules
+
+##### 3.2 Map 2nd Degree Components
+
+#### 4. Assess Architectural Maturity of Security Services
+
+
+Follow the rubric and determine maturity. 
+
+
+## Architecture Maturity Rubric
+
+### Questions
 
 * Are major building blocks well defined, including their areas of responsibility and their interfaces to other building blocks?
 * Are major building blocks properly reused or are they unnecessarily duplicated?
@@ -96,38 +127,34 @@ Goal 2 asked the architecture reviewer to assess the architecture and develop as
 * Have boundaries been created to contain the damaging effect of errors and reduce the amount of code that has to be concerned about error processing?
 * Is the user interface modularized so that changes in it won't affect the rest of the program?
 * Does the solution use reputable 3rd party components or are the components from less reliable and known 3rd parties?
+* Identification of components whose internal implementations can change without posing a significant risk to security and/or usability assurances
 
-### Example Assertions
 
-The output of the Architecture Review is a set of assertions based on the architecture of the solution. These should be statements which are true based on the architecture which is changed less often than individual elements of the solution.
+### Levels
 
-#### Positive
+Each level is defined by the qualities which are true about it. 
 
-1. Input sanitization to protect against XSS is done uniformly across the solution using the .NET Framework. Therefore, changes to the API or Controllers components will pose no risk to the XSS protections.
-2. The public facing results portal uses a database account with read-only access and thus changes to the results portal pose low risk to the integrity of the database. This assumes the database is properly patched.
-3. All file imports inherit from a singular file import class which enforces input sanitization and restrictions on the types of files to be stored and processed. Adding new file imports which inherit from this base class pose little risk to file injection attacks.
-4. The public facing results portal is hosting using Azure App Service which is supporting through on constantly patched Windows 10 operating system. Underlying patches to this infrastructure pose little risk to the reliability and availability of the system and help ensure its security claims are valid.
-5. A SQL data access framework called Entity Framework is used to make all data access calls to the database. This framework uniformly enforces SQL injections projections. Therefore, changes to the API and Controllers pose little risk to the SQL injection protections. This assertion assumes Entity Framework is used for every database call.
+#### Level 1 
 
-#### Negative
 
-1. There is no SQL data access middleware used to make database calls that enforces SQL injection protections. SQL calls are custom built for every application. This means we can't ensure future changes will not pose unique SQL injection risks.  
+
+#### Level 2 
+
+* The security service is provided and configured by no more components than the minimum number necessary
+* 2nd Degree components have internal implementations which can change without impacting the 1st degree components
+
+#### Level 3 
+
+* Components which are designed to change are separate from, and interact through a well-defined interface with, the components which provide security service
+
+
+
+
 
 ## Process Inputs
 
 The Technology Provider will supply architecture diagrams, architecture descriptions, software source code, and access to a functioning version of the solution. The architecture review will use the source code and functioning solution to validate or complete missing pieces from the the architecture diagrams and descriptions. For more information about what is expected for the architecture diagrams and description, see the Provider Submission activity.
 
-## Process
-
-1. Review provider given architecture diagrams
-2. Validate important architecture aspects via inspection of system, code
-3. Identify the critical, security providing code and the modules it is contained in (e.g. access control, data sanitization, input validation, data integrity, etc)
-4. Identify interfaces and dependencies of the critical, security providing modules
-5. Identify the critical data and the modules which handle the data (and their permissions)
-6. Identify the 3rd party services or modules which are trusted
-7. Assign labels of criticality to modules, interfaces, 3rd parties, and data
-8. Assign labels to trust boundaries (if any)
-9. ....
 
 ## Technical Guidance
 
