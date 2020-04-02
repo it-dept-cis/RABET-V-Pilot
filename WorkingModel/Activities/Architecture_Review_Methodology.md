@@ -12,14 +12,8 @@ For each security service, the Architecture Review will identify the product com
 
 #### 2. Security Service Architectural Maturity Scores
 
-<<<<<<< HEAD
 Based on the maturity scoring rubric, the solution architecture will be assigned a score for each security service which corresponds to how well the architecture supports that security service.
-=======
-* Identification of components which are significant to the security assurances of the system
-* Identification of 3rd party components which are significant to the security assurances of the system, and how likely changes to these components are to affect the security assurances of the system
-* Identification of components whose internal implementations can change without posing a significant risk to security
-* Identification of components which are designed to change and the risk of the likely changes to security
->>>>>>> b9302c842483128fe20c7d8af0fcec0b54287d8d
+
 
 
 ## Concepts 
