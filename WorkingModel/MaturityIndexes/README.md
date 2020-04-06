@@ -1,4 +1,4 @@
-## Maturity Indexes
+## RABET-V Maturity Indexes
 
 RABET-V evaluates the security, reliability, and usability of products and provides a set of maturity scores for each product version. RABET-V provides three maturity indexes:
 
