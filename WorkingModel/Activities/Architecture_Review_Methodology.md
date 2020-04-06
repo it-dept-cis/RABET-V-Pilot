@@ -2,27 +2,27 @@
 
 The RABET-V Architecture Review is designed to evaluate the solution's architectural support for the 10 (RABET-V security services)[]. This evaluation produces an architectural maturity score for each security service and identifies the components which provide the security service. This score does not measure how well the product achieves the security service (i.e. its capability level), just how mature the architecture is that supports the current capability level. The Product Security Capability Maturity level is a separate metric determined in the Security Claims Review and Verification Activities and it indicates how well the product provides the security services. 
 
-The Architecture Maturity scores and component mappings are used to help assess the risk that changes to the product will negatively effect the security services. These are used in the Testing Rules Determination Activity to identify how to test the product changes. The higher the maturity scores, the less testing required to validate the security capability scores. 
+The Architecture Maturity scores and component mappings are used to help assess the risk that changes to the product will negatively effect the security services. These are used in the Testing Rules Determination Activity to identify how to test the product changes. The higher the maturity scores, the less testing required to validate the security capability scores.
 
 ## Outputs
 
-#### 1. Security Service Component Mapping
+### 1. Security Service Component Mapping
 
 For each security service, the Architecture Review will identify the product components at the system and software levels which *PROVIDE* and *CONFIGURE* the security service and those components which *USE* the component that provides the security service. The components which *PROVIDE* and/or *CONFIGURE* the security service are referred to as 1st Degree components. The ones which use the 1st Degree components are referred to as 2nd Degree components. This mapping of components is referred to as the Security Services Architecture.
 
-#### 2. Security Service Architectural Maturity Scores
+### 2. Security Service Architectural Maturity Scores
 
-Based on the maturity scoring rubric, the solution architecture will be assigned a score for each security service which corresponds to how well the architecture supports that security service.
+Based on the maturity scoring rubric, the architecture will be assigned a score for each security service which corresponds to how well it supports that security service.
 
 ## Concepts 
 
 The following are key concepts used in the RABET-V Architecture Review process.
 
-#### System and Software Architecture Levels
+### System and Software Architecture Levels
 
 The RABET-V Architecture Review considers the system and the software architecture. We define the system architecture as [John TBD]. We define the software architecture as [John TBD].
 
-#### Components 
+### Components
 
 The architecture review deconstructs the product solution into components. A component may be a small module with a few lines of code or a larger executable with many lines of code. The goal is to identify the smallest logical unit possible in order to limit the retesting of parts which are not materially involved in providing the security service. For more mature architectures, these will be small, centralized components. For less mature architectures, these will be larger and many in nature.
 
@@ -60,12 +60,12 @@ When considering parts that are internally developed, the following may be consi
 
 ## Workflow
 
-#### 1. Documentation Verification
+### 1. Documentation Verification
 
-Internal Notes: Refer to somewhere where we list the documentation that would be ideal. We should develop an example or two of a Security Services Architecture diagram
-Validate important architecture aspects via inspection of system, code
+[Internal Notes: Refer to somewhere where we list the documentation that would be ideal. We should develop an example or two of a Security Services Architecture diagram
+Validate important architecture aspects via inspection of system, code]
 
-#### 2. Component Identification
+### 2. Component Identification
 
 The architecture review will identify significant architectural components, their boundaries, how they interface, and their dependencies with one another and 3rd party components.
 
@@ -84,19 +84,18 @@ Outputs will include:
 * Interfaces - how do the components exchange data and control
 * Dependencies - which components depend on each other, which dependencies are third parties
 
+#### 2.1 System Architecture Components Decomposition
 
-##### 2.1 System Architecture Components Decomposition
-
-##### 2.2 Software Architecture Components Decomposition
+#### 2.2 Software Architecture Components Decomposition
 
 
-#### 3. Security Service Component Mapping
+### 3. Security Service Component Mapping
 
 * Identification of components which are significant to the security services of the system
 * Identification of 3rd party components which are significant to the security and/or usability assurances of the system, and how likely changes to these components are to affect the security and/or usability assurances of the system
 
 
-##### 3.1 Map 1st Degree Components
+#### 3.1 Map 1st Degree Components
 
 Based on the components identified, this step will map the components to the security services starting with the 1st degree components. A 1st degree component is one that *PROVIDES* or *CONFIGURES* a security service.
 For each 1st degree component, we need to identify interfaces and dependencies the component has on other components. These will be represented by *DEPENDS ON* relationships with the 1st degree 
@@ -108,9 +107,9 @@ Identify the interface the 2nd degree component uses.
 
 #### 4. Assess Architectural Maturity of Security Services
 
+### 4. Assess Architectural Maturity of Security Services
 
-Follow the rubric and determine maturity. 
-
+Follow the rubric and determine maturity.
 
 ## Architecture Maturity Rubric
 
@@ -148,7 +147,7 @@ Questions
 * What is the minimum number of components required based on the architecture of the system?
 * Are there more components being used than necessary? By a lot? By a little? Is it justifiable? Is it unnecessarily spread out?
 
-#### Level 3 
+#### Level 3
 
 There is strong, functional cohesion in the component(s) which provides the security service. It does doing one thing and does it well.
 
@@ -183,7 +182,6 @@ There is minimal effort to use and verify use of security service. It is easy fo
 ## Process Inputs
 
 The Technology Provider will supply architecture diagrams, architecture descriptions, software source code, and access to a functioning version of the solution. The architecture review will use the source code and functioning solution to validate or complete missing pieces from the the architecture diagrams and descriptions. For more information about what is expected for the architecture diagrams and description, see the Provider Submission activity.
-
 
 ## Technical Guidance
 
