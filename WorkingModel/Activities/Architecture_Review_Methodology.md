@@ -1,34 +1,32 @@
 # Architecture Review Methodology
 
-The RABET-V Architecture Review is designed to evaluate the solution's architectural support for 10 security services (link to page where these are defined). This evaluation produces an architectural maturity score for each security service and identifies the components which provide the security service. This score does not measure the well the product achieves the security service, just how mature the architecture is that supports the current capability level. The Product Security Capability Maturity level is a separate metric determined in the Security Claims Review and Verification Activities and it indicates how well the product provides the security services. 
+The RABET-V Architecture Review is designed to evaluate the solution's architectural support for 10 [security services](). This evaluation produces an *architectural maturity score* for each security service and identifies the *component* which provide the security service. This score does not measure how well the product achieves the security service, just how mature the architecture is that supports the current capability level. The *Product Security Capability Maturity* level is a separate metric determined in the *Security Claims Review* and *Verification Activities* and it indicates how well the product provides the security services.
 
-The Architecture Maturity scores and component mappings are used to help assess the risk that changes to the product will negatively effect the security services. These are used in the Testing Rules Determination Activity to identify how to test the product changes. The higher the maturity scores, the less testing required to validate the security capability scores. 
+The Architecture Maturity scores and component mappings are used to help assess the risk that changes to the product will negatively effect the security services. These are used in the Testing Rules Determination Activity to identify how to test the product changes. The higher the maturity scores, the less testing required to validate the security capability scores.
 
 ## Outputs
 
-#### 1. Security Service Component Mapping
+### 1. Security Service Component Mapping
 
-For each security service, the Architecture Review will identify the product components at the system and software levels which *PROVIDE* and *CONFIGURE* the security service and those components which *USE* the component that provides the security service. The components which *PROVIDE* and/or *CONFIGURE* the security service are referred to as 1st Degree components. The ones which use the 1st Degree components are referred to as 2nd Degree components.  
+For each security service, the Architecture Review will identify the product components at the system and software levels which *provide* and *configure* the security service and those components which *use* the component that provides the security service. The components which *provide* and/or *configure* the security service are referred to as 1st Degree components. The ones which use the 1st Degree components are referred to as 2nd Degree components.
 
-#### 2. Security Service Architectural Maturity Scores
+### 2. Security Service Architectural Maturity Scores
 
-Based on the maturity scoring rubric, the solution architecture will be assigned a score for each security service which corresponds to how well the architecture supports that security service.
+Based on the maturity scoring rubric, the architecture will be assigned a score for each security service which corresponds to how well it supports that security service.
 
-
-
-## Concepts 
+## Concepts
 
 The following are key concepts used in the RABET-V Architecture Review process.
 
-#### System and Software Architecture Levels
+### System and Software Architecture Levels
 
 The RABET-V Architecture Review considers the system and the software architecture. We define the system architecture as []. We define the software architecture as [].
 
-#### Components 
+### Components
 
-The architecture review deconstructs the product solution into components. A component may be a small module with a few lines of code or a larger executable with many lines of code. The architecture review will identify as many components as necessary to identify the components which provide or configure a security service or use a component that does. The goal is to identify the smallest logical unit possible in order to limit the retesting of parts which are not materially involved in providing the security service. For more mature architectures, these will be small, centralized components. For less mature architectures, these will be larger and many in nature.
+The architecture review deconstructs the product solution into components. A component may be a small module with a few lines of code or a larger executable with many lines of code. The architecture review will identify as many components as necessary to identify the components which provide or configure a security service or use a component that does. The goal is to identify the smallest logical unit possible in order to limit the retesting of parts of the product which are not materially involved in providing the security service. For more mature architectures, these will be small, centralized components. For less mature architectures, these will be larger and more numerous.
 
-Here are the guidelines for deconstructing a product solution into components which will be used to map a security services architecture (I like this word "Security Services Architecture POV"...might be worth using elsewhere). This guidance is different for 3rd party components and internally developed components. 
+Here are the guidelines for deconstructing a product solution into components which will be used to map a security services architecture (I like this word "Security Services Architecture POV"...might be worth using elsewhere). This guidance is different for 3rd party components and internally developed components.
 
 ### Third Party
 
@@ -44,7 +42,7 @@ When considering parts of the overall solution which are not internally develope
 * Network Appliance (virtual or real)
 * External Device Driver/Firmware
 
-RABET-V Architecture Review will not further decompose these elements of the solution. The assumption of the above rule is that any change to these components will be treated a change to the entire component and the version number and change list will describe the entire component.
+RABET-V Architecture Review will not further deconstruct these elements of the solution. The assumption of the above rule is that any change to these components will be treated a change to the entire component and the version number and change list will describe the entire component.
 
 ### Internally Developed
 
@@ -62,12 +60,12 @@ When considering parts that are internally developed, the following may be consi
 
 ## Workflow
 
-#### 1. Documentation Verification
+### 1. Documentation Verification
 
-Internal Notes: Refer to somewhere where we list the documentation that would be ideal. We should develop an example or two of a Security Services Architecture diagram
-Validate important architecture aspects via inspection of system, code
+[Internal Notes: Refer to somewhere where we list the documentation that would be ideal. We should develop an example or two of a Security Services Architecture diagram
+Validate important architecture aspects via inspection of system, code]
 
-#### 2. Component Identification
+### 2. Component Identification
 
 The architecture review will identify significant architectural components, their boundaries, how they interface, and their dependencies with one another and 3rd party components.
 
@@ -86,31 +84,28 @@ Outputs will include:
 * Interfaces - how do the components exchange data and control
 * Dependencies - which components depend on each other, which dependencies are third parties
 
+#### 2.1 System Architecture Components Decomposition
 
-##### 2.1 System Architecture Components Decomposition
-
-##### 2.2 Software Architecture Components Decomposition
+#### 2.2 Software Architecture Components Decomposition
 
 
-#### 3. Security Service Component Mapping
+### 3. Security Service Component Mapping
 
 * Identification of components which are significant to the security services of the system
 * Identification of 3rd party components which are significant to the security and/or usability assurances of the system, and how likely changes to these components are to affect the security and/or usability assurances of the system
 
 
-##### 3.1 Map 1st Degree Components
+#### 3.1 Map 1st Degree Components
 
 Based on the components identified, this step will map the components to the security services starting with the 1st degree components. A 1st degree component is one that *PROVIDES* or *CONFIGURES* a security service.
 For each 1st degree component, we need to identify interfaces and dependencies the component has on other components. These will be represented by *DEPENDS ON* relationships with the 1st degree 
 * Identify the dependencies of the critical, security service providing modules
 
-##### 3.2 Map 2nd Degree Components
+#### 3.2 Map 2nd Degree Components
 
-#### 4. Assess Architectural Maturity of Security Services
+### 4. Assess Architectural Maturity of Security Services
 
-
-Follow the rubric and determine maturity. 
-
+Follow the rubric and determine maturity.
 
 ## Architecture Maturity Rubric
 
@@ -130,32 +125,24 @@ Follow the rubric and determine maturity.
 * Does the solution use reputable 3rd party components or are the components from less reliable and known 3rd parties?
 * Identification of components whose internal implementations can change without posing a significant risk to security and/or usability assurances
 
-
 ### Levels
 
-Each level is defined by the qualities which are true about it. 
+Each level is defined by the qualities which are true about it.
 
-#### Level 1 
+#### Level 1
 
-
-
-#### Level 2 
+#### Level 2
 
 * The security service is provided and configured by no more components than the minimum number necessary
 * 2nd Degree components have internal implementations which can change without impacting the 1st degree components
 
-#### Level 3 
+#### Level 3
 
 * Components which are designed to change are separate from, and interact through a well-defined interface with, the components which provide security service
-
-
-
-
 
 ## Process Inputs
 
 The Technology Provider will supply architecture diagrams, architecture descriptions, software source code, and access to a functioning version of the solution. The architecture review will use the source code and functioning solution to validate or complete missing pieces from the the architecture diagrams and descriptions. For more information about what is expected for the architecture diagrams and description, see the Provider Submission activity.
-
 
 ## Technical Guidance
 
