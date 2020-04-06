@@ -1,0 +1,1 @@
+For each service, there is a set of requirements built from the [Security Best Practices for Non-Voting Election Technology](https://www.cisecurity.org/wp-content/uploads/2019/11/Security-Best-Practices-Non-Voting-Election-Tech-Singles-19-Nov.pdf). These requirements are used to identify the 

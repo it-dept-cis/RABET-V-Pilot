@@ -142,7 +142,7 @@ Question
 
 #### Level 2 
 
-There is a minimal number of components which provide the security service. This is ideally one component per technical stack or subsystem. There is one component which configures the security service provider.
+There is a minimal number of components which provide the security service. This is ideally one component per technology stack or subsystem. There is one component which configures the security service provider.
 
 Questions
 * What is the minimum number of components required based on the architecture of the system?

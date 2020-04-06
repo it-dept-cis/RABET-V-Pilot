@@ -14,14 +14,7 @@ In addition to providing the maturity scores, the SAMM evaluation will determine
 * List of software development artifacts usable for verification
 
 
-## Technical Guidance
-
-* [OWASP SAMM](https://owaspsamm.org/)
-* [NIST Mitigating the Risk of Software Vulnerabilities by Adopting a Secure Software Development Framework (SSDF)](https://csrc.nist.gov/publications/detail/white-paper/2019/06/11/mitigating-risk-of-software-vulnerabilities-with-ssdf/draft)
-* https://safecode.org/wp-content/uploads/2017/05/SAFECode_TPC_Whitepaper.pdf
-
-
-## Process
+## Workflow
 The OWASP SAMM evaluation will be conducted by a 3rd party evaluator. OWASP maintains a list of SAMM evaluators. Unless not practical, the SAMM evaluation should be performed by one of these evaluators. These evaluators will review documentation and perform interviews with the technology provider in order to complete the evaluation. Evidence of artifacts will be required. 
 
 The OWASP SAMM project makes a toolkit available. This [toolkit ](https://github.com/OWASP/samm/tree/master/Supporting%20Resources/v2.0/toolbox) provides an interview option for evaluating the provider's processes according to SAMM. Based on the answers, the toolkit will provide a maturity score for each Security Practice. 
@@ -188,3 +181,9 @@ Level 1 of Policy and Standards is a minimum. Level 2 of Compliance Management i
 
 **Operational Management**
 
+
+## Technical Guidance
+
+* [OWASP SAMM](https://owaspsamm.org/)
+* [NIST Mitigating the Risk of Software Vulnerabilities by Adopting a Secure Software Development Framework (SSDF)](https://csrc.nist.gov/publications/detail/white-paper/2019/06/11/mitigating-risk-of-software-vulnerabilities-with-ssdf/draft)
+* https://safecode.org/wp-content/uploads/2017/05/SAFECode_TPC_Whitepaper.pdf
