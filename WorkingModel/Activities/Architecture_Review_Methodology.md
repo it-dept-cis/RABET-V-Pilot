@@ -1,6 +1,6 @@
 # Architecture Review Methodology
 
-The RABET-V Architecture Review is designed to evaluate the solution's architectural support for 10 [security services](). This evaluation produces an *architectural maturity score* for each security service and identifies the *component* which provide the security service. This score does not measure how well the product achieves the security service, just how mature the architecture is that supports the current capability level. The *Product Security Capability Maturity* level is a separate metric determined in the *Security Claims Review* and *Verification Activities* and it indicates how well the product provides the security services.
+The RABET-V Architecture Review is designed to evaluate the solution's architectural support for the 10 (RABET-V security services)[]. This evaluation produces an architectural maturity score for each security service and identifies the components which provide the security service. This score does not measure how well the product achieves the security service (i.e. its capability level), just how mature the architecture is that supports the current capability level. The Product Security Capability Maturity level is a separate metric determined in the Security Claims Review and Verification Activities and it indicates how well the product provides the security services. 
 
 The Architecture Maturity scores and component mappings are used to help assess the risk that changes to the product will negatively effect the security services. These are used in the Testing Rules Determination Activity to identify how to test the product changes. The higher the maturity scores, the less testing required to validate the security capability scores.
 
@@ -8,25 +8,25 @@ The Architecture Maturity scores and component mappings are used to help assess 
 
 ### 1. Security Service Component Mapping
 
-For each security service, the Architecture Review will identify the product components at the system and software levels which *provide* and *configure* the security service and those components which *use* the component that provides the security service. The components which *provide* and/or *configure* the security service are referred to as 1st Degree components. The ones which use the 1st Degree components are referred to as 2nd Degree components.
+For each security service, the Architecture Review will identify the product components at the system and software levels which *PROVIDE* and *CONFIGURE* the security service and those components which *USE* the component that provides the security service. The components which *PROVIDE* and/or *CONFIGURE* the security service are referred to as 1st Degree components. The ones which use the 1st Degree components are referred to as 2nd Degree components. This mapping of components is referred to as the Security Services Architecture.
 
 ### 2. Security Service Architectural Maturity Scores
 
 Based on the maturity scoring rubric, the architecture will be assigned a score for each security service which corresponds to how well it supports that security service.
 
-## Concepts
+## Concepts 
 
 The following are key concepts used in the RABET-V Architecture Review process.
 
 ### System and Software Architecture Levels
 
-The RABET-V Architecture Review considers the system and the software architecture. We define the system architecture as []. We define the software architecture as [].
+The RABET-V Architecture Review considers the system and the software architecture. We define the system architecture as [John TBD]. We define the software architecture as [John TBD].
 
 ### Components
 
-The architecture review deconstructs the product solution into components. A component may be a small module with a few lines of code or a larger executable with many lines of code. The architecture review will identify as many components as necessary to identify the components which provide or configure a security service or use a component that does. The goal is to identify the smallest logical unit possible in order to limit the retesting of parts of the product which are not materially involved in providing the security service. For more mature architectures, these will be small, centralized components. For less mature architectures, these will be larger and more numerous.
+The architecture review deconstructs the product solution into components. A component may be a small module with a few lines of code or a larger executable with many lines of code. The goal is to identify the smallest logical unit possible in order to limit the retesting of parts which are not materially involved in providing the security service. For more mature architectures, these will be small, centralized components. For less mature architectures, these will be larger and many in nature.
 
-Here are the guidelines for deconstructing a product solution into components which will be used to map a security services architecture (I like this word "Security Services Architecture POV"...might be worth using elsewhere). This guidance is different for 3rd party components and internally developed components.
+Here are the guidelines for deconstructing a product solution into components which will be used to build the Security Services Architecture. This guidance is different for 3rd party components and internally developed components. 
 
 ### Third Party
 
@@ -101,7 +101,11 @@ Based on the components identified, this step will map the components to the sec
 For each 1st degree component, we need to identify interfaces and dependencies the component has on other components. These will be represented by *DEPENDS ON* relationships with the 1st degree 
 * Identify the dependencies of the critical, security service providing modules
 
-#### 3.2 Map 2nd Degree Components
+##### 3.2 Map 2nd Degree Components
+
+Identify the interface the 2nd degree component uses.
+
+#### 4. Assess Architectural Maturity of Security Services
 
 ### 4. Assess Architectural Maturity of Security Services
 
@@ -125,20 +129,55 @@ Follow the rubric and determine maturity.
 * Does the solution use reputable 3rd party components or are the components from less reliable and known 3rd parties?
 * Identification of components whose internal implementations can change without posing a significant risk to security and/or usability assurances
 
-### Levels
 
-Each level is defined by the qualities which are true about it.
+### Provider Component(s) Design 
 
-#### Level 1
+#### Level 1 
 
-#### Level 2
+The security service is being provided and through well-vetted components. 
 
-* The security service is provided and configured by no more components than the minimum number necessary
-* 2nd Degree components have internal implementations which can change without impacting the 1st degree components
+Question
+* Who wrote or provides the components? Was it written in house? Was it provided by a reputable third party?
+
+#### Level 2 
+
+There is a minimal number of components which provide the security service. This is ideally one component per technical stack or subsystem. There is one component which configures the security service provider.
+
+Questions
+* What is the minimum number of components required based on the architecture of the system?
+* Are there more components being used than necessary? By a lot? By a little? Is it justifiable? Is it unnecessarily spread out?
 
 #### Level 3
 
-* Components which are designed to change are separate from, and interact through a well-defined interface with, the components which provide security service
+There is strong, functional cohesion in the component(s) which provides the security service. It does doing one thing and does it well.
+
+Questions
+
+
+### Interface and Usage 
+
+
+#### Level 1 
+
+Exhibits loose coupling, encapsulation, and information hiding properties to allow the 1st and 2nd degree components to change without having an effect on the other. These segregates design decisions that are most likely to change in order to protect security services from modification if the design decision is changed.
+
+Questions
+
+
+#### Level 2 
+
+There is a simple and stable interface which is not concerned with the other module's internal implementation
+
+Questions
+
+
+
+#### Level 3 
+
+There is minimal effort to use and verify use of security service. It is easy for the 1st degree component to be used by other components. Its use can be easily validated.
+
+
+
 
 ## Process Inputs
 
