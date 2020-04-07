@@ -14,7 +14,7 @@ For each security service, the Architecture Review will identify the product com
 
 Based on the maturity scoring rubric, the architecture will be assigned a score for each security service which corresponds to how well it supports that security service.
 
-## Concepts 
+## Concepts
 
 The following are key concepts used in the RABET-V Architecture Review process.
 
@@ -26,7 +26,7 @@ The RABET-V Architecture Review considers the system and the software architectu
 
 The architecture review deconstructs the product solution into components. A component may be a small module with a few lines of code or a larger executable with many lines of code. The goal is to identify the smallest logical unit possible in order to limit the retesting of parts which are not materially involved in providing the security service. For more mature architectures, these will be small, centralized components. For less mature architectures, these will be larger and many in nature.
 
-Here are the guidelines for deconstructing a product solution into components which will be used to build the Security Services Architecture. This guidance is different for 3rd party components and internally developed components. 
+Here are the guidelines for deconstructing a product solution into components which will be used to build the Security Services Architecture. This guidance is different for 3rd party components and internally developed components.
 
 ### Third Party
 
@@ -129,55 +129,96 @@ Follow the rubric and determine maturity.
 * Does the solution use reputable 3rd party components or are the components from less reliable and known 3rd parties?
 * Identification of components whose internal implementations can change without posing a significant risk to security and/or usability assurances
 
+### Provider Component(s) Design
 
-### Provider Component(s) Design 
+#### Maturity Level 1
 
-#### Level 1 
+[Vetted almost seems like a process oriented criteria. I would use trustworthy or something more quantifiable.]
 
-The security service is being provided and through well-vetted components. 
+##### Benefit
 
-Question
-* Who wrote or provides the components? Was it written in house? Was it provided by a reputable third party?
+The security service is being provided through well-vetted components.
 
-#### Level 2 
+##### Question
 
-There is a minimal number of components which provide the security service. This is ideally one component per technical stack or subsystem. There is one component which configures the security service provider.
+- Who wrote or provides the components?
+- Was it written in house?
+- Was it provided by a reputable third party?
 
-Questions
-* What is the minimum number of components required based on the architecture of the system?
-* Are there more components being used than necessary? By a lot? By a little? Is it justifiable? Is it unnecessarily spread out?
+##### Quality criteria
+
+The component is written by a reputable third party. Use of an in-house security service must be justified.
+
+##### Answers
+
+- Component not vetted
+- Yes, written in house
+- Yes, written by third party
+
+#### Level 2
+
+##### Benefit
+
+A single security service of a given type is used within the subsystem.
+
+##### Quality criteria
+
+There is a minimal number of components which provide the security service. This is ideally one component per technical stack or subsystem. Use of multiple components providing the same security service must be justified. This should not be construed to discourage defense-in-depth approaches. Two security services that provide different mitigations to the same threat are acceptable. For example, a security service may provide input sanitization to defend against SQL injection. Another may provide query parameterization to defend against the same.
+
+##### Question
+
+- What is the minimum number of components required based on the architecture of the system?
+- Are there more components being used than necessary? By a lot? By a little? Is it justifiable? Is it unnecessarily spread out?
+
+##### Answers
+
+- Multiple security services of the same type are used in a single subsystem
+- A single security service is used per type
 
 #### Level 3
+
+##### Benefit
+
+The security service is configured and used consistently throughout the subsystem. There is one component which configures the security service provider.
+
+##### Quality Criteria
+
+Ideally, at most a single component should be responsible for the configuration of the security service. This criteria rewards approaches that centralize the configuration of security services.
+
+##### Question
+
+- What component(s) configure the security service?
+- Is the configuration overridden by other components?
+
+##### Answer
+
+- Configured centrally, or zero configuration required
+- Mostly configured centrally, with some service details configured at point of use
+- Usually or always configured at point of use
+
+#### Level X
 
 There is strong, functional cohesion in the component(s) which provides the security service. It does doing one thing and does it well.
 
 Questions
 
+### Interface and Usage
 
-### Interface and Usage 
-
-
-#### Level 1 
+#### Level 1
 
 Exhibits loose coupling, encapsulation, and information hiding properties to allow the 1st and 2nd degree components to change without having an effect on the other. These segregates design decisions that are most likely to change in order to protect security services from modification if the design decision is changed.
 
 Questions
 
-
-#### Level 2 
+#### Level 2
 
 There is a simple and stable interface which is not concerned with the other module's internal implementation
 
 Questions
 
-
-
-#### Level 3 
+#### Level 3
 
 There is minimal effort to use and verify use of security service. It is easy for the 1st degree component to be used by other components. Its use can be easily validated.
-
-
-
 
 ## Process Inputs
 
