@@ -8,7 +8,7 @@ Once the provider has made their submission, the RABET-V Verification Authority 
 ## Outputs
 
 * A decision about which RABET-V activities are necessary to perform based on the submission type and change list
-* Test Plan for Product Verification activity (if no other activities are necessary)
+
 
 ## Workflow
 
@@ -49,9 +49,7 @@ The Security Claims Validation activity is required when one of the following co
 * The change list indicates that prior Security Claims Validation findings need to be reviewed.  
 
 
-### 6. Generate Test Plan for Product Verification activity
 
-If the Process Assessment, Architecture Review, and Security Claims validation activities are not necessary, the next activity is the Product Verification Activity. The Test Plan for the Product Verification activity is generated from the Testing Rules for the product. Consult the Testing Rules with the current change list and generate a Test Plan. 
 
 
 

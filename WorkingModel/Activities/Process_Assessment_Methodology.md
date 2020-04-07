@@ -1,6 +1,6 @@
 # Process Assessment Methodology
 
-The RABET-V Process Assessment Methodology uses the OWASP Software Assurance Maturity Model (SAMM) as the basis for its evaluation. This evaluation determines a maturity score for the technology provider in 15 areas. These maturity scores are used to help determine the types of testing conducted by RABET-V for product changes. 
+The RABET-V Process Assessment Methodology measures the [Software Development Maturity (SDM)](../MaturityIndexes/Software_Development_Maturity_Index.md) of the technology provider. It uses the OWASP Software Assurance Maturity Model (SAMM) as the basis for its evaluation. This evaluation determines a maturity score for the technology provider in 15 areas. These maturity scores are used to help determine the types of testing conducted by RABET-V for product changes. 
 In addition to providing the maturity scores, the SAMM evaluation will determine the reliability of provider-generated artifacts that can be used by RABET-V. By using provider-generated artifacts, the RABET-V process will not have to reproduce these artifacts (i.e. test results). 
 
 ## Inputs
@@ -19,7 +19,7 @@ The OWASP SAMM evaluation will be conducted by a 3rd party evaluator. OWASP main
 
 The OWASP SAMM project makes a toolkit available. This [toolkit ](https://github.com/OWASP/samm/tree/master/Supporting%20Resources/v2.0/toolbox) provides an interview option for evaluating the provider's processes according to SAMM. Based on the answers, the toolkit will provide a maturity score for each Security Practice. 
 
-## Artifacts
+## Determining Reliable Artifacts
 
 One of the advantages of having higher maturity scores with SAMM is that the provider's processes produce more reliable artifacts which can be used by RABET-V. These artifacts may reduce the assessed risk and/or eliminate the need for the RABET-V process to reproduce these artifacts. The evaluation will determine which of these artifacts are reliable and robust enough to be used by RABET-V.
 
