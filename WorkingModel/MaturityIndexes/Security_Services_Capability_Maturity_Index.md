@@ -5,8 +5,15 @@ The SSCM Index provides a set of maturity scores for each of the ten security se
 The scores are based on how well the product revision meets the security requirements set forth for each security service. These requirements are built from the [Security Best Practices for Non-Voting Election Technology](https://www.cisecurity.org/wp-content/uploads/2019/11/Security-Best-Practices-Non-Voting-Election-Tech-Singles-19-Nov.pdf). 
 
 
-## Maturity Scores
+## Maturity Score Ranges
+Maturity scores are provided for each of the 10 security services. A green, yellow, and red range is provided for each area to indicate optimal, acceptable, and unacceptable score ranges. 
 
-* **Score < 1.0:** Little or basic security capabilities
-* **1.0 <= Score < 2.0:** Intermediate security capabilities
-* **2.0 <= Score <= 3.0:** Advanced security capabilities
+The range values will be set by the Verification Authority and may be overwritten by individual states who wish to establish their own ranges of optimal, acceptable, and unacceptable. 
+
+*There are no ranges established for the pilot program.*
+
+**Green:** TBD
+
+**Yellow:** TBD
+
+**Red:** TBD
