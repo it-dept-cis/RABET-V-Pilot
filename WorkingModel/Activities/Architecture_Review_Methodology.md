@@ -143,19 +143,19 @@ Follow the rubric and determine maturity.
 
 The security service is being provided through well-vetted components.
 
+##### Quality criteria
+
+In the vast majority of cases, the security service should be written by a reputable third party. Use of security service developed or maintained in-house must be thoroughly justified.
+
 ##### Question
 
-- Who wrote or provides the components?
+- Who wrote or provides the security service?
 - Was it written in house?
 - Was it provided by a reputable third party?
 
-##### Quality criteria
-
-The component is written by a reputable third party. Use of an in-house security service must be justified.
-
 ##### Answers
 
-- Component not vetted
+- Security service not vetted
 - Yes, written in house
 - Yes, written by third party
 
@@ -171,8 +171,8 @@ There is a minimal number of components which provide the security service. This
 
 ##### Question
 
-- What is the minimum number of components required based on the architecture of the system?
-- Are there more components being used than necessary? By a lot? By a little? Is it justifiable? Is it unnecessarily spread out?
+- What is the minimum number of security services required based on the architecture of the system?
+- Are there more security services being used than necessary? By a lot? By a little? Is it justifiable? Is it unnecessarily spread out?
 
 ##### Answers
 
@@ -210,20 +210,28 @@ Questions
 
 #### Level 1
 
+##### Benefit
+
+The security service does not depend on functional parts of the solution.
+
+> Implied by answering **Yes, written by third party** to Level 1 of component design.
+
+##### Quality attributes
+
 Exhibits loose coupling, encapsulation, and information hiding properties to allow the 1st and 2nd degree components to change without having an effect on the other. These segregates design decisions that are most likely to change in order to protect security services from modification if the design decision is changed.
 
 Questions
 
 #### Level 2
 
-There is a simple and stable interface which is not concerned with the other module's internal implementation
+There is minimal effort to use and verify use of security service. It is easy for the 1st degree component to be used by other components. Its use can be easily validated.
 
-Questions
 
 #### Level 3
 
-There is minimal effort to use and verify use of security service. It is easy for the 1st degree component to be used by other components. Its use can be easily validated.
+There is a simple and stable interface which is not concerned with the other module's internal implementation
 
+Questions
 
 
 ## Technical Guidance
