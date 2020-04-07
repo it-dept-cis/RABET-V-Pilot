@@ -13,7 +13,6 @@ The purpose of the product verification activity is to finalize the Security Ser
 
 ## Workflow
 
-
 ### 1. Test Plan Generation
 
 The Test Plan for the Product Verification activity is generated from the Testing Rules for the product. The Testing Rules are built in the Testing Rules Determination Activity and may be recently created or be existing rules from prior RABET-V iterations. 
@@ -30,12 +29,55 @@ The Test Plan will identify how to test the product revision using one or more o
 As indicated in the Test Plan, the RABET-V reviewers will use one of more of the following techniques. The scope of the testing (i.e. which components to test) will also be indicated 
 
 ### Artifact Review
+This method will review an artifact provided by the technology provider. The review will look for gaps or concerns in relevant security controls based on the target scope. Each type of artifact will have various indicators of acceptability. Types of provider artifacts include:
 
+* Automated source code unit test results
+* Automated vulnerability test results
+* Automated configuration verification results
+* Audit logs 
+* 3rd Party security analysis results (automated or manual)
 
-### Automated Review
+The artifacts must be evaluated as "reliable" during the Process Assessment activity in order to be used for Product Verification. 
+
+### Automated Testing
+Automated testing is broad type of testing relying on software to perform test routines against the product or product component. Automated testing will execute the testing software against its target and produce results which will be evaluated by the Verification Authority or its agent. The type of automated test will depend on the target. The types of automated testing currently conceived for RABET-V include:
+* Configuration Testing
+* Vulnerability Analysis
+* Source Code Analysis
+* Accessibility Testing
+* Browser Compatibility Testing
+* TBD
 
 
 ### Functional Testing
+Functional testing is a broad type of testing which focuses on the system output (i.e. the functionality users can interact with). It is geared toward testing the functional requirements of the product and is a manual testing method. The scope and intensity of functional testing can vary, and there are sub-types of functional testing to indicate the scope and intensity. The following sub-types are used in RABET-V:
+
+* Component - testing which evaluates a singular component and the requirements associated with that component
+* Sanity - testing that is done to ensure that all the major and vital functionalities are working correctly
+* Regression - testing performed to ensure that adding new code, enhancements, fixing of bugs is not breaking the existing functionality or causing any instability and still works according to the specifications. 
+* Integration - validation that multiple components work coherently when operating together.
+* System/Sub-system - testing that is performed on a complete system or sub-system to verify it works as expected once all the modules or components are integrated.
+* End to End - testing performed to verify the functionality of the product.
+* Exploratory/Ad-hoc - informal testing to explore the application and looks for defects which exist in the application.
+
+### Penetration Testing
+Penetration tests evaluate the product to find security vulnerabilities that an attacker could exploit. The scope of a penetration test may the product's network, computer systems, or software application(s). The methods vary based on the type of penetration test being conducted. In RABET-V, the penetration testing is limited to web application penetration testing. Automated testing options largely cover the network and computer system penetration testing scope.
+
+More TBD
+
+## User-Centered Testing
+
+There is other testing which is out of scope for RABET-V. RABET-V is chiefly concerned with verifying the security and reliability of the product revision in a rapid way. Since rapid change cycles are possible with RABET-V, other user-centered types of testing can be performed by the current or potential end users and reprocessed through RABET-V without significant lag. These other testing types include:
+
+### Acceptance Testing
+
+Acceptance Testing, or User Acceptance Testing (UAT), is performed by the client and verifies whether the end to end the flow of the system meets their business requirements or not. The client accepts the system only when all the features and functionalities work as expected. 
 
 
-### Integration Testing 
+ ### Beta Testing
+Beta Testing is carried out by the customer or potential customer. It is performed in the real environment before releasing the product to the market for the actual end-users. Beta Testing is often used to ensure that there are no major feature gaps or bugs in the product and it satisfies the business requirements. 
+Usually, this testing is typically done by end-users or others. It is the final testing done before releasing an application for commercial purpose. Usually, the Beta version of the software or product released is limited to a certain number of users in a specific area.
+
+### Usability Testing
+Under Usability Testing, the user-friendliness is verified. The application flow is tested to know if a new user can understand the application easily or not and if proper help documentation is provided. 
+RABET-V measures the provider's usability and accessibility testing process maturity but the ultimate usability testing should be performed by the end-users.
