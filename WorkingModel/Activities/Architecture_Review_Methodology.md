@@ -4,6 +4,10 @@ The RABET-V Architecture Review is designed to evaluate the solution's architect
 
 The Architecture Maturity scores and component mappings are used to help assess the risk that changes to the product will negatively effect the security services. These are used in the Testing Rules Determination Activity to identify how to test the product changes. The higher the maturity scores, the less testing required to validate the security capability scores.
 
+## Inputs
+
+The Technology Provider will supply architecture diagrams, architecture descriptions, software source code, and access to a functioning version of the solution. The architecture review will use the source code and functioning solution to validate or complete missing pieces from the architecture diagrams and descriptions. For more information about what is expected for the architecture diagrams and description, see the [Provider Submission](ProviderSubmission.md) activity.
+
 ## Outputs
 
 ### 1. Security Service Component Mapping
@@ -220,9 +224,7 @@ Questions
 
 There is minimal effort to use and verify use of security service. It is easy for the 1st degree component to be used by other components. Its use can be easily validated.
 
-## Process Inputs
 
-The Technology Provider will supply architecture diagrams, architecture descriptions, software source code, and access to a functioning version of the solution. The architecture review will use the source code and functioning solution to validate or complete missing pieces from the the architecture diagrams and descriptions. For more information about what is expected for the architecture diagrams and description, see the Provider Submission activity.
 
 ## Technical Guidance
 
