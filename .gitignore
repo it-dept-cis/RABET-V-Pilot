@@ -1,4 +1,4 @@
-.vs
-.vscode
+.vs/*
+.vscode/*
 .vs/RABET-V-Pilot/v16/.suo
 *.sqlite
