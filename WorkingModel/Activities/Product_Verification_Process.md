@@ -45,7 +45,7 @@ Automated testing is broad type of testing relying on software to perform test r
 * Source Code Analysis
 * Accessibility Testing
 * Browser Compatibility Testing
-* TBD
+
 
 
 ### Functional Testing
@@ -60,18 +60,21 @@ Functional testing is a broad type of testing which focuses on the system output
 * Exploratory/Ad-hoc - informal testing to explore the application and looks for defects which exist in the application.
 
 ### Penetration Testing
-Penetration tests evaluate the product to find security vulnerabilities that an attacker could exploit. The scope of a penetration test may the product's network, computer systems, or software application(s). The methods vary based on the type of penetration test being conducted. In RABET-V, the penetration testing is limited to web application penetration testing. Automated testing options largely cover the network and computer system penetration testing scope.
+Penetration tests evaluate the product to find security vulnerabilities that an attacker could exploit. The scope of a penetration test may be the product's network, computer systems, or software application(s). In RABET-V, the penetration testing is limited to web application penetration testing. Web applications expose the greatest surface area for which automated testing is incapable of fully evaluating. Automated tools are fairly effective for network and computer systems where the major issues are vulnerable versions and lack of patching. Web applications, however, are custom and may have a variety of issues not easily captured by automated tools. Automated tools help with web application pen tests but must be used by skilled and experienced testers.
 
-Explain why web apps are the focus:
-* Automated tools are fairly effective for network and computer systems where the major issues are patching and these tools identify those pretty well
-* Web apps are custom and may have a variety of issues not easily captured by automated tools. Automated tools help with web app pen test but these are more custom testing engagements.
+RABET-V relies on the [OWASP Web Application Security Testing](https://github.com/OWASP/wstg/tree/master/document/4-Web_Application_Security_Testing) Guide to segment up the penetration testing options.
 
-Use the OWASP Testing Guide Sections to split up the penetration testing so we don't have to do a full pen test every time
+In addition to a full penetration testing option, the following web application penetration testing subtypes are supported:
+* Configuration and Deployment 
+* Identity Management
+* Authentication
+* Authorization
+* Session Management
+* Input Validation
+* Error Handling
+* Cryptography
 
-
-More TBD
-
-
+Limited penetration testing may be used if the changes do not warrant full penetration testing. 
 
 ## User-Centered Testing
 
