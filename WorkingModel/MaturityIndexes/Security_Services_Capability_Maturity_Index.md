@@ -20,91 +20,22 @@ The range values will be set by the Verification Authority and may be overwritte
 
 ## SSCM Model
 
-### Authentication
+### [Authentication](./SSCMModel/Authentication_Capability_Maturity.md)
 
-#### Maturity Level 1
+### [Authorization](./SSCMModel/Authorization_Capability_Maturity.md)
 
-##### Benefit
+### [Injection Prevention](./SSCMModel/Injection_Prevention_Capability_Maturity.md)
 
-Basic level of authentication best practices are implemented across the product in order to ensure only valid users are given access.
+### [Key/Secret/Credentials Management](./SSCMModel/Secret_Management_Capability_Maturity.md)
 
-##### Quality criteria
+### [User Session Management](./SSCMModel/User_Session_Management_Capability_Maturity.md)
 
-To be filled in with profile level 1 authentication best practices.
+### [Logging/Alerting](./SSCMModel/Logging_Alerting_Capability_Maturity.md)
 
-##### Question
+### [Data Integrity Protection](./SSCMModel/Data_Integrity_Capability_Maturity.md)
 
-- Do you implement these technology controls or activities?
-- Does the product provide these features or controls?
+### [Data Confidentiality Protection](./SSCMModel/Data_Confidentiality_Capability_Maturity.md)
 
-##### Answers
+### [Boundary Protection](./SSCMModel/Boundary_Protection_Capability_Maturity.md)
 
-- No
-- Yes, on some components 
-- Yes, on most components and/or they are provided manually
-- Yes, on all components that require authentication
-
-#### Maturity Level 2
-
-##### Benefit
-
-Advanced level of authentication best practices are implemented across the product in order to ensure only valid users are given access.
-
-##### Quality criteria
-
-To be filled in with profile level 2 authentication best practices.
-
-##### Question
-
-- Do you implement these technology controls or activities?
-- Does the product provide these features or controls?
-
-##### Answers
-
-- No
-- Yes, on some components 
-- Yes, on most components and/or they are provided manually
-- Yes, on all components that require authentication
-
-#### Maturity Level 3
-
-##### Benefit
-
-Optimal level of authentication best practices are implemented across the product in order to ensure only valid users are given access.
-
-##### Quality criteria
-
-To be filled in with profile level 3 authentication best practices.
-
-##### Question
-
-- Do you implement these technology controls or activities?
-- Does the product provide these features or controls?
-
-##### Answers
-
-- No
-- Yes, on some components 
-- Yes, on most components and/or they are provided manually
-- Yes, on all components that require authentication
-
-
-
-### Authorization
-TBD
-### Injection Prevention
-TBD
-### Key/Secret/Credentials Management
-TBD
-### User Session Management
-TBD
-### Logging/Alerting
-TBD
-### Data integrity protection
-TBD
-### Data confidentiality protection
-TBD
-### Boundary protection
-TBD
-###  System integrity protection
-TBD
+### [System Integrity Protection](./SSCMModel/System_Integrity_Capability_Maturity.md)
