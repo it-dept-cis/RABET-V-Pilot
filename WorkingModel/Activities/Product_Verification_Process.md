@@ -1,6 +1,6 @@
 # Product Verification Activity
 
-The purpose of the product verification activity is to finalize the Security Services Capability Maturity (SSCM) scores based on the set of requirements. For some product changes, this activity will be streamlined because the changes were determined to pose a low risk to the current security capability scores. For other changes, this activity will be extensive in order to determine, or redetermine, the proper maturity scores. The risk is calculated in the Testing Rules which produces a Test Plan. 
+The purpose of the product verification activity is to finalize the Security Services Capability Maturity (SSCM) scores for this product revision. For some product changes, this activity will be streamlined because the changes were determined to pose a low risk to the current security capability scores. For other changes, this activity will be extensive in order to determine, or redetermine, the proper maturity scores. The risk is calculated by the Testing Rules which produces a Test Plan commensurate with the risk. 
 
 ## Inputs
 
@@ -15,7 +15,7 @@ The purpose of the product verification activity is to finalize the Security Ser
 
 ### 1. Test Plan Generation
 
-The Test Plan for the Product Verification activity is generated from the Testing Rules for the product. The Testing Rules are built in the Testing Rules Determination Activity and may be recently created or be existing rules from prior RABET-V iterations. 
+The Test Plan for the Product Verification activity is generated from the product's Testing Rules. The Testing Rules are built in the Testing Rules Determination activity and may be recently created or be existing rules from prior RABET-V iterations. 
 
 The Testing Rules are a decision tree (or trees) where each change is processed by the tree and the end result is a verification method to use. This must be done for all changes and the Test Plan is the aggregation of all verification methods. 
  
@@ -23,18 +23,17 @@ The Testing Rules are a decision tree (or trees) where each change is processed 
 
 The Test Plan will identify how to test the product revision using one or more of the verification methods. Each verification method has its own workflow. 
 
-
 ## Verification Methods
 
-As indicated in the Test Plan, the RABET-V reviewers will use one of more of the following techniques. The scope of the testing (i.e. which components to test) will also be indicated 
+As indicated in the Test Plan, the RABET-V reviewers will use one of more of the following techniques. The scope of the testing (i.e. which components to test) will also be indicated by the Test Plan.
 
 ### Artifact Review
-This method will review an artifact provided by the technology provider. The review will look for gaps or concerns in relevant security controls based on the target scope. Each type of artifact will have various indicators of acceptability. Types of provider artifacts include:
+This method will review an artifact provided by the technology provider. The review will look for gaps or concerns in relevant security controls based on the information provided. Each type of artifact will have various indicators of acceptability. Types of provider artifacts include:
 
 * Automated source code unit test results
 * Automated vulnerability test results
 * Automated configuration verification results
-* Audit logs 
+* Security event audit logs 
 * 3rd Party security analysis results (automated or manual)
 
 The artifacts must be evaluated as "reliable" during the Process Assessment activity in order to be used for Product Verification. 
@@ -46,7 +45,7 @@ Automated testing is broad type of testing relying on software to perform test r
 * Source Code Analysis
 * Accessibility Testing
 * Browser Compatibility Testing
-* TBD
+
 
 
 ### Functional Testing
@@ -61,18 +60,21 @@ Functional testing is a broad type of testing which focuses on the system output
 * Exploratory/Ad-hoc - informal testing to explore the application and looks for defects which exist in the application.
 
 ### Penetration Testing
-Penetration tests evaluate the product to find security vulnerabilities that an attacker could exploit. The scope of a penetration test may the product's network, computer systems, or software application(s). The methods vary based on the type of penetration test being conducted. In RABET-V, the penetration testing is limited to web application penetration testing. Automated testing options largely cover the network and computer system penetration testing scope.
+Penetration tests evaluate the product to find security vulnerabilities that an attacker could exploit. The scope of a penetration test may be the product's network, computer systems, or software application(s). In RABET-V, the penetration testing is limited to web application penetration testing. Web applications expose the greatest surface area for which automated testing is incapable of fully evaluating. Automated tools are fairly effective for network and computer systems where the major issues are vulnerable versions and lack of patching. Web applications, however, are custom and may have a variety of issues not easily captured by automated tools. Automated tools help with web application pen tests but must be used by skilled and experienced testers.
 
-Explain why web apps are the focus:
-* Automated tools are fairly effective for network and computer systems where the major issues are patching and these tools identify those pretty well
-* Web apps are custom and may have a variety of issues not easily captured by automated tools. Automated tools help with web app pen test but these are more custom testing engagements.
+RABET-V relies on the [OWASP Web Application Security Testing](https://github.com/OWASP/wstg/tree/master/document/4-Web_Application_Security_Testing) Guide to segment up the penetration testing options.
 
-Use the OWASP Testing Guide Sections to split up the penetration testing so we don't have to do a full pen test every time
+In addition to a full penetration testing option, the following web application penetration testing subtypes are supported:
+* Configuration and Deployment 
+* Identity Management
+* Authentication
+* Authorization
+* Session Management
+* Input Validation
+* Error Handling
+* Cryptography
 
-
-More TBD
-
-
+Limited penetration testing may be used if the changes do not warrant full penetration testing. 
 
 ## User-Centered Testing
 
