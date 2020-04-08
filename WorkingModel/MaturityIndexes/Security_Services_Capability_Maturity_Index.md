@@ -19,6 +19,7 @@ The range values will be set by the Verification Authority and may be overwritte
 **Red:** TBD
 
 ## SSCM Model
+The SSCM Index provides maturity scores across 10 security services. The pages below detail what each maturity level entails. 
 
 ### [Authentication](./SSCMModel/Authentication_Capability_Maturity.md)
 

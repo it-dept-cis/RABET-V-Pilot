@@ -1,4 +1,4 @@
-# Authentication
+# Authentication Capability Maturity
 
 ## Maturity Level 1
 
