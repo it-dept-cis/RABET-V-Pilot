@@ -7,8 +7,8 @@ Once the provider has made their submission, the RABET-V Verification Authority 
 
 ## Outputs
 
-* A decision about which RABET-V activities are necessary to perform based on the submission type and change list
-
+* Submission review response returned to provider indicating submission type, change list, and which RABET-V activities should be performed for this submission
+* Submission review checklist indicating submission type, change list, and which RABET-V activities should be performed for this submission
 
 ## Workflow
 
