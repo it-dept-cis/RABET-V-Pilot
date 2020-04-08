@@ -4,8 +4,9 @@ The purpose of the product verification activity is to finalize the Security Ser
 
 ## Inputs
 
-* Product Revision deployed to test environment
-* Product Development artifacts
+* Testing Rules
+* Product Revision Submission (Product Revision deployed to test environment, Product development artifacts)
+
 
 ## Outputs
 
@@ -76,14 +77,13 @@ In addition to a full penetration testing option, the following web application 
 
 Limited penetration testing may be used if the changes do not warrant full penetration testing. 
 
-## User-Centered Testing
+## Non-Security Testing
 
-There is other testing which is out of scope for RABET-V. RABET-V is chiefly concerned with verifying the security and reliability of the product revision in a rapid way. Since rapid change cycles are possible with RABET-V, other user-centered types of testing can be performed by the current or potential end users and reprocessed through RABET-V without significant lag. These other testing types include:
+There is other testing which is out of scope for RABET-V. RABET-V is chiefly concerned with verifying the security and reliability of the product revision in a rapid way. Since rapid change cycles are possible with RABET-V, other user-centered types of testing can be performed by the current or potential end users and the changes reprocessed through RABET-V without significant lag. These other testing types include:
 
 ### Acceptance Testing
 
 Acceptance Testing, or User Acceptance Testing (UAT), is performed by the client and verifies whether the end to end the flow of the system meets their business requirements or not. The client accepts the system only when all the features and functionalities work as expected. 
-
 
  ### Beta Testing
 Beta Testing is carried out by the customer or potential customer. It is performed in the real environment before releasing the product to the market for the actual end-users. Beta Testing is often used to ensure that there are no major feature gaps or bugs in the product and it satisfies the business requirements. 
