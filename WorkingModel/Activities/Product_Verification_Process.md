@@ -63,7 +63,16 @@ Functional testing is a broad type of testing which focuses on the system output
 ### Penetration Testing
 Penetration tests evaluate the product to find security vulnerabilities that an attacker could exploit. The scope of a penetration test may the product's network, computer systems, or software application(s). The methods vary based on the type of penetration test being conducted. In RABET-V, the penetration testing is limited to web application penetration testing. Automated testing options largely cover the network and computer system penetration testing scope.
 
+Explain why web apps are the focus:
+* Automated tools are fairly effective for network and computer systems where the major issues are patching and these tools identify those pretty well
+* Web apps are custom and may have a variety of issues not easily captured by automated tools. Automated tools help with web app pen test but these are more custom testing engagements.
+
+Use the OWASP Testing Guide Sections to split up the penetration testing so we don't have to do a full pen test every time
+
+
 More TBD
+
+
 
 ## User-Centered Testing
 
