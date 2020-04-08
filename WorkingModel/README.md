@@ -48,12 +48,11 @@ The RABET-V Process consist of eight activities, beginning with Product Submissi
 
 ![RABET-V Process Model](https://github.com/it-dept-cis/RABET-V-Pilot/blob/master/WorkingModel/election_verification_proc_model-2020-0115.png "RABET-V Process Model")
 
-#### 1. [Provider Submission](Activities/Provider_Submission.md) 
-
-#### 2. [Submission Review Process](Activities/Submission_Review_Process.md)
-#### 3. [Process Assessment Methodology](Activities/Process_Assessment_Methodology.md)
-#### 4. [Architecture Review Methodology](Activities/Architecture_Review_Methodology.md)
-#### 5. [Security Claims Validation](Activities/Security_Claims_Validation.md)
-#### 6. [Testing Rules Determination](Activities/Testing_Rules_Determination.md)
-#### 7. [Product Verification Process](Activities/Product_Verification_Process.md)
-#### 8. [Reporting Process](Activities/Reporting_Process.md).
+### 1. [Provider Submission](Activities/Provider_Submission.md) 
+### 2. [Submission Review Process](Activities/Submission_Review_Process.md)
+### 3. [Process Assessment Methodology](Activities/Process_Assessment_Methodology.md)
+### 4. [Architecture Review Methodology](Activities/Architecture_Review_Methodology.md)
+### 5. [Security Claims Validation](Activities/Security_Claims_Validation.md)
+### 6. [Testing Rules Determination](Activities/Testing_Rules_Determination.md)
+### 7. [Product Verification Process](Activities/Product_Verification_Process.md)
+### 8. [Reporting Process](Activities/Reporting_Process.md).
