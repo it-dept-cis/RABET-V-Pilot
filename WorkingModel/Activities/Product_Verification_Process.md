@@ -1,6 +1,6 @@
 # Product Verification Activity
 
-The purpose of the product verification activity is to finalize the Security Services Capability Maturity (SSCM) scores based on the set of requirements. For some product changes, this activity will be streamlined because the changes were determined to pose a low risk to the current security capability scores. For other changes, this activity will be extensive in order to determine, or redetermine, the proper maturity scores. The risk is calculated in the Testing Rules which produces a Test Plan. 
+The purpose of the product verification activity is to finalize the Security Services Capability Maturity (SSCM) scores for this product revision. For some product changes, this activity will be streamlined because the changes were determined to pose a low risk to the current security capability scores. For other changes, this activity will be extensive in order to determine, or redetermine, the proper maturity scores. The risk is calculated by the Testing Rules which produces a Test Plan commensurate with the risk. 
 
 ## Inputs
 
@@ -15,7 +15,7 @@ The purpose of the product verification activity is to finalize the Security Ser
 
 ### 1. Test Plan Generation
 
-The Test Plan for the Product Verification activity is generated from the Testing Rules for the product. The Testing Rules are built in the Testing Rules Determination Activity and may be recently created or be existing rules from prior RABET-V iterations. 
+The Test Plan for the Product Verification activity is generated from the product's Testing Rules. The Testing Rules are built in the Testing Rules Determination activity and may be recently created or be existing rules from prior RABET-V iterations. 
 
 The Testing Rules are a decision tree (or trees) where each change is processed by the tree and the end result is a verification method to use. This must be done for all changes and the Test Plan is the aggregation of all verification methods. 
  
@@ -23,18 +23,17 @@ The Testing Rules are a decision tree (or trees) where each change is processed 
 
 The Test Plan will identify how to test the product revision using one or more of the verification methods. Each verification method has its own workflow. 
 
-
 ## Verification Methods
 
-As indicated in the Test Plan, the RABET-V reviewers will use one of more of the following techniques. The scope of the testing (i.e. which components to test) will also be indicated 
+As indicated in the Test Plan, the RABET-V reviewers will use one of more of the following techniques. The scope of the testing (i.e. which components to test) will also be indicated by the Test Plan.
 
 ### Artifact Review
-This method will review an artifact provided by the technology provider. The review will look for gaps or concerns in relevant security controls based on the target scope. Each type of artifact will have various indicators of acceptability. Types of provider artifacts include:
+This method will review an artifact provided by the technology provider. The review will look for gaps or concerns in relevant security controls based on the information provided. Each type of artifact will have various indicators of acceptability. Types of provider artifacts include:
 
 * Automated source code unit test results
 * Automated vulnerability test results
 * Automated configuration verification results
-* Audit logs 
+* Security event audit logs 
 * 3rd Party security analysis results (automated or manual)
 
 The artifacts must be evaluated as "reliable" during the Process Assessment activity in order to be used for Product Verification. 
