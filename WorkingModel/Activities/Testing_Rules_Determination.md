@@ -1,17 +1,26 @@
 # Testing Rules Determination
 
-To achieve the most change tolerant process possible given the product’s architecture, the RABET-V process creates product-specific verification procedures. For each requirement and each type of change, there will be specific verification methods prescribed for the product according to what can be justifiably assumed. In some cases, for well-defined architectures, the testing may be very little, automated, or deferred to the technology provider. This will be particularly true when the changes are small, limited in scope, and the technology provider’s process can produce meaningful artifacts. Testing scope and verification methods will change based on the type of changes submitted and how those changes mesh with the system architecture. Changes to interfaces between modules, for example, will be considered higher risk than changes within a module that do not impact its interfaces. Higher risks will yield greater testing scope and more intense verification methods. Portable software built on commercially supported platforms, for example, will be allowed to patch commercially supported elements with limited and automated testing. Systems with transparent software supply chains where updates and patches can be verified will be treated similarly. 
-Once the process is established after the initial architecture and process review, future product version submissions will follow the rules established in the unique product verification process.
+This activity takes the results from previous activities and builds a unique set of Testing Rules for each product. These Testing Rules stay valid as long as none of the previous activities - Architecture Review, Process Assessment, and Security Claims Validation - do not need to be redone. If any of those activities are performed during the RABET-V Iteration, the Testing Rules Determination must be performed again.
+
+The Testing Rules are structured as a decision tree.  A decision tree is a flowchart-like structure where each internal node is a "test" of a condition. Each branch represents an outcome of the test until a final node has been reached. The final node represents a decision.
+
+In our application of decision trees, product changes are the inputs to the decision tree which are then taken through a series of questions about the change and the result is a verification method to use. The decision tree is different for each product because the questions being asked are different. There is some commonality to the decision tree structure which is discussed below, along with how the decision trees are built. 
+
 
 ## Inputs
 
-* Security Claims
-* Architecture Scores
-* Process Maturity Scores
-
+* Applicable Security Claims
+* Security Service Architectural Maturity Scores
+* Software Development Maturity Scores
 
 ## Outputs
 
-* Results of verification test methods
+* Testing Rules Decision Tree(s)
 
 ## Workflow
+
+
+
+## Decision Trees
+
+I assume we will have more than one

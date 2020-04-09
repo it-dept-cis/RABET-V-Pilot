@@ -1,5 +1,7 @@
 # RABET-V Glossary
 
+*RABET-V Iteration* - a complete cycle through the RABET-V activities with a unique product revision. The first iteration is called the Initial iteration.
+
 *Registered Technology Provider* - A organization that develops election technology and has met the minimum requirements to become a RABET-V Registered Technology Provider.
 
 *Testing Rules* - A technology provider and product specific set of rules which determine how changes to that product will be verified during RABET-V iterations.
