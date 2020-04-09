@@ -55,4 +55,4 @@ The RABET-V Process consist of eight activities, beginning with Product Submissi
 ### 5. [Security Claims Validation](Activities/Security_Claims_Validation.md)
 ### 6. [Testing Rules Determination](Activities/Testing_Rules_Determination.md)
 ### 7. [Product Verification Process](Activities/Product_Verification_Process.md)
-a### 8. [Reporting Process](Activities/Reporting_Process.md).
+### 8. [Reporting Process](Activities/Reporting_Process.md).
