@@ -1,18 +1,18 @@
 # Architecture Review Methodology
 
-The RABET-V Architecture Review is designed to evaluate the solution's architectural support for the 10 (RABET-V security services)[]. This evaluation produces an architectural maturity score for each security service and identifies the components which provide the security service. This score does not measure how well the product achieves the security service (i.e. its capability level), just how mature the architecture is that supports the current capability level. The Product Security Capability Maturity level is a separate metric determined in the Security Claims Review and Verification Activities and it indicates how well the product provides the security services. 
+The RABET-V Architecture Review is designed to evaluate the solution's architectural support for the 10 (RABET-V security services)[]. This evaluation produces an architectural maturity score for each security service and identifies the components which provide the security service. This score does not measure how well the product achieves the security service (i.e. its capability level), just how mature the architecture is that supports the current capability level. The Product Security Capability Maturity level is a separate metric determined in the Security Claims Review and Verification Activities and it indicates how well the product provides the security services.
 
 The Architecture Maturity scores and component mappings are used to help assess the risk that changes to the product will negatively effect the security services. These are used in the Testing Rules Determination Activity to identify how to test the product changes. The higher the maturity scores, the less testing required to validate the security capability scores.
 
 ## Inputs
 
-The Technology Provider will supply architecture diagrams, architecture descriptions, software source code, and access to a functioning version of the solution. The architecture review will use the source code and functioning solution to validate or complete missing pieces from the architecture diagrams and descriptions. For more information about what is expected for the architecture diagrams and description, see the [Provider Submission](ProviderSubmission.md) activity.
+The Technology Provider will supply architecture diagrams, architecture descriptions, software source code, and access to a functioning version of the solution. The architecture review will use the source code and functioning solution to validate or complete missing pieces from the architecture diagrams and descriptions. For more information about what is expected for the architecture diagrams and description, see the [Provider Submission](Provider_Submission.md) activity.
 
 ## Outputs
 
 ### 1. Security Service Component Mapping
 
-For each security service, the Architecture Review will identify the product components at the system and software levels which *PROVIDE- and *CONFIGURE- the security service and those components which *USE- the component that provides the security service. The components which *PROVIDE- and/or *CONFIGURE- the security service are referred to as 1st Degree components. The ones which use the 1st Degree components are referred to as 2nd Degree components. This mapping of components is referred to as the Security Services Architecture.
+For each security service, the Architecture Review will identify the product components at the system and software levels which *PROVIDE* and *CONFIGURE* the security service and those components which *USE* the component that provides the security service. The components which *PROVIDE* and/or *CONFIGURE* the security service are referred to as 1st Degree components. The ones which use the 1st Degree components are referred to as 2nd Degree components. This mapping of components is referred to as the Security Services Architecture.
 
 ### 2. Security Service Architectural Maturity Scores
 
