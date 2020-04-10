@@ -1,6 +1,6 @@
-# Security Service Usage
+# Security Service Usage Maturity
 
-## Maturity Level 1 (Single service)
+## Maturity Level 1
 
 ### Benefit
 
@@ -14,7 +14,7 @@ There is a minimal number of components which provide the security service. This
 
 This should not be construed to discourage defense-in-depth approaches. Two security services that provide different mitigations to the same threat are acceptable. For example, a security service may provide input sanitization to defend against SQL injection. Another may provide query parameterization to defend against the same.
 
-### Question
+### Questions
 
 - Are there multiple security services providing the same mitigation?
 
@@ -36,21 +36,27 @@ The security service is centrally configured.
 
 ### Discussion
 
-Ideally, at most a single component should be responsible for the configuration of the security service. This criteria rewards approaches that centralize the configuration of security services.
+Ideally, a single component is responsible for the configuration of the security service. This criteria rewards approaches that centralize the configuration of security services. If the security service does not support central configuration, and no wrapper has been written, no credit will be given.
 
-### Question
+### Questions
 
 - What component(s) configure the security service?
-- Is the configuration overridden by other components?
+- Is the centralized configuration overridden by other components?
 
 ### Answer
 
-- Usually or always configured at point of use (no credit)
+- Usually or always configured at the point of use (no credit)
 - Mostly configured centrally, with some service details configured at point of use (partial credit)
-- Configured centrally, or zero configuration required (full credit)
+- Configured centrally, or no configuration required (full credit)
 
-## Maturity Level 3 (TBD)
+## Maturity Level 3
 
-There is strong, functional cohesion in the component(s) which provides the security service. It does doing one thing and does it well.
+### Benefit
 
-Questions
+### Quality Criteria
+
+### Discussion
+
+### Questions
+
+### Answers
