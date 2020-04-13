@@ -6,6 +6,7 @@ The purpose of the product verification activity is to finalize the Security Ser
 
 * Testing Rules
 * Product Revision Submission (Product Revision deployed to test environment, Product development artifacts)
+* Component definitions from Architecture Review (used to set scope of testing)
 
 
 ## Outputs
