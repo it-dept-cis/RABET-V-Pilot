@@ -38,6 +38,7 @@ The RABET-V Technology Advisory Committee is a growing group of experts in relev
 * Lauren Cooper, SEI
 * Brian Glas, OWASP SAMM
 * Beau Woods, Atlantic Council
+* More being added
 
 ## Program Administration and Research
 The program will be administered by CIS team with assistance from The Turnout. Dr. Mike Garcia will serve as the Research Lead.
