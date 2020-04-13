@@ -1,75 +1,44 @@
 # Architecture Review Methodology
 
+![Image of Architecture Review Methodology](Architecture_Review_Methodology_files/_19_0_3_43701b0_1585746146678_950815_14100.svg)
+
 The RABET-V Architecture Review is designed to evaluate the solution's architectural support for the 10 (RABET-V security services)[]. This evaluation produces an architectural maturity score for each security service and identifies the components which provide the security service. This score does not measure how well the product achieves the security service (i.e. its capability level), just how mature the architecture is that supports the current capability level. The Product Security Capability Maturity level is a separate metric determined in the Security Claims Review and Verification Activities and it indicates how well the product provides the security services.
 
 The Architecture Maturity scores and component mappings are used to help assess the risk that changes to the product will negatively effect the security services. These are used in the Testing Rules Determination Activity to identify how to test the product changes. The higher the maturity scores, the less testing required to validate the security capability scores.
 
-## Inputs
+### Inputs
+
+#### Provider Submission
 
 The Technology Provider will supply architecture diagrams, architecture descriptions, software source code, and access to a functioning version of the solution. The architecture review will use the source code and functioning solution to validate or complete missing pieces from the architecture diagrams and descriptions. For more information about what is expected for the architecture diagrams and description, see the [Provider Submission](Provider_Submission.md) activity.
 
-## Outputs
+### Outputs
 
-### 1. Security Service Component Mapping
-
-For each security service, the Architecture Review will identify the product components at the system and software levels which *PROVIDE* and *CONFIGURE* the security service and those components which *USE* the component that provides the security service. The components which *PROVIDE* and/or *CONFIGURE* the security service are referred to as 1st Degree components. The ones which use the 1st Degree components are referred to as 2nd Degree components. This mapping of components is referred to as the Security Services Architecture.
-
-### 2. Security Service Architectural Maturity Scores
+#### Product Security Architecture Maturity Scores
 
 Based on the maturity scoring rubric, the architecture will be assigned a score for each security service which corresponds to how well it supports that security service.
 
-## Concepts
+#### Security Service Component Mapping
 
-The following are key concepts used in the RABET-V Architecture Review process.
+For each security service, the Architecture Review will identify the product components at the system and software levels which *PROVIDE* and *CONFIGURE* the security service and those components which *USE* the component that provides the security service. The components which *PROVIDE* and/or *CONFIGURE* the security service are referred to as 1st Degree components. The ones which use the 1st Degree components are referred to as 2nd Degree components. This mapping of components is referred to as the Security Services Architecture.
 
-### System and Software Architecture Levels
+### P2.2 Review provider given architecture documentation
 
-The RABET-V Architecture Review considers the system and the software architecture. We define the system architecture as [John TBD]. We define the software architecture as [John TBD].
+The registered technology provider will provide documentation of the product's architecture. Use of other submitted artifacts, such as source code or a working system will be used as necessary to validate the documentation and complete the architecture review.
 
-### Components
+### P2.3 Perform threat analysis
 
-The architecture review deconstructs the product solution into components. A component may be a small module with a few lines of code or a larger executable with many lines of code. The goal is to identify the smallest logical unit possible in order to limit the retesting of parts which are not materially involved in providing the security service. For more mature architectures, these will be small, centralized components. For less mature architectures, these will be larger and many in nature.
+Threat modeling and analysis is used to build the security architecture viewpoint. It also aids in the development of the system and software architecture viewpoints. Threat modeling takes the provider submitted architectural documentation as input. The services provided by the application are enumerated using the threat modeling methodology. The services are then further deconstructed into functions and the data required to perform those functions. The data flows/functions must be annotated with sensitivity labels (data-critical, data-sensitive) and  (low, medium, high) which will influence the severity level determination of any threat.
 
-Here are the guidelines for deconstructing a product solution into components which will be used to build the Security Services Architecture. This guidance is different for 3rd party components and internally developed components.
+### P2.4 Build system architecture
 
-### Third Party
+The output of the threat analysis is to build out a system level architecture. This is done by converting the top level services (e.g. Web Applications, Virtual Machines) and data stores (e.g. SQL Server, MySQL) into subsystem-level components.
 
-When considering parts of the overall solution which are not internally developed, each unique version of the following will be considered individual components of the system:
+### P2.5 Identify required security services
 
-- Operating System
-- Framework
-- 3rd party API
-- Embedded 3rd Party Library
-- Hosting Software/Service (i.e. IIS, Docker, Elastic Beanstalk, Azure App Service, etc.)
-- Database (database stored functions and procedures will be treated as a part of the software application)
-- File Storage System/Service
-- Network Appliance (virtual or real)
-- External Device Driver/Firmware
+The security services required for a given product will depend on the results of the threat modeling exercise. Security services are chosen from a predefined security service catalog.
 
-RABET-V Architecture Review will not further deconstruct these elements of the solution. The assumption of the above rule is that any change to these components will be treated a change to the entire component and the version number and change list will describe the entire component.
-
-### Internally Developed
-
-When considering parts that are internally developed, the following may be considered individual components of the system based on how the software is constructed:
-
-- Program Executable
-- Program Library (e.g. DLL)
-- Namespace
-- Class
-- API
-- Service
-- Module
-
-[Internal Notes: More is needed here or maybe somewhere else about how these components will be identified. As in, where do we draw the boundaries.]
-
-## Workflow
-
-### 1. Documentation Verification
-
-[Internal Notes: Refer to somewhere where we list the documentation that would be ideal. We should develop an example or two of a Security Services Architecture diagram
-Validate important architecture aspects via inspection of system, code]
-
-### 2. Component Identification
+### P2.6 Identify software components
 
 The architecture review will identify significant architectural components, their boundaries, how they interface, and their dependencies with one another and 3rd party components.
 
@@ -79,71 +48,68 @@ Component identification will perform:
   - Boundaries between 3rd party components and election technology components
   - Boundaries between components of differing sensitivity
   - Trust boundaries
-- Identify the interfaces between the components and how well these interfaces decouple the implementation details of each component
 
 Outputs will include:
 
 - Components - what function does the component serve, how critical is the function, how critical is the data it uses
 - Boundaries - where is the logical divide between this component and another, how well-defined is the boundary, is it a trust boundary
-- Interfaces - how do the components exchange data and control
 - Dependencies - which components depend on each other, which dependencies are third parties
 
-#### 2.1 System Architecture Components Decomposition
+### P2.7 Convert functions to ports
 
-#### 2.2 Software Architecture Components Decomposition
+The functions identified during threat modeling will be converted to ports (bundles of interfaces that provide system functionality). Any security services required to mitigate a threat to the port should be listed as a required interface.
 
-### 3. Security Service Component Mapping
+### P2.8 Apply sensitivity labels
 
-- Identification of components which are significant to the security services of the system
-- Identification of 3rd party components which are significant to the security and/or usability assurances of the system, and how likely changes to these components are to affect the security and/or usability assurances of the system
+Sensitivity labels are applied to interfaces that provide exchange data-critical or data-sensitive information. This identification is done during the threat modeling exercise. These labels are mapped to the interfaces that expose the data of a component.
 
-#### 3.1 Map 1st Degree Components
+### P2.9 Apply security service labels
 
-Based on the components identified, this step will map the components to the security services starting with the 1st degree components. A 1st degree component is one that *PROVIDES* or *CONFIGURES* a security service.
-For each 1st degree component, we need to identify interfaces and dependencies the component has on other components. These will be represented by *DEPENDS ON* relationships with the 1st degree 
-- Identify the dependencies of the critical, security service providing modules
+Components of the architecture that provide security services are identified. Additionally, components that configure or provide security services are labeled. Ports that depend on a security service are also identified.
 
-##### 3.2 Map 2nd Degree Components
+### P2.10 Perform security service architectural maturity review
 
-Identify the interface the 2nd degree component uses.
+Apply the security service architectural maturity rubric and assign a score to each identified security service.
 
-#### 4. Assess Architectural Maturity of Security Services
+### P2.11 Perform security service gap analysis
 
-### 4. Assess Architectural Maturity of Security Services
+Analyze the architecture and identify if any sensitive interface(s) are not protected by a security service. This could be due to a missing or incorrectly configured security service.
 
-Follow the rubric and determine maturity.
+### P2.14 Record unmitigated threats
 
-## Architecture Maturity Rubric
+Record the unmitigated threats in the product.
 
-A rubric has been developed to ensure consistency in scoring security services. Each security service provided by a subsystem will be assigned a maturity level across a number of areas.
+### Data used in Process
 
-### Questions
+#### ![Image of Threats](Architecture_Review_Methodology_files/icon_dataobject_782362936.svg) Threats
+#### ![Image of Provider Submission](Architecture_Review_Methodology_files/icon_datainput_347794730.svg) Provider Submission ![Image of Provider Submission](Architecture_Review_Methodology_files/icon_class_1862347028.svg) Provider Submission
+![Image of Provider Submission](Architecture_Review_Methodology_files/icon_datainput_347794730.svg)Provider Submission 
+The Technology Provider will supply architecture diagrams, architecture descriptions, software source code, and access to a functioning version of the solution. The architecture review will use the source code and functioning solution to validate or complete missing pieces from the architecture diagrams and descriptions. For more information about what is expected for the architecture diagrams and description, see the [Provider Submission](Provider_Submission.md) activity.
+#### ![Image of Security Service Catalog](Architecture_Review_Methodology_files/icon_dataobject_2046024949.svg) Security Service Catalog
+#### ![Image of Required Security Services](Architecture_Review_Methodology_files/icon_dataobject_782362936.svg) Required Security Services ![Image of Security Service](Architecture_Review_Methodology_files/icon_class_385583231.svg) Security Service
+![Image of Security Service](Architecture_Review_Methodology_files/icon_class_385583231.svg)Security Service 
+Mechanisms used to provide confidentiality, integrity authentication, source authentication and/or support non-repudiation of information.
+#### ![Image of Functions](Architecture_Review_Methodology_files/icon_dataobject_782362936.svg) Functions
+![Image of Functions](Architecture_Review_Methodology_files/icon_dataobject_782362936.svg)Functions 
+A discrete piece of functionality provided by the product.
+#### ![Image of Product Security Architecture Maturity Scores](Architecture_Review_Methodology_files/icon_dataoutput_1414094273.svg) Product Security Architecture Maturity Scores ![Image of Product Security Architecture Maturity](Architecture_Review_Methodology_files/icon_class_1862347028.svg) Product Security Architecture Maturity
+![Image of Product Security Architecture Maturity Scores](Architecture_Review_Methodology_files/icon_dataoutput_1414094273.svg)Product Security Architecture Maturity Scores 
+Based on the maturity scoring rubric, the architecture will be assigned a score for each security service which corresponds to how well it supports that security service.
+#### ![Image of Data labels](Architecture_Review_Methodology_files/icon_dataobject_782362936.svg) Data labels ![Image of Data Sensitivity](Architecture_Review_Methodology_files/icon_class_1862347028.svg) Data Sensitivity
+![Image of Data labels](Architecture_Review_Methodology_files/icon_dataobject_782362936.svg)Data labels 
+A sensitivity label applied to data. Two data labels are defined for RABET-V:
 
-- Are major building blocks well defined, including their areas of responsibility and their interfaces to other building blocks?
-- Are major building blocks properly reused or are they unnecessarily duplicated?
-- Which components can change without affecting other components?
-- How portable are components in the architecture? Are they likely to break when moved to a different operating system or version of the operating system?
-- Are the data, application logic, and user interface separated from each other or intertwined?
-- Is the strategy for handling untrusted data and users at trust boundaries well-defined and justified? Are the trust boundaries well-placed?
-- Is the architecture designed to accommodate likely changes? Which components are designed to be changed more frequently? Are these components separated and isolated from critical components?
-- Is there a specific framework such as J2EE or Microsoft .NET or is there no explicit framework? Is the choice of framework appropriate for the application?
-- Does the architecture provide a way to catch and handle error conditions within components and/or globally?
-- Have boundaries been created to contain the damaging effect of errors and reduce the amount of code that has to be concerned about error processing?
-- Is the user interface modularized so that changes in it won't affect the rest of the program?
-- Does the solution use reputable 3rd party components or are the components from less reliable and known 3rd parties?
-- Identification of components whose internal implementations can change without posing a significant risk to security and/or usability assurances
+1. Data Criticality - a label indicating the sensitivity of the data the component is handling. This may be thought of as a label of "integrity". This is measured by the impact of the data being manipulated to an unknown or incorrect value. Criticality can be determined by examining a component's exposed interfaces.
 
-## Technical Guidance
+2. Data Sensitivity - a label indicating the sensitivity of the data the component is handling. This may be thought of as a label of "confidentiality". This is measured by the impact of the data being exposed to an unauthorized party. Sensitivity can be determined by examining a component's exposed interfaces.
 
-Technical guidance is intended to help technology providers prepare for the architecture review. These resources are not conclusive but will help ensure the most optimal outcomes.
-
-*Documenting Architecture*
-Views and Beyond: The SEI Approach for Architecture Documentation
-https://resources.sei.cmu.edu/library/asset-view.cfm?assetID=513862
-
-*Building Secure Architectures"
-https://www.owasp.org/images/8/83/Securing_Enterprise_Web_Applications_at_the_Source.pdf
-
-*Code Complete Checklists*
-https://ycnotes.com/2016/10/03/code-complete/
-https://ycnotes.com/2016/10/04/code-complete-checklists/
+#### ![Image of Services](Architecture_Review_Methodology_files/icon_dataobject_782362936.svg) Services
+![Image of Services](Architecture_Review_Methodology_files/icon_dataobject_782362936.svg)Services 
+A system level component that provides data processing capabilities.
+#### ![Image of Security Architecture Rubric](Architecture_Review_Methodology_files/icon_dataobject_2046024949.svg) Security Architecture Rubric
+#### ![Image of ](Architecture_Review_Methodology_files/icon_dataobject_782362936.svg)  ![Image of Security Service](Architecture_Review_Methodology_files/icon_class_385583231.svg) Security Service
+![Image of Security Service](Architecture_Review_Methodology_files/icon_class_385583231.svg)Security Service 
+Mechanisms used to provide confidentiality, integrity authentication, source authentication and/or support non-repudiation of information.
+#### ![Image of Security Service Component Mapping](Architecture_Review_Methodology_files/icon_dataoutput_1171440490.svg) Security Service Component Mapping
+![Image of Security Service Component Mapping](Architecture_Review_Methodology_files/icon_dataoutput_1171440490.svg)Security Service Component Mapping 
+For each security service, the Architecture Review will identify the product components at the system and software levels which *PROVIDE* and *CONFIGURE* the security service and those components which *USE* the component that provides the security service. The components which *PROVIDE* and/or *CONFIGURE* the security service are referred to as 1st Degree components. The ones which use the 1st Degree components are referred to as 2nd Degree components. This mapping of components is referred to as the Security Services Architecture.
