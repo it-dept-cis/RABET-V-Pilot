@@ -20,7 +20,11 @@ In our application of decision trees, product changes are the inputs to the deci
 
 ## Workflow
 
-### 1. 
+### 1. Initial Decision Tree
+
+Any time the testing rules need to be created or updated, there is a starting decision tree. For initial RABET-V iterations, there is a basic template ()[]. For revision iterations, the starting tree is prior the decision tree that you are updating. 
+
+### 2. 
 
 
 
@@ -42,10 +46,10 @@ Where is the change?
 
 What type of change is it?
 
-1. Add - a new component was added 
-2. Replacement - the component was replaced
-3. Interface change - the component interface was changed
-4. Implementation - 
+1. Add/Remove - a component was added or removed
+2. Replace - the component was replaced
+3. Interface change - the component interface was changed or changed how it interfaced with other components
+4. Implementation/Patch - 
 - For internally developed components, the internal implementation of a component was changed without impacting the interface(s) (only applies to )
 - For 3rd party components patch - the component was patched by its provider (only applies to 3rd party components)
 
@@ -60,7 +64,7 @@ Was the change in a security service related component?
 
 1. 1st Degree Security Service component - the change was in a 1st degree security service component (1st and 2nd degree security service components are determined in the architecture review)
 2. 2nd Degree Security Service component - the changes was in a 2nd degree security service component (1st and 2nd degree security service components are determined in the architecture review)
-3. No
+3. None
 
 #### Security Service Architectural Maturity
 
@@ -69,8 +73,8 @@ What is the architectural maturity of the security service impacted?
 This uses the Security Service Architectural Maturity (SSAM) scores from the architecture review. Decision options will be 3 ranges set specifically for each product.
 
 
-### Software Development Maturity
-These test conditions are related to the technology providers Software Development Maturity (SDM) scores.
+### Software Development Considerations
+These test conditions are related to the technology providers Software Development Maturity (SDM) scores and artifacts.
 
 #### Software Assurance Maturity
 
@@ -96,6 +100,17 @@ How mature are the technology provider's processes for environment management (i
 
 This uses the SAMM Environment Management score with 3 ranges set specifically for each product.
 
+#### Software Development Artifacts 
+The following test conditions look at whether reliable artifacts are available. 
+
+Is there a reliable artifact available? Possible examples include:
+
+* Automated source code unit test results
+* Automated vulnerability test results
+* Manual testing artifacts (test run results, example outputs, etc)
+* Automated configuration verification results
+* Security event audit logs 
+* 3rd Party security analysis results (automated or manual)
 
 
 
