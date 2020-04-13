@@ -24,9 +24,12 @@ In our application of decision trees, product changes are the inputs to the deci
 
 Any time the testing rules need to be created or updated, there is a starting decision tree. For initial RABET-V iterations, there is a basic template ()[]. For revision iterations, the starting tree is prior the decision tree that you are updating. 
 
-### 2. 
+### 2. Modify Decision Tree
 
 
+### 3. Review Decision Tree
+
+Who can review? TAC, Steering Committee? Review COmmittee?
 
 ## Test Conditions
 
