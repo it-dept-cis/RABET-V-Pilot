@@ -114,16 +114,12 @@ Record the unmitigated threats in the product.
 #### ![Image of Threats](Architecture_Review_Methodology_files/icon_dataobject_1304218151.svg) [![Image of Threat](Architecture_Review_Methodology_files/icon_class_1862347028.svg)] Threats 
 A threat is role of a situation that may lead to one or more related incidents or failures.
 The threat consists of the existence of zero or more threat actors together with a set of one or more vulnerabilities. Thus, the threat of theft may result in an actual theft (attack), and threats correspond to attacks that are typically classified by attacker motivation (e.g., theft) as opposed to technique (e.g., spoofing). In some books and articles, the different but highly related terms "attack" and "threat" are sometimes confounded by being used as synonyms [Firesmith 03, Tulloch 03].
-#### ![Image of Provider Submission](Architecture_Review_Methodology_files/icon_datainput_1699839074.svg) [![Image of Provider Submission](Architecture_Review_Methodology_files/icon_class_1862347028.svg)] Provider Submission 
-The Technology Provider will supply architecture diagrams, architecture descriptions, software source code, and access to a functioning version of the solution. The architecture review will use the source code and functioning solution to validate or complete missing pieces from the architecture diagrams and descriptions. For more information about what is expected for the architecture diagrams and description, see the [Provider Submission](Provider_Submission.md) activity.
 #### ![Image of Security Service Catalog](Architecture_Review_Methodology_files/icon_dataobject_265530045.svg) [![Image of Security Service](Architecture_Review_Methodology_files/icon_class_677103671.svg)] Security Service Catalog 
 A set of security services identified by RABET-V to mitigate threats.
 #### ![Image of Required Security Services](Architecture_Review_Methodology_files/icon_dataobject_1304218151.svg) [![Image of Security Service](Architecture_Review_Methodology_files/icon_class_677103671.svg)] Required Security Services 
 Mechanisms used to provide confidentiality, integrity authentication, source authentication and/or support non-repudiation of information.
 #### ![Image of Functions](Architecture_Review_Methodology_files/icon_dataobject_1304218151.svg) [![Image of Process](Architecture_Review_Methodology_files/icon_class_1862347028.svg)] Functions 
 A discrete piece of functionality provided by the product.
-#### ![Image of Product Security Architecture Maturity Scores](Architecture_Review_Methodology_files/icon_dataoutput_717768341.svg) [![Image of Product Security Architecture Maturity](Architecture_Review_Methodology_files/icon_class_1862347028.svg)] Product Security Architecture Maturity Scores 
-Based on the maturity scoring rubric, the architecture will be assigned a score for each security service which corresponds to how well it supports that security service.
 #### ![Image of Data labels](Architecture_Review_Methodology_files/icon_dataobject_1304218151.svg) [![Image of Data Sensitivity](Architecture_Review_Methodology_files/icon_class_1862347028.svg)] Data labels 
 A sensitivity label applied to data. Two data labels are defined for RABET-V:
 
@@ -136,5 +132,3 @@ A system level component that provides data processing capabilities.
 #### ![Image of Security Architecture Rubric](Architecture_Review_Methodology_files/icon_dataobject_265530045.svg) Security Architecture Rubric 
 #### ![Image of Security Service](Architecture_Review_Methodology_files/icon_dataobject_1304218151.svg) [![Image of Security Service](Architecture_Review_Methodology_files/icon_class_677103671.svg)] Security Service 
 Mechanisms used to provide confidentiality, integrity authentication, source authentication and/or support non-repudiation of information.
-#### ![Image of Security Service Component Mapping](Architecture_Review_Methodology_files/icon_dataoutput_1803687631.svg) Security Service Component Mapping 
-For each security service, the Architecture Review will identify the product components at the system and software levels which *PROVIDE* and *CONFIGURE* the security service and those components which *USE* the component that provides the security service. The components which *PROVIDE* and/or *CONFIGURE* the security service are referred to as 1st Degree components. The ones which use the 1st Degree components are referred to as 2nd Degree components. This mapping of components is referred to as the Security Services Architecture.
