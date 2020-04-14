@@ -64,7 +64,7 @@ The security service is used consistently and appropriately throughout the syste
 
 ### Discussion
 
-This item measures how widespead and appropriate the security service components are used in the application. Ideally, the system is setup to use the security service throughout the application and it does not have to be invoked many times by different components. Where it does need to be invoked, there are reusable components (i.e. base classes, base page, etc.) which invoke it by default.
+This item measures how widespread and appropriate the security service components are used in the application. Ideally, the system is setup to use the security service throughout the application and it does not have to be invoked many times by different components. Where it does need to be invoked, there are reusable components (i.e. base classes, base page, etc.) which invoke it by default.
 
 ### Questions
 
