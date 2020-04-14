@@ -1,54 +1,79 @@
-# Provider Submission 
-Each RABET-V iteration begins with a product submission. 
+# Provider Submission
+The RABET-V process begins with a product submission.
 
 ## Submission Types
-The submission package required from a Registered Technology Provider (RTP) will vary based on whether this is the RTP's initial submission of a product revision submission. The initial submission will require the most information in order to establish the product in the RABET-V program. Revision submissions will require varying levels of information based on the changes submitted and how those changes impact current [Testing Rules](../RABET-V_Glossary.md). 
+All product submissions are either an Initial Submission or a Revision Submission.
 
 ### Initial Submission
 
-The Initial Submission is a unique, one-time submission of product information. You can update this information as a part of a product revision too. To construct your Initial Submission package, include the following items in addition to the items requested in the Revision Submission section below.
+The Initial Submission is a first-time submission of product information. It includes statements about the product and the Registered Technology Provider (RTP) that will be used throughout the RABET-V process.
 
-#### Product Goals
-The Product Goals are a one or two paragraph summary of what the product is designed to do. This is a free form description which should clearly state the product goals in a non-technical way. This description will be used  by the [Verification Authority](../RABET-V_Glossary.md) in the Submission Review activity to determine if the stated security claims are commensurate with the product goals. For example, if the product goals include managing sensitive voter information, the Verification Authority will expect to see security claims designed to product the sensitive voter information. The product goals will also be published in the [RABET-V Public Portal](../RABET-V_Glossary.md). 
+An Initial Submission requires all items listed in the remainder of the Provider Submission Process.
 
-#### Expected Usage
-The Expected Usage statement should identify the ways in which the product is expected to be used. This is a free form description which will be used along with the Product Goals to evaluate the product's security claims. The Expected Usage will be published along with the Product Goals on the RABET-V Public Portal. One way to communicate the Expected Usage is by providing high-level use cases. Use cases lists the actions or interactions between an actor and a system to achieve a goal. For this submission, the Expected Usage is meant to be more comprehensive and less detailed. 
+### Revision Submission
 
-#### Product Security Claims
-The Product Security Claims are statements about which security requirements are met by the product. RABET-V security requirements are built from the Security Best Practices for Non-Voting Election Technology. For each implemented requirement, the provider will describe how they implement it. If the provider only implements it on certain components, those should be detailed along with a reason for excluding it from other components. Well-reasoned written arguments for why the implementation decisions were made and how they result in the appropriate level of security for the product are expected. This approach allows for each product to implement a unique approach to the security of their application that is specific to its goals and usage.   
+A Revision Submission is for changes being made to a product that has already been through the RABET-V process. It includes information about changes to the product since the last submission.
 
-#### Process Descriptions
+An RTP can make a Revision Submission at any time. It can improve the likelihood of a smooth process by engaging the [Verification Authority](../RABET-V_Glossary.md) about upcoming changes and understanding how any established Testing Rules will be impacted by deviations from the previous version.
 
-TBD - 
+A Revision Submission requires only the change list, artifacts, desired deployment date, and version numbers items listed in the remainder of the Provider Submission Process.
 
-*The lack of process descriptions will not exclude a pilot participant from the program. The pilot program will work with the provider to create documentation and diagrams which are missing.* 
+## Submission Items
 
+### Product Goals -- Initial Submission Only
+The Product Goals statement is a description of the product's purpose in non-technical language. It should be brief: a one or two paragraph summary of what the product is designed to do.
 
-#### Architecture Documentation and Diagrams
+This description will be used  by the [Verification Authority](../RABET-V_Glossary.md) in the Submission Review activity to determine if the stated security claims align with with the product goals. For example, if the Product Goals include managing sensitive voter information, the Verification Authority will expect to see security claims designed to protect sensitive voter information.
+
+The Product Goals will be published in the [RABET-V Public Portal](../RABET-V_Glossary.md).
+
+### Expected Usage -- Initial Submission Only
+The Expected Usage statement describes how the provider expects the election office to use the product. While it can communicate this through a number of means, a good approach is through high-level use cases that list the actions and interactions between involved parties and the system to achieve the Product Goals.
+
+This description will be used  by the [Verification Authority](../RABET-V_Glossary.md) in the Submission Review activity to determine if the stated security claims align with the expected usage.
+
+The Expected Usage will be published in the [RABET-V Public Portal](../RABET-V_Glossary.md).
+
+### Product Security Claims -- Initial Submission Only
+The Product Security Claims statement is a listing of security requirements met by the product. While the provider may use any set of security requirements, there is a strong preference for leveraging widely-accepted and publicly available control sets to the maximum extent possible. For instance, the provider may have specific security requirements for the product, but should map those requirements to the most recent revisions of the CIS Controls or NIST SP 800-53.
+
+For each implemented requirement, the provider will describe how they implement it. If the provider only implements it on certain components, those should be detailed along with a reason for excluding it from other components. The provider should include well-reasoned arguments for why the implementation decisions were made and how they result in the appropriate level of security for the product. This approach allows for each product to implement a unique approach to the security of their application that is specific to its goals and usage.
+
+### Process Descriptions -- Initial Submission Only
+
+The Process Descriptions statement is about the provider's development and operating environment and organizational maturity and controls. There are two parts the statement: the software development maturity and the organizational security maturity.
+
+For the software development maturity portion of the Process Description statement, the provider should use OWASP Software Assurance Maturity Model (SAMM) as the basis for its evaluation. SAMM will also provide the basis for the interview portion of the process assessment.
+
+For the organizational security maturity of the Process Description statements, the provider should use the most recent version of the CIS Controls. The maturity of the provider's organizational security approach will be determined based on its adherence to each of the CIS Controls Implementation Groups.
+
+A lack of detail in the Process Description statement will not exclude a provider from participating in the program, though it may slow the pace of the review. The pilot program will work with the provider to create the necessary descriptions.
+
+### Architecture Documentation and Diagrams -- Initial Submission Only
 
 TBD - John
 
-*The lack of architecture documentation and diagrams will not exclude a pilot participant from the program. The pilot program will work with the provider to create documentation and diagrams which are missing.* 
+*The lack of architecture documentation and diagrams will not exclude a pilot participant from the program. The pilot program will work with the provider to create documentation and diagrams which are missing.*
 
 
-#### Third-Party Component Details
+### Third-Party Component Details -- Initial Submission Only
 
-TBD 
+The Third-party Component Details describe the provider's approach to managing supply chain risk. This includes whether the organization has selected third-party software components with a history of known vulnerabilities, and how the organization maintains traceability and assurance of third-party and open source software throughout the lifetime of the software.
 
-*The lack of documented third-party component details will not exclude a pilot participant from the program. The pilot program will work with the provider to create documentation and diagrams which are missing.* 
+The provider should detail initial and ongoing vetting procedures for third-party providers and components, to include open source software and libraries. Vetting should include fit for the provider as well as security and reliability. Management of third-parties includes the approach to policies, SLAs, reputation, maintenance, and past performance of third-party software and services.
 
-### Revision Submissions
+*The lack of documented third-party component details will not exclude a participant from the program's pilot phase. The pilot program will work with the provider to develop the necessary documentation.*
 
-A Registered Technology Provider (RTP) can submit a product revision to RABET-V at any time. Fore warning is not necessary but may be helpful. Engaging the [Verification Authority](../RABET-V_Glossary.md) about upcoming changes and consulting the existing Testing Rules (if exist) will help a technology provider better prepare their submission. 
+### Revision Submission Artifacts
 
-Required items include:
-* Change list - this must indicate which components have changed and what level of change was made. For product revisions, the list should reference the components identified in the architecture review. 
-* Artifacts - this is the artifacts which were identified in the process review. The process review will identify the product development artifacts which can be used during the subsequent verifications. 
-* Desired Deployment Date - the date when the product revision would ideally be deployed into a product environment.
-* Version numbers - the version number of the current product revision. This must indicate and correspond to code branches and change size (i.e. minor version number changes must correspond to minor changes)
+All Revision Submissions require the following artifacts:
+* Change list - Indicates which components have changed and what level of change was made. It should reference the components identified in the architecture review.
+* Artifacts - The product development artifacts identified in the existing Process Review. These artifacts provide the necessary information on product changes to conduct a review of the changes in the Change List
+* Desired Deployment Date - Target date for deploying the product revision in a production environment.
+* Version number - The version number of the current product revision. It must indicate and correspond to code branches and change size (i.e. minor version number changes must correspond to minor changes).
 
-A provider may change any of the Initial Submission items during a Revision Submission by providing updated information and alerting the Verification Authority. 
+A provider may change any of the Initial Submission items during a Revision Submission by providing updated information and alerting the Verification Authority.
 
 ## Submission
 
-Once the Initial Submission or Revision Submission package is complete, it should be submitted electronically to the RABET-V certifying authority (TBD). For the pilot, this information will be submitted to a secure file upload portal (TBD). 
+Once the Initial Submission or Revision Submission package is complete, it should be submitted electronically to the RABET-V certifying authority (TBD). For the pilot, this information will be submitted to a secure file upload portal (TBD).
