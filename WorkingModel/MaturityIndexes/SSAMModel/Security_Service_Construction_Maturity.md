@@ -65,7 +65,7 @@ To protect against changes in the underlying implementation of the security serv
 
 ### Questions
 
-- Is the security service provide and consistent interface?
+- Does the security service provide and consistent interface?
 - Does the interface integrate with the chosen technology stack?
 
 ### Answers
