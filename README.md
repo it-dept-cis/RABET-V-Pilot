@@ -29,7 +29,7 @@ We will add steering committee member information below as we confirm members:
 The following technology providers have volunteered to have their products used in the RABET-V Pilot. 
 * Scytl - Election Night Reporting
 * VR Systems - Electronic Pollbooks and Election Night Reporting
-* More TBD
+* KNOWink - Electronic Pollbook
 
 ## Technology Advisory Committee
 
