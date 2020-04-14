@@ -8,15 +8,15 @@ The security service is being provided through well-vetted components.
 
 ### Quality Criteria
 
-- The trustworthyness of the security service has been vetted
+- The trustworthiness and reliability of the security service components have been vetted
 
 ### Discussion
 
-In the vast majority of cases, the security service should be written by a reputable third party. Use of security service developed or maintained in-house must be thoroughly justified.
+In the vast majority of cases, the security service components should be written by a reputable third party. Use of security service components developed or maintained in-house must be thoroughly justified.
 
 ### Question
 
-- Who wrote or provides the security service?
+- Who wrote or provides the security service components?
 - Was it written in house?
 - Was it provided by a reputable third party?
 
@@ -30,11 +30,11 @@ In the vast majority of cases, the security service should be written by a reput
 
 ### Benefit
 
-The security service is well documented.
+The security service components are well documented.
 
 ### Quality criteria
 
-- Proper usage of the security service can be determined from documentation
+- Proper usage of the security service component can be determined from documentation
 - Illustrative examples of the security service are provided
 
 ### Questions
