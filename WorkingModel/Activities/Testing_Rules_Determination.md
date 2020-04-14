@@ -6,6 +6,7 @@ The Testing Rules are structured as a decision tree.  A decision tree is a flowc
 
 In our application of decision trees, product changes are the inputs to the decision tree which are then taken through a series of questions about the change and the result is a verification method to use. The decision tree is different for each product because the questions being asked are different. There is some commonality to the decision tree structure which is discussed below, along with how the decision trees are built. 
 
+Pilot research question: is a unique decision tree per product necessary or can we simple to get to one decision tree?
 
 ## Inputs
 
@@ -16,7 +17,7 @@ In our application of decision trees, product changes are the inputs to the deci
 
 ## Outputs
 
-* Testing Rules Decision Tree(s)
+* Testing Rules Decision Tree
 
 ## Workflow
 
@@ -24,17 +25,22 @@ In our application of decision trees, product changes are the inputs to the deci
 
 Any time the testing rules need to be created or updated, there is a starting decision tree. For initial RABET-V iterations, there is a basic template ()[]. For revision iterations, the starting tree is prior the decision tree that you are updating. 
 
+Do we begin with a master tree and then simply it based on the current scores?
+What about the No security service relation? I think we use the Lattix scores possibly, and the usability maturity scores.
+
+
 ### 2. Modify Decision Tree
 
+For a Initial Submission, the entire tree should be updated to reflect the initial architectural and software development maturity scores. For subsequent iterations, only portions of the tree related to the updated scores need to be changed.  
 
 ### 3. Review Decision Tree
 
-Who can review? TAC, Steering Committee? Review COmmittee?
+Who can review? TAC, Steering Committee? Review Committee?
 
 ## Test Conditions
 
 ### Change Attributes
-This test conditions are related to where the change was made and what kind of change it is.
+These test conditions are related to where the change was made and what kind of change it is.
 
 #### Change Location
 
