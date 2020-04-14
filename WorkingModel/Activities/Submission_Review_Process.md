@@ -40,7 +40,7 @@ The Architecture Review is required when one of the following conditions is true
 * The change list indicates the addition, removal, or modification of architectural components since the last Architecture Review.
 
 
-### 5. Determine if Security Claims Validation activityis necessary
+### 5. Determine if Security Claims Validation activity is necessary
 
 The Security Claims Validation activity is required when one of the following conditions is true:
 * The submission is an Initial Submission
