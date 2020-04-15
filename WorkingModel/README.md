@@ -32,7 +32,14 @@ Technology providers who wish to remain RABET-V registered technology providers 
 * Accurate representation of the product capabilities and its security provisions to RABET-V reviewers, customers, and other stakeholders
 * Continued education on and inclusion of cyber security best practices as an organization
 * Continuous product maintenance, including the patching of components within reasonable time frames
-* Transparency of their product's expected usage and validated security claims
+
+## Provider Deregistration and Product Delisting
+
+TBD
+
+## RABET-V Subscriber Access vs. Public
+Many of RABET-V reports are made public, but some of the sensitive detailed reports or appendices are not made publicly available. They are, however, available to RABET-V Subscribers. A RABET-V subscriber is a Federal, State, or local election authority that has requested access to all RABET-V reports and has agreed to treat the information and sensitive (not to be shared with the public or other organizations).
+
 
 ## Maturity Indexes
 

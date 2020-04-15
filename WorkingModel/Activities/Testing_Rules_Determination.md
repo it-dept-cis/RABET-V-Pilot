@@ -4,9 +4,7 @@ This activity takes the results from previous activities and builds a unique set
 
 The Testing Rules are structured as a decision tree.  A decision tree is a flowchart-like structure where each internal node is a "test" of a condition. Each branch represents an outcome of the test until a final node has been reached. The final node represents a decision.
 
-In our application of decision trees, product changes are the inputs to the decision tree which are then taken through a series of questions about the change and the result is a verification method to use. The decision tree is different for each product because the questions being asked are different. There is some commonality to the decision tree structure which is discussed below, along with how the decision trees are built. 
-
-Pilot research question: is a unique decision tree per product necessary or can we simple to get to one decision tree?
+In our application of decision trees, product changes are the inputs to the decision tree which are then taken through a series of questions about the change and the result is a verification method to use. The decision tree is different for each product because the master tree is simplified to only branches that are relevant for the product and provider. 
 
 ## Inputs
 
@@ -23,19 +21,14 @@ Pilot research question: is a unique decision tree per product necessary or can 
 
 ### 1. Initial Decision Tree
 
-Any time the testing rules need to be created or updated, there is a starting decision tree. For initial RABET-V iterations, there is a basic template ()[]. For revision iterations, the starting tree is prior the decision tree that you are updating. 
+Any time the testing rules need to be created or updated, start with a copy of the master decision tree. The master decision tree has all possible outcomes, even if they are not relevant for the product. 
 
-Do we begin with a master tree and then simply it based on the current scores?
-What about the No security service relation? I think we use the Lattix scores possibly, and the usability maturity scores.
+The decision tree is currently implemented with (Silver Decisions)[http://silverdecisions.pl/]. The master decision tree is located in this repository at (master decision tree)[].
 
 
-### 2. Modify Decision Tree
+### 2. Simplify Master Tree
 
-For a Initial Submission, the entire tree should be updated to reflect the initial architectural and software development maturity scores. For subsequent iterations, only portions of the tree related to the updated scores need to be changed.  
-
-### 3. Review Decision Tree
-
-Who can review? TAC, Steering Committee? Review Committee?
+The master decision tree has a number of test conditions for maturity scores which are known at this point in the process, and thus can be simplified. To simply, remove the branches of the decision tree which are irrelevant. This will be branches corresponding to maturity scores other than the score the product/provider received. This should leave a simplified decision tree.
 
 ## Test Conditions
 
@@ -79,7 +72,11 @@ Was the change in a security service related component?
 
 What is the architectural maturity of the security service impacted? 
 
-This uses the Security Service Architectural Maturity (SSAM) scores from the architecture review. Decision options will be 3 ranges set specifically for each product.
+This uses the Security Service Architectural Maturity (SSAM) scores from the architecture review. Uses 3 options to indicate the level of maturity. The scores ranges below are just placeholders until more accurate score ranges can be determined.
+
+- Immature: < 1.0
+- Good Maturity: 1.0-2.0
+- Excellent Maturity: 2.0 -3.0
 
 
 ### Software Development Considerations
@@ -89,25 +86,42 @@ These test conditions are related to the technology providers Software Developme
 
 How mature are the provider's processes related to software assurance?
 
-This uses the average score of all SAMM principles with 3 ranges set specifically for each product. 
+This uses the average score of all SAMM principles with 3 ranges. The scores ranges below are just placeholders until more accurate score ranges can be determined.
+
+- Immature: < 1.0
+- Good Maturity: 1.0-2.0
+- Excellent Maturity: 2.0 -3.0
+
 
 #### 3rd Party Component Maturity 
 
 How mature is the technology provider process for vetting 3rd party components?
 
-This uses the SAMM streams of Supplier Security and Software Dependencies with 3 ranges set specifically for each product.
+This uses the SAMM streams of Supplier Security and Software Dependencies with 3 ranges.The scores ranges below are just placeholders until more accurate score ranges can be determined.
+
+- Immature: < 1.0
+- Good Maturity: 1.0-2.0
+- Excellent Maturity: 2.0 -3.0
 
 #### Internal Development and Deployment Maturity 
 
 How mature are the technology providers processes for internal development and deployment?
 
-This uses the SAMM streams of Security Requirements, Build Process, Software Dependencies, Deployment Process, and Secret Management with 3 ranges set specifically for each product.
+This uses the SAMM streams of Security Requirements, Build Process, Software Dependencies, Deployment Process, and Secret Management with 3 ranges.The scores ranges below are just placeholders until more accurate score ranges can be determined.
+
+- Immature: < 1.0
+- Good Maturity: 1.0-2.0
+- Excellent Maturity: 2.0 -3.0
 
 #### Environment Management Maturity
 
 How mature are the technology provider's processes for environment management (i.e. configuration hardening, patching, and updating)?
 
-This uses the SAMM Environment Management score with 3 ranges set specifically for each product.
+This uses the SAMM Environment Management score with 3 ranges. The scores ranges below are just placeholders until more accurate score ranges can be determined.
+
+- Immature: < 1.0
+- Good Maturity: 1.0-2.0
+- Excellent Maturity: 2.0 -3.0
 
 #### Software Development Artifacts 
 The following test conditions look at whether reliable artifacts are available. 
