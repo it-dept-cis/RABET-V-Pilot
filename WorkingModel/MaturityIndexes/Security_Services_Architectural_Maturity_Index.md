@@ -1,6 +1,6 @@
 # RABET-V Security Services Architectural Maturity (SSAM) Index
 
-The SSAM index provides scores which indicate how well the product's architecture is built to provide the security service. This is a measure of the reliability of the security service and how isolated the security service is from other system changes. These maturity scores are measured during the RABET-V Architecture Review. See [Achitecture Review Methodology](../Activities/Architecture_Review_Methodology.md) for more information on this maturity index.
+The SSAM index provides scores which indicate how well the product's architecture is built to provide the security service. This is a measure of the reliability of the security service and how isolated the security service is from other system changes. These maturity scores are measured during the RABET-V Architecture Review. See [Architecture Review Methodology](../Activities/Architecture_Review_Methodology.md) for more information on this maturity index.
 
 ## Maturity Score Ranges
 

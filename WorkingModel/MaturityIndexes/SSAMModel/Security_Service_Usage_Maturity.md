@@ -59,7 +59,7 @@ The security service is used consistently and appropriately throughout the syste
 ### Quality Criteria
 
 - The component(s) providing the security service is used by other components throughout the system, where appropriate
-- Reusable components are constructed to make is easy to use the security service 
+- Reusable components are constructed to make is easy to use the security service
 - System defaults encourage or enforce the use of the security service
 
 ### Discussion
