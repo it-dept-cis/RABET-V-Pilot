@@ -29,7 +29,7 @@ The approach to validating the change list will vary based on the findings of th
 
 Record the result in the Submission Review Checklist.
 
-### 3. Determine if Process Assessment activity needs to be performed
+### 3. Determine if Process Assessment activity is necessary
 
 The Process Assessment is required when one of the following conditions is true:
 * The submission is an Initial Submission
@@ -39,7 +39,7 @@ The Process Assessment is required when one of the following conditions is true:
 
 Record the result in the Submission Review Checklist.
 
-### 4. Determine if Architecture Review activity needs to be performed
+### 4. Determine if Architecture Review activity is necessary
 
 The Architecture Review is required when one of the following conditions is true:
 * The submission is an Initial Submission
@@ -48,7 +48,7 @@ The Architecture Review is required when one of the following conditions is true
 
 Record the result in the Submission Review Checklist.
 
-### 5. Determine if Security Claims Validation activity needs to be performed
+### 5. Determine if Security Claims Validation activity is necessary
 
 The Security Claims Validation activity is required when one of the following conditions is true:
 * The submission is an Initial Submission

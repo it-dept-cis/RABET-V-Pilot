@@ -29,15 +29,25 @@ We will add steering committee member information below as we confirm members:
 The following technology providers have volunteered to have their products used in the RABET-V Pilot. 
 * Scytl - Election Night Reporting
 * VR Systems - Electronic Pollbooks and Election Night Reporting
-* More TBD
+* KNOWink - Electronic Pollbook
 
 ## Technology Advisory Committee
 
 The RABET-V Technology Advisory Committee is a growing group of experts in relevant subject matter that are volunteering their time to assist in the refinement of the RABET-V process. 
-* Jono Spring, SEI
-* Lauren Cooper, SEI
+* Jono Spring, SEI CERT Division
+* Lauren Cooper, SEI CERT Division
 * Brian Glas, OWASP SAMM
 * Beau Woods, Atlantic Council
+*	Mary M Shaw, Carnegie Melon
+* David Garlan, Carnegie Melon
+* Ryan Wagner, Carnegie Melon 
+* Joshua Bloch, Carnegie Melon
+* Daniel Plakosh, SEI Software Solutions Division
+* Gema Howell, NIST
+* Mary Brady, NIST
+* Gordon Gillerman, NIST
+* Lisa Carnahan, NIST
+* Rob Gordon
 
 ## Program Administration and Research
 The program will be administered by CIS team with assistance from The Turnout. Dr. Mike Garcia will serve as the Research Lead.

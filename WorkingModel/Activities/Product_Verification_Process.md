@@ -6,6 +6,7 @@ The purpose of the product verification activity is to finalize the Security Ser
 
 * Testing Rules
 * Product Revision Submission (Product Revision deployed to test environment, Product development artifacts)
+* Component definitions from Architecture Review (used to set scope of testing)
 
 
 ## Outputs
@@ -20,9 +21,13 @@ The Test Plan for the Product Verification activity is generated from the produc
 
 The Testing Rules are a decision tree (or trees) where each change is processed by the tree and the end result is a verification method to use. This must be done for all changes and the Test Plan is the aggregation of all verification methods. 
  
-### 2. Execute Test Plan
+### 2. Execute Test Plan for Security Requirements
 
 The Test Plan will identify how to test the product revision using one or more of the verification methods. Each verification method has its own workflow. 
+
+### 3. Sanity Testing for Functional Requirements
+
+RABET-V is primarily a security verification process. However, it is critical that each product revision processed by RABET-V meet basic functional requirements for its stated purpose. During the initial RABET-V iteration, sanity testing will be performed against a basic set of functional testing requirements based on the product type. For subsequent RABET-V iterations, the testing rules will indicate whether sanity testing is necessary and whether it is limited or full. Limited sanity testing is focused on the changed component. Full sanity testing will perform testing on all requirements. 
 
 ## Verification Methods
 

@@ -51,20 +51,39 @@ A lack of detail in the Process Description statement will not exclude a provide
 
 ### Architecture Documentation and Diagrams -- Initial Submission Only
 
-TBD - John
+The most up to date documentation is requested. Architecture can be described textually, using diagrams, or a combination of the two. RABET-V expects documentation regarding the architecture at the system as well as the software level. The system architecture should describe deployable subsystems, such as web services, databases, as well as hardware components such as firewalls and tablets. The software architecture should be described in terms of software components.
+
+The term *component* is used generically within RABET-V to describe part of a product. Components can be broken down into subcomponents, as required. The architecture should be deconstructed to the level that exposed functionality (e.g. a particular web service, program API, etc.) can be identified.
+
+RABET-V does not dictate a particular notation for diagrams, however we would prefer if the provider followed our examples, which are based on UML Component Diagrams.
 
 *The lack of architecture documentation and diagrams will not exclude a pilot participant from the program. The pilot program will work with the provider to create documentation and diagrams which are missing.*
-
 
 ### Third-Party Component Details -- Initial Submission Only
 
 The Third-party Component Details describe the provider's approach to managing supply chain risk. This includes whether the organization has selected third-party software components with a history of known vulnerabilities, and how the organization maintains traceability and assurance of third-party and open source software throughout the lifetime of the software.
+
+When considering parts of the overall solution which are not internally developed, each unique version of the following will be considered individual components of the system:
+
+* Operating System
+* Framework
+* 3rd party API
+* Embedded 3rd Party Library
+* Hosting Software/Service (i.e. IIS, Docker, Elastic Beanstalk, Azure App Service, etc.)
+* Database (database stored functions and procedures will be treated as a part of the software application)
+* File Storage System/Service
+* Network Appliance (virtual or real)
+* External Device Driver/Firmware
+
+RABET-V Architecture Review will not further deconstruct these elements of the solution. The assumption of the above rule is that any change to these components will be treated a change to the entire component and the version number and change list will describe the entire component.
 
 The provider should detail initial and ongoing vetting procedures for third-party providers and components, to include open source software and libraries. Vetting should include fit for the provider as well as security and reliability. Management of third-parties includes the approach to policies, SLAs, reputation, maintenance, and past performance of third-party software and services.
 
 *The lack of documented third-party component details will not exclude a participant from the program's pilot phase. The pilot program will work with the provider to develop the necessary documentation.*
 
 ### Revision Submission Artifacts
+
+A provider can submit a product revision to RABET-V at any time. Engaging the [Verification Authority](../RABET-V_Glossary.md) about upcoming changes and consulting the existing Testing Rules (if exist) will help a technology provider better prepare their submission.
 
 All Revision Submissions require the following artifacts:
 * Change list - Indicates which components have changed and what level of change was made. It should reference the components identified in the architecture review.
