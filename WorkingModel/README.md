@@ -30,7 +30,7 @@ Technology providers must submit a completed request package to become an RTP. A
 
 Technology providers who wish to remain RABET-V registered technology providers must agree to the RABET-V Program Commitment. The commitment establishes the ethical and responsible behavior expected by all program providers. The program commitment is subject to change. The Commitment includes:
 * Accurate representation of the product capabilities and its security provisions to RABET-V reviewers, customers, and other stakeholders
-* Continued education on and inclusion of cyber security best practices as an organization
+* Organization implementation and regular assessment of an organizational security framework like the CIS Controls.  
 * Continuous product maintenance, including the patching of components within reasonable time frames
 
 ## Provider Deregistration and Product Delisting
