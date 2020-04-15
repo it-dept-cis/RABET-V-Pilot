@@ -6,22 +6,41 @@ RABET-V defines ten [Security Services](../RABET-V_Glossary.md) to be evaluated.
 ## Security Service Definitions
 
 ### Authentication
-TBD
+
+Verifying the identity of a user, process, or device, often as a prerequisite to allowing access to resources in an information system. [NIST FIPS 200]
+
 ### Authorization
-TBD
+
+The right or a permission that is granted to a system entity to access a system resource. [NIST SP 800-82 Rev. 2]
+
 ### Injection Prevention
-TBD
+
+TBD [OWASAP uses but does not define]
+
 ### Key/Secret/Credentials Management
-TBD
+
+The activities involving the handling of cryptographic keys and other related security parameters (e.g. passwords) during the entire life cycle of the keys, including their generation, storage, establishment, entry and output, and destruction. [NIST CNSSI 4009-2015]
+
 ### User Session Management
-TBD
+
+A persistent interaction between a subscriber and an end point. [Adapted from NIST SP 1800-17b]
+
 ### Logging/Alerting
-TBD
+
+The systemic management and monitoring of the events occurring within an organization’s systems and networks. [Adapted from NIST SP 800-92]
+
 ### Data integrity protection
-TBD
+
+Assurance that that data has not been altered in an unauthorized manner. Data integrity covers data in storage, during processing, and while in transit. [adapted from NIST SP 800-33]
+
 ### Data confidentiality protection
-TBD
+
+Data Confidentiality deals with protecting against the disclosure of information by ensuring that the data is limited to those authorized or by representing the data in such a way that its semantics remain accessible only to those who possess some critical information (e.g., a key for decrypting the enciphered data). [NIST SP 800-13]
+
 ### Boundary protection
-TBD
-###  System integrity protection
-TBD
+
+Monitoring and control of communications at the external boundary of an information system to prevent and detect malicious and other unauthorized communications, through the use of boundary protection devices (e.g. gateways, routers, firewalls, guards, encrypted tunnels). [NIST SP 800-53 Rev. 4]
+
+### System integrity protection
+
+The quality that a system has when it performs its intended function in an unimpaired manner, free from unauthorized manipulation of the system, whether intentional or accidental. [NIST SP 800-27 Rev. A]
