@@ -35,7 +35,9 @@ The registered technology provider will provide documentation of the product's a
 
 ### P2.3 Perform threat analysis
 
-Threat modeling and analysis is used to build the security architecture viewpoint. It also aids in the development of the system and software architecture diagrams. Threat modeling takes the provider submitted architectural documentation as input. The services provided by the application are enumerated using the threat modeling methodology. The services are then further deconstructed into functions and the data required to perform those functions. The data flows/functions must be annotated with sensitivity labels (data-critical, data-sensitive) and  (low, medium, high) which will influence the severity level determination of any identified threat.
+Threat modeling and analysis is used to build the security architecture viewpoint. It also aids in the development of the system and software architecture diagrams. The system level diagram identifies the larger components of the environment used to host and manage the election technology software application(s). The software level diagram identifies the components a layer deeper into the election technology software application(s). 
+
+Threat modeling takes the provider submitted architectural documentation as input. The services provided by the application are enumerated using the threat modeling methodology. The services are then further deconstructed into software functions and the data required to perform those functions. The data flows/functions must be annotated with sensitivity labels (data-critical, data-sensitive) and  (low, medium, high) which will influence the severity level determination of any identified threat.
 
 RABET-V will evaluate the use the [Microsoft Threat Modeling tool](https://www.microsoft.com/en-us/securityengineering/sdl/threatmodeling) during pilot. 
 
@@ -46,11 +48,11 @@ The output of the threat analysis is used to build out a system level architectu
 
 ### P2.5 Identify required security services
 
-The security services required for a given product will depend on the results of the threat modeling exercise. Security services are select from the 10 security services identified for RABET-V.
+The security services required for a given product will depend on the results of the threat modeling exercise. Security services are selected from the 10 security services identified for RABET-V.
 
 ### P2.6 Identify software components
 
-The architecture review will identify significant architectural components, their boundaries, how they interface, and their dependencies with one another and 3rd party components.
+While the threat analysis helps identify the system level components, the software level components must be identified separately. This step will identify significant software architectural components, their boundaries, how they interface, and their dependencies with one another and 3rd party components.
 
 Component identification will perform:
 
@@ -65,19 +67,22 @@ Outputs will include:
 - Boundaries - where is the logical divide between this component and another, how well-defined is the boundary, is it a trust boundary
 - Dependencies - which components depend on each other, which dependencies are third parties
 
-Automated tools, such as [Lattix](https://www.lattix.com/) or others will be evaluated in the RABET-V pilot.
+Automated tools, such as [Lattix](https://www.lattix.com/) or others will be evaluated in the RABET-V pilot as a way to perform this step.
 
-### P2.7 Convert functions to ports
+### P2.7 Convert threat analysis to component mapping
 
-The functions identified during threat modeling will be converted to ports (bundles of interfaces that provide system functionality). Any security services required to mitigate a threat to the port should be listed as a required interface.
+The threat analysis identifies the software functionalities which need security services and the previous step identified the software components. This step will map the security services to software components by first identifies which components offer which functionalities. 
 
-### P2.8 Apply sensitivity labels
+This is done by converting the software functions from the threat model to ports on the software component diagram. (Ports are how functionality is expressed on UML component diagrams.) Here we also map the ports to software components identified in the previous step. With this combined point of view, it is then clear which software components should be providing/uses a security service.
 
-Sensitivity labels are applied to interfaces that provide/exchange data-critical or data-sensitive information. This identification is done during the threat modeling exercise. These labels are mapped to the interfaces that expose the data of a component.
+
+### P2.8 Convert threat analysis to sensitivity labels
+
+Sensitivity labels are applied to ports that provide/exchange data-critical or data-sensitive information during the threat analysis step. Using the component to port relationships identified in the previous step, we map and apply the sensitivity labels to components in this step. These labels are used to identify gaps in security service protection in a later step.
 
 ### P2.9 Apply security service labels
 
-Components of the architecture that provide security services are identified and labeled. Components that configure security services are also identified and labeled. Ports that depend on a security service are also identified.
+In this step, we complete the Security Service Architecture by labeling the system and software components, for each security service, that provide or configure the security service.
 
 ### P2.10 Perform security service architectural maturity review
 
