@@ -19,15 +19,18 @@ The purpose of the product verification activity is to finalize the Security Ser
 
 The Test Plan for the Product Verification activity is generated from the product's Testing Rules. The Testing Rules are built in the Testing Rules Determination activity and may be recently created or be existing rules from prior RABET-V iterations. 
 
-The Testing Rules are a decision tree (or trees) where each change is processed by the tree and the end result is a verification method to use. This must be done for all changes and the Test Plan is the aggregation of all verification methods. 
+The Testing Rules are a decision tree where each change is processed by the tree and the end result is a verification method(s) to use. This must be done for all changes and the Test Plan is the aggregation of all verification methods. 
+
+For initial submissions, a full system test is performed. A full system test is will review automated test results, perform a system wide functional test and penetration test. 
  
 ### 2. Execute Test Plan for Security Requirements
 
 The Test Plan will identify how to test the product revision using one or more of the verification methods. Each verification method has its own workflow. 
 
-### 3. Sanity Testing for Functional Requirements
 
-RABET-V is primarily a security verification process. However, it is critical that each product revision processed by RABET-V meet basic functional requirements for its stated purpose. During the initial RABET-V iteration, sanity testing will be performed against a basic set of functional testing requirements based on the product type. For subsequent RABET-V iterations, the testing rules will indicate whether sanity testing is necessary and whether it is limited or full. Limited sanity testing is focused on the changed component. Full sanity testing will perform testing on all requirements. 
+### 3. Sanity Testing for Product Type Requirements
+
+RABET-V is primarily a security verification process. However, it is critical that each product revision processed by RABET-V meet basic product requirements for its stated purpose. During the initial RABET-V iteration, sanity testing will be performed against a basic set of product requirements based on the product type. For subsequent RABET-V iterations, the testing rules will indicate whether sanity testing is necessary and whether it is limited or full. Limited sanity testing is focused on the changed component. Full sanity testing will perform testing on all requirements. 
 
 ## Verification Methods
 
@@ -52,8 +55,6 @@ Automated testing is broad type of testing relying on software to perform test r
 * Accessibility Testing
 * Browser Compatibility Testing
 
-
-
 ### Functional Testing
 Functional testing is a broad type of testing which focuses on the system output (i.e. the functionality users can interact with). It is geared toward testing the functional requirements of the product and is a manual testing method. The scope and intensity of functional testing can vary, and there are sub-types of functional testing to indicate the scope and intensity. The following sub-types are used in RABET-V:
 
@@ -68,7 +69,7 @@ Functional testing is a broad type of testing which focuses on the system output
 ### Penetration Testing
 Penetration tests evaluate the product to find security vulnerabilities that an attacker could exploit. The scope of a penetration test may be the product's network, computer systems, or software application(s). In RABET-V, the penetration testing is limited to web application penetration testing. Web applications expose the greatest surface area for which automated testing is incapable of fully evaluating. Automated tools are fairly effective for network and computer systems where the major issues are vulnerable versions and lack of patching. Web applications, however, are custom and may have a variety of issues not easily captured by automated tools. Automated tools help with web application pen tests but must be used by skilled and experienced testers.
 
-RABET-V relies on the [OWASP Web Application Security Testing](https://github.com/OWASP/wstg/tree/master/document/4-Web_Application_Security_Testing) Guide to segment up the penetration testing options.
+RABET-V relies on the [OWASP Web Application Security Testing Guide](https://github.com/OWASP/wstg/tree/master/document/4-Web_Application_Security_Testing) to segment up the penetration testing options.
 
 In addition to a full penetration testing option, the following web application penetration testing subtypes are supported:
 * Configuration and Deployment 
@@ -82,7 +83,7 @@ In addition to a full penetration testing option, the following web application 
 
 Limited penetration testing may be used if the changes do not warrant full penetration testing. 
 
-## Non-Security Testing
+## Out-of-scope Testing
 
 There is other testing which is out of scope for RABET-V. RABET-V is chiefly concerned with verifying the security and reliability of the product revision in a rapid way. Since rapid change cycles are possible with RABET-V, other user-centered types of testing can be performed by the current or potential end users and the changes reprocessed through RABET-V without significant lag. These other testing types include:
 
