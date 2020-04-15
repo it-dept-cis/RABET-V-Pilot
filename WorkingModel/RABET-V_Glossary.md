@@ -6,8 +6,6 @@
 
 *Testing Rules* - A technology provider and product specific set of rules which determine how changes to that product will be verified during RABET-V iterations.
 
-*RABET-V Public Portal* - A organization that develops election technology and has met the minimum requirements to become a RABET-V Registered Technology Provider.
-
 *Verification Authority* - The organization responsible for overseeing and executing the RABET-V process. CIS is the Verification Authority for the pilot program. 
 
 *Security Service Capability Maturity (SSCM)* - one of the primary metrics reported by RABET-V. The SSCM is a set of maturity scores for each of the ten security services.
@@ -22,3 +20,8 @@
 
 *Product Revision* - a specific version of the product submitted to RABET-V 
 
+*1st Degree Component* - these components provide or configure one of the 10 security services. Components are determined to be 1st or 2nd degree components in the Architecture Review. 
+
+*2nd Degree Component* - these components use one of the components which provide or configure a security service. Components are determined to be 1st or 2nd degree components in the Architecture Review. 
+
+*Security Services Architecture* - an architectural view created in the Architecture Review which identifies components and maps them to the 10 security services.
