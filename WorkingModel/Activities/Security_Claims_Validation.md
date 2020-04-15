@@ -1,6 +1,6 @@
 # Security Claims Validation
 
-This security claims activity reviews whether the technology provider's statements of security are sufficient for their product's goals and expected usage. Not all applications pose the same security risks. Even similar products can have different risk profiles based on the type of data they manage and/or how the product will be used. This activity reviews the particulars of the product to ensure the security claims match the specific risk profile of each product. This validation activity determines if the provider's claims make sense given the product environment and data sensitivity, and if the claims are sufficient for the given context.
+This security claims activity reviews whether the technology provider's statements of security are sufficient for their product's goals and expected usage. Not all applications pose the same security risks. Even similar products can have different risk profiles based on the type of data they manage and/or how the product will be used. This activity reviews the particulars of the product to ensure the security claims match its specific risk profile. This validation activity determines if the provider's claims make sense given the product environment and data sensitivity, and if the claims are sufficient for the given context.
 
 Security claims are submitted by providers in their submission package. The Initial Submission Package must include claims for each security requirement. Subsequent Revision Submissions can add, remove, or modify a previous security claim, but are not required to. 
 
@@ -9,7 +9,7 @@ For each requirement, the provider must include:
 * Which component or sub-systems implements the requirement, and whether it is all or a sub-set of components
 * Rationale for Not Applicable (only if Not Applicable is claimed)
 * Implementation details, including as much detail as possible 
-* Explanation for why the requirement is only partially met or partially applied to the system. Simple explanations can be used (i.e. planned for future development, lack of resources, etc. If the provider believes that partial implementation is fully sufficient, a longer explanation is necessary. 
+* Explanation for why the requirement is only partially met or partially applied to the system. Simple explanations can be used (i.e. planned for future development, lack of resources, etc.) If the provider believes that partial implementation is fully sufficient, a longer explanation is necessary. 
 
 The Product Verification activity performs the verification of these claims, based on the Testing Rules created in the Testing Rules Determination activity. The Testing Rules Determination accounts for the security claims made by the provider. For instance, the testing rules will exclude requirements which are Not Met or Not Applicable. 
 
@@ -30,15 +30,19 @@ The Product Verification activity performs the verification of these claims, bas
 
 ### 1. Review Product Goals, Expected Usage, and Product Functionality
 
-This first step will review the written goals and usage from the provider. This step should be augmented with a product demo or access to the product in a test environment. Reviewers should obtain and good sense of the high-level product functionality and validate the goals and usage and consistent with the product functionality. For example, if there are use cases related to product administration, the reviewer should be able to access the administration module and exercise a few use cases. 
+This first step will review the written goals and usage from the provider. This step should be augmented with a product demo or access to the product in a test environment. Reviewers should obtain a good sense of the high-level product functionality and validate the goals and usage and consistent with the product functionality. For example, if there are use cases related to product administration, the reviewer should be able to access the administration module and exercise a few use cases. 
 
 ### 2. Review Requirements listed as Not Applicable
 
-The requirements marked Not Applicable are reviewed to ensure that for this product the requirement is not relevant and thus the SSCM scores should not reflect non conformance in its numbers. This is done with the aid of the security service component mapping from architecture review. Using the component mapping and knowledge from the product demo and expected usage, the reviewer should be able to make a determination on whether or not the requirement is valid for this product. Often times, the decision comes down to the use of certain technologies in the system. For example, if the product disabled all wireless, the requirements on using encrypted wireless are N/A. 
+The requirements marked Not Applicable are reviewed to ensure that for this product the requirement is not relevant and thus the SSCM scores should not reflect non-conformance in its numbers. This is done with the aid of the threat analysis and security service component mapping from architecture review. Using the component mapping and knowledge from the product demo and expected usage, the reviewer should be able to make a determination on whether or not the requirement is valid for this product. Often times, the decision comes down to the use of certain technologies in the system. For example, if the product disabled all wireless, the requirements on using encrypted wireless are N/A. 
 
 ### 3. Review Remaining Requirements
 
-Once the list of applicable requirements have been determined in the prior step, the reviewer will go through the remaining requirements one security service at a time. Using the security service component mapping and the implementation details, the reviewer can determine if the requirement is being fully met, partially met, or not met. Requirements are fully met when the implementation of the requirement covers all of the relevant components. If the implementation is only covering a portion of the relevant components, the requirement is partially met. The determination of which components are relevant is made by the reviewer.   
+Once the list of applicable requirements have been determined in the prior step, the reviewer will go through the remaining requirements one security service at a time. Using the security service component mapping and the implementation details, the reviewer can validate if the stated implementation is fully, partially, or not meeting the requirement. Requirements are fully met when the implementation of the requirement covers all of the relevant components. If the implementation is only covering a portion of the relevant components, the requirement is partially met. The determination of which components are relevant is made by the reviewer.   
+
+### 4. Determine Claim Sufficiency
+
+In this final step, the reviewer will analysis the product's use cases, the list of applicable requirements, and the provider's validated claims. If there are sensitive use cases which are not being mitigated to a minimally acceptable level, the reviewer may determine that the claims are not sufficient. Until more guidance can be developed on what is minimally acceptable, the guidance is that any product which claims to meet all applicable maturity level 1 requirements will pass this step. 
 
 ## Risk Considerations
 
