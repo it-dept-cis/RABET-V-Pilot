@@ -61,11 +61,11 @@ There is a consistent and stable interface that integrates well with the chosen 
 
 ### Discussion
 
-To protect against changes in the underlying implementation of the security service, it should expose stable interfaces. Ideally, the security service should integrate with the underlying framework used (if any). For example, an Java application implementing Authentication could use the platform's built in LoginModule. Platforms that do no provide extension points for a given security service will not be penalized.
+To protect against changes in the underlying implementation of the security service, it should expose stable interfaces. Ideally, the security service should integrate with the underlying framework used (if any). For example, a Java application implementing Authentication could use the platform's built in LoginModule. Platforms that do no provide extension points for a given security service will not be penalized.
 
 ### Questions
 
-- Does the security service provide and consistent interface?
+- Does the security service provide a consistent interface?
 - Does the interface integrate with the chosen technology stack?
 
 ### Answers
