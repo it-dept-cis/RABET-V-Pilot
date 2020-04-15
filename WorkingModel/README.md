@@ -51,7 +51,6 @@ There will be a RABET-V public portal. The public portal serves the following pu
 Many of RABET-V reports are made public, but some of the sensitive detailed reports or appendices are not made publicly available. They are, however, available to RABET-V Subscribers. A RABET-V subscriber is a Federal, State, or local election authority that has requested access to all RABET-V reports and has agreed to treat the information and sensitive (not to be shared with the public or other organizations).
 
 
-
 ## Maturity Indexes
 
 RABET-V evaluates the security, reliability, and usability of products and provides a set of maturity scores for each product version. RABET-V provides three maturity indexes:

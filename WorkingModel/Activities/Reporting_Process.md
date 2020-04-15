@@ -40,7 +40,7 @@ Issues and deviations are detailed in the Product Provider Report.
 
 #### Report Template
 
-The RABET-V Results Summary provides scored outcomes for product security capabilities and security architecture maturity and for organizational software development process maturity, organizational security maturity. For Revision Submissions, it will include any change from the previous submission.
+The RABET-V Results Summary provides scored outcomes for product security capabilities and security architecture maturity and for organizational software development process maturity. For Revision Submissions, it will include any change from the previous submission.
 
 Product Security Capability Maturity: the quality of the product's capabilities of the system at providing each of these security services:
 * Authentication
@@ -52,7 +52,7 @@ Product Security Capability Maturity: the quality of the product's capabilities 
 * Data integrity protection
 * Data confidentiality protection
 
-Product Security Architecture Maturity: the quality of the product's architecture to supports these security services and the likelihood that product changes will impact the Product Security Capability Maturity levels:
+Product Security Architecture Maturity: the quality and reliability of the product's architecture to support these security services and the likelihood that product changes will impact the Product Security Capability Maturity levels:
 * Authentication
 * Authorization
 * Injection Prevention
@@ -62,7 +62,7 @@ Product Security Architecture Maturity: the quality of the product's architectur
 * Data integrity protection
 * Data confidentiality protection
 
-Software Assurance Maturity: the quality of the provider's processes in each of these SAMM components:
+Software Development Maturity: the quality of the provider's processes in each of these areas:
 * Governance
 * Design
 * Implementation
@@ -70,17 +70,15 @@ Software Assurance Maturity: the quality of the provider's processes in each of 
 * Operations
 * Usability
 
-Organizational Security Maturity: the quality the provider's organizational process for managing security risk in each of these CIS Controls components:
-* [not sure what to do here. Can we use a subset of the IGs? I don't think each of the 20 controls is the way to go]
 
 Product (Revision) Summary
 * Details about the product that were submitted including its description, expected usage (i.e. use cases), version number(s), etc. This includes the Change List for Revision Submissions.
 
 Verification Methods
-* Description of how the system was tested to include decision tree, etc., used in the verification process.
+* Description of how the system was tested to include verification methods used in the testing.
 
 Maturity Trends
-* A description of what caused a change for any product or organizational maturity level that changed.
+* A description of what caused a change for any product or process maturity level that changed.
 
 Appendices
 * Requirements Scores: a list of all individual requirements and whether the provider is meeting them
