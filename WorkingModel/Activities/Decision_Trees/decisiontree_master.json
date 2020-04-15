@@ -1,0 +1,4060 @@
+{
+  "SilverDecisions": "1.1.0",
+  "buildTimestamp": 1544382143568,
+  "savetime": "2020-04-15T18:18:49.092Z",
+  "lng": "en",
+  "viewMode": "criterion1",
+  "rule": "expected-value-maximization",
+  "title": "RABET-V Testing Rules",
+  "description": "",
+  "format": {
+    "locales": "en",
+    "payoff1": {
+      "style": "currency",
+      "currency": "USD",
+      "currencyDisplay": "symbol",
+      "minimumFractionDigits": 0,
+      "maximumFractionDigits": 2,
+      "useGrouping": true
+    },
+    "payoff2": {
+      "style": "decimal",
+      "currency": "USD",
+      "currencyDisplay": "symbol",
+      "minimumFractionDigits": 0,
+      "maximumFractionDigits": 2,
+      "useGrouping": true
+    },
+    "probability": {
+      "style": "decimal",
+      "minimumFractionDigits": 2,
+      "maximumFractionDigits": 3,
+      "useGrouping": true
+    }
+  },
+  "treeDesigner": {
+    "margin": {
+      "left": 25,
+      "right": 25,
+      "top": 25,
+      "bottom": 25
+    },
+    "scale": 1,
+    "lng": "en",
+    "layout": {
+      "type": "tree",
+      "nodeSize": 25,
+      "limitNodePositioning": true,
+      "limitTextPositioning": true,
+      "gridHeight": 65,
+      "gridWidth": 150,
+      "edgeSlantWidthMax": 20
+    },
+    "fontFamily": "sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "normal",
+    "fontStyle": "normal",
+    "node": {
+      "strokeWidth": "1px",
+      "optimal": {
+        "stroke": "#006f00",
+        "strokeWidth": "1.5px"
+      },
+      "label": {
+        "fontSize": "1em",
+        "color": "black"
+      },
+      "payoff": {
+        "fontSize": "1em",
+        "color": "black",
+        "negativeColor": "#b60000"
+      },
+      "decision": {
+        "fill": "#ff7777",
+        "stroke": "#660000",
+        "selected": {
+          "fill": "#aa3333"
+        }
+      },
+      "chance": {
+        "fill": "#ffff44",
+        "stroke": "#666600",
+        "selected": {
+          "fill": "#aaaa00"
+        }
+      },
+      "terminal": {
+        "fill": "#44ff44",
+        "stroke": "black",
+        "selected": {
+          "fill": "#00aa00"
+        },
+        "payoff": {
+          "fontSize": "1em",
+          "color": "black",
+          "negativeColor": "#b60000"
+        }
+      }
+    },
+    "edge": {
+      "stroke": "#424242",
+      "strokeWidth": "1.5",
+      "optimal": {
+        "stroke": "#006f00",
+        "strokeWidth": "2.4"
+      },
+      "selected": {
+        "stroke": "#045ad1",
+        "strokeWidth": "3.5"
+      },
+      "label": {
+        "fontSize": "1em",
+        "color": "back"
+      },
+      "payoff": {
+        "fontSize": "1em",
+        "color": "black",
+        "negativeColor": "#b60000"
+      }
+    },
+    "probability": {
+      "fontSize": "1em",
+      "color": "#0000d7"
+    },
+    "title": {
+      "fontSize": "16px",
+      "fontWeight": "bold",
+      "fontStyle": "normal",
+      "color": "#000000",
+      "margin": {
+        "top": 15,
+        "bottom": 10
+      }
+    },
+    "description": {
+      "show": true,
+      "fontSize": "12px",
+      "fontWeight": "bold",
+      "fontStyle": "normal",
+      "color": "#000000",
+      "margin": {
+        "top": 5,
+        "bottom": 10
+      }
+    },
+    "readOnly": false,
+    "disableAnimations": true,
+    "forceFullEdgeRedraw": false,
+    "hideLabels": false,
+    "hidePayoffs": true,
+    "hideProbabilities": true,
+    "raw": true,
+    "payoffNames": [
+      null,
+      null
+    ],
+    "maxPayoffsToDisplay": 1
+  },
+  "data": {
+    "code": "",
+    "expressionScope": {},
+    "trees": [
+      {
+        "computed": {},
+        "childEdges": [
+          {
+            "computed": {
+              "payoff": [
+                "0",
+                "0"
+              ]
+            },
+            "name": "Software Application Core Component",
+            "payoff": [
+              0,
+              0
+            ],
+            "childNode": {
+              "computed": {},
+              "childEdges": [
+                {
+                  "computed": {
+                    "payoff": [
+                      "0",
+                      "0"
+                    ]
+                  },
+                  "name": "1st Degree",
+                  "payoff": [
+                    0,
+                    0
+                  ],
+                  "childNode": {
+                    "computed": {},
+                    "childEdges": [
+                      {
+                        "computed": {
+                          "payoff": [
+                            "0",
+                            "0"
+                          ]
+                        },
+                        "name": "Add/\nRemove",
+                        "payoff": [
+                          0,
+                          0
+                        ],
+                        "childNode": {
+                          "computed": {},
+                          "childEdges": [
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "<1.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [],
+                                "name": "FT: System, Pen Test",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 12.5
+                                },
+                                "type": "terminal"
+                              }
+                            },
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "1.0-2.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [],
+                                "name": "FT: Regression",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 77.5
+                                },
+                                "type": "terminal"
+                              }
+                            },
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "2.0-3.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [],
+                                "name": "FT: Component",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 142.5
+                                },
+                                "type": "terminal"
+                              }
+                            }
+                          ],
+                          "name": "Security \nService \nArchitectural \nMaturity",
+                          "code": "",
+                          "expressionScope": {},
+                          "folded": false,
+                          "location": {
+                            "x": 462.5,
+                            "y": 77.5
+                          },
+                          "type": "decision"
+                        }
+                      },
+                      {
+                        "computed": {
+                          "payoff": [
+                            "0",
+                            "0"
+                          ]
+                        },
+                        "name": "Replace",
+                        "payoff": [
+                          0,
+                          0
+                        ],
+                        "childNode": {
+                          "computed": {},
+                          "childEdges": [
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "< 1.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [],
+                                "name": "",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 220.50000000000045
+                                },
+                                "type": "terminal"
+                              }
+                            },
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "1.0-2.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [],
+                                "name": "",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 285.50000000000045
+                                },
+                                "type": "terminal"
+                              }
+                            },
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "2.0-3.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [],
+                                "name": "",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 350.50000000000045
+                                },
+                                "type": "terminal"
+                              }
+                            }
+                          ],
+                          "name": "Security \nService \nArchitectural \nMaturity",
+                          "code": "",
+                          "expressionScope": {},
+                          "folded": false,
+                          "location": {
+                            "x": 462.5,
+                            "y": 285.50000000000045
+                          },
+                          "type": "decision"
+                        }
+                      },
+                      {
+                        "computed": {
+                          "payoff": [
+                            "0",
+                            "0"
+                          ]
+                        },
+                        "name": "Interface \nChange",
+                        "payoff": [
+                          0,
+                          0
+                        ],
+                        "childNode": {
+                          "computed": {},
+                          "childEdges": [
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "< 1.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [],
+                                "name": "",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 428.5
+                                },
+                                "type": "terminal"
+                              }
+                            },
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "1.0-2.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "< 1.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 318
+                                      },
+                                      "type": "terminal"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "1.0 - 2.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "<1.0",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [],
+                                            "name": "",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 318
+                                            },
+                                            "type": "terminal"
+                                          }
+                                        },
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "1.0-2.0",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [],
+                                            "name": "",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 383
+                                            },
+                                            "type": "terminal"
+                                          }
+                                        },
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "2.0-3.0",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [],
+                                            "name": "",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 448
+                                            },
+                                            "type": "terminal"
+                                          }
+                                        }
+                                      ],
+                                      "name": "Internal D&D Maturity ",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 383
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "2.0 - 3.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "<1.0",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "No",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 493.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              },
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "Yes",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 558.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              }
+                                            ],
+                                            "name": "Reliable \nArtifact \nExist",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 526
+                                            },
+                                            "type": "decision"
+                                          }
+                                        },
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "1.0-2.0",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "No",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 636.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              },
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "Yes",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 701.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              }
+                                            ],
+                                            "name": "Reliable \nArtifact \nExist",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 669
+                                            },
+                                            "type": "decision"
+                                          }
+                                        },
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "2.0-3.0",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "No",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 779.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              },
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "Yes",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 844.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              }
+                                            ],
+                                            "name": "Reliable \nArtifact \nExist",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 812
+                                            },
+                                            "type": "decision"
+                                          }
+                                        }
+                                      ],
+                                      "name": "Internal D&D Maturity ",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 668.9999999999995
+                                      },
+                                      "type": "decision"
+                                    }
+                                  }
+                                ],
+                                "name": "Software \nAssurance \nMaturity",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 493.5
+                                },
+                                "type": "decision"
+                              }
+                            },
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "2.0-3.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "< 1.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 1033.0000000000005
+                                      },
+                                      "type": "terminal"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "1.0 - 2.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "<1.0",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "No",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 922.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              },
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "Yes",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 987.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              }
+                                            ],
+                                            "name": "Reliable \nArtifact \nExist",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 955
+                                            },
+                                            "type": "decision"
+                                          }
+                                        },
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "1.0-2.0",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "No",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 1065.5000000000005
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              },
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "Yes",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 1130.5000000000005
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              }
+                                            ],
+                                            "name": "Reliable \nArtifact \nExist",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 1098.0000000000005
+                                            },
+                                            "type": "decision"
+                                          }
+                                        },
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "2.0-3.0",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "No",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 1208.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              },
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "Yes",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 1273.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              }
+                                            ],
+                                            "name": "Reliable \nArtifact \nExist",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 1241
+                                            },
+                                            "type": "decision"
+                                          }
+                                        }
+                                      ],
+                                      "name": "Internal D&D Maturity ",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 1098.0000000000005
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "2.0 - 3.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "No",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 1351.5000000000002
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              },
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "Yes",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 1416.5000000000002
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              }
+                                            ],
+                                            "name": "Reliable \nArtifact \nExist",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 1384.0000000000002
+                                            },
+                                            "type": "decision"
+                                          }
+                                        },
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "No",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 1494.5000000000002
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              },
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "Yes",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 1559.5000000000002
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              }
+                                            ],
+                                            "name": "Reliable \nArtifact \nExist",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 1527.0000000000002
+                                            },
+                                            "type": "decision"
+                                          }
+                                        },
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "No",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 1637.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              },
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "Yes",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "Artifact Review",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 1702.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              }
+                                            ],
+                                            "name": "Reliable \nArtifact \nExist",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 1670
+                                            },
+                                            "type": "decision"
+                                          }
+                                        }
+                                      ],
+                                      "name": "Internal D&D Maturity ",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 1527.0000000000005
+                                      },
+                                      "type": "decision"
+                                    }
+                                  }
+                                ],
+                                "name": "Software \nAssurance \nMaturity",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 1280
+                                },
+                                "type": "decision"
+                              }
+                            }
+                          ],
+                          "name": "Security \nService \nArchitectural \nMaturity",
+                          "code": "",
+                          "expressionScope": {},
+                          "folded": false,
+                          "location": {
+                            "x": 462.5,
+                            "y": 854.2500000000005
+                          },
+                          "type": "decision"
+                        }
+                      },
+                      {
+                        "computed": {
+                          "payoff": [
+                            "0",
+                            "0"
+                          ]
+                        },
+                        "name": "Implementation/\nPatch",
+                        "payoff": [
+                          0,
+                          0
+                        ],
+                        "childNode": {
+                          "computed": {},
+                          "childEdges": [
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "< 1.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [],
+                                "name": "",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 1858.5
+                                },
+                                "type": "terminal"
+                              }
+                            },
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "1.0-2.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "< 1.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 1748
+                                      },
+                                      "type": "terminal"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "1.0 - 2.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "<1.0",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [],
+                                            "name": "",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 1748
+                                            },
+                                            "type": "terminal"
+                                          }
+                                        },
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "1.0-2.0",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [],
+                                            "name": "",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 1813
+                                            },
+                                            "type": "terminal"
+                                          }
+                                        },
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "2.0-3.0",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [],
+                                            "name": "",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 1878
+                                            },
+                                            "type": "terminal"
+                                          }
+                                        }
+                                      ],
+                                      "name": "Internal D&D Maturity ",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 1813
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "2.0 - 3.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "<1.0",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "No",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 1923.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              },
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "Yes",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 1988.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              }
+                                            ],
+                                            "name": "Reliable \nArtifact \nExist",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 1956
+                                            },
+                                            "type": "decision"
+                                          }
+                                        },
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "1.0-2.0",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "No",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 2066.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              },
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "Yes",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 2131.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              }
+                                            ],
+                                            "name": "Reliable \nArtifact \nExist",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 2099
+                                            },
+                                            "type": "decision"
+                                          }
+                                        },
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "2.0-3.0",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "No",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 2209.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              },
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "Yes",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 2274.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              }
+                                            ],
+                                            "name": "Reliable \nArtifact \nExist",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 2242
+                                            },
+                                            "type": "decision"
+                                          }
+                                        }
+                                      ],
+                                      "name": "Internal D&D Maturity ",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 2099
+                                      },
+                                      "type": "decision"
+                                    }
+                                  }
+                                ],
+                                "name": "Software \nAssurance \nMaturity",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 1923.5
+                                },
+                                "type": "decision"
+                              }
+                            },
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "2.0-3.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "< 1.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 2463
+                                      },
+                                      "type": "terminal"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "1.0 - 2.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "<1.0",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "No",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 2352.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              },
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "Yes",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 2417.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              }
+                                            ],
+                                            "name": "Reliable \nArtifact \nExist",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 2385
+                                            },
+                                            "type": "decision"
+                                          }
+                                        },
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "1.0-2.0",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "No",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 2495.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              },
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "Yes",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 2560.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              }
+                                            ],
+                                            "name": "Reliable \nArtifact \nExist",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 2528
+                                            },
+                                            "type": "decision"
+                                          }
+                                        },
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "2.0-3.0",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "No",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 2638.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              },
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "Yes",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 2703.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              }
+                                            ],
+                                            "name": "Reliable \nArtifact \nExist",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 2671
+                                            },
+                                            "type": "decision"
+                                          }
+                                        }
+                                      ],
+                                      "name": "Internal D&D Maturity ",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 2528
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "2.0 - 3.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "No",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 2781.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              },
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "Yes",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 2846.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              }
+                                            ],
+                                            "name": "Reliable \nArtifact \nExist",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 2814
+                                            },
+                                            "type": "decision"
+                                          }
+                                        },
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "No",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 2924.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              },
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "Yes",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 2989.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              }
+                                            ],
+                                            "name": "Reliable \nArtifact \nExist",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 2957
+                                            },
+                                            "type": "decision"
+                                          }
+                                        },
+                                        {
+                                          "computed": {
+                                            "payoff": [
+                                              "0",
+                                              "0"
+                                            ]
+                                          },
+                                          "name": "",
+                                          "payoff": [
+                                            0,
+                                            0
+                                          ],
+                                          "childNode": {
+                                            "computed": {},
+                                            "childEdges": [
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "No",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 3067.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              },
+                                              {
+                                                "computed": {
+                                                  "payoff": [
+                                                    "0",
+                                                    "0"
+                                                  ]
+                                                },
+                                                "name": "Yes",
+                                                "payoff": [
+                                                  0,
+                                                  0
+                                                ],
+                                                "childNode": {
+                                                  "computed": {},
+                                                  "childEdges": [],
+                                                  "name": "Artifact Review",
+                                                  "code": "",
+                                                  "expressionScope": {},
+                                                  "folded": false,
+                                                  "location": {
+                                                    "x": 1062.5,
+                                                    "y": 3132.5
+                                                  },
+                                                  "type": "terminal"
+                                                }
+                                              }
+                                            ],
+                                            "name": "Reliable \nArtifact \nExist",
+                                            "code": "",
+                                            "expressionScope": {},
+                                            "folded": false,
+                                            "location": {
+                                              "x": 912.5,
+                                              "y": 3100
+                                            },
+                                            "type": "decision"
+                                          }
+                                        }
+                                      ],
+                                      "name": "Internal D&D Maturity ",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 2957
+                                      },
+                                      "type": "decision"
+                                    }
+                                  }
+                                ],
+                                "name": "Software \nAssurance \nMaturity",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 2710
+                                },
+                                "type": "decision"
+                              }
+                            }
+                          ],
+                          "name": "Security \nService \nArchitectural \nMaturity",
+                          "code": "",
+                          "expressionScope": {},
+                          "folded": false,
+                          "location": {
+                            "x": 462.5,
+                            "y": 2284.25
+                          },
+                          "type": "decision"
+                        }
+                      }
+                    ],
+                    "name": "Change\nType",
+                    "code": "",
+                    "expressionScope": {},
+                    "folded": false,
+                    "location": {
+                      "x": 312.5,
+                      "y": 1180.875
+                    },
+                    "type": "decision"
+                  }
+                },
+                {
+                  "computed": {
+                    "payoff": [
+                      "0",
+                      "0"
+                    ]
+                  },
+                  "name": "2nd Degree",
+                  "payoff": [
+                    0,
+                    0
+                  ],
+                  "childNode": {
+                    "computed": {},
+                    "childEdges": [
+                      {
+                        "computed": {
+                          "payoff": [
+                            "0",
+                            "0"
+                          ]
+                        },
+                        "name": "Add/\nRemove",
+                        "payoff": [
+                          0,
+                          0
+                        ],
+                        "childNode": {
+                          "computed": {},
+                          "childEdges": [
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "< 1.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "< 1.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 3035.0000000000005
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "1.0 - 2.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 3100.0000000000005
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "2.0 - 3.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 3165.0000000000005
+                                      },
+                                      "type": "decision"
+                                    }
+                                  }
+                                ],
+                                "name": "Software\nAssurance \nMaturity",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 3100.0000000000005
+                                },
+                                "type": "decision"
+                              }
+                            },
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "1.0-2.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "< 1.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 3243.0000000000005
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "1.0 - 2.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 3308.0000000000005
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "2.0 - 3.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 3373.0000000000005
+                                      },
+                                      "type": "decision"
+                                    }
+                                  }
+                                ],
+                                "name": "Software \nAssurance \nMaturity",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 3308.0000000000005
+                                },
+                                "type": "decision"
+                              }
+                            },
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "2.0-3.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "< 1.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 3451.0000000000005
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "1.0 - 2.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 3516.0000000000005
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "2.0 - 3.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 3581.0000000000005
+                                      },
+                                      "type": "decision"
+                                    }
+                                  }
+                                ],
+                                "name": "Software \nAssurance \nMaturity",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 3516.0000000000005
+                                },
+                                "type": "decision"
+                              }
+                            }
+                          ],
+                          "name": "Security \nService \nArchitectural \nMaturity",
+                          "code": "",
+                          "expressionScope": {},
+                          "folded": false,
+                          "location": {
+                            "x": 462.5,
+                            "y": 3308.0000000000005
+                          },
+                          "type": "decision"
+                        }
+                      },
+                      {
+                        "computed": {
+                          "payoff": [
+                            "0",
+                            "0"
+                          ]
+                        },
+                        "name": "Replace",
+                        "payoff": [
+                          0,
+                          0
+                        ],
+                        "childNode": {
+                          "computed": {},
+                          "childEdges": [
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "< 1.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "< 1.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 3659.0000000000005
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "1.0 - 2.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 3724.0000000000005
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "2.0 - 3.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 3789.0000000000005
+                                      },
+                                      "type": "decision"
+                                    }
+                                  }
+                                ],
+                                "name": "Software\nAssurance \nMaturity",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 3724.0000000000005
+                                },
+                                "type": "decision"
+                              }
+                            },
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "1.0-2.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "< 1.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 3867.0000000000005
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "1.0 - 2.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 3932.0000000000005
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "2.0 - 3.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 3997.0000000000005
+                                      },
+                                      "type": "decision"
+                                    }
+                                  }
+                                ],
+                                "name": "Software \nAssurance \nMaturity",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 3932.0000000000005
+                                },
+                                "type": "decision"
+                              }
+                            },
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "2.0-3.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "< 1.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 4075.0000000000005
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "1.0 - 2.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 4140.000000000001
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "2.0 - 3.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 4205.000000000001
+                                      },
+                                      "type": "decision"
+                                    }
+                                  }
+                                ],
+                                "name": "Software \nAssurance \nMaturity",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 4140.000000000001
+                                },
+                                "type": "decision"
+                              }
+                            }
+                          ],
+                          "name": "Security \nService \nArchitectural \nMaturity",
+                          "code": "",
+                          "expressionScope": {},
+                          "folded": false,
+                          "location": {
+                            "x": 462.5,
+                            "y": 3932.0000000000005
+                          },
+                          "type": "decision"
+                        }
+                      },
+                      {
+                        "computed": {
+                          "payoff": [
+                            "0",
+                            "0"
+                          ]
+                        },
+                        "name": "Interface \nChange",
+                        "payoff": [
+                          0,
+                          0
+                        ],
+                        "childNode": {
+                          "computed": {},
+                          "childEdges": [
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "< 1.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "< 1.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 4283
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "1.0 - 2.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 4348
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "2.0 - 3.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 4413
+                                      },
+                                      "type": "decision"
+                                    }
+                                  }
+                                ],
+                                "name": "Software\nAssurance \nMaturity",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 4348
+                                },
+                                "type": "decision"
+                              }
+                            },
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "1.0-2.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "< 1.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 4491
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "1.0 - 2.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 4556
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "2.0 - 3.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 4621
+                                      },
+                                      "type": "decision"
+                                    }
+                                  }
+                                ],
+                                "name": "Software \nAssurance \nMaturity",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 4556
+                                },
+                                "type": "decision"
+                              }
+                            },
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "2.0-3.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "< 1.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 4699.000000000001
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "1.0 - 2.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 4764.000000000001
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "2.0 - 3.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 4829.000000000001
+                                      },
+                                      "type": "decision"
+                                    }
+                                  }
+                                ],
+                                "name": "Software \nAssurance \nMaturity",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 4764.000000000001
+                                },
+                                "type": "decision"
+                              }
+                            }
+                          ],
+                          "name": "Security \nService \nArchitectural \nMaturity",
+                          "code": "",
+                          "expressionScope": {},
+                          "folded": false,
+                          "location": {
+                            "x": 462.5,
+                            "y": 4556
+                          },
+                          "type": "decision"
+                        }
+                      },
+                      {
+                        "computed": {
+                          "payoff": [
+                            "0",
+                            "0"
+                          ]
+                        },
+                        "name": "Implementation/\nPatch",
+                        "payoff": [
+                          0,
+                          0
+                        ],
+                        "childNode": {
+                          "computed": {},
+                          "childEdges": [
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "< 1.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "< 1.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 4907.000000000001
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "1.0 - 2.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 4972.000000000001
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "2.0 - 3.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 5037.000000000001
+                                      },
+                                      "type": "decision"
+                                    }
+                                  }
+                                ],
+                                "name": "Software\nAssurance \nMaturity",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 4972.000000000001
+                                },
+                                "type": "decision"
+                              }
+                            },
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "1.0-2.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "< 1.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 5115
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "1.0 - 2.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 5180
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "2.0 - 3.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 5245
+                                      },
+                                      "type": "decision"
+                                    }
+                                  }
+                                ],
+                                "name": "Software \nAssurance \nMaturity",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 5180
+                                },
+                                "type": "decision"
+                              }
+                            },
+                            {
+                              "computed": {
+                                "payoff": [
+                                  "0",
+                                  "0"
+                                ]
+                              },
+                              "name": "2.0-3.0",
+                              "payoff": [
+                                0,
+                                0
+                              ],
+                              "childNode": {
+                                "computed": {},
+                                "childEdges": [
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "< 1.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 5323.000000000001
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "1.0 - 2.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 5388.000000000001
+                                      },
+                                      "type": "decision"
+                                    }
+                                  },
+                                  {
+                                    "computed": {
+                                      "payoff": [
+                                        "0",
+                                        "0"
+                                      ]
+                                    },
+                                    "name": "2.0 - 3.0",
+                                    "payoff": [
+                                      0,
+                                      0
+                                    ],
+                                    "childNode": {
+                                      "computed": {},
+                                      "childEdges": [],
+                                      "name": "",
+                                      "code": "",
+                                      "expressionScope": {},
+                                      "folded": false,
+                                      "location": {
+                                        "x": 762.5,
+                                        "y": 5453.000000000001
+                                      },
+                                      "type": "decision"
+                                    }
+                                  }
+                                ],
+                                "name": "Software \nAssurance \nMaturity",
+                                "code": "",
+                                "expressionScope": {},
+                                "folded": false,
+                                "location": {
+                                  "x": 612.5,
+                                  "y": 5388.000000000001
+                                },
+                                "type": "decision"
+                              }
+                            }
+                          ],
+                          "name": "Security \nService \nArchitectural \nMaturity",
+                          "code": "",
+                          "expressionScope": {},
+                          "folded": false,
+                          "location": {
+                            "x": 462.5,
+                            "y": 5180
+                          },
+                          "type": "decision"
+                        }
+                      }
+                    ],
+                    "name": "Change\nType",
+                    "code": "",
+                    "expressionScope": {},
+                    "folded": false,
+                    "location": {
+                      "x": 312.5,
+                      "y": 4244
+                    },
+                    "type": "decision"
+                  }
+                },
+                {
+                  "computed": {
+                    "payoff": [
+                      "0",
+                      "0"
+                    ]
+                  },
+                  "name": "None",
+                  "payoff": [
+                    0,
+                    0
+                  ],
+                  "childNode": {
+                    "computed": {},
+                    "childEdges": [
+                      {
+                        "computed": {},
+                        "name": "",
+                        "payoff": [
+                          0,
+                          0
+                        ],
+                        "childNode": {
+                          "computed": {},
+                          "childEdges": [],
+                          "name": "Usability/\nAccessibility \nMaturity Score",
+                          "code": "",
+                          "expressionScope": null,
+                          "folded": false,
+                          "location": {
+                            "x": 462.5,
+                            "y": 5258
+                          },
+                          "type": "decision"
+                        }
+                      }
+                    ],
+                    "name": "Lattix Coupling Score",
+                    "code": "",
+                    "expressionScope": {},
+                    "folded": false,
+                    "location": {
+                      "x": 312.5,
+                      "y": 5258
+                    },
+                    "type": "decision"
+                  }
+                }
+              ],
+              "name": "Security \nService \nRelation",
+              "code": "",
+              "expressionScope": {},
+              "folded": false,
+              "location": {
+                "x": 162.5,
+                "y": 3219.4375000000005
+              },
+              "type": "decision"
+            }
+          },
+          {
+            "computed": {
+              "payoff": [
+                "0",
+                "0"
+              ]
+            },
+            "name": "Software Application Supporting Component",
+            "payoff": [
+              0,
+              0
+            ],
+            "childNode": {
+              "computed": {},
+              "childEdges": [],
+              "name": "",
+              "code": "",
+              "expressionScope": {},
+              "folded": false,
+              "location": {
+                "x": 162.5,
+                "y": 3284.4375000000005
+              },
+              "type": "decision"
+            }
+          },
+          {
+            "computed": {
+              "payoff": [
+                "0",
+                "0"
+              ]
+            },
+            "name": "Supporting Environment",
+            "payoff": [
+              0,
+              0
+            ],
+            "childNode": {
+              "computed": {},
+              "childEdges": [],
+              "name": "",
+              "code": "",
+              "expressionScope": {},
+              "folded": false,
+              "location": {
+                "x": 162.5,
+                "y": 3349.4375000000005
+              },
+              "type": "decision"
+            }
+          }
+        ],
+        "name": "Change \nLocation",
+        "code": "",
+        "expressionScope": {},
+        "folded": false,
+        "location": {
+          "x": 12.5,
+          "y": 3284.4375000000005
+        },
+        "type": "decision"
+      }
+    ],
+    "texts": [],
+    "payoffNames": [
+      "Cost",
+      "Effect",
+      "Cost",
+      "Effect"
+    ],
+    "defaultCriterion1Weight": 1,
+    "weightLowerBound": 0,
+    "weightUpperBound": "Infinity"
+  },
+  "sensitivityAnalysis": {}
+}
