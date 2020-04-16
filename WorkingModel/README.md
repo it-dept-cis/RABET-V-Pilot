@@ -48,7 +48,7 @@ There will be a RABET-V public portal. The public portal serves the following pu
 - Lists all Product Versions submitted by RTPs, the date of submission and date of completion, the outcome of the submission, and the RABET-V report (if one completed)
 
 ### RABET-V Subscriber Access vs. Public
-Many of RABET-V reports are made public, but some of the sensitive detailed reports or appendices are not made publicly available. They are, however, available to RABET-V Subscribers. A RABET-V subscriber is a Federal, State, or local election authority that has requested access to all RABET-V reports and has agreed to treat the information and sensitive (not to be shared with the public or other organizations).
+Many of RABET-V reports are made public, but some sensitive reports are not made publicly available. They are, however, available to RABET-V Subscribers. A RABET-V Subscriber is a Federal, State, or local election authority that has requested access to all RABET-V reports and has agreed to treat the information as sensitive—i.e. not to be shared with the public or other organizations.
 
 
 ## Maturity Indexes
