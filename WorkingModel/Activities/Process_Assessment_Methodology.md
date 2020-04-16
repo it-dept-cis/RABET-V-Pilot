@@ -19,8 +19,8 @@ The OWASP SAMM evaluation will be conducted by a 3rd party evaluator. OWASP main
 
 The OWASP SAMM project makes a toolkit available. This [toolkit ](https://github.com/OWASP/samm/tree/master/Supporting%20Resources/v2.0/toolbox) provides an interview option for evaluating the provider's processes according to SAMM. Based on the answers, the toolkit will provide a maturity score for each Security Practice. 
 
-### Discussion Sessions (~8hrs)
-These sessions are for interactive discussions with different roles supporting the efforts related to Software at an organization, which will normally involve two interviewers and each will alst approximately 60-90 minutes in legth. The sessions will driven by specific topics found in the SAMM toolkit will not be checklist based but discussions on how processes and procedure are implemented and conducted throughout the organization. Below are some of the common role that would be interviewed, however representatives from the logical business units are also useful candidate for interviewing
+### Discussion Sessions
+These sessions are for interactive discussions with  the different roles supporting the efforts related to software development at an organization. The internviews  will normally involve two interviewers and each will last approximately 60-90 minutes in length. While sessions are driven by topics found in the SAMM toolkit, they will not be checklist-based, but discussions on how processes and procedure are implemented and conducted throughout the organization. Below are some of the common role that would be interviewed, however representatives from the logical business units are also useful candidates for interviewing:
 
 * Application/Software Security lead (or responsible party) with responsibilities for defining and managing the integration of security into software
 
@@ -38,7 +38,7 @@ These sessions are for interactive discussions with different roles supporting t
 
 *  Incident response/Support or similar roles with responsibilities for helping support, triage, respond to issues in production systems
 
-### Analysis and Reporting (~10hrs)
+### Analysis and Reporting 
 
 Analysis of the provided documentation (if any) along with the captured session notes will be used to complete a SAMM assessment for the organization. At the conclusion of the analysis, the following artifacts will be delivered as part of the work product for the organization:
 
@@ -153,6 +153,7 @@ Maturity level 3 requires regular conformity checks with the hardening guidance.
 
 Maturity level 3 requires a list of components and versions. This list should be submitted to the RABET-V iteration a evidence of recent patches. 
 
+
 **Operational Management/Data Protection**
 
 Maturity Level 3 requires automated monitoring of attempted or actual violations of the data protection policy. Results from this monitoring can be submitted to RABET-V and assist with an assessment of security controls and response. 
@@ -196,7 +197,7 @@ At a base level the organization should have a documented set of security requir
 
 **Security Architecture**
 
-The second level of maturity dictates that organizations should have an established list of recommended techologies and a list of resusable security services that are use to support each of the products.  
+The second level of maturity dictates that organizations should have an established list of recommended techologies and a list of resusable security services that are use to support each of the products.  These two could be considered useful artifacts for more advance verification efforts. 
 
 ### Implementation
 
