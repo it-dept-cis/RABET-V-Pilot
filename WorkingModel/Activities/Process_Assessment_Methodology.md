@@ -193,13 +193,17 @@ At a base level the organization should have a documented set of security requir
 
 #### Security Architecture
 
-The second level of maturity dictates that organizations should have an established list of recommended techologies and a list of resusable security services that are use to support each of the products.  These two could be considered useful artifacts for more advance verification efforts. 
+The second level of maturity dictates that organizations should have an established list of recommended techologies and a list of resusable security services that are use to support each of the products. These two could be considered useful artifacts for more advanced verification efforts. 
 
 ### Implementation
 
 #### Secure Build
 
+At a base level, the organization should have a record of all dependencies used in the production environment. The second level of maturity dictates that this list of dependencies should be assessed as to whether each dependency meets a set of criteria (e.g. no known vulnerabilities, up-to-date version, actively supported and maintained). The third level of maturity is reached with the development of a formalized whitelist of approved dependencies and versions, which is integrated into the build process.
+
 #### Secure Deployment
+
+
 
 #### Defect Management
 
