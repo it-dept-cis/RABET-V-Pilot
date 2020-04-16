@@ -169,13 +169,13 @@ In this section, we describe the implication of maturity scores on the RABET-V t
 
 #### Strategy & Metrics
 
-Want this to be a 1 or higher. Beyond that, it really depends on what the KPIs are that they are tracking. Some of the KPIs that may be relevant for the secure software development lifecycle are the Mean Time to Remediation, Flaw Creation Rate, and Portion of Application covered by Automated Security Testing.
+At a base level, the organization should identify the means of measuring the effectiveness of any security program. These indicators may be different based on the organization, but could include Mean Time to Remediation, Flaw Creation Rate, and Portion of Application covered by Automated Security Testing. Level two involves developing a strategy to ensure application security and setting goals for each of the indicators to monitor and track progress.
 
 #### Policy & Compliance
 
-If they are tracking their compliance with the requirements under test, this one can be very helpful and is really a minimum requirement.
+Level one of Policy & Compliance expects that the organization has a common set of policies and standards that govern all aspects of software development. The policies protect the integrity of its computing environment, safety and privacy of the data, and maturity of the software development life-cycles. The standards set requirements for technologies—such as languages and frameworks—used within the organization.
 
-Level 1 of Policy and Standards is a minimum. Level 2 of Compliance Management is what I would like to be a minimum but not sure our pilot participants will get that far at this point.
+The base level of Compliance Management involves creating a comprehensive list of all compliance requirements and what triggers potentially put an application in scope. One useful artifact is a compliance matrix—aimed at the organizational level rather than the application level—which provides a basic understanding of useful compliance requirements. At level two, each external compliance obligation should be mapped to a well-defined set of application requirements and the organization has procedures in place to verify compliance against the requirements.
 
 #### Education & Guidance
 
@@ -206,6 +206,8 @@ At a base level, the organization should have a record of all dependencies used 
 
 
 #### Defect Management
+
+
 
 ### Verification
 
