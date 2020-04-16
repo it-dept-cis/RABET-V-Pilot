@@ -213,11 +213,15 @@ With level one of Defect Management, an organization should establish a single l
 
 #### Architecture Assessment
 
-
+The Architecture Assessment builds on the work from Governance and Design to identify compliance issues and develop mitigations for known threats. At a basic level, the architecture is reviewed for structural stability and all missing security controls are logged as defects.
 
 #### Requirements-driven Testing
 
+Level one of Requirements-driven Testing requires testing the correct functioning of the standard security controls—i.e. aspects of the service that control confidentiality, integrity, and availability. Testing at this level should also cover fuzz testing the main input parameters and the inspection of as many application crashes as possible for security impact.
+
 #### Security Testing
+
+Security Testing involves both in-depth testing based on knowledge of an application and its business logic and automated testing for scalability.
 
 ### Operations
 
