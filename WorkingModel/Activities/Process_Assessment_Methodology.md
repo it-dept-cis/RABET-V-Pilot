@@ -1,5 +1,3 @@
-[toc]
-
 # Process Assessment Methodology
 
 The RABET-V Process Assessment Methodology measures the [Software Development Maturity (SDM)](../MaturityIndexes/Software_Development_Maturity_Index.md) of the technology provider. It uses the OWASP Software Assurance Maturity Model (SAMM) as the basis for its evaluation. This evaluation determines a maturity score for the technology provider in 15 areas. These maturity scores are used to help determine the types of testing conducted by RABET-V for product changes. 
