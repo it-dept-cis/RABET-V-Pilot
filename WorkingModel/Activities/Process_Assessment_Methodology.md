@@ -213,7 +213,7 @@ With level one of Defect Management, an organization should establish a single l
 
 #### Architecture Assessment
 
-The Architecture Assessment builds on the work from Governance and Design to identify compliance issues and develop mitigations for known threats. At a basic level, the architecture is reviewed for structural stability and all missing security controls are logged as defects.
+The Architecture Assessment builds on the work from Governance and Design to identify compliance issues and develop mitigations for known threats. At a base level, the architecture is reviewed for structural stability and all missing security controls are logged as defects.
 
 #### Requirements-driven Testing
 
@@ -227,9 +227,15 @@ Security Testing involves both in-depth testing based on knowledge of an applica
 
 #### Incident Management
 
+At a base level, the expectation is for the organization to perform best-effort incident detection. This would involve designating a contact point and person for the creation and handling of security events, developing an incident documentation process, analyzing log data based on the log retention schedule, and matching the frequency of analysis to the level of importance of the application.
+
 #### Environment Management
 
+Eventually, every aspect of the application or service starts to show its age. For this reason, over time, parts of the application will need to be updated, patched, or culled. At a base level, this process is performed on a best-effort basis using available information for configuration hardening and attemping/testing updates to system and application components. At the second—and more preferable—level, this process is performed using formal processes and baselines which should be well-documented, timely, and completed according to a schedule.
+
 #### Operational Management
+
+The Operational Management of applications within an organization is based around the people and processes. At a base level, basic data protection practices—e.g. knowing what's processed and stored in an application, what is the sensitivity level of the data, and how to prevent compromising the data—should be in place. Unused application should be identified and decommissioned as often as possible. There should also be a process in place for sunsetting legacy applications and prevent unexpected disruptions for customers and users.
 
 ## Technical Guidance
 
