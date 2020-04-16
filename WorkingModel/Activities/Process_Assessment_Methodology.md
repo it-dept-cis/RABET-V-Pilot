@@ -207,11 +207,13 @@ At a base level, the organization should have a record of all dependencies used 
 
 #### Defect Management
 
-
+With level one of Defect Management, an organization should establish a single location for tracking defects in an application. The defects should also be clearly defined and may include threat assessments, penetration tests, and output from static and dynamic analysis scanning tools. The organization should also have a rudimentary defect classification system in place to prioritize the handling of defects. At level two, a single severity scheme is in place across the organization and each severity level has clearly defined service-level agreements (SLAs) for resolution.
 
 ### Verification
 
 #### Architecture Assessment
+
+
 
 #### Requirements-driven Testing
 
