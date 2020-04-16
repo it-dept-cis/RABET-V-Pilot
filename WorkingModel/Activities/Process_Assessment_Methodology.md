@@ -19,15 +19,44 @@ The OWASP SAMM evaluation will be conducted by a 3rd party evaluator. OWASP main
 
 The OWASP SAMM project makes a toolkit available. This [toolkit ](https://github.com/OWASP/samm/tree/master/Supporting%20Resources/v2.0/toolbox) provides an interview option for evaluating the provider's processes according to SAMM. Based on the answers, the toolkit will provide a maturity score for each Security Practice. 
 
+### Discussion Sessions (~8hrs)
+These sessions are for interactive discussions with different roles supporting the efforts related to Software at an organization, which will normally involve two interviewers and each will alst approximately 60-90 minutes in legth. The sessions will driven by specific topics found in the SAMM toolkit will not be checklist based but discussions on how processes and procedure are implemented and conducted throughout the organization. Below are some of the common role that would be interviewed, however representatives from the logical business units are also useful candidate for interviewing
+
+* Application/Software Security lead (or responsible party) with responsibilities for defining and managing the integration of security into software
+
+* Business Analyst or similar role with responsibilities related to requirements, user stories, etc.
+
+*  Project Manager or similar role with responsibilities for guiding teams through the processes to develop, acquire, and/or maintain software
+
+*  Application Architect or similar role with responsibilities to help ensure good design and architecture for applications is defined
+
+*  Developer or similar role that has responsibilities to write code and some testing
+
+*  QA/Test or similar role that handling the primary testing for software or applications
+
+*  DevOps Eng or similar role with responsibilities related to build and deployment processes for software
+
+*  Incident response/Support or similar roles with responsibilities for helping support, triage, respond to issues in production systems
+
+### Analysis and Reporting (~10hrs)
+
+Analysis of the provided documentation (if any) along with the captured session notes will be used to complete a SAMM assessment for the organization. At the conclusion of the analysis, the following artifacts will be delivered as part of the work product for the organization:
+
+* High level executive summary of the process, findings, maturity level score and tailored recommendations in a PowerPoint format
+
+* Completed SAMM Toolbox in Excel format
+
+* Interview session notes in a Word document format
+
 ## Determining Reliable Artifacts
 
-One of the advantages of having higher maturity scores with SAMM is that the provider's processes produce more reliable artifacts which can be used by RABET-V. These artifacts may reduce the assessed risk and/or eliminate the need for the RABET-V process to reproduce these artifacts. The evaluation will determine which of these artifacts are reliable and robust enough to be used by RABET-V.
+One of the advantages of having higher maturity scores with SAMM is that the provider's processes produce more reliable artifacts which can be used by RABET-V. These artifacts may reduce the assessed risk and/or eliminate the need for the RABET-V process to reproduce these artifacts. The evaluation will determine which of these artifacts are reliable and robust enough to be used by RABET-V. 
 
 The following are the artifacts required by certain SAMM maturity levels which may be useful in a RABET-V iteration.
 
 **Governance/Measure and Improve Stream**
 
-Maturity Level 2 and 3 have defined KPIs reflecting application security. The KPIs and the current KPI results can be used by the RABET-V process to assess the security health of the system. For example, one KPI may be the number of reported security incidents and how quickly they were addressed. This information can assist RABET-V evaluators to determine the effectiveness of current security controls and response mechanisms. 
+Maturity Level 2 and 3 have defined KPIs reflecting application security. The KPIs and the current KPI results can be used by the RABET-V process to assess the security health of the system. For example, one KPI may be the number of identified vulnerabilities and how quickly they were addressed. This information can assist RABET-V evaluators to determine the effectiveness of current security controls and response mechanisms.  In addition  SAMM requires the maintenance and documentation of an organization's risk management process, one such artifact that may be of value to the RABET-V evaluators is an updated risk profile that details the outputs of the organization's risk assessment. 
 
 **Policy and Compliance/Policy and Standards Stream**
 
@@ -39,7 +68,7 @@ Maturity level 2 requiring mapping of external compliance obligations to well-de
 
 **Education and Guidance**
 
-None
+Level 2 and 3 of this stream requires that the organization has established standard and guidelines relating to the Application Security, such documentation could be useful for RABET-V evaluator to determine a base level of organizational maturity. 
 
 **Threat Assessment/Threat Modeling Stream**
 
@@ -54,9 +83,12 @@ Maturity level 2 requires measurement of key performance indicators for key vend
 
 Maturity level 3 requires verification that solution meets quality and security objectives before every major release. Evidence that this was done, such as a checklist, would be a useful artifact for the RABET-V process.
 
+
+All levels of security requirements requires the creation and maintenance of a security requirements for applications. The inclusion of these securtiy requirements and their alignment to the threats and risks identified in the threat modeling and risk assessment section would be useful for the RABET-V assesors to validate the security requirements. 
+
 **Secure Architecture/Architecture Design Stream**
 
-All maturity levels produce artifacts which will be useful during the Architecture Review. The greater the maturity, the more useful the artifact will be to the architecture review. These will assist in expediting the architecture review and ensuring its output is an accurate as possible. 
+All maturity levels produce artifacts which will be useful during the Architecture Review. The greater the maturity, the more useful the artifact will be to the architecture review. These will assist in expediting the architecture review and ensuring its output is an accurate as possible.  
 
 **Secure Architecture/Technology Management Stream**
 
@@ -66,15 +98,16 @@ Maturity level 1 requires a list of the most important technologies used in the 
 
 Maturity level 3 requires that the application build fails if it doesn't meet a predefined security baseline. Having a copy of this security baseline and the results of the build process verifying compliance with the security baseline will prove very useful for each RABET-V iteration. Depending on the content of the security baseline, it can greatly streamline the verification process. 
 
-**Secure Architecture/Software Dependencies**
+**Secure Build/ Software Dependencies**
 
 Maturity level 1 requires the documentation of software dependencies at least once in the last 3 months. Providing updated documentation of dependencies can assist with the initial and subsequent RABET-V iterations. 
 
 Maturity level 3 requires the scanning of dependencies using a static analysis tool. This will produce results which will be useful in the RABET-V process. 
 
-**Secure Deployment**
 
-None
+**Secure Deployment/Deployment**
+
+All maturity requires the creation and maintenance of a deployement process, this artifact and it's inclusion of the secure means of handing secrets would be useful for RABET-V assessors. Depending on how the deployment is managed, scripts and associated outputs of the deployment process could be seen as useful artifacts. 
 
 **Defect Management/Defect Tracking**
 
@@ -98,7 +131,7 @@ Maturity level 2 requires the capturing of results. The extent of the test suite
 
 **Requirements Testing/Misuse/Abuse Testing**
 
-None
+Maturity level 2 requires the creation of abuse profiles and personas, such documentation which cold be included as part of the threat modeling documentation would be useful for the RABET-V assessors. 
 
 **Security Testing/Scalable Baseline**
 
@@ -138,7 +171,8 @@ In this section, we describe the implication of maturity scores on the RABET-V t
 
 **Strategy & Metrics**
 
-Want this to be a 1 or higher. Beyond that, it really depends on what the KPIs are that they are tracking. Perhaps we need to give some thought to the types of KPIs we are looking for in order to be able to give relief based on this one. 
+Want this to be a 1 or higher. Beyond that, it really depends on what the KPIs are that they are tracking. Some of the KPIs that may be relevant for the secure software development lifecycle are the Mean Time to Remediation, Flaw Creation Rate, and Portion of Application covered by Automated Security Testing 
+
 
 **Policy & Compliance**
 
@@ -147,15 +181,22 @@ Level 1 of Policy and Standards is a minimum. Level 2 of Compliance Management i
 
 **Education & Guidance**
 
+Level one of Education & Guidance requires the creation of a training program that involves various different topics, such as specific application best practices and is incorporated as part of the onboarding process. Higher levels of this practice involves the additional coverage of the training program to other members of the workforce and deeper coverage of the topics associated with SDLC. Having a general education program in place that details who the program applies to and the topics coverd by the program could be considered as a minimum. 
 
 
 ### Design
 
 **Threat Assessment**
+The practices in this stream focus upon building and maintaining the core risk profiles of the organization and assuring that they're aligned to both the business needs of the organizations and risk the organization faces. Having both the ability to access the final risk registry and threat model methodology used would be beneficial for the assessment and could present a reasonable starting point. 
+
 
 **Security Requirements**
+At a base level the organization should have a documented set of security requirements, with higher maturity levels having it in a more standardized notation and including active participation and developmment from the application development team. Having a well documented set of security requirements should be considered a baseline for verification efforts.
+
 
 **Security Architecture**
+
+The second level of maturity dictates that organizations should have an established list of recommended techologies and a list of resusable security services that are use to support each of the products.  
 
 ### Implementation
 
