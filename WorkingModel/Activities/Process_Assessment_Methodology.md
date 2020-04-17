@@ -21,7 +21,7 @@ The OWASP SAMM project makes a toolkit available. This [toolkit](https://github.
 
 ### Discussion Sessions
 
-These sessions are for interactive discussions with  the different roles supporting the efforts related to software development at an organization. The internviews  will normally involve two interviewers and each will last approximately 60-90 minutes in length. While sessions are driven by topics found in the SAMM toolkit, they will not be checklist-based, but discussions on how processes and procedure are implemented and conducted throughout the organization. Below are some of the common role that would be interviewed, however representatives from the logical business units are also useful candidates for interviewing:
+These sessions are for interactive discussions with  the different roles supporting the efforts related to software development at an organization. The interviews  will normally involve two interviewers and each will last approximately 60-90 minutes in length. While sessions are driven by topics found in the SAMM toolkit, they will not be checklist-based, but discussions on how processes and procedure are implemented and conducted throughout the organization. Below are some of the common role that would be interviewed, however representatives from the logical business units are also useful candidates for interviewing:
 
 * Application/Software Security lead (or responsible party) with responsibilities for defining and managing the integration of security into software
 
@@ -65,7 +65,7 @@ Maturity level 2 requires completed verification checklists and maturity level 3
 
 ### Policy and Compliance/Compliance Management Stream
 
-Maturity level 2 requiring mapping of external compliance obligations to well-defined set of application requirements. This mapping should be done for the Non-Voting Election Technology Security Best Practices. If done, maturity level 3 requires regularly reporting on compliance metrics. These reports would greatly assist and help expedite the RABET-V process.
+Maturity level 2 requires mapping of external compliance obligations to well-defined set of application requirements. This mapping should be done for the Non-Voting Election Technology Security Best Practices. If done, maturity level 3 requires regularly reporting on compliance metrics. These reports would greatly assist and help expedite the RABET-V process.
 
 ### Education and Guidance
 
@@ -129,7 +129,7 @@ Maturity level 2 requires the capturing of results. The extent of the test suite
 
 ### Requirements Testing/Misuse/Abuse Testing
 
-Maturity level 2 requires the creation of abuse profiles and personas, such documentation which cold be included as part of the threat modeling documentation would be useful for the RABET-V assessors. 
+Maturity level 2 requires the creation of abuse profiles and personas, such documentation which could be included as part of the threat modeling documentation would be useful for the RABET-V assessors. 
 
 ### Security Testing/Scalable Baseline
 
@@ -137,7 +137,7 @@ Maturity level 3 requires the tracking and reviewing of security test results. T
 
 ### Security Testing/Deep Understanding
 
-Maturity level 2 and 3 require a review of the results. These results can be used by RABET-V to augment or substitute additional testing. 
+Maturity level 2 and 3 require a review of the results from testing such as penetration tests in maturity level 2. These results can be used by RABET-V to augment or substitute additional testing. 
 
 ### Incident Management
 
@@ -149,7 +149,7 @@ Maturity level 3 requires regular conformity checks with the hardening guidance.
 
 ### Environment Management/Patching and Updating
 
-Maturity level 3 requires a list of components and versions. This list should be submitted to the RABET-V iteration a evidence of recent patches.
+Maturity level 3 requires a list of components and versions. This list should be submitted to the RABET-V iteration as evidence of recent patches.
 
 ### Operational Management/Data Protection
 
@@ -179,7 +179,7 @@ The base level of Compliance Management involves creating a comprehensive list o
 
 #### Education & Guidance
 
-Level one of Education & Guidance requires the creation of a training program that involves various different topics, such as specific application best practices and is incorporated as part of the onboarding process. Higher levels of this practice involves the additional coverage of the training program to other members of the workforce and deeper coverage of the topics associated with SDLC. Having a general education program in place that details who the program applies to and the topics coverd by the program could be considered as a minimum.
+Level one of Education & Guidance requires the creation of a training program that involves various different topics, such as specific application best practices that is incorporated as part of the onboarding process. Higher levels of this practice involves the additional coverage of the training program to other members of the workforce and deeper coverage of the topics associated with SDLC. Having a general education program in place that details who the program applies to and the topics coverd by the program could be considered as a starting point.
 
 ### Design
 
@@ -203,25 +203,25 @@ At a base level, the organization should have a record of all dependencies used 
 
 #### Secure Deployment
 
-
+In the base of the secure deployment maturity organizations are are required to have a documented process for conducting deployments, including the appropriate use and handling of application secrets, with the higher levels of maturity requiring the use of automated processes that leverage security checks as part of the process. 
 
 #### Defect Management
 
-With level one of Defect Management, an organization should establish a single location for tracking defects in an application. The defects should also be clearly defined and may include threat assessments, penetration tests, and output from static and dynamic analysis scanning tools. The organization should also have a rudimentary defect classification system in place to prioritize the handling of defects. At level two, a single severity scheme is in place across the organization and each severity level has clearly defined service-level agreements (SLAs) for resolution.
+With level one of Defect Management, an organization should establish a single location for tracking defects in an application. The defects should also be clearly defined and may include threat assessments, penetration tests, and output from static and dynamic analysis scanning tools. The organization should also have a rudimentary defect classification system in place to prioritize the handling of defects based on risk. At level two, a single severity scheme is in place across the organization and each severity level has clearly defined service-level agreements (SLAs) for resolution.
 
 ### Verification
 
 #### Architecture Assessment
 
-The Architecture Assessment builds on the work from Governance and Design to identify compliance issues and develop mitigations for known threats. At a base level, the architecture is reviewed for structural stability and all missing security controls are logged as defects.
+The Architecture Assessment builds on the work from Governance and Design to identify compliance issues and develop mitigations for known threats. At a base level, the architecture is reviewed for structural stability and all missing security controls are logged as defects. Higher levels of maturity will also include activities periodic re-evaluations of the threat assessments as well as the review of the internal and external requirements, which are either logged as defects if unaddressed for organizations of the highest level of maturity. 
 
 #### Requirements-driven Testing
 
-Level one of Requirements-driven Testing requires testing the correct functioning of the standard security controls—i.e. aspects of the service that control confidentiality, integrity, and availability. Testing at this level should also cover fuzz testing the main input parameters and the inspection of as many application crashes as possible for security impact.
+Level one of Requirements-driven Testing requires testing the correct functioning of the standard security controls—i.e. aspects of the service that control confidentiality, integrity, and availability. Testing at this level should also cover fuzz testing the main input parameters and the inspection of as many application crashes as possible for security impact. In addition for organizations for maturity level 2 or higher will have security tests automated and documented using a standardized framework or DSL. For organizations with the highest level of maturity or organizations that have a high availability requirement, should also conduct security stress testing to assure that the application can perform in adverse circumstances.
 
 #### Security Testing
 
-Security Testing involves both in-depth testing based on knowledge of an application and its business logic and automated testing for scalability.
+Security Testing involves both in-depth testing based on knowledge of an application and its business logic and automated testing for scalability. For organization's of all maturity this testing should be done in an automated fashion with some level of manual review for high risk components. Organizations with a higher level of maturity will have this security testing build into their build and deploy process with a feedback loop that helps improve the organization's secure development practices.
 
 ### Operations
 
@@ -231,7 +231,7 @@ At a base level, the expectation is for the organization to perform best-effort 
 
 #### Environment Management
 
-Eventually, every aspect of the application or service starts to show its age. For this reason, over time, parts of the application will need to be updated, patched, or culled. At a base level, this process is performed on a best-effort basis using available information for configuration hardening and attemping/testing updates to system and application components. At the second—and more preferable—level, this process is performed using formal processes and baselines which should be well-documented, timely, and completed according to a schedule.
+Eventually, every aspect of the application or service starts to show its age. For this reason, over time, parts of the application will need to be updated, patched, or culled. At a base level, this process is performed on a best-effort basis using available information for configuration hardening and attemping/testing updates to system and application components. At the second—and more preferable—level, this process is performed using formal processes and baselines which should be well-documented, timely, and completed according to a schedule. The final level of maturity has the organization assessing the technology against the established baseline with a methodology in place both to review the baseline and remediate any noncompliant systems.
 
 #### Operational Management
 
