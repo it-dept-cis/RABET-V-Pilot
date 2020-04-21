@@ -30,12 +30,16 @@ Technology providers must submit a completed request package to become an RTP. A
 
 Technology providers who wish to remain RABET-V registered technology providers must agree to the RABET-V Program Commitment. The commitment establishes the ethical and responsible behavior expected by all program providers. The program commitment is subject to change. The Commitment includes:
 * Accurate representation of the product capabilities and its security provisions to RABET-V reviewers, customers, and other stakeholders
-* Organization implementation and regular assessment of an organizational security framework like the CIS Controls.  
+* Organization implementation and regular assessment of an organizational security framework like the CIS Controls.  Organization security audits must be performed regularly and the report provided to RABET-V. The report will be provided to RABET-V Subscribers. 
 * Continuous product maintenance, including the patching of components within reasonable time frames
 
 ## Provider Deregistration and Product Delisting
 
-TBD
+Failure to meet the requirements of the program commitment can lead to deregistration of the Registered Technology Provider and/or delisting of the provider's products. 
+
+- Inaccurate representation - if the vendor is found to have intentionally mislead RABET-V authorities or its customers as to the organization or the product's capabilities, the vendor risks being deregistered from the program and all product's delisted from the RABET-V registry. 
+- Lacking organization security - if the vendors fails to subscribe to an organizational security framework, like the CIS controls, and maintain regular audits, the vendor risks being deregistered from the program and all product's delisted from the RABET-V registry.
+- Lacking product maintenance - if the vendor is no longer properly supporting a product with regular monitoring and maintenance, RABET-V will delist the product from its registry. 
 
 
 ## RABET-V Public Portal
@@ -44,11 +48,11 @@ TBD
 There will be a RABET-V public portal. The public portal serves the following purposes:
 
 - Lists all Registered Technology Providers (RTP)
-- List all submitted Products and the product's latest goals, expected usage, and security claims
+- Provides a product registry which list all submitted products and the product's latest goals, expected usage, and security claims
 - Lists all Product Versions submitted by RTPs, the date of submission and date of completion, the outcome of the submission, and the RABET-V report (if one completed)
 
 ### RABET-V Subscriber Access vs. Public
-Many of RABET-V reports are made public, but some of the sensitive detailed reports or appendices are not made publicly available. They are, however, available to RABET-V Subscribers. A RABET-V subscriber is a Federal, State, or local election authority that has requested access to all RABET-V reports and has agreed to treat the information and sensitive (not to be shared with the public or other organizations).
+Many of RABET-V reports are made public, but some sensitive reports are not made publicly available. They are, however, available to RABET-V Subscribers. A RABET-V Subscriber is a Federal, State, or local election authority that has requested access to all RABET-V reports and has agreed to treat the information as sensitive—i.e. not to be shared with the public or other organizations.
 
 
 ## Maturity Indexes

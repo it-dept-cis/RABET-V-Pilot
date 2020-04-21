@@ -15,7 +15,7 @@ The right or a permission that is granted to a system entity to access a system 
 
 ### Injection Prevention
 
-TBD [OWASAP uses but does not define]
+The rejection or sanitization of data input and output to ensure malicious executable code is not executed.
 
 ### Key/Secret/Credentials Management
 
@@ -31,7 +31,7 @@ The systemic management and monitoring of the events occurring within an organiz
 
 ### Data integrity protection
 
-Assurance that that data has not been altered in an unauthorized manner. Data integrity covers data in storage, during processing, and while in transit. [adapted from NIST SP 800-33]
+Assurance that the data has not been altered in an unauthorized manner. Data integrity covers data in storage, during processing, and while in transit. [adapted from NIST SP 800-33]
 
 ### Data confidentiality protection
 
