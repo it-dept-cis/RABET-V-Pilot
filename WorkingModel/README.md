@@ -67,7 +67,7 @@ RABET-V evaluates the security, reliability, and usability of products and provi
 ## Activity Process Descriptions
 The RABET-V Process consist of eight activities, beginning with Product Submission. The process flow will vary for each iteration.  
 
-![RABET-V Process Model](https://github.com/it-dept-cis/RABET-V-Pilot/blob/master/WorkingModel/election_verification_proc_model-2020-0115.png "RABET-V Process Model")
+![RABET-V Process Model](./election_verification_proc_model-2020-0115.png "RABET-V Process Model")
 
 ### 1. [Provider Submission](Activities/Provider_Submission.md) 
 ### 2. [Submission Review Process](Activities/Submission_Review_Process.md)
