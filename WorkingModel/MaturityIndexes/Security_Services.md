@@ -15,7 +15,7 @@ The right or a permission that is granted to a system entity to access a system 
 
 ### Injection Prevention
 
-TBD [OWASAP uses but does not define]
+The rejection or sanitization of data input and output to ensure malicious executable code is not executed.
 
 ### Key/Secret/Credentials Management
 
