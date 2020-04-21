@@ -31,7 +31,7 @@ The systemic management and monitoring of the events occurring within an organiz
 
 ### Data integrity protection
 
-Assurance that that data has not been altered in an unauthorized manner. Data integrity covers data in storage, during processing, and while in transit. [adapted from NIST SP 800-33]
+Assurance that the data has not been altered in an unauthorized manner. Data integrity covers data in storage, during processing, and while in transit. [adapted from NIST SP 800-33]
 
 ### Data confidentiality protection
 
