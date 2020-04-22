@@ -8,6 +8,8 @@ from recommonmark.parser import CommonMarkParser
 source_parsers = {
    '.md': CommonMarkParser
 }
+# Required when running on Windows
+image_converter = 'C:\Program Files\ImageMagick-7.0.10-Q16\magick.exe'
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
@@ -47,6 +49,7 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
+    'sphinx.ext.imgconverter',
     'recommonmark',
 ]
 
@@ -156,7 +159,6 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
 #
-# html_title = 'EAVS Section B Data Standard v0.4'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
@@ -176,7 +178,7 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+# html_static_path = ['_static']
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
@@ -282,8 +284,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'EAVSSectionBDataStandard.tex', 'EAVS Section B Data Standard Documentation',
-     'Jared Marcotte', 'manual'),
+    (master_doc, 'RABETV.tex', 'RABET-V',
+     'RABET-V Team', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -317,45 +319,3 @@ latex_documents = [
 # If false, no module index is generated.
 #
 # latex_domain_indices = True
-
-
-# -- Options for manual page output ---------------------------------------
-
-# One entry per manual page. List of tuples
-# (source start file, name, description, authors, manual section).
-man_pages = [
-    (master_doc, 'eavssectionbdatastandard', 'EAVS Section B Data Standard Documentation',
-     [author], 1)
-]
-
-# If true, show URL addresses after external links.
-#
-# man_show_urls = False
-
-
-# -- Options for Texinfo output -------------------------------------------
-
-# Grouping the document tree into Texinfo files. List of tuples
-# (source start file, target name, title, author,
-#  dir menu entry, description, category)
-texinfo_documents = [
-    (master_doc, 'EAVSSectionBDataStandard', 'EAVS Section B Data Standard Documentation',
-     author, 'EAVSSectionBDataStandard', 'One line description of project.',
-     'Miscellaneous'),
-]
-
-# Documents to append as an appendix to all manuals.
-#
-# texinfo_appendices = []
-
-# If false, no module index is generated.
-#
-# texinfo_domain_indices = True
-
-# How to display URL addresses: 'footnote', 'no', or 'inline'.
-#
-# texinfo_show_urls = 'footnote'
-
-# If true, do not generate a @detailmenu in the "Top" node's menu.
-#
-# texinfo_no_detailmenu = False
