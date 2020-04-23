@@ -64,7 +64,7 @@ RABET-V evaluates the security, reliability, and usability of products and provi
 * [Security Services Architectural Maturity (SSAM) Index](./MaturityIndexes/Security_Services_Architectural_Maturity_Index) - identifies the maturity and reliability of the product architecture to support each of the ten security services. 
 
 
-## Process Activity Descriptions
+## Activity Process Descriptions
 The RABET-V Process consist of eight activities, beginning with Product Submission. The process flow will vary for each iteration.  
 
 ![RABET-V Process Model](https://github.com/it-dept-cis/RABET-V-Pilot/blob/master/WorkingModel/election_verification_proc_model-2020-0115.png "RABET-V Process Model")
