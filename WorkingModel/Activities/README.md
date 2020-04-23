@@ -1,4 +1,4 @@
-# RABET-V Activity Process Details
+# RABET-V Activity Process Descriptions
 
 The Rapid Architecture-Based Election Technology Verification (RABET-V) process consists of eight total activities, five of which are conditional activities that are scaled to meet the needs of the particular review. This scaling provides a rapid, risk-based testing strategy informed by the product’s architecture, the developer’s processes, and their security claims.
 
