@@ -1,0 +1,24 @@
+( ([ {lemma:/\Q1st\E/} || {word:/\Q1st\E/} ][ {lemma:/\Qdegree\E/} || {word:/\QDegree\E/} ][ {lemma:/\Qcomponent\E/} || {word:/\QComponent\E/} ]) )	GLOSSARY_TERM	1st Degree Component	20
+( ([ {lemma:/\Q2nd\E/} || {word:/\Q2nd\E/} ][ {lemma:/\Qdegree\E/} || {word:/\QDegree\E/} ][ {lemma:/\Qcomponent\E/} || {word:/\QComponent\E/} ]) )	GLOSSARY_TERM	2nd Degree Component	20
+( ([ {lemma:/\Qdata\E/} || {word:/\Qdata\E/} ][ {lemma:/\Qcriticality\E/} || {word:/\Qcriticality\E/} ][ {lemma:/\Qlabel\E/} || {word:/\Qlabel\E/} ]) )	GLOSSARY_TERM	data criticality label	22
+( ([ {lemma:/\Qdata\E/} || {word:/\Qdata\E/} ][ {lemma:/\Qsensitivity\E/} || {word:/\Qsensitivity\E/} ]) )	GLOSSARY_TERM	data sensitivity	16
+( ([ {lemma:/\Qdata\E/} || {word:/\Qdata\E/} ][ {lemma:/\Qsensitivity\E/} || {word:/\Qsensitivity\E/} ][ {lemma:/\Qlabel\E/} || {word:/\Qlabel\E/} ]) )	GLOSSARY_TERM	data sensitivity label	22
+( ([ {lemma:/\Qfunction\E/} || {word:/\Qfunctions\E/} ]) )	GLOSSARY_TERM	functions	9
+( ([ {lemma:/\Qport\E/} || {word:/\Qport\E/} ]) )	GLOSSARY_TERM	port	4
+( ([ {lemma:/\Qprocess\E/} || {word:/\Qprocess\E/} ]) )	GLOSSARY_TERM	process	7
+( ([ {lemma:/\Qproduct\E/} || {word:/\Qproduct\E/} ]) )	GLOSSARY_TERM	product	7
+( ([ {lemma:/\Qproduct\E/} || {word:/\Qproduct\E/} ][ {lemma:/\Qrevision\E/} || {word:/\Qrevision\E/} ]) )	GLOSSARY_TERM	product revision	16
+( ([ {lemma:/\Qrabet-v\E/} || {word:/\QRABET-V\E/} ][ {lemma:/\Qiteration\E/} || {word:/\QIteration\E/} ]) )	GLOSSARY_TERM	RABET-V Iteration	17
+( ([ {lemma:/\QRegistered\E/} || {word:/\QRegistered\E/} ][ {lemma:/\QTechnology\E/} || {word:/\QTechnology\E/} ][ {lemma:/\QProvider\E/} || {word:/\QProvider\E/} ]) )	GLOSSARY_TERM	Registered Technology Provider	30
+( ([ {lemma:/\Qrequired\E/} || {word:/\Qrequired\E/} ][ {lemma:/\Qsecurity\E/} || {word:/\Qsecurity\E/} ][ {lemma:/\Qservice\E/} || {word:/\Qservices\E/} ]) )	GLOSSARY_TERM	required security services	26
+( ([ {lemma:/\Qsecurity\E/} || {word:/\Qsecurity\E/} ][ {lemma:/\Qservice\E/} || {word:/\Qservice\E/} ]) )	GLOSSARY_TERM	security service	16
+( ([ {lemma:/\QSecurity\E/} || {word:/\QSecurity\E/} ][ {lemma:/\QService\E/} || {word:/\QService\E/} ][ {lemma:/\QCapability\E/} || {word:/\QCapability\E/} ][ {lemma:/\QMaturity\E/} || {word:/\QMaturity\E/} ][ {lemma:/\Q-lrb-\E/} || {word:/\Q-LRB-\E/} ][ {lemma:/\QSSCM\E/} || {word:/\QSSCM\E/} ][ {lemma:/\Q-rrb-\E/} || {word:/\Q-RRB-\E/} ]) )	GLOSSARY_TERM	Security Service Capability Maturity (SSCM)	43
+( ([ {lemma:/\Qsecurity\E/} || {word:/\Qsecurity\E/} ][ {lemma:/\Qservice\E/} || {word:/\Qservice\E/} ][ {lemma:/\Qcatalog\E/} || {word:/\Qcatalog\E/} ]) )	GLOSSARY_TERM	security service catalog	24
+( ([ {lemma:/\Qsecurity\E/} || {word:/\Qsecurity\E/} ][ {lemma:/\Qservice\E/} || {word:/\Qservice\E/} ][ {lemma:/\Qlabel\E/} || {word:/\Qlabel\E/} ]) )	GLOSSARY_TERM	security service label	22
+( ([ {lemma:/\QSecurity\E/} || {word:/\QSecurity\E/} ][ {lemma:/\QServices\E/} || {word:/\QServices\E/} ][ {lemma:/\QArchitectural\E/} || {word:/\QArchitectural\E/} ][ {lemma:/\QMaturity\E/} || {word:/\QMaturity\E/} ][ {lemma:/\Q-lrb-\E/} || {word:/\Q-LRB-\E/} ][ {lemma:/\QSSAM\E/} || {word:/\QSSAM\E/} ][ {lemma:/\Q-rrb-\E/} || {word:/\Q-RRB-\E/} ]) )	GLOSSARY_TERM	Security Services Architectural Maturity (SSAM)	47
+( ([ {lemma:/\QSecurity\E/} || {word:/\QSecurity\E/} ][ {lemma:/\QServices\E/} || {word:/\QServices\E/} ][ {lemma:/\QArchitecture\E/} || {word:/\QArchitecture\E/} ]) )	GLOSSARY_TERM	Security Services Architecture	30
+( ([ {lemma:/\Qservice\E/} || {word:/\Qservices\E/} ]) )	GLOSSARY_TERM	services	8
+( ([ {lemma:/\QSoftware\E/} || {word:/\QSoftware\E/} ][ {lemma:/\QDevelopment\E/} || {word:/\QDevelopment\E/} ][ {lemma:/\QMaturity\E/} || {word:/\QMaturity\E/} ][ {lemma:/\Q-lrb-\E/} || {word:/\Q-LRB-\E/} ][ {lemma:/\QSDM\E/} || {word:/\QSDM\E/} ][ {lemma:/\Q-rrb-\E/} || {word:/\Q-RRB-\E/} ]) )	GLOSSARY_TERM	Software Development Maturity (SDM)	35
+( ([ {lemma:/\Qtesting\E/} || {word:/\Qtesting\E/} ][ {lemma:/\Qrule\E/} || {word:/\Qrules\E/} ]) )	GLOSSARY_TERM	testing rules	13
+( ([ {lemma:/\Qthreat\E/} || {word:/\Qthreat\E/} ]) )	GLOSSARY_TERM	threat	6
+( ([ {lemma:/\Qverification\E/} || {word:/\Qverification\E/} ][ {lemma:/\Qauthority\E/} || {word:/\Qauthority\E/} ]) )	GLOSSARY_TERM	verification authority	22
