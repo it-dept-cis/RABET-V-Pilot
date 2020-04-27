@@ -1,15 +1,7 @@
 '''
 RABET-V documentation build configuration file
 '''
-# Additions to support Markdown
-import recommonmark
-from recommonmark.transform import AutoStructify
-from recommonmark.parser import CommonMarkParser
-source_parsers = {
-   '.md': CommonMarkParser
-}
-# Required when running on Windows
-image_converter = 'C:\Program Files\ImageMagick-7.0.10-Q16\magick.exe'
+
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
@@ -29,8 +21,21 @@ image_converter = 'C:\Program Files\ImageMagick-7.0.10-Q16\magick.exe'
 #
 import os
 import datetime
-# import sys
+import sys
 # sys.path.insert(0, os.path.abspath('.'))
+
+# Additions to support Markdown
+import recommonmark
+from recommonmark.transform import AutoStructify
+from recommonmark.parser import CommonMarkParser
+
+source_parsers = {
+    '.md': CommonMarkParser
+}
+
+# Windows Imagemagick configuration
+#if sys.platform.startswith('win32'):
+#    image_converter = 'C:\path\to\ImageMagick\magick.exe'
 
 # -- General configuration ------------------------------------------------
 
@@ -49,7 +54,7 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
-    'sphinx.ext.imgconverter',
+    #'sphinx.ext.imgconverter',
     'recommonmark',
 ]
 

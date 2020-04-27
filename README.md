@@ -6,13 +6,14 @@ For more information of the Background and Motivation for RABET-V, see CIS' [How
 
 In this repository, you will find three main areas:
 
-* [Working Model](WorkingModel/). The Working Model defines the RABET-V process details. Read through the working model to get an idea of how RABET-V works in detail.  
+* [Working Model](WorkingModel/). The Working Model defines the RABET-V process details. Read through the working model to get an idea of how RABET-V works in detail.
 * [Research Plan](ResearchPlan/). The Research Plan discusses how we intend on evaluating RABET-V throughout the Pilot Program. Read this to understand the pilot project.
 * [Economic Model](EconomicModel/). The Economic Model proposes various methods of deploying and operating a RABET-V process in the United States for non-voting election technology verification.
 
 ## Steering Committee
 The RABET-V Pilot Program is guided by a steering committee comprised of election officials, election technology providers, and other election infrastructure stakeholders.
 We will add steering committee member information below as we confirm members:
+
 * Aaron Wilson, Sr. Director of Election Security at The Center for Internet Security (CIS) - Steering Committee Chair
 * Jerome Lovato, Testing and Certification Director at The Election Assistance Commission (EAC) 
 * Don Palmer, EAC Commissioner
@@ -27,6 +28,7 @@ We will add steering committee member information below as we confirm members:
 ## Pilot Participants
 
 The following technology providers have volunteered to have their products used in the RABET-V Pilot. 
+
 * Scytl - Election Night Reporting
 * VR Systems - Electronic Pollbooks and Election Night Reporting
 * KNOWink - Electronic Pollbook
@@ -34,11 +36,12 @@ The following technology providers have volunteered to have their products used 
 ## Technology Advisory Committee
 
 The RABET-V Technology Advisory Committee is a growing group of experts in relevant subject matter that are volunteering their time to assist in the refinement of the RABET-V process. 
+
 * Jono Spring, SEI CERT Division
 * Lauren Cooper, SEI CERT Division
 * Brian Glas, OWASP SAMM
 * Beau Woods, Atlantic Council
-*	Mary M Shaw, Carnegie Melon
+* Mary M Shaw, Carnegie Melon
 * David Garlan, Carnegie Melon
 * Ryan Wagner, Carnegie Melon 
 * Joshua Bloch, Carnegie Melon
@@ -50,7 +53,7 @@ The RABET-V Technology Advisory Committee is a growing group of experts in relev
 * Rob Gordon
 
 ## Program Administration and Research
-The program will be administered by CIS team with assistance from The Turnout. Dr. Mike Garcia will serve as the Research Lead.
+The program will be administered by CIS team with assistance from [The Turnout](https://turnout.rocks). Dr. Mike Garcia will serve as the Research Lead.
 
 ## Pilot Process
 
