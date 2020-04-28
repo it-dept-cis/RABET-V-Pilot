@@ -26,6 +26,7 @@ First, install the required libraries and then build the html files:
 
 ```sh
 pipenv install
+pipenv shell
 sphinx-build -b html . build
 ```
 
@@ -41,8 +42,8 @@ python -m http.server
 To build the documentation into a single file in Word `.docx` format, execute the following commands:
 
 ```sh
-cd build
 pipenv shell
-sphinx-build -b singlehtml . ../output_directory
+sphinx-build -b singlehtml . build
+cd build
 pandoc --filter=../svg_filter.py -o rabet-v.docx  --reference-doc ../WorkingModel/RABET-V\ Working\ Model\ 0.1\ 20200423.docx toctree.html
 ```
