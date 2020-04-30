@@ -1,0 +1,878 @@
+WEBVTT
+
+1
+00:00:03.834 --> 00:00:07.674
+Alright, thank you for those of you. Joining, and watching this webinar.
+
+2
+00:00:07.705 --> 00:00:20.065
+I hope that in the short time that I can convey to you the latest about the rabbit V pilot program, I have a series of slides here that I'm just gonna go through and talk you through the program.
+
+3
+00:00:20.065 --> 00:00:30.024
+We've been hard work coming up with what we call this program description, which is all tables the rabbit, the program first. I want to give you some background.
+
+4
+00:00:30.774 --> 00:00:32.064
+If you're not familiar with rabid V,
+
+5
+00:00:32.094 --> 00:00:34.765
+stands for the rapid architecture base selection,
+
+6
+00:00:34.795 --> 00:00:35.575
+technology,
+
+7
+00:00:36.085 --> 00:00:41.515
+verification program the intent all along has been to produce a flexible,
+
+8
+00:00:41.515 --> 00:00:43.435
+rapid and cost efficient process,
+
+9
+00:00:43.945 --> 00:00:48.145
+particularly for non voting election technology and by that,
+
+10
+00:00:48.174 --> 00:00:48.625
+you know,
+
+11
+00:00:48.625 --> 00:00:49.945
+that's kind of an umbrella term.
+
+12
+00:00:49.945 --> 00:01:02.185
+But we specifically call out electronic poll books, election, night, reporting and electronic delivery as sort of our first group of non voting technology. The goal with rabbit V.
+
+13
+00:01:02.185 --> 00:01:05.605
+is to to verify both the initial product version,
+
+14
+00:01:05.605 --> 00:01:07.525
+but also subsequent product versions,
+
+15
+00:01:08.004 --> 00:01:10.704
+particularly focused on those subsequent product versions,
+
+16
+00:01:10.704 --> 00:01:18.204
+making that cycle as quick and as efficient as possible while maintaining the assurances that we,
+
+17
+00:01:18.234 --> 00:01:20.515
+that we want to provide through a verification scheme.
+
+18
+00:01:21.504 --> 00:01:22.375
+So,
+
+19
+00:01:22.375 --> 00:01:24.444
+with that rabid V is a,
+
+20
+00:01:24.474 --> 00:01:24.715
+is a,
+
+21
+00:01:25.405 --> 00:01:28.974
+it's a cycle of eight activities we call the,
+
+22
+00:01:29.004 --> 00:01:40.435
+the sort of each iteration through these activities are a rabbit V duration during the initial submission all of the activities are executed all eight of them.
+
+23
+00:01:40.974 --> 00:01:44.094
+But as you two product revisions,
+
+24
+00:01:44.784 --> 00:01:47.694
+the workflow changes fairly dramatically,
+
+25
+00:01:47.694 --> 00:01:51.745
+based on the changes that you submit to include,
+
+26
+00:01:51.775 --> 00:01:52.135
+you know,
+
+27
+00:01:52.165 --> 00:01:54.594
+skipping many of these more lengthy,
+
+28
+00:01:54.594 --> 00:02:00.745
+your activities over here on the right and streamlining straight through true product verification again,
+
+29
+00:02:00.745 --> 00:02:10.134
+depending upon the changes that are submitted in the subsequent product revision submissions you go straight to product vacation.
+
+30
+00:02:10.134 --> 00:02:24.835
+The product verification is also tailored to the changes that are submitted and it's identified how to test is identified based on these testing rules that are that are determined through these initial set of evaluations.
+
+31
+00:02:24.835 --> 00:02:39.235
+That we call the process assessment, the architecture review, the security claims validation. Those three activities, inform these testing rules and the testing rules, create a risk based approach to product verification.
+
+32
+00:02:39.235 --> 00:02:42.895
+And I'll be talking through these a little bit more throughout the presentation.
+
+33
+00:02:44.544 --> 00:02:47.034
+We believe through this process,
+
+34
+00:02:47.094 --> 00:02:52.944
+that rabid V incentivizes providers to provide high quality,
+
+35
+00:02:52.944 --> 00:02:54.354
+modern system architectures,
+
+36
+00:02:55.044 --> 00:03:03.264
+they're more resistant to attacks it helps incentivizes them to have robust risk mitigating software development processes.
+
+37
+00:03:03.534 --> 00:03:15.294
+It also incentivizes smaller more manageable change cycles for others, particularly for elections already. The goal is to provide a consistent centralized information that they can draw from.
+
+38
+00:03:17.425 --> 00:03:29.814
+Pilot program has different committees. We have a steering committee chair about myself right now. It includes a number of a couple of federal agencies, a number of state election officials. We also have a technical advisory committee.
+
+39
+00:03:30.594 --> 00:03:38.574
+We have four participants signed up to work with us during the pilot program, and we have some folks helping with program administration.
+
+40
+00:03:39.085 --> 00:03:48.085
+Our research leaders is Dr Mike Garcia we have posted everything that we're doing on the Git hub page there at the bottom of the page.
+
+41
+00:03:48.294 --> 00:04:02.784
+And you can check it all out there when you have the time, and you'll notice on a on a number of these slides. That there is a, I look at the bottom to the page where more detail is provided for that.
+
+42
+00:04:03.564 --> 00:04:15.805
+So specifically on our steering committee. And and our technical advisory committee, we have a number of folks, including the AC FF, we have six states represented on the technical advisory committee.
+
+43
+00:04:15.805 --> 00:04:24.865
+We have a number of folks from last and other organizations, including NIST. Very excited to have these these two committees.
+
+44
+00:04:24.894 --> 00:04:35.334
+They help us work through these ideas, evaluate the data and will help us evaluate the results and and make a draw appropriate conclusions scheduled.
+
+45
+00:04:35.334 --> 00:04:45.595
+Right now we kicked everything off in February, March and April have devoted to creating the program description, which is, which is what I'm gonna be going through today. Kind of the, the.
+
+46
+00:04:46.079 --> 00:05:00.444
+Proposed program description in May we will begin the initial iteration the first time through the rabbit the process in June we hope to be able to complete those initial iterations July through September will be
+
+47
+00:05:00.714 --> 00:05:02.785
+subsequent sort of product revisions,
+
+48
+00:05:02.964 --> 00:05:06.235
+which should be shorter and more rapid iterations.
+
+49
+00:05:06.415 --> 00:05:09.865
+And then we'll spend the fall doing data collection analysis.
+
+50
+00:05:11.845 --> 00:05:26.785
+So now I want to composition talk about the rabbit V program and I want to talk first about just a couple of key concepts that we've introduced. The first one is this registered technology provider and that's who we're gonna be verifying.
+
+51
+00:05:27.144 --> 00:05:39.954
+So each technology provider wants to be part of rabid wants to have their products go through the, the process will become registered technology providers. What that means is we collect some basic information about them.
+
+52
+00:05:39.954 --> 00:05:52.045
+It also means that they ascribe to this program commitment. The program commitment is very simple. There's three things to it. There's the first is, there's a commitment to being honest and transparent about capabilities within the product.
+
+53
+00:05:53.485 --> 00:06:06.954
+The second is that each that he's provided subscribe to an organizational security framework and, and conduct regular audits against that framework that can be shared with the rabbit be subscribers.
+
+54
+00:06:08.064 --> 00:06:12.384
+And the third one is that there's, there's a commitment to maintaining the product.
+
+55
+00:06:12.415 --> 00:06:23.545
+And so, you know, not only will rabbit be help test product changes, but it also requires that the providers are making constant changes.
+
+56
+00:06:24.024 --> 00:06:34.495
+And this is a good thing in, from a security perspective that they're continually patching and updating these systems. We don't want static systems that haven't been patched in years.
+
+57
+00:06:34.949 --> 00:06:45.745
+To be a part of the program we also have this term called subscribers and that's gonna be your state and local election officials who are going to consume the data and the reports generated by rabbit.
+
+58
+00:06:46.615 --> 00:06:46.884
+And then,
+
+59
+00:06:46.884 --> 00:06:47.214
+of course,
+
+60
+00:06:47.214 --> 00:06:56.245
+we have the public who will have access to a number of different reports that may be sanitize to some extent,
+
+61
+00:06:56.935 --> 00:07:03.175
+based on the sensitive nature of some of the data that we are producing the next three concepts.
+
+62
+00:07:03.204 --> 00:07:16.435
+I'm going to be talking more about, in the following slides. The first is security services and that is what we're verifying. We've, we've essentially distilled down the security that we're verifying to ten security services and I'll go through those.
+
+63
+00:07:17.064 --> 00:07:25.105
+We also are gonna be producing what we call maturity indexes. We have three maturity indexes that are scores for how the provider is doing in certain areas.
+
+64
+00:07:25.944 --> 00:07:38.274
+And the last one is these activity descriptions, which is going to describe how we're going to run the rabbit be process and go through each of the eight activities first. Let me talk about security services.
+
+65
+00:07:38.274 --> 00:07:43.314
+The security services acquitted the capability that supports many security goals.
+
+66
+00:07:44.694 --> 00:07:47.545
+And we have taken our security services,
+
+67
+00:07:47.545 --> 00:07:51.415
+we derive them from the security best practices for non voting election technology,
+
+68
+00:07:51.415 --> 00:07:54.985
+which is the document that produced in the fall of twenty,
+
+69
+00:07:54.985 --> 00:07:55.675
+nineteen,
+
+70
+00:07:56.634 --> 00:08:00.204
+and we've used that to create the security service capability.
+
+71
+00:08:00.235 --> 00:08:01.014
+Maturity.
+
+72
+00:08:01.529 --> 00:08:05.545
+Model as well, as the security services architectural maturity model.
+
+73
+00:08:05.964 --> 00:08:13.975
+These are two of the three maturity indexes that I referenced or ten security services are authentication authorization,
+
+74
+00:08:14.574 --> 00:08:15.084
+injection,
+
+75
+00:08:15.084 --> 00:08:15.774
+prevention,
+
+76
+00:08:15.985 --> 00:08:16.795
+key management,
+
+77
+00:08:16.824 --> 00:08:18.144
+user session management,
+
+78
+00:08:18.415 --> 00:08:18.865
+logging,
+
+79
+00:08:18.865 --> 00:08:19.884
+alerting data,
+
+80
+00:08:19.884 --> 00:08:20.394
+integrity,
+
+81
+00:08:20.394 --> 00:08:20.964
+protection,
+
+82
+00:08:21.384 --> 00:08:21.625
+data,
+
+83
+00:08:21.625 --> 00:08:22.464
+confidentiality,
+
+84
+00:08:22.464 --> 00:08:23.035
+production,
+
+85
+00:08:23.064 --> 00:08:23.454
+boundary,
+
+86
+00:08:23.454 --> 00:08:25.644
+production and system integrity protection.
+
+87
+00:08:26.274 --> 00:08:31.764
+And the definitions for each of these are available at the link at the bottom if you're interested in a little bit further detail.
+
+88
+00:08:34.254 --> 00:08:38.754
+Ten security services used to build what we call the security service capability,
+
+89
+00:08:38.754 --> 00:08:41.125
+maturity index the,
+
+90
+00:08:42.804 --> 00:08:43.764
+and what it is,
+
+91
+00:08:43.764 --> 00:08:47.065
+the location of how well product is meeting these,
+
+92
+00:08:47.335 --> 00:08:50.274
+these security in these ten areas,
+
+93
+00:08:50.304 --> 00:08:59.605
+and that's measured by the requirements that we've established for each of these ten areas these requirements are are also derived from the security best practices that I mentioned earlier,
+
+94
+00:09:00.384 --> 00:09:08.485
+and the maturity model uses these requirements to build a score to assign a score of between zero and three or three is the best.
+
+95
+00:09:09.414 --> 00:09:14.335
+But in addition to the score itself, we will be giving some guidance on how to interpret the score.
+
+96
+00:09:16.855 --> 00:09:29.125
+The maturity model is the security service, architectural maturity, and this is a little different, because it's a measure of how well, the architecture is built to provide the security service capabilities.
+
+97
+00:09:29.125 --> 00:09:29.184
+So,
+
+98
+00:09:29.184 --> 00:09:39.804
+you may have a certain capability score and you may have a higher or a lower architectural maturity score related to it because you've built the architecture such that you've,
+
+99
+00:09:39.924 --> 00:09:47.095
+you've done it in a reliable and scalable way or maybe you've achieved that capability through a very immature architectural approach.
+
+100
+00:09:47.215 --> 00:09:52.345
+That isn't reliable. That isn't resilient. Industrial architectural score would be lower.
+
+101
+00:09:53.304 --> 00:09:58.014
+So, it measures a little bit different thing for this. We did have to build our own maturity model.
+
+102
+00:09:58.284 --> 00:09:58.705
+We,
+
+103
+00:09:59.274 --> 00:10:04.825
+we created what we call a construction stream and a usage stream and exactly how,
+
+104
+00:10:04.884 --> 00:10:05.215
+you know,
+
+105
+00:10:05.215 --> 00:10:13.495
+what factors we use to determine the score here are on get the scores will range from zero to three.
+
+106
+00:10:13.764 --> 00:10:27.715
+And it's an indication again of how reliable and resilient the architecture is to other changes in the system. We rely on this within rabid V fairly heavily because the higher the maturity scores here in the architecture.
+
+107
+00:10:29.125 --> 00:10:40.500
+The more streamline the testing can be for changes outside of the security services because we can be more confident that the security services will not be negatively impacted.
+
+108
+00:10:41.544 --> 00:10:54.205
+The maturity index, which I haven't mentioned yet is what we call the secure software development maturity index and it's a measure of the provider software development processes for security and useability.
+
+109
+00:10:54.865 --> 00:11:02.485
+We've based our model here on the software assurance maturity model or Sam and we've added usability.
+
+110
+00:11:02.485 --> 00:11:04.585
+And accessibility on top of that to create,
+
+111
+00:11:05.995 --> 00:11:06.804
+sort of this rabbit,
+
+112
+00:11:06.835 --> 00:11:10.345
+the software development maturity model here again,
+
+113
+00:11:10.345 --> 00:11:13.225
+the scores range from zero to three three is the best,
+
+114
+00:11:13.735 --> 00:11:18.174
+and we will be publishing ranges and and how to interpret those ranges.
+
+115
+00:11:18.174 --> 00:11:32.605
+Because these, these maturity indexes may not all produce very clean. You know, everything below one is bad everything between one and two is good. Everything between two and three is great. It may not come out that perfectly.
+
+116
+00:11:32.605 --> 00:11:36.414
+So, we'll be publishing some guidance on how to interpret the, the different scores.
+
+117
+00:11:37.585 --> 00:11:38.634
+Within the,
+
+118
+00:11:38.695 --> 00:11:38.995
+the,
+
+119
+00:11:39.024 --> 00:11:39.565
+the models,
+
+120
+00:11:39.924 --> 00:11:41.424
+the here again,
+
+121
+00:11:41.424 --> 00:11:45.445
+we will be using this maturity index the higher the maturity index,
+
+122
+00:11:45.445 --> 00:11:53.605
+the more streamlined the testing will be simply because we have more confidence in what the provider is doing internally with,
+
+123
+00:11:53.664 --> 00:11:56.725
+with their requirements with their with their development.
+
+124
+00:11:56.725 --> 00:12:05.845
+With their own testing with their own deployment. All of that's measured here. And so the higher the scores, the more streamlined the rabbit, the verification can become.
+
+125
+00:12:07.825 --> 00:12:17.575
+So with that I want to return to this flowchart, these the rabbit fee activity, so we've talked about some of the baseline concepts, the security services, the different maturity indexes.
+
+126
+00:12:18.144 --> 00:12:31.345
+But now, let's walk through each of these eight activities, and I can talk to you about our methodology and our process for each of these. So the first couple are fairly straightforward. The first one is provider submission.
+
+127
+00:12:31.764 --> 00:12:33.804
+What are we asking for from providers?
+
+128
+00:12:34.764 --> 00:12:49.044
+Product goals expected usage these are just statements about how the product is expected to be used, which need to match with the type of security that the provider is claiming to have, which is, which is documented in their security claims.
+
+129
+00:12:50.034 --> 00:12:50.215
+Then,
+
+130
+00:12:50.215 --> 00:12:51.774
+there's also a process descriptions,
+
+131
+00:12:51.774 --> 00:12:52.284
+architecture,
+
+132
+00:12:52.284 --> 00:12:54.085
+documentation and third party components,
+
+133
+00:12:54.264 --> 00:13:02.335
+these three really help our evaluation process to to more expedited the more implementation and we can,
+
+134
+00:13:02.904 --> 00:13:05.485
+we can reduce but that's the initial submission.
+
+135
+00:13:05.514 --> 00:13:19.945
+The revision submissions don't require that information to be repeatedly sent. Unless they're changing it, so on revision, we need a change list. We need a desired deployment date there, artifacts from their development process.
+
+136
+00:13:20.245 --> 00:13:29.934
+And then again, if they wanna make any updates to their initial submission, they can do that submission review. This is simply this is the.
+
+137
+00:13:30.240 --> 00:13:45.115
+Part of the overall rabbit the program that determines which of the rabid activities are going to be executed for that duration. So one, there's a review of the, the package for completion validating the change list determining.
+
+138
+00:13:45.115 --> 00:13:59.485
+If the process assessment is necessary, architecture review and security claims are necessary. These are necessary for larger changes that are necessary. When, when you're updating security claims, these are going to be rarely required after the initial iteration.
+
+139
+00:13:59.485 --> 00:14:11.934
+Or at least that's our, the theory. The process assessment is what determines the software development maturity scores as I mentioned earlier.
+
+140
+00:14:11.934 --> 00:14:18.264
+And so, here, we are using the, the Sam, the Sam model, we're also using their approach.
+
+141
+00:14:18.264 --> 00:14:28.434
+They use an innovative interview based approach to to talk to the provider and key roles of the provider key roles,
+
+142
+00:14:28.465 --> 00:14:29.995
+like their software development architects,
+
+143
+00:14:29.995 --> 00:14:30.835
+or software developer,
+
+144
+00:14:30.835 --> 00:14:31.105
+software,
+
+145
+00:14:31.105 --> 00:14:31.644
+engineers,
+
+146
+00:14:32.605 --> 00:14:33.384
+product managers,
+
+147
+00:14:33.384 --> 00:14:34.375
+those kinds of roles.
+
+148
+00:14:34.764 --> 00:14:43.164
+And we also look at artifacts that they're producing, you know, test results and those sorts of things to really gauge their software development maturity.
+
+149
+00:14:44.184 --> 00:14:44.365
+But,
+
+150
+00:14:44.365 --> 00:14:46.434
+in addition to giving the scores,
+
+151
+00:14:46.975 --> 00:14:48.774
+according to the same approach,
+
+152
+00:14:49.615 --> 00:14:54.325
+we're also added this idea that this is where we need to investigate,
+
+153
+00:14:54.804 --> 00:15:00.565
+whether their internal processes develop artifacts that we can rely on in rabbit be.
+
+154
+00:15:01.254 --> 00:15:13.554
+The most important of these is the change list. If we can determine that the change list that they're providing is reliable, then rabid V. doesn't have to go back and redo that verification on the change list.
+
+155
+00:15:14.125 --> 00:15:27.445
+In addition to the change list they could also be producing automated configuration, verification, results, source, code, test, results, vulnerability, test, results, security, event, audit, logs and other security analysis done by third parties.
+
+156
+00:15:27.865 --> 00:15:41.065
+If these are determined to be reliable and accurate on a consistent basis, rabbit V will use their versions in their output instead of re, reproducing these internally. Not.
+
+157
+00:15:41.154 --> 00:15:54.475
+That doesn't mean that every time that will take the providers artifact review, still every, once in a while, reproduce the results to ensure that they're continually reliable.
+
+158
+00:15:55.975 --> 00:16:02.965
+Next we have the architecture review, and then here's where we had to get, you know, we had to develop some new concepts.
+
+159
+00:16:02.965 --> 00:16:15.325
+We had to we were looking at the architecture to inform risk and to develop these architectural maturity scores, which, which are related to the risk of changes.
+
+160
+00:16:16.134 --> 00:16:27.985
+And the idea is that there are certain changes that posed low risks to the security assurances of the system. And there are certain changes that represent higher risk.
+
+161
+00:16:27.985 --> 00:16:37.284
+And, of course, we're in the middle, and so we needed an architecture review that was going to isolate the parts of the architecture that would inform us of that risk.
+
+162
+00:16:37.465 --> 00:16:43.674
+And so we created this process that first starts with a threat analysis to build out the system.
+
+163
+00:16:43.674 --> 00:16:56.394
+Architecture and understand where the threats were, where the threats are, what are the components that should be protected what are the components that should be providing the protection and that all begins with a thread analysis.
+
+164
+00:16:56.394 --> 00:17:09.835
+We then identify the main components and start to simplify which ones are providing the security services, and which ones are using the security services. And from that, we can actually derive the maturity scores based on the maturity model.
+
+165
+00:17:11.634 --> 00:17:25.974
+It's currently eleven's process. I won't walk through all of this, but check it out on get to better understand our approach and we are looking here at ways. Automated tools can help with this. So it can be a an efficient process.
+
+166
+00:17:27.414 --> 00:17:38.964
+The next activity is the security claims validation and this is the activity that looks at the security claims that the provider is making to ensure that they're consistent with how the product is, is intended to be sold and used.
+
+167
+00:17:39.384 --> 00:17:41.454
+And this is where we reviewed the product goals,
+
+168
+00:17:41.454 --> 00:17:43.884
+expected usage the functionality,
+
+169
+00:17:44.244 --> 00:17:50.244
+and we compare that with what we know from the architecture review to try to determine if,
+
+170
+00:17:51.204 --> 00:17:56.875
+if they are claiming to meet the right level of security.
+
+171
+00:17:57.414 --> 00:18:08.964
+This does not validate the claims that comes later this is just trying to make sure that that they these are claiming to, to provide the right level of security.
+
+172
+00:18:09.775 --> 00:18:14.365
+And, of course, if it's not, then it can be turned around at this point without further investigation.
+
+173
+00:18:16.644 --> 00:18:24.924
+All three of those previous activities inform what we call the testing rules determination, and this essentially build a formula for how to test the product.
+
+174
+00:18:24.924 --> 00:18:32.964
+Because every product is gonna be different because there's gonna be different maturity scores, a different architecture, different security claims and that's all.
+
+175
+00:18:32.964 --> 00:18:43.734
+Okay and so we just wanted to develop a testing approach that would be risk based and be specific to the risk profile of that product.
+
+176
+00:18:43.855 --> 00:18:49.855
+And so excited to do here is capture the formula in a testing in a.
+
+177
+00:18:52.555 --> 00:18:58.075
+Excuse me, in a decision, and we may be moving the decision table. They're very similar concepts.
+
+178
+00:18:58.075 --> 00:19:10.134
+The idea is that you have these conditions here on the right side of this slide and based on the conditions, the output changes. And, as you can imagine in a testing tree.
+
+179
+00:19:10.164 --> 00:19:21.535
+Each of the nodes sort of takes you down a different branch to it to the point that you end up at a different place. In, in our case what we're inputting are the changes and the output is the type of testing that would be done.
+
+180
+00:19:22.045 --> 00:19:23.335
+And so essentially,
+
+181
+00:19:23.815 --> 00:19:26.214
+for every product submission,
+
+182
+00:19:27.085 --> 00:19:31.105
+the changes go through this decision tree and the outputs are the,
+
+183
+00:19:31.315 --> 00:19:31.644
+the,
+
+184
+00:19:31.674 --> 00:19:32.515
+the test methods,
+
+185
+00:19:32.515 --> 00:19:36.894
+the test approaches take and build the test plan,
+
+186
+00:19:38.035 --> 00:19:40.494
+the conditions themselves or where did the change happen?
+
+187
+00:19:40.494 --> 00:19:55.075
+What's the relationship for security service? What's the type of change? What's their maturity levels? And then what are their artifacts that they can provide? So now we can product verification and again remember that on the initial iteration.
+
+188
+00:19:56.875 --> 00:20:08.875
+You go through everything that I've so far on subsequent revisions. Subsequent product revisions. You may just simply go after the submission and the submission review. You may go directly to the product verification.
+
+189
+00:20:10.045 --> 00:20:22.015
+Which drives, it's approach to testing based on those testing rules. So if there's testing rules, that decision tree is already in place, then we don't need to recreate the decision tree.
+
+190
+00:20:23.220 --> 00:20:32.065
+Just build a test plan based on the changes that are submitted. And so, what's that? What that's gonna do is tell us the type of testing to conduct.
+
+191
+00:20:32.125 --> 00:20:32.305
+So,
+
+192
+00:20:32.305 --> 00:20:36.535
+the type of testing that we that we support here within rabid V or artifact review,
+
+193
+00:20:36.775 --> 00:20:51.325
+which I discussed is that opportunity to review the provider submitted documentation and test results automated testing service would be performing some automated testing rabbit V functional testing and then penetration testing
+
+194
+00:20:52.194 --> 00:20:52.525
+again,
+
+195
+00:20:52.525 --> 00:20:55.015
+the submission here will perform full testing.
+
+196
+00:20:55.494 --> 00:21:06.654
+Subsequent revisions will be based on those testing rules and the decision tree. They're predominantly here. We're testing for security requirements, but we do, we do.
+
+197
+00:21:07.500 --> 00:21:19.315
+Test for a major functionality, major product functionality for the different types of products that we support. So, electronic poll books, election night, reporting and electronic about delivery.
+
+198
+00:21:19.315 --> 00:21:25.525
+We will have some basic test testing requirements that we will be running against on these products.
+
+199
+00:21:25.914 --> 00:21:36.535
+But the idea here is that if rabbit the is as quick as we hope it will be, it would allow for rapid product iterations.
+
+200
+00:21:37.615 --> 00:21:40.134
+Where the customer is able to,
+
+201
+00:21:40.194 --> 00:21:41.035
+or the state,
+
+202
+00:21:41.065 --> 00:21:46.315
+or the local is able to do their own testing provide feedback to the provider,
+
+203
+00:21:46.315 --> 00:21:55.494
+the provider is able to make changes take it back through rabid B and presented again to the state of the local within a reasonable amount of time,
+
+204
+00:21:56.005 --> 00:21:58.045
+so you don't have to have all this upfront,
+
+205
+00:21:58.345 --> 00:22:05.845
+functional and product requirements testing because you can't you can go back through rabid to be on a quick,
+
+206
+00:22:06.474 --> 00:22:07.075
+quick basis.
+
+207
+00:22:07.075 --> 00:22:19.674
+So we do say here are the out of scope, testing, acceptance, data usability are out of scope here, because you don't have to go through this very lengthy campaign of which you wanna, you wanna make sure everything's perfect.
+
+208
+00:22:19.674 --> 00:22:23.154
+You have an opportunity to iterate and get better through through iterations.
+
+209
+00:22:23.305 --> 00:22:36.565
+So, some of that testing is out of scope and then, finally, in the reporting phase, we make a determination of verified, conditionally verified or returned returned as we found something significant. That cannot be fixed quickly.
+
+210
+00:22:36.565 --> 00:22:49.255
+That needs to go back and be addressed verified is they, they need all their security claims that we found and we found their level of security claims to be sufficient. And then, conditionally verified as we is.
+
+211
+00:22:49.255 --> 00:22:54.325
+It most things checked off a couple of minor things may not have in there and we believe that they can be turned around quickly.
+
+212
+00:22:56.424 --> 00:23:10.464
+The generation itself, the indexes will release the summary of the changes that that went through the verification, the maturity trends. So so, how are they trending from a maturity perspective? Are they going to go down? They stay in the same.
+
+213
+00:23:12.325 --> 00:23:18.984
+So, all that would be in there. So, that concludes the presentation here of the program description again.
+
+214
+00:23:18.984 --> 00:23:31.615
+Please check out, get have for the for more details on each of these activities on each of the maturity indexes on some of the theory behind what we're doing. And if you have comments, please submit them to me.
+
+215
+00:23:31.615 --> 00:23:44.694
+My email is here on the screen Aaron, dot Wilson at sky security, dot Org summit and Katie at turnout, dot rocks, let us know what you think if you would like, we are developing a word document.
+
+216
+00:23:44.724 --> 00:23:58.255
+That is consolidation of everything on get up and so we can provide that to you as well if you would like to review that instead of reviewing it. I appreciate your time. Thank you for watching today.
+
+217
+00:23:58.765 --> 00:24:01.734
+Please reach out to us if you have questions or comments. Thank you.
+
+218
+00:24:09.569 --> 00:24:14.934
+Okay, yeah. Did you stop recording.
+
+219
+00:24:17.785 --> 00:24:18.595
+Yeah, it was really good.
+
