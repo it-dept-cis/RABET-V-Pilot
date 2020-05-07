@@ -4,11 +4,9 @@
 
 ### Activate Audit Logging
 
-[Resolve meaning of local logging]
+Ensure that logging has been enabled on all systems and networking devices.
 
-Ensure that local logging has been enabled on all systems and networking devices.
-
-> Components of election technology solutions must utilize local logging capabilities to store system activity.
+> Components of election technology solutions must utilize available logging capabilities to store system activity.
 
 Method: Copy
 
