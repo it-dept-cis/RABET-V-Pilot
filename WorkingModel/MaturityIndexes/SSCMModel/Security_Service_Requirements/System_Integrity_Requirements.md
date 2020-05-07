@@ -1,12 +1,22 @@
 # System Integrity Requirements
 
-## Maturity Level 1 
-- Install the Latest Stable Version of Any Security-Related Updates on All Network Devices - Install the latest stable version of any security-related updates on all network devices.
->Ensure that you are monitoring for updates and applying them as you are able. This may require a plan to make updates prior to sensitive election dates.
+## Maturity Level 1
 
->Reference: CIS Security Best Practices for Non-Voting Election Technology 1.3.4
-- Ensure Anti-Malware Software and Signatures Are Updated - Ensure that the organization's anti-malware software updates its scanning engine and signature database on a regular basis.
->Ensure that all anti-malware instances are receiving signature updates. This requires periodic review of devices within the election technology system.
+### Install the Latest Stable Version of Any Security-Related Updates on All Network Devices
+
+Install the latest stable version of any security-related updates on all network devices.
+
+> Ensure that you are monitoring for updates and applying them as you are able. This may require a plan to make updates prior to sensitive election dates.
+
+Scope: Endpoints and servers provided by provider
+
+> Reference: CIS Security Best Practices for Non-Voting Election Technology 1.3.4
+
+### Ensure Anti-Malware Software and Signatures Are Updated
+
+The product must allow a administrator to perform updates to its anti-malware software, scanning engine and signature database on a regular basis.
+
+> Ensure that all anti-malware instances are receiving signature updates. This requires periodic review of devices within the election technology system.
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 2.3.2
 - Configure Devices to Not Auto-Run Content - Configure devices to not auto-run content from removable media.
@@ -47,7 +57,7 @@
 >All endpoints in an election technology solution must use properly installed and constantly running anti-malware software. Central management allows administrators to enforce this rule.
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 2.3.1
-- Limit Access to Scripting Tools - Limit access to scripting tools (such as Microsoft® PowerShell and Python) to only administrative or development users with the need to access those capabilities.
+- Limit Access to Scripting Tools - Limit access to scripting tools (such as Microsoftï¿½ PowerShell and Python) to only administrative or development users with the need to access those capabilities.
 >Election technology may make use of these technologies, but access to them should be limited to only the most trusted and protected accounts.
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 2.4.7
