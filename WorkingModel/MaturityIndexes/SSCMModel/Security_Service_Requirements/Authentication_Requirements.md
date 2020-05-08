@@ -25,6 +25,14 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 5.1.4
 
+- Store User Passwords Using a Strong, Iterative, Salted Hash - User passwords must be stored using secure hashing techniques with strong algorithms like PBKDF2, bcrypt, or SHA-512. Simply hashing the password a single time does not sufficiently protect the password. Use adaptive hashing (a work factor) combined with a randomly generated salt for each user to make the hash strong. [Moved this from Data Confidentiality]
+> 
+Applies to: All components
+
+Method: Copy
+
+>Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.8
+
 - Organization admins have access to an inventory of their users - Maintain an inventory of all accounts organized by authentication system. Maintain an up-to-date list of accounts for each system and tie each account to an individual person wherever possible and having this ability in the platform helps organizations manage their users.
 
 Applies to: Web Components
