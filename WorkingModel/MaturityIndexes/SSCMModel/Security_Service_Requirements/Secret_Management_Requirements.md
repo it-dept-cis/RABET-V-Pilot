@@ -18,6 +18,12 @@ Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.2.6
 
+### Securely Exchange Encryption Keys
+
+If encryption keys are exchanged or preset in your application, any key establishment or exchange must be performed over a secure channel.
+
+> Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.7
+
 ## Maturity Level 2
 
 ### Set Up Secure Key Management Processes
@@ -28,12 +34,16 @@ When keys are stored in your system, they must be properly secured and only acce
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.4
 
-### Securely Exchange Encryption Keys
+### Use a FIPS 140-2 Validated Modules
 
-[Move to 1?]
-
-If encryption keys are exchanged or preset in your application, any key establishment or exchange must be performed over a secure channel.
-
-> Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.7
+[Goal is to use well vetted cryptographic algorithms]
 
 ## Maturity Level 3
+
+### Use Hardware Security Modules or Key Management Service for keys
+
+Use a Hardware Security Module (HSM) or Key Management Service (KMS) when using crypographic keys. These products are tamper evident and provide a secure environment for the management and operation of keys.
+
+[Not sure KMS provide all the features of HSMs]
+
+Method: New
