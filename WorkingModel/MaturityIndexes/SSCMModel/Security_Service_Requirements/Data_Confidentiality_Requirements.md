@@ -116,34 +116,66 @@ Method: Copy
 - Encrypt the Hard Drive of All Mobile Devices. - Utilize approved whole disk encryption software to encrypt the hard drive of all mobile devices.
 >Determine what sensitive information you will permit on employees' laptops and mobile devices. Ensure the hard drives of laptops and mobile devices are fully encrypted to prevent information from being stolen.
 
+Applies to: On-prem components
+
+Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.1.5
 - Encrypt Data on USB Storage Devices - If USB storage devices are required, all data stored on such devices must be encrypted while at rest.
 >Data classified as confidential should be encrypted whenever it is stored on a USB device.
 
+Applies to: On-prem components
+
+Method: Copy
+
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.1.8
 - Encrypt All Sensitive Information in Transit - Encrypt all sensitive information in transit.
 >Consider whether the election data's confidentiality is sensitive. If you are unsure, consider it sensitive.
+
+Applies to: All components
+
+Method: Copy
+
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.3
 - Encrypt Sensitive Information at Rest - Encrypt all sensitive information at rest using a tool that requires a secondary authentication mechanism not integrated into the operating system, in order to access the information.
 >Election databases and their backups, for example, should be encrypted to ensure they are protected from manipulation.
 
+Applies to: All components
+
+Method: Copy
+
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.4
 - Encrypt Data Stored in Cloud Storage Containers - Use application encryption with secret keys only known to the data owner(s) to protect confidential data stored in a cloud storage container.
 >This protects the data even in the event of a data breach of the cloud hosting provider or a misconfiguration of the cloud storage container's permissions.
+
+Applies to: Hosted components
+
+Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.3.2
 - Routinely Audit Cloud Storage Configuration Settings - On a periodic basis, review configuration settings for all cloud storage containers and match effectiveness to the sensitivity of the data being stored in the container.
 >Automated routines are available for evaluation against the CIS Foundations Benchmarks. Automated routines may be necessary if you have a lot of containers.
 
+Applies to: Hosted components
+
+Method: Copy
+
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.3.3
-- Use Separate Storage Containers for Unique Data Classifications - Don't overload one container with data at various classification levels. Create separate containers with appropriate names and configuration settings for each data classification level.
+- Use Separate Storage Containers for Unique Data Classifications - Don't overload one container with data at various classification levels. Create separate containers with appropriate names and configuration settings for each data classification level. [there's also record specific encryption for sensitive coresident food]
 >Follow your data classification scheme and establish containers based on sensitivity. Also, don't mix production and test data or data from different technologies and products.
+
+Applies to: Hosted components
+
+Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.3.4
 - Don't Use Unvalidated Forwards or Redirects - An unvalidated forward can allow an attacker to access private content without authentication. Unvalidated redirects allow an attacker to lure victims into visiting malicious sites. Prevent these from occurring by conducting the appropriate access control checks before sending the user to the given location.
 >
+
+Applies to: Web Components
+
+Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.4.3
 
