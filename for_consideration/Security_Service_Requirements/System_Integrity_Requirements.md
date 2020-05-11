@@ -4,39 +4,52 @@
 
 ### Install the Latest Stable Version of Any Security-Related Updates on All Network Devices
 
+[Remove? Seems to overlap with RABET-V]
+
 Install the latest stable version of any security-related updates on all network devices.
 
 > Ensure that you are monitoring for updates and applying them as you are able. This may require a plan to make updates prior to sensitive election dates.
 
-Scope: Hosted components
+Applies to: Hosted components
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 1.3.4
 
 ### Ensure Anti-Malware Software and Signatures Are Updated
 
 [Revert to previous wording and add hosted clause?]
+[Cannot apply to iOS?]
 
-The product must allow an administrator to perform updates to its anti-malware software, scanning engine and signature database on a regular basis.
+The product must allow an administrator to perform updates to its anti-malware software, scanning engine and signature database.
 
 > Ensure that all anti-malware instances are receiving signature updates. This requires periodic review of devices within the election technology system.
+
+Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.3.2
 
 ### Configure Devices to Not Auto-Run Content
 
-Configure devices to not auto-run content from removable media.
+[Changed content to executable code]
+
+Configure devices to not auto-run executable code from removable media.
 
 > This helps ensure an attacker cannot insert a malicious device and execute it without having user credentials.
 
->Reference: CIS Security Best Practices for Non-Voting Election Technology 2.5.3
+Applies to: Vendor supplied hardware
+
+Method: Derived
+
+> Reference: CIS Security Best Practices for Non-Voting Election Technology 2.5.3
 
 ### Use USB Port Protectors on Unused Ports
 
 Cover all unused USB ports on endpoint devices with locks or tamper-evident port protectors to ensure unauthorized USB devices are not inserted into the device.
 
-> This is especially important for devices that are taken into less physically secure environments. It is also important to put tamper-evident seals on ports that do have a device plugged in to detect an attempt to swap a legitimate device with an illegitimate one.
+> This is especially important for devices that are taken into less physically secure environments.
 
->Reference: CIS Security Best Practices for Non-Voting Election Technology 2.5.6
+Method: Derived
+
+> Reference: CIS Security Best Practices for Non-Voting Election Technology 2.5.6
 
 Applies to: Provider supplied hardware
 
@@ -52,7 +65,7 @@ Maintain standard, documented security configuration standards for all authorize
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 1.3.1
 
-Applies to: Vendor provided hardware
+Applies to: Vendor supplied hardware
 
 Method: Copy
 

@@ -2,19 +2,21 @@
 
 ## Maturity Level 1
 
-### Lock Workstation Sessions After Inactivity
+### Lock Endpoint Device Sessions After Inactivity
 
-Automatically lock workstation sessions after a standard period of inactivity.
+[Anti pattern? Provide option?]
+
+Automatically lock endpoint device sessions after a standard period of inactivity.
 
 > This is a basic security control that should be used universally. Employees should also be trained to lock their computers whenever they leave their devices.
 
-Scope: Endpoints configured by provider.
+Applies to: Vendor provided hardware
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 5.1.11
 
 ### Set the Cookie Expiration Time
 
-The session cookie should have a reasonable expiration time. Non-expiring session cookies should only be allowed for applications with no sensitive information, such as one providing basic public information that is customized for a user.
+The session cookie should have a reasonable expiration time given the sensitivity of the data. Non-expiring session cookies should only be allowed for applications with no sensitive information, such as one providing basic public information that is customized for a user.
 
 Scope: Web components
 
