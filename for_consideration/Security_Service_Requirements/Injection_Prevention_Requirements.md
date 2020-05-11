@@ -4,13 +4,15 @@
 
 ### Use Secure HTTP Response Headers
 
+[X-XSS-Protection is depricated, require anyway? https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection]
+
 To protect against cross-site scripting (XSS) and man-in-the-middle (MITM) attacks, use the Content Security Policy (CSP), X-XSS-Protection, and Public-Key-Pins headers.
 
 Applies to: Web components
 
 Method: Copy
 
->Reference: CIS Security Best Practices for Non-Voting Election Technology A1.3.2
+> Reference: CIS Security Best Practices for Non-Voting Election Technology A1.3.2
 
 ### Validate Uploaded Files
 
@@ -33,6 +35,8 @@ Method: Copy
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.3.7
 
 ### Prefer Whitelists Over Blacklists for Input Validation
+
+[Too vague? Do we want to require whitelist in certain cases?]
 
 For each user input field, there should be validation on the input content. Whitelisting input is the preferred approach. Only accept data that meets certain criteria. For input that needs more flexibility, blacklisting can also be applied where known bad input patterns or characters are blocked.
 
