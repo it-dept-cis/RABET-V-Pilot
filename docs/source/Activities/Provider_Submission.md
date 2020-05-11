@@ -26,7 +26,7 @@ The Product Goals statement is a description of the product’s purpose in non-t
 
 This description will be used by the RABET-V Administrator in the Submission Review and Security Claims Review activities to determine if the stated security claims align with the product goals. For example, if the Product Goals include managing sensitive voter information, the RABET-V Administrator will expect to see security claims designed to protect sensitive voter information.
 
-The Product Goals will be published in the [RABET-V Public Portal](./RABET-V_Glossary).
+The Product Goals will be published in the [RABET-V Public Portal](../Appendices/RABET-V_Glossary).
 
 #### Expected Usage – Initial Submission and On Change
 
@@ -34,7 +34,7 @@ The Expected Usage statement describes how the provider expects the election off
 
 This description will be used by the RABET-V Administrator in the Security Claims Review activity to determine if the stated security claims align with the expected usage.
 
-The Expected Usage will be published in the [RABET-V Public Portal](./RABET-V_Glossary).
+The Expected Usage will be published in the [RABET-V Public Portal](../Appendices/RABET-V_Glossary).
 
 #### Product Security Claims – Initial Submission and On Change
 

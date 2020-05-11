@@ -18,4 +18,4 @@ The RABET-V Program consists of eight discrete activities from Product Submissio
 
 1.  Reporting: Produces reports and provides results to stakeholders.
 
-![A flow diagram of the RABET-V Workflow](./media/image1.png)
+![A flow diagram of the RABET-V Workflow](media/election_verification_proc_model-2020-0115.png)

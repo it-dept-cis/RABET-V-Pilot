@@ -191,7 +191,7 @@ A non-voting system is any other information system used to administer an electi
 
 ### Definitions
 
-See [RABET-V Glossary](./RABET-V_Glossary)
+See [RABET-V Glossary](Appendices/RABET-V_Glossary)
 
 ## RABET-V Administrator
 

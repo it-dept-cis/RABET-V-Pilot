@@ -1,16 +1,16 @@
 ## Architecture Review Methodology
 
-![A flow diagram of the Architecture Review Methodology](./media/image2.png)The RABET-V Architecture Review is designed to evaluate the solution’s architectural support for the [RABET-V security services](./MaturityIndexes/Security_Services). This evaluation produces an architectural maturity score for each security service and identifies the components which provide the security service. This score does not measure how well the product executes the security service (i.e., its capability level), just how mature the architecture is that supports the security service. The [Security Services Capability Maturity](./MaturityIndexes/Security_Services_Capability_Maturity_Index) level is a separate metric determined in the [Security Claims Validation](./Security_Claims_Validation) and it indicates how well the product provides the security services.
+![A flow diagram of the Architecture Review Methodology](media/workflow.svg)The RABET-V Architecture Review is designed to evaluate the solution’s architectural support for the [RABET-V security services](../Overview/Security_Services). This evaluation produces an architectural maturity score for each security service and identifies the components which provide the security service. This score does not measure how well the product executes the security service (i.e., its capability level), just how mature the architecture is that supports the security service. The [Security Services Capability Maturity](../Security_Services_Capability_Maturity_Index/README.md) level is a separate metric determined in the [Security Claims Validation](Security_Claims_Validation) and it indicates how well the product provides the security services.
 
-The Architectural Maturity scores and component mappings are used to help assess the risk that changes to the product will negatively impact the security services. These are used in the [Testing Rules Determination Activity](./Testing_Rules_Determination) to identify how to test the product changes. The higher the architectural maturity scores, the less testing required to validate the security capability scores.
+The Architectural Maturity scores and component mappings are used to help assess the risk that changes to the product will negatively impact the security services. These are used in the [Testing Rules Determination Activity](Testing_Rules_Determination) to identify how to test the product changes. The higher the architectural maturity scores, the less testing required to validate the security capability scores.
 
 The Architecture Review is supplied with architecture diagrams, architecture descriptions, and access to a functioning version of the solution. The architecture review will use the functioning solution to validate or fill-in missing pieces from the architecture diagrams and descriptions.
 
 > Software code may be requested in the pilot in order to determine if it significantly improves the reliability of the architecture review.
 
-For more information about what is expected for the architecture diagrams and description, see the [Provider Submission](./Provider_Submission) activity.
+For more information about what is expected for the architecture diagrams and description, see the [Provider Submission](Provider_Submission.md) activity.
 
-For each security service, the Architecture Review will identify the product components at the system and software levels that *PROVIDE* and *CONFIGURE* the security service and those components that *USE* the component that provides the security service. The components which *PROVIDE* or *CONFIGURE* the security service are referred to as [1st Degree components](./RABET-V_Glossary). The ones which use the 1st degree components are referred to as [2nd Degree components](file:///C:/Users/wilso/RABET-V_Glossary). The 1st and 2nd degree components together comprise the Security Service Architecture.
+For each security service, the Architecture Review will identify the product components at the system and software levels that *PROVIDE* and *CONFIGURE* the security service and those components that *USE* the component that provides the security service. The components which *PROVIDE* or *CONFIGURE* the security service are referred to as [1st Degree components](../Appendices/RABET-V_Glossary). The ones which use the 1st degree components are referred to as [2nd Degree components](../Appendices/RABET-V_Glossary). The 1st and 2nd degree components together comprise the Security Service Architecture.
 
 This activity will also complete the system, security and software architectural viewpoints. The system level diagram identifies the larger components of the environment used to host and manage the election technology software application(s). The software level diagram identifies the components a layer deeper into the election technology software application(s).
 
@@ -66,7 +66,7 @@ In this step, we complete the Security Service Architecture by labeling the syst
 
 Apply the security service architectural maturity rubric and assign a score to each identified security service.
 
-For more information please see [Security Service Architectural Maturity](./MaturityIndexes/Security_Services_Architectural_Maturity_Index)
+For more information please see [Security Service Architectural Maturity](../Security_Services_Architectural_Maturity_Index/README)
 
 #### Perform security service gap analysis
 
@@ -90,10 +90,10 @@ A sensitivity label applied to data. Two data labels are defined for RABET-V:
 
 1.  Data Sensitivity - a label indicating the sensitivity of the data the component is handling. This may be thought of as a label of “confidentiality”. This is measured by the impact of the data being exposed to an unauthorized party. Sensitivity can be determined by examining a component’s exposed interfaces.
 
-For more information, see the related definition for [Data Sensitivity](./RABET-V_Glossary.md#Data-Sensitivity)
+For more information, see the related definition for [Data Sensitivity](../Appendices/RABET-V_Glossary.md#Data-Sensitivity)
 
 #### Services
 
 A system level component that provides data processing capabilities.
 
-For more information, see the related definition for [Process](./RABET-V_Glossary.md#Process)
+For more information, see the related definition for [Process](../Appendices/RABET-V_Glossary.md#Process)

@@ -22,11 +22,12 @@ if sys.platform.startswith('win32'):
 
 ## Build Instructions
 
-First, install the required libraries and then build the html files:
+First, install the required libraries, change directory to `docs`, and then build the html files:
 
 ```sh
 pipenv install
 pipenv shell
+cd docs
 sphinx-build -b html . build
 ```
 

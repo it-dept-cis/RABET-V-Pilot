@@ -19,9 +19,9 @@ fmt_to_option = {
     "latex": ("--export-pdf", "pdf"),
     "beamer": ("--export-pdf", "pdf"),
     #use PNG because EMF and WMF break transparency
-    "docx": ("--export-png", "png"),
+    "docx": ("--export-type=png", "png"),
     #because of IE
-    "html": ("--export-png", "png")
+    "html": ("--export-type=png", "png")
 }
 
 def svg_to_any(key, value, fmt, meta):
@@ -48,7 +48,7 @@ def svg_to_any(key, value, fmt, meta):
             except OSError:
                 mtime = -1
             if mtime < os.path.getmtime(src):
-                cmd_line = ['inkscape', option[0], eps_name, src]
+                cmd_line = ['inkscape', option[0], '--export-filename={}'.format(eps_name), src]
                 sys.stderr.write("Running %s\n" % " ".join(cmd_line))
                 subprocess.call(cmd_line, stdout=sys.stderr.fileno())
             if attrs:
