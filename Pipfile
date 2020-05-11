@@ -8,5 +8,6 @@ sphinx = "*"
 recommonmark = "*"
 sphinx-markdown-tables = "*"
 pandocfilters = "*"
+sphinx-rtd-theme = "*"
 
 [dev-packages]
