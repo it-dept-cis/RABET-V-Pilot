@@ -6,55 +6,58 @@ For more information of the Background and Motivation for RABET-V, see CIS' [How
 
 In this repository, you will find three main areas:
 
-* [Working Model](WorkingModel/). The Working Model defines the RABET-V process details. Read through the working model to get an idea of how RABET-V works in detail.  
-* [Research Plan](ResearchPlan/). The Research Plan discusses how we intend on evaluating RABET-V throughout the Pilot Program. Read this to understand the pilot project.
-* [Economic Model](EconomicModel/). The Economic Model proposes various methods of deploying and operating a RABET-V process in the United States for non-voting election technology verification.
+* [docs](docs). This defines the RABET-V program details. Read through the program to get an idea of how RABET-V works in detail.
+* [Research Plan](research/Research_Plan). The Research Plan discusses how we intend on evaluating RABET-V throughout the Pilot Program. Read this to understand the pilot project.
+* [Economic Model](research/Economic_Model). The Economic Model proposes various methods of deploying and operating a RABET-V process in the United States for non-voting election technology verification.
 
 ## Steering Committee
 The RABET-V Pilot Program is guided by a steering committee comprised of election officials, election technology providers, and other election infrastructure stakeholders.
 We will add steering committee member information below as we confirm members:
-* Aaron Wilson, Sr. Director of Election Security at The Center for Internet Security (CIS) - Steering Committee Chair
-* Jerome Lovato, Testing and Certification Director at The Election Assistance Commission (EAC) 
-* Don Palmer, EAC Commissioner
-* David Beirne, Federal Voting Assistance Program (FVAP)
-* Nikki Charlson, Maryland State Board of Elections
-* Spencer Wood, Ohio Secretary of State's Office
-* Richard Rydecki, Wisconsin Elections Commission Staff
-* Christina Adkins, Texas Secretary of State's Office
-* Jessica Myers, Pennsylvania Secretary of State's Office
-* Mike Moser, Pennsylvania Secretary of State's Office
+
+- Aaron Wilson, Sr. Director of Election Security at The Center for Internet Security (CIS) - Steering Committee Chair
+- Jerome Lovato, Testing and Certification Director at The Election Assistance Commission (EAC) 
+- Don Palmer, EAC Commissioner
+- David Beirne, Federal Voting Assistance Program (FVAP)
+- Nikki Charlson, Maryland State Board of Elections
+- Spencer Wood, Ohio Secretary of State's Office
+- Richard Rydecki, Wisconsin Elections Commission Staff
+- Christina Adkins, Texas Secretary of State's Office
+- Jessica Myers, Pennsylvania Secretary of State's Office
+- Mike Moser, Pennsylvania Secretary of State's Office
 
 ## Pilot Participants
 
 The following technology providers have volunteered to have their products used in the RABET-V Pilot. 
-* Scytl - Election Night Reporting
-* VR Systems - Electronic Pollbooks and Election Night Reporting
-* KNOWink - Electronic Pollbook
+
+- Scytl - Election Night Reporting
+- VR Systems - Electronic Pollbooks and Election Night Reporting
+- KNOWink - Electronic Pollbook
 
 ## Technology Advisory Committee
 
 The RABET-V Technology Advisory Committee is a growing group of experts in relevant subject matter that are volunteering their time to assist in the refinement of the RABET-V process. 
-* Jono Spring, SEI CERT Division
-* Lauren Cooper, SEI CERT Division
-* Brian Glas, OWASP SAMM
-* Beau Woods, Atlantic Council
-*	Mary M Shaw, Carnegie Melon
-* David Garlan, Carnegie Melon
-* Ryan Wagner, Carnegie Melon 
-* Joshua Bloch, Carnegie Melon
-* Daniel Plakosh, SEI Software Solutions Division
-* Gema Howell, NIST
-* Mary Brady, NIST
-* Gordon Gillerman, NIST
-* Lisa Carnahan, NIST
-* Rob Gordon
+
+- Jono Spring, SEI CERT Division
+- Lauren Cooper, SEI CERT Division
+- Brian Glas, OWASP SAMM
+- Beau Woods, Atlantic Council
+- Mary M Shaw, Carnegie Melon
+- David Garlan, Carnegie Melon
+- Ryan Wagner, Carnegie Melon 
+- Joshua Bloch, Carnegie Melon
+- Daniel Plakosh, SEI Software Solutions Division
+- Gema Howell, NIST
+- Mary Brady, NIST
+- Gordon Gillerman, NIST
+- Lisa Carnahan, NIST
+- Rob Gordon
 
 ## Program Administration and Research
-The program will be administered by CIS team with assistance from The Turnout. Dr. Mike Garcia will serve as the Research Lead.
+The program will be administered by CIS team with assistance from [The Turnout](https://turnout.rocks). Dr. Mike Garcia will serve as the Research Lead.
 
 ## Pilot Process
 
-The RABET-V Pilot Program will first establish a detailed version of the RABET-V process called the [RABET-V Working Model](WorkingModel). This version will detail how each activity will be conducted. The Working Model will be iteratively reviewed by the program Steering Committee and modified as necessary.
+The RABET-V Pilot Program will first establish a detailed version of the RABET-V process called the [RABET-V Working Model](docs/source/README). This version will detail how each activity will be conducted. The Working Model will be iteratively reviewed by the program Steering Committee and modified as necessary.
 
 Using the Working Model, the Pilot Program will conduct initial reviews on real products from Pilot Program participants. Each initial review will execute all seven RABET-V activities resulting in the creation of Testing Rules and initial verification results for each product. The Architecture Review and Process Assessments will follow the architecture and process review steps detailed in the Working Model, which may be updated as necessary throughout the Pilot Program.
 

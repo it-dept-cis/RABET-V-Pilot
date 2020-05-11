@@ -1,0 +1,13 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+sphinx = "*"
+recommonmark = "*"
+sphinx-markdown-tables = "*"
+pandocfilters = "*"
+sphinx-rtd-theme = "*"
+
+[dev-packages]
