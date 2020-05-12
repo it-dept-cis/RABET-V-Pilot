@@ -12,6 +12,8 @@ Install the latest stable version of any security-related updates on all network
 
 Applies to: Hosted components
 
+Method: Copy
+
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 1.3.4
 
 ### Ensure Anti-Malware Software and Signatures Are Updated
@@ -22,6 +24,8 @@ Applies to: Hosted components
 The product must allow an administrator to perform updates to its anti-malware software, scanning engine and signature database.
 
 > Ensure that all anti-malware instances are receiving signature updates. This requires periodic review of devices within the election technology system.
+
+Applies to: All
 
 Method: Derived
 
@@ -43,17 +47,17 @@ Method: Derived
 
 ### Use USB Port Protectors on Unused Ports
 
+[This could be done at the time of delivery, but if the needed USB ports change based on device configuration then this might need to be reworded/ struck]
+
 Cover all unused USB ports on endpoint devices with locks or tamper-evident port protectors to ensure unauthorized USB devices are not inserted into the device.
 
 > This is especially important for devices that are taken into less physically secure environments.
 
+Applies to: Provider supplied hardware
+
 Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.5.6
-
-Applies to: Provider supplied hardware
-
-Method: Copy
 
 ## Maturity Level 2
 
@@ -63,27 +67,37 @@ Maintain standard, documented security configuration standards for all authorize
 
 > This is especially important for all network devices which enforce a network boundary between the election solution and another network segment.
 
-> Reference: CIS Security Best Practices for Non-Voting Election Technology 1.3.1
-
 Applies to: Vendor supplied hardware
 
 Method: Copy
 
+> Reference: CIS Security Best Practices for Non-Voting Election Technology 1.3.1
+
 ### Perform Complete System Backups
 
-[Remove?]
+[Remove? Could change to "product must provide the ability to backup..."]
 
 Ensure that all of the organization's key systems are backed up as a complete system, through processes such as imaging, to enable the quick recovery of an entire system.
 
 > These types of backups should be done prior to each election for each type of election system used. This allows for quick recovery back to the known good version. Maintaining extra units created from these system backups is another good approach.
 
->Reference: CIS Security Best Practices for Non-Voting Election Technology 1.4.2
+Applies to: All
+
+Method: Copy
+
+> Reference: CIS Security Best Practices for Non-Voting Election Technology 1.4.2
 
 ### Establish Secure Configurations
+
+[Need better delineation between this and the "Network Devices" req in the same vein]
 
 Maintain documented, standard security configuration standards for all authorized operating systems and software.
 
 > Using a vetted configuration standard, identify each component of the election technology and its secure configuration standard to use.
+
+Applies to: All
+
+Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.1.1
 
@@ -93,9 +107,15 @@ Deploy system configuration management tools that will automatically enforce and
 
 > Where possible, each component should be inspected and updated with the latest known good secure configuration prior to use in any election.
 
+Applies to: All
+
+Method: Copy
+
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.1.5
 
 ### Deploy Automated Operating System Patch Management Tools
+
+[Delete? Overlaps with RABET-V]
 
 Deploy automated software update tools in order to ensure that the operating systems are running the most recent security updates provided by the software vendor.
 
@@ -107,27 +127,37 @@ Applies to: Hosted components
 
 ### Deploy Automated Software Patch Management Tools
 
+[Delete? Overlaps with RABET-V]
+
 Deploy automated software update tools in order to ensure that third-party software on all systems is running the most recent security updates provided by the software vendor.
 
 > Ensure that software is patched until it is no longer appropriate to make changes to software prior to an election. After this date, manually review patches to determine if the operational risk of patching is greater than the security risk of the vulnerability the patch fixes.
 
->Reference: CIS Security Best Practices for Non-Voting Election Technology 2.2.5
+> Reference: CIS Security Best Practices for Non-Voting Election Technology 2.2.5
 
 ### Utilize Centrally Managed Anti-Malware Software
 
-[Remove?]
+[Remove? Seems out of scope]
 
 Utilize centrally managed anti-malware software to continuously monitor and defend each of the organization's workstations and servers.
 
 > All endpoints in an election technology solution must use properly installed and constantly running anti-malware software. Central management allows administrators to enforce this rule.
 
->Reference: CIS Security Best Practices for Non-Voting Election Technology 2.3.1
+Applies to: All
+
+Method: Copy
+
+> Reference: CIS Security Best Practices for Non-Voting Election Technology 2.3.1
 
 ### Limit Access to Scripting Tools
 
 Limit access to scripting tools (such as Microsoft PowerShell and Python) to only administrative or development users with the need to access those capabilities.
 
 > Election technology may make use of these technologies, but access to them should be limited to only the most trusted and protected accounts.
+
+Applies to: All
+
+Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.4.7
 
@@ -137,7 +167,11 @@ Configure devices so that they automatically conduct an anti-malware scan of rem
 
 > Use of USB devices is very common in election systems. Therefore, it is critical that all external devices be scanned for malware prior to use.
 
->Reference: CIS Security Best Practices for Non-Voting Election Technology 2.5.5
+Applies to: Vendor supplied hardware
+
+Method: Copy
+
+> Reference: CIS Security Best Practices for Non-Voting Election Technology 2.5.5
 
 ### Use Standard Hardening Configuration Templates for Databases
 
@@ -145,7 +179,11 @@ For applications that rely on a database, use standard hardening configuration t
 
 > CIS Benchmarks are available for various database offerings such as SQL Server, MySQL, and PostgreSQL. Guidance for cloud-based databases are also available.
 
->Reference: CIS Security Best Practices for Non-Voting Election Technology 3.2.16
+Applies to: All
+
+Method: Copy
+
+> Reference: CIS Security Best Practices for Non-Voting Election Technology 3.2.16
 
 ## Maturity Level 3
 
@@ -157,7 +195,11 @@ Ensure that all of the organization's key systems are restored from a complete s
 
 > Full system recovery should be tested well in advance of each election for each type of election system used. This allows for verification that quick recovery back to the known good version is functioning properly.
 
->Reference: CIS Security Best Practices for Non-Voting Election Technology 1.4.6
+Applies to: All
+
+Method: Copy
+
+> Reference: CIS Security Best Practices for Non-Voting Election Technology 1.4.6
 
 ### Establish DDoS Mitigation Services With a Third-Party DDoS Mitigation Provider
 
@@ -166,6 +208,8 @@ Obtain third-party DDoS mitigation services.
 > A number of DDoS protection services have made their offerings available to election jurisdictions. Whether free or at a cost, these services can be very helpful to protect the most critical internet-connected election functions.
 
 Applies to: Hosted components
+
+Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 1.5.6
 
@@ -193,6 +237,10 @@ Enable anti-exploitation features such as Data Execution Prevention (DEP) or Add
 
 > This should be considered for election technology servers and other sensitive endpoints.
 
+Applies to: All
+
+Method: Copy
+
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.3.3
 
 ### Disable Access to USB Devices Where Possible
@@ -203,6 +251,8 @@ Disable the use of USB devices on a system to completely remove the risk of remo
 
 Applies to: Vendor provided hardware
 
+Method: Copy
+
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.5.7
 
 ### Use USB Write Blocker to Transfer Data Into Sensitive Systems
@@ -210,5 +260,9 @@ Applies to: Vendor provided hardware
 USB Write Blockers allow a high integrity system to read the content of a USB device while mitigating the risk of transferring any malicious payload.
 
 > These devices should be used when transferring data into the voting system or the voter registration system using removable USB media.
+
+Applies to: Vendor supplied hardware
+
+Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.5.8

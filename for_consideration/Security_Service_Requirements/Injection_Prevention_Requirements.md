@@ -1,10 +1,12 @@
 # Injection Prevention Requirements
 
+[The use of `interpreted` is defined as: Input that may be treated as data or as code depending on its content.]
+
 ## Maturity Level 1
 
 ### Use Secure HTTP Response Headers
 
-[X-XSS-Protection is depricated, require anyway? https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection]
+[X-XSS-Protection is deprecated, require anyway? https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection]
 
 To protect against cross-site scripting (XSS) and man-in-the-middle (MITM) attacks, use the Content Security Policy (CSP), X-XSS-Protection, and Public-Key-Pins headers.
 
@@ -34,15 +36,27 @@ Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.3.7
 
-### Prefer Whitelists Over Blacklists for Input Validation
+### Use Whitelists On Interpreted Input
 
-[Too vague? Do we want to require whitelist in certain cases?]
+[Dropped blacklisting as not strong enough]
 
-For each user input field, there should be validation on the input content. Whitelisting input is the preferred approach. Only accept data that meets certain criteria. For input that needs more flexibility, blacklisting can also be applied where known bad input patterns or characters are blocked.
+For input that will be interpreted, whitelist acceptable inputs. Only inputs that appear on the whitelist will be accepted.
 
 Applies to: Interpreted inputs (including SQL)
 
-Method: Copy
+Method: Derived
+
+> Reference: CIS Security Best Practices for Non-Voting Election Technology A1.3.10
+
+### Validate all input
+
+For each user input field, there should be validation on the input content.
+
+> Examples of validation include data type validation, length validation, pattern validation, among others.
+
+Applies to: All
+
+Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.3.10
 
@@ -50,7 +64,7 @@ Method: Copy
 
 ### Use Parameterized Inputs
 
-Input to a interpreter (e.g. a SQL Engine) should be passed using parameterized input, such as a bind variable, or parameter into a stored procedure. The interpreter must also provide injection prevention. For example `dbms_sql` (Oracle), `EXECUTE IMMEDIATE` (Oracle) and `execute sp_executesql` (SQL Server) allow dynamic SQL to be constructed from within stored procedures or triggers.
+Input to an interpreter (e.g. an SQL Engine) should be passed using parameterized input, such as a bind variable. If Dynamic SQL is constructed within stored procedures, the procedural database code must also use bind variables. For example `dbms_sql` (Oracle), `EXECUTE IMMEDIATE` (Oracle) and `execute sp_executesql` (SQL Server) allow dynamic SQL to be constructed from within stored procedures or triggers.
 
 Applies to: Interpreted inputs
 
@@ -61,6 +75,8 @@ Satisfies: Prefer Whitelists Over Blacklists for Input Validation
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.3.9
 
 ### Use the X-Frame-Options Header
+
+[Split up the two mitigation techniques into M2 and M3 levels?]
 
 Use the X-Frame-Options header to prevent content from being loaded by a foreign site in a frame. This mitigates Clickjacking attacks. For older browsers that do not support this header, add frame busting JavaScript code to mitigate Clickjacking (although this method is not foolproof and can be circumvented).
 
@@ -82,9 +98,13 @@ Method: Copy
 
 ### Validate the Source of Input
 
+[Confusing]
+
 The source of the input must be validated. For example, if input is expected from a POST request, do not accept the input variable from a GET request.
 
-[Need more review]
+Applies to: Web components
+
+Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.3.4
 
@@ -100,9 +120,13 @@ Method: Copy
 
 ## Maturity Level 3
 
-- Deploy Web Application Firewalls (WAFs) - Protect web applications by deploying WAFs that inspect all traffic flowing to the web application for common web application attacks. For applications that are not web-based, specific application firewalls should be deployed if such tools are available for the given application type. If the traffic is encrypted, the device should either sit behind the encryption or be capable of decrypting the traffic prior to analysis. If neither option is appropriate, a host-based web application firewall should be deployed.
+### Deploy Web Application Firewalls (WAFs)
+
+Protect web applications by deploying WAFs that inspect all traffic flowing to the web application for common web application attacks. For applications that are not web-based, specific application firewalls should be deployed if such tools are available for the given application type. If the traffic is encrypted, the device should either sit behind the encryption or be capable of decrypting the traffic prior to analysis. If neither option is appropriate, a host-based web application firewall should be deployed.
 
 > These can be very effective at protecting multiple web applications at once. This should be considered for web deployments of multiple election applications in the same hosting environment.
+
+Applies to: All
 
 Method: Copy
 
