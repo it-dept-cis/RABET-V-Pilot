@@ -20,6 +20,9 @@ Method: Copy
 
 The product must provide a mechanism to maintain the storage of logs over a certain period of time.
 
+[AMW: I think violations of this will be obvious]
+
+
 > Election technology components should be designed to store audit logs for multiple significant election events without losing any data. Logs should be retained for a minimum of 180 days with the option to archive logs for longer periods of time.
 
 Applies to: All
@@ -85,6 +88,8 @@ Method: New
 ### Centralize Anti-Malware Logging
 
 The product must allow all malware detection events to be sent to enterprise anti-malware administration tools and event log servers for analysis and alerting.
+
+
 
 > This assist in the early detection of an incident and ensures the proper security personnel are alerted to malware on the network.
 

@@ -1,5 +1,7 @@
 # Secret Management Requirements
 
+[AMW: Perhaps we need to consult outside help for these sets of requirements]
+
 ## Maturity Level 1
 
 ### Don't Hardcode Credentials

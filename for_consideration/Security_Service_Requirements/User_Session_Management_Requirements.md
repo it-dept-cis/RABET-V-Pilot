@@ -5,6 +5,7 @@
 ### Lock Endpoint Device Sessions After Inactivity
 
 [Anti pattern? Require vendor to provide option?]
+[AMW: sure]
 
 Automatically lock endpoint device sessions after a standard period of inactivity.
 
@@ -29,6 +30,7 @@ Method: Derived
 ### Place a Logout Button on Every Page
 
 [Seems like a M2, certainly not required]
+[AMW: seems M1 to me]
 
 The logout button or logout link should be easily accessible to the user on every page after they have authenticated.
 
@@ -61,8 +63,9 @@ Method: Copy
 ### Invalidate the Session after Logout
 
 [Seems overbroad]
+[AMW: i think its ok]
 
-When the user logs out of the application, the session and corresponding data on the server must be destroyed. This ensures that the session cannot be accidentally revived.
+When the user logs out of the application, the session on the server must be destroyed. This ensures that the session cannot be accidentally revived.
 
 Applies to: Web applications
 
@@ -99,6 +102,7 @@ Method: Copy
 ### Implement an Absolute Session Timeout
 
 [This could be an antipattern, think EPBs or any product used on Election Day]
+[AMW: I agree, consider rewording]
 
 Users should be logged out after an extensive amount of time (e.g., 4-8 hours) has passed since they logged in, regardless of activity. This helps mitigate the risk of an attacker using a hijacked session.
 

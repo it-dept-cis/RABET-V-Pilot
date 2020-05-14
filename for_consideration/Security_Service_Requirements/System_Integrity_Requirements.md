@@ -5,6 +5,7 @@
 ### Install the Latest Stable Version of Any Security-Related Updates on All Network Devices
 
 [Remove? Seems to overlap with RABET-V]
+[AMW: I dont understand the overlap. We want to enable this, therefore requiring it seems consistent]
 
 Install the latest stable version of any security-related updates on all network devices.
 
@@ -20,6 +21,7 @@ Method: Copy
 
 [Revert to previous wording and add hosted clause?]
 [Cannot apply to iOS?]
+[AMW: Leave it and add a carve out "for systems that support anti-malware software"]
 
 The product must allow an administrator to perform updates to its anti-malware software, scanning engine and signature database.
 
@@ -76,6 +78,7 @@ Method: Copy
 ### Perform Complete System Backups
 
 [Remove? Could change to "product must provide the ability to backup..."]
+[AMW: Hosted systems would be backed up (there will be evidence of this. On Prem must provide the ability. So, we may need to add that language in addition to the current language]
 
 Ensure that all of the organization's key systems are backed up as a complete system, through processes such as imaging, to enable the quick recovery of an entire system.
 
@@ -91,7 +94,7 @@ Method: Copy
 
 [Need better delineation between this and the "Network Devices" req in the same vein]
 
-Maintain documented, standard security configuration standards for all authorized operating systems and software.
+Maintain documented, standard security configuration standards for all authorized operating systems and software such as the CIS Benchmarks.
 
 > Using a vetted configuration standard, identify each component of the election technology and its secure configuration standard to use.
 
@@ -101,21 +104,12 @@ Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.1.1
 
-### Deploy System Configuration Management Tools
 
-Deploy system configuration management tools that will automatically enforce and redeploy configuration settings to systems at regularly scheduled intervals.
-
-> Where possible, each component should be inspected and updated with the latest known good secure configuration prior to use in any election.
-
-Applies to: All
-
-Method: Copy
-
-> Reference: CIS Security Best Practices for Non-Voting Election Technology 2.1.5
 
 ### Deploy Automated Operating System Patch Management Tools
 
 [Delete? Overlaps with RABET-V]
+[AMW: We should discuss. Automated is best but it does become a problem of review/approve.]
 
 Deploy automated software update tools in order to ensure that the operating systems are running the most recent security updates provided by the software vendor.
 
@@ -128,6 +122,7 @@ Applies to: Hosted components
 ### Deploy Automated Software Patch Management Tools
 
 [Delete? Overlaps with RABET-V]
+[AMW: We need to strike a balance. Automated into a pre-production system which is then submitted to RABET-V? Then, manually pushed upon approval? What if we allowed them to patch OS and 3rd party components and the verification happens retroactively?]
 
 Deploy automated software update tools in order to ensure that third-party software on all systems is running the most recent security updates provided by the software vendor.
 
@@ -138,6 +133,7 @@ Deploy automated software update tools in order to ensure that third-party softw
 ### Utilize Centrally Managed Anti-Malware Software
 
 [Remove? Seems out of scope]
+[AMW: Change the language to limit it to product components]
 
 Utilize centrally managed anti-malware software to continuously monitor and defend each of the organization's workstations and servers.
 
@@ -190,6 +186,7 @@ Method: Copy
 ### Verify Complete System Recovery
 
 [Process, remove?]
+[AMW: I reluctantly agree]
 
 Ensure that all of the organization's key systems are restored from a complete system backup, through processes such as imaging, to verify the quick recovery of an entire system.
 
@@ -216,6 +213,7 @@ Method: Copy
 ### Maintain Secure Images
 
 [Process, remove? Not really part of architecture]
+[AMW: I like the idea of taking an image after a RABET-V verifcation]
 
 Maintain secure images or templates for all components based on the selected configuration standards. Any new system deployment or existing system that becomes compromised should be imaged using one of those images or templates.
 
@@ -230,6 +228,18 @@ Utilize a Security Content Automation Protocol (SCAP) compliant configuration mo
 > This prevents accidental misconfiguration and allows election technology providers the ability to prove the component has been properly and securely configured.
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.1.4
+
+### Deploy System Configuration Management Tools
+
+Deploy system configuration management tools that will automatically enforce and redeploy configuration settings to systems at regularly scheduled intervals.
+
+> Where possible, each component should be inspected and updated with the latest known good secure configuration prior to use in any election.
+
+Applies to: All
+
+Method: Copy
+
+> Reference: CIS Security Best Practices for Non-Voting Election Technology 2.1.5
 
 ### Enable Operating System Anti-Exploitation Features and Deploy Anti-Exploit Technologies
 

@@ -8,6 +8,8 @@
 
 [X-XSS-Protection is deprecated, require anyway? https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection]
 
+[AMW: What is the replacement? Just use that]
+
 To protect against cross-site scripting (XSS) and man-in-the-middle (MITM) attacks, use the Content Security Policy (CSP), X-XSS-Protection, and Public-Key-Pins headers.
 
 Applies to: Web components
@@ -101,6 +103,8 @@ Method: Copy
 [Confusing]
 
 The source of the input must be validated. For example, if input is expected from a POST request, do not accept the input variable from a GET request.
+
+[AMW: this should be reworded to require the use of the proper http method]
 
 Applies to: Web components
 
