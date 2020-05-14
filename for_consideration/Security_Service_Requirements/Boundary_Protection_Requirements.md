@@ -2,6 +2,9 @@
 
 ## Maturity Level 1 
 - Application boundaries, such as network boundaries and APIs are inventoried - Maintain an up-to-date inventory of all of the organization's network  and API boundaries. [Not sure if this makes sense from an application/product stand point. For SaaS platforms, the network boundary kinda makes sense and the API boundaries might. Alternative is to remove this one]
+
+[AMW: I kind of agree on inventory ones because how do we enforce without helping them pass?]
+
 >Deployments of election technology should be segregated into their own network segment. These should be known and kept up to date. If the application needs to provide access through an API or similar types of interfaces then those boundaries are also captured
 
 Applies to: All components
@@ -11,6 +14,9 @@ Method: Copy
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.1.1
 
 - Require all infrastructure maintenance Use Multi-Factor Authentication and Encryption - Require that all remote administration to the organization's network and systems use multifactor authentication (MFA) and be encrypted. [I may think we can cut this, since it overlaps with network one. The use of MFA for remote access should be part of their general security practices and since only folks managing the infrastructure, which define below, or administrative users, which we define in Authentication already require MFA, this might be duplicative]
+
+[AMW: ok to cut it]
+
 >Remote access to election technology should be limited to select personnel who are authenticated via MFA over encrypted channels.
 
 Applies to: Hosted components
@@ -20,6 +26,9 @@ Method: Derived
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.1.11
 
 - Deny Communications with Known Malicious IP Addresses - Deny communications with known malicious or unused Internet IP addresses. Limit access to trusted and necessary IP address ranges at each of the organization's network boundaries.
+
+[AMW: This is black list and white list approach, which should be separate. Black list should apply to all network boundaries. White list should apply to the most secure ones. Also, I liked the earlier requirement that mentioned the application API as a boundary. Please add that here.]
+
 >This can be done using a network firewall at the parameter of your election network. Preventing access from known malicious IP addresses can be done for all election applications, even public facing ones. The Election Infrastructure Information Sharing and Analysis Center (EI-ISAC) provides list of known malicious IP addresses.
 
 Applies to: Hosted components
@@ -51,7 +60,7 @@ Applies to: Hosted components
 Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.3.2
-- Manage Network Devices Using Multifactor Authentication and Encrypted Sessions - Manage all network devices using MFA and encrypted sessions.
+- Manage Network Infrastructure Using Multifactor Authentication and Encrypted Sessions - Manage all network infrastructure using MFA and encrypted sessions.
 >The ability to manage network devices should be limited to authorized personnel accessing the management interface locally or using MFA in encryption sessions.
 
 Applies to: Hosted components
@@ -60,6 +69,10 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.3.5
 - Port and Packet Size Filtering - Consider port and packet size filtering by the upstream network service provider.
+
+
+[AMW: What does it mean to consider?]
+
 >Work with upstream providers to filter out as much as possible that is not related to the election service being provided.
 
 Applies to: Hosted Components
@@ -69,6 +82,9 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.5.2
 - Configure Perimeter Devices to Prevent Common Types of Attacks - Define strict �TCP keepalive� and �maximum connection� on all perimeter devices, such as firewalls and proxy servers. This assists with preventing the success of SYN Flood attacks.
+
+[AMW: There is also a SYN Cookie approach we need to require somewhere. This is probablt the right place.]
+
 >A SYN Flood is one of the most common forms of DDoS attacks observed by the MS-ISAC.
 
 Applies to: Hosted components
@@ -78,6 +94,9 @@ Method: Copy
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.5.4
 
 - Maintain an Inventory of Authorized Wireless Access Capabilities - Maintain an inventory of authorized wireless access capabilities connected to the infrastructure.
+
+[AMW: Same comment about inventory requirements. Need to convert to something meaningful or remove.]
+
 >Identify election technology that uses a wireless connection, and document each access point. For Wi-Fi, this will be a Wi-Fi router and any endpoint devices. For Bluetooth and NFC, this may be multiple devices. The decision to enable wireless technology should be made by the election administrator using a risk-based decision-making process.
 
 Applies to: On-prem components
@@ -86,6 +105,9 @@ Method: Derived
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.6.1
 - Dedicated wireless networks - Create a separate wireless network for each separate use. Access from the wireless network should be treated as untrusted and filtered and audited accordingly.[IF we really want dedicate wireless environment, then we would need mutual authentication, I suggest removing this one]
+
+[AMW: Dont we have a requirement for mutual authentication?]
+
 >Use of any wireless technology in election technology should be isolated for a very specific purpose, and incoming connections from the wireless network should be handled with care.
 
 Applies to: On-prem components
@@ -114,7 +136,7 @@ Method: Copy
 ## Maturity Level 2 
 
 
-- Enable Firewall Logging - Enable firewall logging of accepted and denied traffic to determine where the DDoS may be originating from.
+- Enable Firewall Logging - Enable firewall logging of accepted and denied traffic to determine where a DDoS may be originating from.
 >Most election technology must be careful not to block based on IP address unless there is evidence of malicious behavior.
 
 Applies to: Hosted components
@@ -131,6 +153,9 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.5.5
 - Limit Wireless Access on Client Devices - Configure wireless access only on client machines that do not have an essential wireless business purpose. Allow access only to authorized wireless networks, and restrict access to other wireless networks.
+
+[AMW: I think this has a typo and "do not" should be "do". But also, how does this one differ from the ones at maturity level 1?]
+
 >All Wi-Fi connected election technology devices must only connect to the authorized wireless access point and no other.
 
 Applies to: On-prem components
@@ -170,6 +195,9 @@ Method: Copy
 
 - Manage All Devices Remotely Logging into Internal Network - Scan all enterprise devices remotely logging into the organization's network prior to accessing the network to ensure that each of the organization's security policies has been enforced in the same manner as local network devices.
 [This might another to cut]
+
+[AMW: I actually like it. The use of a mobile device manager to enforce a policy on all devices is amazing. ]
+
 >Limit the number of devices that are connected to election technology network segments and keep standard business networks separate.
 
 Applies to: Hosted components
@@ -196,7 +224,7 @@ Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.7
 
-- Use Wireless Authentication Protocols That Require Mutual, Multifactor Authentication - Ensure that wireless networks use authentication protocols such as Extensible Authentication Protocol-Transport Layer Security (EAP/TLS) that requires mutual, multifactor authentication. [This is also possibly a level three, since its probably not easy to set this up on client environments]
+- Use Wireless Authentication Protocols That Require Mutual, Multifactor Authentication - Ensure that wireless networks use authentication protocols such as Extensible Authentication Protocol-Transport Layer Security (EAP/TLS) that requires mutual, multifactor authentication. 
 >Use of wireless technology in election technology demands that all parties be properly and fully authenticated.
 
 Applies to: On-prem components
