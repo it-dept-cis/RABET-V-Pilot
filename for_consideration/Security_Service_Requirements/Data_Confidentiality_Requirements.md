@@ -10,6 +10,9 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.6.7
 - Use Only Standardized and Extensively Reviewed Encryption Algorithms - Use only standardized and extensively reviewed encryption algorithms.
+
+[AMW: Title and description are the same]
+
 >Use standard libraries available from reputable sources instead of developing your own cryptographic solutions.
 
 Applies to: All components
@@ -18,6 +21,9 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 3.2.15
 - Maintain an Inventory of Sensitive Information - Maintain an inventory of all sensitive information stored, processed, or transmitted by the organization's technology systems, including information located onsite or at a remote service provider.
+
+[AMW: Can we convert this to something testable?]
+
 >Locate all data that has privacy concerns and election operations concerns if its confidentiality or integrity were to be compromised.
 
 Applies to: All components
@@ -26,6 +32,9 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.1.1
 - Remove ["Isolate" might be more accommodating to different models] Sensitive Data or Systems Not Regularly Accessed by the Organization - Remove sensitive data or systems not regularly accessed by the organization from the network. These systems should only be used as stand-alone systems (disconnected from the network) by the business unit needing to occasionally use the system or completely virtualized and powered off until needed.
+
+[AMW: I like hte phrase "remove or isolate"]
+
 >Disconnect systems that store or process election data that do not absolutely have to be online. Do not leave USB devices with sensitive information plugged into machines when they are not in use.
 
 Applies to: All components
@@ -43,6 +52,9 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.3.1
 - Encrypt Transmittal of Username and Authentication Credentials - Ensure that all account usernames and authentication credentials are transmitted across networks using encrypted channels.
+
+[AMW: Does this include password reset links sent via email?]
+
 >This includes network traffic and data moved using removable media.
 
 Applies to: All components
@@ -51,6 +63,9 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 5.1.5
 - Limit the Use and Storage of Sensitive Data - Conduct an evaluation to ensure that sensitive data is not being unnecessarily transported or stored. Where possible, use tokenization to reduce data exposure risks.
+
+[AMW: reword this one to require data is not stored or transmitted when it doesn't have to be]
+
 >
 
 Applies to: All components
@@ -139,6 +154,8 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.3
 - Encrypt Sensitive Information at Rest - Encrypt all sensitive information at rest using a tool that requires a secondary authentication mechanism not integrated into the operating system, in order to access the information.
+
+[AMW: is there an example of a secondary authentication mechanism not integrated into the operating system?]
 >Election databases and their backups, for example, should be encrypted to ensure they are protected from manipulation.
 
 Applies to: All components
@@ -147,6 +164,9 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.4
 - Encrypt Data Stored in Cloud Storage Containers - Use application encryption with secret keys only known to the data owner(s) to protect confidential data stored in a cloud storage container.
+
+[AMW: Move to Level 3]
+
 >This protects the data even in the event of a data breach of the cloud hosting provider or a misconfiguration of the cloud storage container's permissions.
 
 Applies to: Hosted components
@@ -163,6 +183,9 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.3.3
 - Use Separate Storage Containers for Unique Data Classifications - Don't overload one container with data at various classification levels. Create separate containers with appropriate names and configuration settings for each data classification level. [there's also record specific encryption for sensitive coresident food]
+
+[AMW: I dont understand the comment. Maybe a level 3 item?]
+
 >Follow your data classification scheme and establish containers based on sensitivity. Also, don't mix production and test data or data from different technologies and products.
 
 Applies to: Hosted components
