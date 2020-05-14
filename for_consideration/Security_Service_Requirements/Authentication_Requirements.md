@@ -3,6 +3,8 @@
 ## Maturity Level 1
 - Default passwords are not used or are automatically changed as part of set up - Before deploying any new asset or instances, change all default passwords to have values consistent with administrative level accounts.
 
+[AMW: The phrase consistent with administrative level accounts seems odd. We could just say strong passwords or according to password policy?]
+
 Applies to: All components
 
 Method: Copy
@@ -11,6 +13,10 @@ Method: Copy
 
 - Authentication systems are inventoried - Maintain an inventory of each of the organization's authentication systems, including those located on-site or at a remote service provider. Make sure you have a full understanding of how all users are authenticated and by what mechanism. It is possible for the same application to have multiple login pages. Make sure you know about these.
 
+[AMW: Lets make sure we follow this one up on Level 2 or 3 that all authenticate systems apply access control consistently.]
+
+[AMW: is this one really useful? How do we verify this without making them aware of authentication systems we found? No one will fail this one. Perhaps just convert this one to a requirement to apply authentication consistently throughout the application? Variations for different user types is permitted.]
+
 Applies to: All components
 
 Method: Copy
@@ -18,6 +24,8 @@ Method: Copy
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 5.1.1
 
 - Encrypt or Hash All Authentication Credentials - Encrypt or hash with a salt all authentication credentials. Ensure that local accounts and accounts with third parties use this approach to store your credentials, and try not to use the same password for third-party accounts and an election technology account. This will limit the impact of a third-party provider breach from impacting the election technology.
+
+[AMW: Do the hashing requirement and the "don't use the same password for 3rd party accounts" appropriate to include together here?]
 
 Applies to: All components
 
@@ -33,7 +41,7 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.8
 
-- Organization admins have access to an inventory of their users - Maintain an inventory of all accounts organized by authentication system. Maintain an up-to-date list of accounts for each system and tie each account to an individual person wherever possible and having this ability in the platform helps organizations manage their users.
+- Organization admins have access to an inventory of their users - Maintain an inventory of all accounts organized by authentication system. Maintain an up-to-date list of accounts for each system and tie each account to an individual person wherever possible. Having this ability in the platform helps organizations manage their users.
 
 Applies to: Web Components
 
@@ -42,12 +50,16 @@ Method: Derived
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 5.1.6
 - Allow organizations to customize strong password policy according to best practices - A password policy should be created and implemented so that passwords meet specific strength criteria.
 
+[AMW: Use of the term "organization" to refer to clients, customers, or users is not my favorite. I would pick one of the terms I mentioned or "election jurisdiction" instead of organization.]
+
 Applies to: All Components
 
 Method: Derived
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.2.3
 - Implement Protections Against Brute Force Attacks - Account lockout needs to be implemented to guard against brute forcing attacks against both the authentication and password reset functionality. After several tries on a specific user account, the account should be locked for a period of time or until unlocked by an administrative action or use of a separate authenticator controlled by the user. Additionally, it is best to continue the same failure message indicating that the credentials are incorrect or the account is locked to prevent an attacker from harvesting usernames.
+
+[AMW: what about voters or pollworkers? Do we believe they should be locked out? Just a question]
 
 Applies to: Web Components
 
@@ -68,12 +80,17 @@ Method: Copy
 
 - Develop a Strong Password Reset System - Password reset systems are often the weakest link in an application. These systems are often based on the user answering personal questions to establish their identity and in turn reset the password. Ideally, such systems will leverage other known authenticators, such as confirming possession of a hardware token or a mobile device. When you do ask questions for password resetting, base them on questions that are both hard to guess, hard to brute force, and are not available through social media or previous data breaches. Additionally, any password reset option must not reveal whether an account is valid, preventing username harvesting.
 
+[AMW: this one should be reworded to provided less background. Also, what about an email based password reset? Seems like that should be valid but the requirement seems to forget it. ]
+
 Applies to: Web Components
 
 Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.2.2
 - Ensure the Use of Dedicated Vendor Administrative Accounts - Ensure that all users with administrative account access use a dedicated or secondary account for elevated activities. This account should only be used for administrative activities and day-to-day activities. [xxx not sure if this one worth keeping since it's not necessarily enforcable]
+
+[AMW: I like it. We can check the accounts to make sure they aren't logging in as other users.]
+
 >Administrator account on election technology endpoints should not be used for anything but administrator level activities and only when necessary.
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 2.4.3
@@ -90,6 +107,8 @@ Method: Re-interpretation
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 2.4.5
 - Configure Centralized Point of Authentication - Configure access for all accounts through as few centralized points of authentication as possible, including network, security, and cloud systems[I'm somewhat assuming that most platforms will have this capability by default, so it might not be worth mentioning].
+
+[AMW: This language isn't sharp enough. It is either a centralized point of authentication for all users or per user type (i.e. admin, voter, pollworker, etc) or not a requirement. "Few" is going to be hard to enforce.]
 
 Applies to: Web components
 
@@ -137,6 +156,9 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 5.1.10
 - Require Multi-Factor Authentication - Require MFA for all user accounts, on all systems, whether managed on-site or by a third-party provider.
+
+[AMW: how about voters who access the application once a year? still required?]
+
 >This is one of the best protections against social engineering attacks.
 
 Applies to: Web components
@@ -144,7 +166,7 @@ Applies to: Web components
 Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 5.1.3
-- Provide the ability for organizational admins to revoking access - Establish and follow an automated process for revoking system access by disabling accounts immediately upon termination or change of responsibilities of an employee or contractor. Disabling those accounts, instead of deleting accounts, allows preservation of audit trails.
+- Provide the ability for organizational admins to revoke access - Establish and follow an automated process for revoking system access by disabling accounts immediately upon termination or change of responsibilities of an employee or contractor. Disabling those accounts, instead of deleting accounts, allows preservation of audit trails.
 >Employee new hire, termination, promotion, and demotion checklists should include the steps to setting user permissions commensurate with the employee's job responsibilities, or lack thereof. This should apply to employees and contractors.
 
 Applies to: Web components
