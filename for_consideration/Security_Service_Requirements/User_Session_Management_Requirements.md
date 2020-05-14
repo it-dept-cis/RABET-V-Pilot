@@ -4,10 +4,7 @@
 
 ### Lock Endpoint Device Sessions After Inactivity
 
-[Anti pattern? Require vendor to provide option?]
-[AMW: sure]
-
-Automatically lock endpoint device sessions after a standard period of inactivity.
+Product must provide capability to automatically lock endpoint device sessions after a standard period of inactivity.
 
 > This is a basic security control that should be used universally. Employees should also be trained to lock their computers whenever they leave them.
 
@@ -28,9 +25,6 @@ Method: Derived
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.5.2
 
 ### Place a Logout Button on Every Page
-
-[Seems like a M2, certainly not required]
-[AMW: seems M1 to me]
 
 The logout button or logout link should be easily accessible to the user on every page after they have authenticated.
 
@@ -61,9 +55,6 @@ Method: Copy
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.5.5
 
 ### Invalidate the Session after Logout
-
-[Seems overbroad]
-[AMW: i think its ok]
 
 When the user logs out of the application, the session on the server must be destroyed. This ensures that the session cannot be accidentally revived.
 
@@ -101,10 +92,9 @@ Method: Copy
 
 ### Implement an Absolute Session Timeout
 
-[This could be an antipattern, think EPBs or any product used on Election Day]
-[AMW: I agree, consider rewording]
+During non-time-sensitive periods, users should be logged out after an extensive amount of time (e.g., 4-8 hours) has passed since they logged in, regardless of activity. This helps mitigate the risk of an attacker using a hijacked session.
 
-Users should be logged out after an extensive amount of time (e.g., 4-8 hours) has passed since they logged in, regardless of activity. This helps mitigate the risk of an attacker using a hijacked session.
+> Does not apply to interfaces that are used on Election Day and require instantaneous access.
 
 Applies to: Web components
 

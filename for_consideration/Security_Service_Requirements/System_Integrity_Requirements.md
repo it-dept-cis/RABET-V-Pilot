@@ -4,9 +4,6 @@
 
 ### Install the Latest Stable Version of Any Security-Related Updates on All Network Devices
 
-[Remove? Seems to overlap with RABET-V]
-[AMW: I dont understand the overlap. We want to enable this, therefore requiring it seems consistent]
-
 Install the latest stable version of any security-related updates on all network devices.
 
 > Ensure that you are monitoring for updates and applying them as you are able. This may require a plan to make updates prior to sensitive election dates.
@@ -19,11 +16,7 @@ Method: Copy
 
 ### Ensure Anti-Malware Software and Signatures Are Updated
 
-[Revert to previous wording and add hosted clause?]
-[Cannot apply to iOS?]
-[AMW: Leave it and add a carve out "for systems that support anti-malware software"]
-
-The product must allow an administrator to perform updates to its anti-malware software, scanning engine and signature database.
+For systems that support the use of anti-malware software, the product must allow an administrator to perform updates to its scanning engine and signature database.
 
 > Ensure that all anti-malware instances are receiving signature updates. This requires periodic review of devices within the election technology system.
 
@@ -34,8 +27,6 @@ Method: Derived
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.3.2
 
 ### Configure Devices to Not Auto-Run Content
-
-[Changed content to executable code]
 
 Configure devices to not auto-run executable code from removable media.
 
@@ -77,10 +68,7 @@ Method: Copy
 
 ### Perform Complete System Backups
 
-[Remove? Could change to "product must provide the ability to backup..."]
-[AMW: Hosted systems would be backed up (there will be evidence of this. On Prem must provide the ability. So, we may need to add that language in addition to the current language]
-
-Ensure that all of the organization's key systems are backed up as a complete system, through processes such as imaging, to enable the quick recovery of an entire system.
+Ensure that all of the organization's key systems are backed up as a complete system, through processes such as imaging, to enable the quick recovery of an entire system. On premises products must provide this capability.
 
 > These types of backups should be done prior to each election for each type of election system used. This allows for quick recovery back to the known good version. Maintaining extra units created from these system backups is another good approach.
 
@@ -104,8 +92,6 @@ Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.1.1
 
-
-
 ### Deploy Automated Operating System Patch Management Tools
 
 [Delete? Overlaps with RABET-V]
@@ -123,6 +109,7 @@ Applies to: Hosted components
 
 [Delete? Overlaps with RABET-V]
 [AMW: We need to strike a balance. Automated into a pre-production system which is then submitted to RABET-V? Then, manually pushed upon approval? What if we allowed them to patch OS and 3rd party components and the verification happens retroactively?]
+[I would be OK with retroactive verification for security related patches ONLY]
 
 Deploy automated software update tools in order to ensure that third-party software on all systems is running the most recent security updates provided by the software vendor.
 
@@ -132,10 +119,7 @@ Deploy automated software update tools in order to ensure that third-party softw
 
 ### Utilize Centrally Managed Anti-Malware Software
 
-[Remove? Seems out of scope]
-[AMW: Change the language to limit it to product components]
-
-Utilize centrally managed anti-malware software to continuously monitor and defend each of the organization's workstations and servers.
+Utilize centrally managed anti-malware software to continuously monitor and defend the vendor provided workstations and servers.
 
 > All endpoints in an election technology solution must use properly installed and constantly running anti-malware software. Central management allows administrators to enforce this rule.
 
@@ -183,21 +167,6 @@ Method: Copy
 
 ## Maturity Level 3
 
-### Verify Complete System Recovery
-
-[Process, remove?]
-[AMW: I reluctantly agree]
-
-Ensure that all of the organization's key systems are restored from a complete system backup, through processes such as imaging, to verify the quick recovery of an entire system.
-
-> Full system recovery should be tested well in advance of each election for each type of election system used. This allows for verification that quick recovery back to the known good version is functioning properly.
-
-Applies to: All
-
-Method: Copy
-
-> Reference: CIS Security Best Practices for Non-Voting Election Technology 1.4.6
-
 ### Establish DDoS Mitigation Services With a Third-Party DDoS Mitigation Provider
 
 Obtain third-party DDoS mitigation services.
@@ -214,6 +183,7 @@ Method: Copy
 
 [Process, remove? Not really part of architecture]
 [AMW: I like the idea of taking an image after a RABET-V verifcation]
+[JD: that would be a capability of the dev tool chain, not the product itself. I think that would go somewhere else]
 
 Maintain secure images or templates for all components based on the selected configuration standards. Any new system deployment or existing system that becomes compromised should be imaged using one of those images or templates.
 

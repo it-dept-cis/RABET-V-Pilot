@@ -10,6 +10,8 @@
 
 [AMW: What is the replacement? Just use that]
 
+[JD: CSP (which is already specified). However IE does not support and IE is still technically a supported browser, so I'm OK leaving it as-is]
+
 To protect against cross-site scripting (XSS) and man-in-the-middle (MITM) attacks, use the Content Security Policy (CSP), X-XSS-Protection, and Public-Key-Pins headers.
 
 Applies to: Web components
@@ -39,8 +41,6 @@ Method: Copy
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.3.7
 
 ### Use Whitelists On Interpreted Input
-
-[Dropped blacklisting as not strong enough]
 
 For input that will be interpreted, whitelist acceptable inputs. Only inputs that appear on the whitelist will be accepted.
 
@@ -78,9 +78,9 @@ Satisfies: Prefer Whitelists Over Blacklists for Input Validation
 
 ### Use the X-Frame-Options Header
 
-[Split up the two mitigation techniques into M2 and M3 levels?]
-
 Use the X-Frame-Options header to prevent content from being loaded by a foreign site in a frame. This mitigates Clickjacking attacks. For older browsers that do not support this header, add frame busting JavaScript code to mitigate Clickjacking (although this method is not foolproof and can be circumvented).
+
+> The use of frame busting is only required for products that support browsers that do not support X-Frame-Options.
 
 Applies to: Web components
 
@@ -100,11 +100,7 @@ Method: Copy
 
 ### Validate the Source of Input
 
-[Confusing]
-
-The source of the input must be validated. For example, if input is expected from a POST request, do not accept the input variable from a GET request.
-
-[AMW: this should be reworded to require the use of the proper http method]
+The HTTP method used to make a request must be validated. For example, if input is expected from a POST request, do not accept the input variable from a GET request.
 
 Applies to: Web components
 

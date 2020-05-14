@@ -16,12 +16,7 @@ Method: Copy
 
 ### Ensure Adequate Storage for Logs
 
-[We cannot specify a certain retention period, will vary by jurisdiction. I'm not sure how testable this is]
-
 The product must provide a mechanism to maintain the storage of logs over a certain period of time.
-
-[AMW: I think violations of this will be obvious]
-
 
 > Election technology components should be designed to store audit logs for multiple significant election events without losing any data. Logs should be retained for a minimum of 180 days with the option to archive logs for longer periods of time.
 
@@ -89,8 +84,6 @@ Method: New
 
 The product must allow all malware detection events to be sent to enterprise anti-malware administration tools and event log servers for analysis and alerting.
 
-
-
 > This assist in the early detection of an incident and ensures the proper security personnel are alerted to malware on the network.
 
 Applies to: All
@@ -150,7 +143,6 @@ Method: Derived
 ### Enable Detailed Logging
 
 Enable system logging to include detailed information such as an event source, date, user, timestamp, source addresses, destination addresses, and other useful elements.
-
 
 > Election technology components particularly servers and those devices in publicly accessible network interfaces should capture detailed enough information to fully understand and reconstruct security incidents.
 
