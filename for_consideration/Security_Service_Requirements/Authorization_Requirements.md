@@ -4,6 +4,8 @@
 
 - Platform provides an authorization system, such as RBAC, that restricts access to sensitive data and functions - Protect all information stored on systems with file system, network share, claims, application, or database-specific access control lists. These controls will enforce the principle that only authorized individuals should have access to the information based on their need to access the information as a part of their responsibilities.
 
+[pl: this an the "principle of least privilege overlap a little. Here's my thoughts on it, this requirement provides the technical implementation of access control and least privilege provides the procedural. Does the platform providde these capabilities, and when assigning users do you make that decision based on least privilege. Does that make sense or should we rewrite these to be more explict?]
+
 Applies to: Web components
 
 Method: Derived

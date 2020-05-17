@@ -28,6 +28,7 @@ Method: Copy
 [Do we want to include any availability best practices? Have fail over capabilities, test them, Stress testing is conducted.]
 
 [AMW: Yes, we need to include something about redundancy and no single point of failure (for hosting systems). I would put that in system integrity though.]
+[Pl:provided my list on teams]
 
 ## Maturity Level 2 
 - Verify Data on Backup Media - Test data integrity on backup media on a regular basis by performing a data restoration process to ensure that the backup is properly working.
@@ -39,7 +40,17 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.4.3
 
+
+- After Key Milestones Archive Sensitive Data and Securely Store the Hash - To ensure that the information of the archived information is not altered, create and store the hash of the archive on a separate system. 
+
+Apples to: All components
+
+Method: Derived
+
+>Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.2
+
 [AMW: Perhaps we can add something short of a digital signature here at level 2 for sensitive information? Hash, CRC, etc. What about options with error correcting capabilities?]
+[PL: one step further, would be providing the customer with the means of conducting data audits, but that can open up a can of worms dependeing on the quality metrics]
 
 ## Maturity Level 3
 - Digitally Sign Sensitive Information in Transit - Sensitive data should be digitally signed by its originator and verified by all components which read, store, or process the data.
