@@ -1,18 +1,12 @@
 # Injection Prevention Requirements
 
-[The use of `interpreted` is defined as: Input that may be treated as data or as code depending on its content.]
+In these requirements, *interpreted* is defined as: Input that may be treated as data or as code depending on its content.
 
 ## Maturity Level 1
 
 ### Use Secure HTTP Response Headers
 
-[X-XSS-Protection is deprecated, require anyway? https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection]
-
-[AMW: What is the replacement? Just use that]
-
-[JD: CSP (which is already specified). However IE does not support and IE is still technically a supported browser, so I'm OK leaving it as-is]
-
-To protect against cross-site scripting (XSS) and man-in-the-middle (MITM) attacks, use the Content Security Policy (CSP), X-XSS-Protection, and Public-Key-Pins headers.
+To protect against cross-site scripting (XSS) and man-in-the-middle (MITM) attacks, use the Content Security Policy (CSP) and Public-Key-Pins headers.
 
 Applies to: Web components
 
