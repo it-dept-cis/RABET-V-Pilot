@@ -4,9 +4,13 @@
 
 ### Install the Latest Stable Version of Any Security-Related Updates on All Network Devices
 
+[Process, remove?]
+
 Install the latest stable version of any security-related updates on all network devices.
 
 > Ensure that you are monitoring for updates and applying them as you are able. This may require a plan to make updates prior to sensitive election dates.
+
+> The vendor must use the most recent security updates available at the beginning of the development cycle, or later.
 
 Applies to: Hosted components
 
@@ -40,11 +44,7 @@ Method: Derived
 
 ### Use USB Port Protectors on Unused Ports
 
-[This could be done at the time of delivery, but if the needed USB ports change based on device configuration then this might need to be reworded/ struck]
-
-Cover all unused USB ports on endpoint devices with locks or tamper-evident port protectors to ensure unauthorized USB devices are not inserted into the device.
-
-> This is especially important for devices that are taken into less physically secure environments.
+Cover all unused USB ports on endpoint devices with locks or tamper-evident port protectors to ensure unauthorized USB devices are not inserted into the device. This must be done prior to delivery to the customer.
 
 Applies to: Provider supplied hardware
 
@@ -55,6 +55,9 @@ Method: Derived
 ## Maturity Level 2
 
 ### Maintain Standard Security Configurations for Network Devices
+
+[Process, remove?]
+[Could be reworded to say that the product "must provide a mechanism to reset the system to a secure state.]
 
 Maintain standard, documented security configuration standards for all authorized network devices.
 
@@ -80,8 +83,6 @@ Method: Copy
 
 ### Establish Secure Configurations
 
-[Need better delineation between this and the "Network Devices" req in the same vein]
-
 Maintain documented, standard security configuration standards for all authorized operating systems and software such as the CIS Benchmarks.
 
 > Using a vetted configuration standard, identify each component of the election technology and its secure configuration standard to use.
@@ -94,32 +95,31 @@ Method: Copy
 
 ### Deploy Automated Operating System Patch Management Tools
 
-[Delete? Overlaps with RABET-V]
-[AMW: We should discuss. Automated is best but it does become a problem of review/approve.]
-
 Deploy automated software update tools in order to ensure that the operating systems are running the most recent security updates provided by the software vendor.
 
 > Ensure all systems are updated until it is no longer appropriate to make changes to a system before an election. Beyond this point, patches should be reviewed by security personnel and a decision should be made on whether the operational risk of patching it greater than the security risk posed by the vulnerability.
 
 Applies to: Hosted components
 
+Method: Copy
+
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.2.4
 
 ### Deploy Automated Software Patch Management Tools
-
-[Delete? Overlaps with RABET-V]
-[AMW: We need to strike a balance. Automated into a pre-production system which is then submitted to RABET-V? Then, manually pushed upon approval? What if we allowed them to patch OS and 3rd party components and the verification happens retroactively?]
-[I would be OK with retroactive verification for security related patches ONLY]
 
 Deploy automated software update tools in order to ensure that third-party software on all systems is running the most recent security updates provided by the software vendor.
 
 > Ensure that software is patched until it is no longer appropriate to make changes to software prior to an election. After this date, manually review patches to determine if the operational risk of patching is greater than the security risk of the vulnerability the patch fixes.
 
+Applies to: All
+
+Method: Copy
+
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.2.5
 
 ### Utilize Centrally Managed Anti-Malware Software
 
-Utilize centrally managed anti-malware software to continuously monitor and defend the vendor provided workstations and servers.
+Utilize centrally managed anti-malware software to continuously monitor and defend workstations and servers.
 
 > All endpoints in an election technology solution must use properly installed and constantly running anti-malware software. Central management allows administrators to enforce this rule.
 
@@ -147,7 +147,7 @@ Configure devices so that they automatically conduct an anti-malware scan of rem
 
 > Use of USB devices is very common in election systems. Therefore, it is critical that all external devices be scanned for malware prior to use.
 
-Applies to: Vendor supplied hardware
+Applies to: Vendor supplied or controlled hardware
 
 Method: Copy
 
@@ -178,18 +178,6 @@ Applies to: Hosted components
 Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 1.5.6
-
-### Maintain Secure Images
-
-[Process, remove? Not really part of architecture]
-[AMW: I like the idea of taking an image after a RABET-V verifcation]
-[JD: that would be a capability of the dev tool chain, not the product itself. I think that would go somewhere else]
-
-Maintain secure images or templates for all components based on the selected configuration standards. Any new system deployment or existing system that becomes compromised should be imaged using one of those images or templates.
-
-> This allows rapid and reliable deployment of election technology components.
-
-> Reference: CIS Security Best Practices for Non-Voting Election Technology 2.1.2
 
 ### Implement Automated Configuration Monitoring Systems
 

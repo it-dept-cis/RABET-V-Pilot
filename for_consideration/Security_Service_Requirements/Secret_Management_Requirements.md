@@ -16,9 +16,7 @@ Method: Copy
 
 ### Store Credentials Securely
 
-[what does `locked down` mean?]
-
-Modern web applications usually consist of multiple layers. The business logic tier (processing of information) often connects to the other tiers, such as a database. Connecting to a database, of course, requires authentication. The authentication credentials, if stored, must be stored in a centralized location that is locked down. Scattering credentials throughout the source code is not acceptable. Some development frameworks provide a centralized secure location for storing credentials. These encrypted stores should be leveraged when possible.
+Modern web applications usually consist of multiple layers. The business logic tier often connects to the other tiers, such as a database. Connecting to a database, of course, requires authentication. The authentication credentials, if stored, must be stored in a centralized location that is under strict access control. Scattering credentials throughout the source code is not acceptable. Some development frameworks provide a centralized secure location for storing credentials. These encrypted stores should be leveraged when possible.
 
 Applies to: All
 
@@ -38,10 +36,11 @@ Method: Derived
 
 ## Maturity Level 2
 
-### Set Up Secure Key Management Processes
+### Set Up Secure Key Generation Processes
 
 [Process-oriented, delete?]
 [Could change to say that access to keys are subject to access control?]
+[AW: will make an attempt]
 
 When keys are stored in your system, they must be properly secured and only accessible to the appropriate staff on a need-to-know basis.
 
@@ -55,7 +54,7 @@ Method: Copy
 
 Use a cryptographic module that meets or exceeds FIPS 140-2 validation, operating in FIPS mode, for performing cryptographic operations.
 
-> It is only necessary that the software is FIPS 140-2 certified, not the specific hardware.
+> It is only necessary that the cryptographic software is FIPS 140-2 certified, not the specific hardware.
 
 Applies to: All
 
