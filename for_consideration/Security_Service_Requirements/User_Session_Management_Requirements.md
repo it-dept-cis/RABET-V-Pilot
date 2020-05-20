@@ -80,13 +80,11 @@ Method: Copy
 
 ### Regenerate Session Tokens
 
-[Clarify]
-
-Session tokens should be regenerated when the user authenticates to the application and when the user privilege level changes. Additionally, should the encryption status change, the session token should always be regenerated.
+Session tokens should be regenerated when the user authenticates to the application. Additionally, should the encryption status change, the session token should always be regenerated.
 
 Applies to: All
 
-Method: Copy
+Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.5.10
 
