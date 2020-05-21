@@ -38,15 +38,13 @@ Method: Derived
 
 ### Set Up Secure Key Generation Processes
 
-[Process-oriented, delete?]
-[Could change to say that access to keys are subject to access control?]
-[AW: will make an attempt]
 
-When keys are stored in your system, they must be properly secured and only accessible to the appropriate staff on a need-to-know basis.
+
+When keys are generated and stored in your system, the product must use PKCS standards and provide a way for customers to securely generate those keys to provide mutual authentication and non-repudiation between components.
 
 Applies to: All
 
-Method: Copy
+Method: Derived 
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.4
 

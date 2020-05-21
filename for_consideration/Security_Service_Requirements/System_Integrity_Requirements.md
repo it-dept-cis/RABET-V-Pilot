@@ -4,9 +4,8 @@
 
 ### Install the Latest Stable Version of Any Security-Related Updates on All Network Devices
 
-[Process, remove?]
 
-Install the latest stable version of any security-related updates on all network devices.
+Install the latest stable version of any security-related updates on all network devices. Latest refers to all updates which were available prior to the internal product testing of the product. 
 
 > Ensure that you are monitoring for updates and applying them as you are able. This may require a plan to make updates prior to sensitive election dates.
 
@@ -52,22 +51,13 @@ Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.5.6
 
+### Backup and Failover capabilities
+
+Application and data storage components have fail over options in the event of a service degradation for primary component. 
+
+
 ## Maturity Level 2
 
-### Maintain Standard Security Configurations for Network Devices
-
-[Process, remove?]
-[Could be reworded to say that the product "must provide a mechanism to reset the system to a secure state.]
-
-Maintain standard, documented security configuration standards for all authorized network devices.
-
-> This is especially important for all network devices which enforce a network boundary between the election solution and another network segment.
-
-Applies to: Vendor supplied hardware
-
-Method: Copy
-
-> Reference: CIS Security Best Practices for Non-Voting Election Technology 1.3.1
 
 ### Perform Complete System Backups
 
@@ -93,9 +83,9 @@ Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.1.1
 
-### Deploy Automated Operating System Patch Management Tools
+### Deploy Operating System Patchs
 
-Deploy automated software update tools in order to ensure that the operating systems are running the most recent security updates provided by the software vendor.
+Operating systems are running the latest security updates provided by the software vendor. Latest refers to all updates which were available prior to the internal product testing of the product. 
 
 > Ensure all systems are updated until it is no longer appropriate to make changes to a system before an election. Beyond this point, patches should be reviewed by security personnel and a decision should be made on whether the operational risk of patching it greater than the security risk posed by the vulnerability.
 
@@ -105,9 +95,9 @@ Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.2.4
 
-### Deploy Automated Software Patch Management Tools
+### Deploy Software Patchs
 
-Deploy automated software update tools in order to ensure that third-party software on all systems is running the most recent security updates provided by the software vendor.
+Third-party software on all systems is running the latest security updates provided by the software vendor. Latest refers to all updates which were available prior to the internal product testing of the product. 
 
 > Ensure that software is patched until it is no longer appropriate to make changes to software prior to an election. After this date, manually review patches to determine if the operational risk of patching is greater than the security risk of the vulnerability the patch fixes.
 
@@ -164,6 +154,7 @@ Applies to: All
 Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 3.2.16
+
 
 ## Maturity Level 3
 
@@ -234,3 +225,7 @@ Applies to: Vendor supplied hardware
 Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.5.8
+
+### No Single Points of Failure
+
+Product reliability is protected against any one system component failing by providing redundancy of critical components. 

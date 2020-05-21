@@ -58,8 +58,6 @@ Method: Derived
 
 ### Store Logs Securely
 
-[too vague?] [Could require signing logs]
-
 Logs should be stored and maintained appropriately to avoid information loss or tampering by an intruder. Log retention should also follow the retention policy set forth by the organization to meet regulatory requirements and provide enough information for forensic and incident response activities.
 
 Applies to: All
@@ -110,7 +108,7 @@ Enable command-line audit logging for command shells, such as Microsoft Powershe
 
 > A large percentage of malware uses Powershell and Bash. This logging will assist in the detection of malware and a better understanding of its impact.
 
-Applies to: Appliance-based products, or other standard configurations that include a command shell [review]
+Applies to: Appliance-based products, or other standard configurations that include a command shell 
 
 Method: Copy
 

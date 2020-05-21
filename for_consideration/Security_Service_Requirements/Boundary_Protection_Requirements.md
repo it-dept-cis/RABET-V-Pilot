@@ -1,24 +1,8 @@
 # Boundary Protections Requirements
 
 ## Maturity Level 1 
-- Application boundaries, such as network boundaries and APIs are inventoried - Maintain an up-to-date inventory of all of the organization's network  and API boundaries. [Not sure if this makes sense from an application/product stand point. For SaaS platforms, the network boundary kinda makes sense and the API boundaries might. Alternative is to remove this one]
-
-[AMW: I kind of agree on inventory ones because how do we enforce without helping them pass?]
-
->Deployments of election technology should be segregated into their own network segment. These should be known and kept up to date. If the application needs to provide access through an API or similar types of interfaces then those boundaries are also captured
-
-Applies to: All components
-
-Method: Copy
-
->Reference: CIS Security Best Practices for Non-Voting Election Technology 1.1.1
-
 
 - Deny Communications with Known Malicious IP Addresses - Deny communications with known malicious or unused Internet IP addresses. Limit access to trusted and necessary IP address ranges at each of the organization's application and network boundaries.
-
-[AMW: This is black list and white list approach, which should be separate. Black list should apply to all network boundaries. White list should apply to the most secure ones. Also, I liked the earlier requirement that mentioned the application API as a boundary. Please add that here.]
-
-[PL: agree we can split this one out between blacklist and whitelist, I do have a concern on the difficulty and managing those IP whitelists and I think it would be appropriate for a level 3]
 
 >This can be done using a network firewall at the parameter of your election network. Preventing access from known malicious IP addresses can be done for all election applications, even public facing ones. The Election Infrastructure Information Sharing and Analysis Center (EI-ISAC) provides list of known malicious IP addresses.
 
@@ -53,7 +37,7 @@ Applies to: Hosted components
 Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.3.2
-- Manage Network Infrastructure Using Multifactor Authentication and Encrypted Sessions - Manage all network infrastructure using MFA and encrypted sessions.
+- Manage Network Infrastructure Using Multifactor Authentication and Encrypted Sessions
 >The ability to manage network devices should be limited to authorized personnel accessing the management interface locally or using MFA in encryption sessions.
 
 Applies to: Hosted components
@@ -61,24 +45,8 @@ Applies to: Hosted components
 Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.3.5
-- Apply Port and Packet Size Filtering - Consider port and packet size filtering by the upstream network service provider to limit unnecessary traffic. 
 
-
-[AMW: What does it mean to consider?]
-[pl: is the intention behind this one to ask upstream providers to stop specific traffic from reaching the organization, in general or in the midst of an attack. Is this a service that is commonly done by upstream providers vs just doing it at your own firewall. Considering this is one is level 1, we probably need to iron these out or just cut]
-
->Work with upstream providers to filter out as much as possible that is not related to the election service being provided.
-
-Applies to: Hosted Components
-
-Method: Copy
-
-
->Reference: CIS Security Best Practices for Non-Voting Election Technology 1.5.2
-- Configure Perimeter Devices to Prevent Common Types of Attacks - Define strict �TCP keepalive� and �maximum connection� on all perimeter devices, such as firewalls and proxy servers. This assists with preventing the success of SYN Flood attacks. Another approach is leveraging SYN cookies to prevent TCP SYN floods. 
-
-[AMW: There is also a SYN Cookie approach we need to require somewhere. This is probablt the right place.]
-[pl: so for the different options that we lay out in the description, are these part of the requirement are they simply examples of the types of mitigations they should have in place?]
+- Configure Perimeter Devices to Prevent Common Types of Attacks - Define strict "TCP keepalive" and "maximum connection" on all perimeter devices, such as firewalls and proxy servers. This assists with preventing the success of SYN Flood attacks. Another approach is leveraging SYN cookies to prevent TCP SYN floods. 
 
 >A SYN Flood is one of the most common forms of DDoS attacks observed by the MS-ISAC.
 
@@ -88,10 +56,18 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.5.4
 
+- Disable Wireless Access on Devices if it is Not Required - Disable wireless access on devices that do not have a business purpose for wireless access.
+
+>Disable all wireless options on election technology devices that are not authorized to use wireless. Periodically review device settings to ensure wireless options (Wi-Fi, Bluetooth, etc.) remain off.
+
+Applies to: On-prem components
+
+Method: Copy
+
+>Reference: CIS Security Best Practices for Non-Voting Election Technology 1.6.4
+
 - Documentation Clearly Identifies Wireless Capabilities - Product documentation clearly defines any required wireless capability associated with the product along with information regarding the security and management of those wireless capabilities. 
 
-[AMW: Same comment about inventory requirements. Need to convert to something meaningful or remove.]
-[pl: a bit more of a paper exercise, but one that might still be useful from a customer standpoint]
 >Identify election technology that uses a wireless connection, and document each access point. For Wi-Fi, this will be a Wi-Fi router and any endpoint devices. For Bluetooth and NFC, this may be multiple devices. The decision to enable wireless technology should be made by the election administrator using a risk-based decision-making process.
 
 Applies to: On-prem components
@@ -99,11 +75,7 @@ Applies to: On-prem components
 Method: Derived 
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.6.1
-- Provide Dedicated Wireless Networks - Create a separate wireless network for each separate use. Access from the wireless network should be treated as untrusted and filtered and audited accordingly.[IF we really want dedicate wireless environment, then we would need mutual authentication, I suggest removing this one]
-
-[AMW: Dont we have a requirement for mutual authentication?]
-
-[pl: we do, the question is from a product standpoint, unless you're shipping out wireless AP with your product and your product can only connect to that stand alone vendor provided ap and that AP can only allow known trusted devices to connect to it, then its hard to ensure that the wireless network is really being used in a dedicated sense and ppl aren't using it for streaming netflix and what not. I'm under the impression, this is one is easier for an organization to do, then build in as a product. One way that we could work around that is recommend vendors provide a standalone access point or recommend they use cellular networks where appropriate. ]
+- Provide Dedicated Wireless Networks - Create a separate wireless network for each separate use. Access from the wireless network should be treated as untrusted and filtered and audited accordingly.
 
 >Use of any wireless technology in election technology should be isolated for a very specific purpose, and incoming connections from the wireless network should be handled with care.
 
@@ -112,14 +84,6 @@ Applies to: On-prem components
 Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.6.10
-- Disable Wireless Access on Devices if it is Not Required - Disable wireless access on devices that do not have a business purpose for wireless access.
->Disable all wireless options on election technology devices that are not authorized to use wireless. Periodically review device settings to ensure wireless options (Wi-Fi, Bluetooth, etc.) remain off.
-
-Applies to: On-prem components
-
-Method: Copy
-
->Reference: CIS Security Best Practices for Non-Voting Election Technology 1.6.4
 - Disable Wireless Peripheral Access to Devices - Disable wireless peripheral access of devices (such as Bluetooth and NFC), unless such access is required for a business purpose.
 >Printers and other peripherals often have Bluetooth capabilities that should be disabled unless absolutely necessary.
 
@@ -151,9 +115,6 @@ Method: Copy
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.5.5
 - Limit Wireless Access on Client Devices - Configure wireless access only on client machines that have an essential wireless business purpose. Allow access only to authorized wireless networks, and restrict access to other wireless networks.
 
-[AMW: I think this has a typo and "do not" should be "do". But also, how does this one differ from the ones at maturity level 1?]
-[pl: the first one is really about disabling wireless this one is about restricting which wireless networks the device can connect to]
-
 >All Wi-Fi connected election technology devices must only connect to the authorized wireless access point and no other.
 
 Applies to: On-prem components
@@ -179,6 +140,15 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.5
 
+- Apply Upstream Port and Packet Size Filtering - Have upstream network service provider or network appliance apply port and packet size filtering to limit unnecessary traffic to the product's network infrastructure. 
+
+>Work with upstream providers to filter out as much as possible that is not related to the election service being provided.
+
+Applies to: Hosted Components
+
+Method: Copy
+
+>Reference: CIS Security Best Practices for Non-Voting Election Technology 1.5.2
 
 ## Maturity Level 3
 
@@ -191,11 +161,7 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.1.7
 
-- Manage All Vendor-issued Devices Remotely Accessing sensitive networks - Scan all vendor issued devices remotely logging into the organization's network prior to accessing the network to ensure that each of the organization's security policies has been enforced in the same manner as local network devices.
-[This might another to cut]
-
-[AMW: I actually like it. The use of a mobile device manager to enforce a policy on all devices is amazing. ]
-[pl: agreed, rephrased this one to be more aligned with what you were thinking, I'm thinking this from a "I gave you an ipad with my product on it" management standpoint. This is tricky cause it also comes down to who are we giving the management of the assets over to, is the expectation the customer or the vendor?]
+- Manage All Vendor-issued Devices Remotely Accessing sensitive networks - Scan all vendor issued devices remotely logging into the organization's network prior to accessing the network to ensure that each of the organization's security policies has been enforced.
 
 >Limit the number of devices that are connected to election technology network segments and keep standard business networks separate.
 
@@ -219,7 +185,7 @@ Method: Copy
 
 Applies to: On-prem components
 
-Copy
+Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.7
 
@@ -233,7 +199,7 @@ Method: Copy
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.6.8
 
 - Limit Access to Trusted IP Address Ranges- By applying a whitelist of known trusted IP addresses this allows organizations to greatly reduce their attack surface.
-[pl:added based on AW comment]
+
 
 >This can be done using a network firewall at the parameter of your election network. Preventing access from known malicious IP addresses can be done for all election applications, even public facing ones. The Election Infrastructure Information Sharing and Analysis Center (EI-ISAC) provides list of known malicious IP addresses.
 
