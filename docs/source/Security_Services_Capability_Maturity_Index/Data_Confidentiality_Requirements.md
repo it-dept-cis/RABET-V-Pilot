@@ -1,6 +1,6 @@
 # Data Confidentiality Requirements
 
-## Maturity Level 1 
+## Maturity Level 1
 
 ### Leverage the Advanced Encryption Standard (AES) to Encrypt Wireless Data
 
@@ -12,6 +12,7 @@ Applies to: On-premise
 Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.6.7
+
 ### Use Only Standardized and Extensively Reviewed Encryption Algorithms 
 
 Use only standardized and extensively reviewed encryption algorithms that are validated by trusted third parties, such as NIST. 
@@ -23,10 +24,10 @@ Applies to: All components
 Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 3.2.15
+
 ### Documentation Clearly Identifies Sensitive Information Processed by the Product
 
 Document all sensitive information stored, processed, or transmitted by the product and network infrastructure.
-
 
 >Locate all data that has privacy concerns and election operations concerns if its confidentiality or integrity were to be compromised.
 
@@ -35,17 +36,16 @@ Applies to: All components
 Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.1.1
-### Remove or Isolate Sensitive Data or Systems Not Regularly Accessed by the Organization 
+
+### Remove or Isolate Sensitive Data or Systems Not Regularly Accessed by the Organization
 
 Remove sensitive data or systems not regularly accessed by the organization from the network. These systems should only be used as stand-alone systems (disconnected from the network) by the business unit needing to occasionally use the system or completely virtualized and powered off until needed.
-
 
 >Disconnect systems that store or process election data that do not absolutely have to be online. Do not leave USB devices with sensitive information plugged into machines when they are not in use.
 
 Applies to: All components
 
 Method: Copy
-
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.1.2
 
@@ -60,10 +60,9 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.3.1
 
-### Encrypt Transmittal of Username and Authentication Credentials 
+### Encrypt Transmittal of Username and Authentication Credentials
 
 Ensure that all account usernames and authentication credentials are transmitted across networks using encrypted channels.
-
 
 >This includes network traffic and data moved using removable media.
 
@@ -73,11 +72,9 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 5.1.5
 
-### Limit the Use and Storage of Sensitive Data 
+### Limit the Use and Storage of Sensitive Data
 
 Product ensures that sensitive data is not being unnecessarily transported or stored. Where possible, use tokenization to reduce data exposure risks.
-
->
 
 Applies to: All components
 
@@ -88,7 +85,6 @@ Method: Copy
 ### Use the Strict-Transport-Security Header
 
 The Strict-Transport-Security header ensures that the browser does not talk to the server over non-TLS. This helps reduce the risk of TLS stripping attacks as implemented by the TLSsniff tool.
->
 
 Applies to: Web components
 
@@ -96,10 +92,10 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.10
 
-### Disable Data Caching Using Cache Control Headers and Autocomplete 
+### Disable Data Caching Using Cache Control Headers and Autocomplete
 
 Browser data caching should be disabled using the cache control HTTP headers or meta tags within the hypertext markup language (HTML) page. Additionally, sensitive input fields, such as the login form, should have the autocomplete=off setting in the HTML form to instruct the browser not to cache the credentials.
->
+
 Applies to: Web components
 
 Method: Copy
@@ -109,16 +105,17 @@ Method: Copy
 ### Updated TLS Configuration on Servers
 
 Weak ciphers must be disabled on all servers. For example, SSL v2, SSL v3, and TLS protocols prior to v1.2 have known weaknesses and are not considered secure. Additionally, disable the NULL, RC4, DES, and MD5 cipher suites. Ensure all key lengths are greater than 128 bits, use secure renegotiation, and disable compression.
->
+
 Applies to: Web components
 
 Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.5
+
 ### Use TLS Everywhere
 
 TLS should be used whenever data is transferred over a network. TLS must be applied to any authentication pages as well as all pages after the user is authenticated. If sensitive information (e.g., personal information) can be submitted before authentication, those features must also be sent over TLS.
->
+
 Applies to: Web components
 
 Method: Copy
@@ -128,7 +125,7 @@ Method: Copy
 ### Disable HTTP access for All TLS Enabled Resources
 
 For all pages requiring protection by TLS, the same URL should not be accessible via the non-TLS channel.
->
+
 Applies to: Web components
 
 Method: Copy
@@ -138,7 +135,6 @@ Method: Copy
 ### Don't Disclose Too Much Information in Error Messages
 
 Messages for authentication errors must be clear and, at the same time, must be written so that sensitive information about the system is not disclosed. For example, error messages that reveal that the userid is valid but that the corresponding password is incorrect confirms to an attacker that the account does exist on the system. Instead, provide only a message that indicates that the login failed.
->
 
 Applies to: All components
 
@@ -146,7 +142,7 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.2.5
 
-### Display Generic Error Messages 
+### Display Generic Error Messages
 
 Error messages should not reveal details about the internal state of the application. For example, file system path and stack information should not be exposed to the user through error messages.
 >
@@ -159,19 +155,17 @@ Method: Copy
 
 ### Store User Passwords Using a Strong, Iterative, Salted Hash
 
-
 User passwords must be stored using secure hashing techniques with strong algorithms like PBKDF2, bcrypt, or SHA-512. Simply hashing the password a single time does not sufficiently protect the password. Use adaptive hashing (a work factor) combined with a randomly generated salt for each user to make the hash strong. 
-> 
+
 Applies to: All components
 
 Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.8
 
+## Maturity Level 2
 
-## Maturity Level 2 
-
-### Encrypt the Hard Drive of All Mobile Devices.
+### Encrypt the Hard Drive of All Mobile Devices
 
 Utilize approved whole disk encryption software to encrypt the hard drive of all mobile devices.
 >Determine what sensitive information you will permit on employees' laptops and mobile devices. Ensure the hard drives of laptops and mobile devices are fully encrypted to prevent information from being stolen.
@@ -202,7 +196,6 @@ Applies to: All components
 
 Method: Copy
 
-
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.3
 
 ### Encrypt Sensitive Information at Rest
@@ -228,10 +221,9 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.3.3
 
-### Use Separate Storage Containers for Unique Data Classifications 
+### Use Separate Storage Containers for Unique Data Classifications
 
-Don't overload one container with data at various classification levels. Create separate containers with appropriate names and configuration settings for each data classification level. 
-
+Don't overload one container with data at various classification levels. Create separate containers with appropriate names and configuration settings for each data classification level.
 
 >Follow your data classification scheme and establish containers based on sensitivity. Also, don't mix production and test data or data from different technologies and products.
 
@@ -244,7 +236,6 @@ Method: Copy
 ### Don't Use Unvalidated Forwards or Redirects
 
 An unvalidated forward can allow an attacker to access private content without authentication. Unvalidated redirects allow an attacker to lure victims into visiting malicious sites. Prevent these from occurring by conducting the appropriate access control checks before sending the user to the given location.
->
 
 Applies to: Web Components
 

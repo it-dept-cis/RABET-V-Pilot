@@ -12,7 +12,7 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 2.4.2
 
-###Authentication is applied consistently through the application
+### Authentication is applied consistently through the application
 
 Users are authenticated consistently through the application using an authentication service, with variations for different user types being permitted.  
 
@@ -23,6 +23,7 @@ Method: Copy
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 5.1.1
 
 ### Encrypt or Hash All Authentication Credentials
+
 Ensure that local accounts and accounts with third parties use this approach to store your credentials. This will limit the impact of a third-party provider breach from impacting the election technology.
 
 Applies to: All components
@@ -37,11 +38,12 @@ Maintain an inventory of all accounts organized by authentication system. Mainta
 
 Applies to: Web Components
 
-Method: Derived 
+Method: Derived
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 5.1.6
 
 ### Allow Password Policy Customization
+
 Allow customers to configure and enforce a strong password policy according to best practices - A password policy should be created and implemented so that passwords meet specific strength criteria.
 
 Applies to: All Components
@@ -61,6 +63,7 @@ Method: Copy
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.2.4
 
 ### Provide Options for Multifactor Authentication 
+
 Allow users to protect their accounts with multifactor authentication. Allow users to choose the authenticator that works best for them, subject to meeting security requirements. Where possible, allow the issuance of multiple authenticators so that multiple combinations can still meet an MFA requirement and be used in the reissuance of lost or stolen authenticators.
 
 Applies to: Web Components
@@ -69,11 +72,10 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.2.8
 
-
-
 ## Maturity Level 2
 
-### Develop a Strong Password Reset System 
+### Develop a Strong Password Reset System
+
 The Password Reset systems will leverage access to email or other known authenticators, such as confirming possession of a hardware token or a mobile device. Email alone should be augmented by security questions.  When you do ask questions for password resetting, base them on questions that are both hard to guess, hard to brute force, and are not available through social media or previous data breaches. Additionally, any password reset option must not reveal whether an account is valid, preventing username harvesting.
 
 Applies to: Web Components
@@ -83,13 +85,15 @@ Method: Copy
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.2.2
 
 ### Ensure the Use of Dedicated Vendor Administrative Accounts
-Ensure that all users with administrative account access use a dedicated or secondary account for elevated activities. This account should only be used for administrative activities and day-to-day activities. 
+
+Ensure that all users with administrative account access use a dedicated or secondary account for elevated activities. This account should only be used for administrative activities and day-to-day activities.
 
 >Administrator account on election technology endpoints should not be used for anything but administrator level activities and only when necessary.
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 2.4.3
 
 ### Black list commonly used passwords
+
 As part of the set up for credentials they are run against a list of commonly used password to ensure that users are not using passwords that are easily guessable 
 
 Applies to: Web components
@@ -104,7 +108,8 @@ Use MFA via encrypted channels for all administrative account access.
 >Election technology administrative accounts have tremendous capabilities to do harm if taken over through a social engineering or other attack. Protecting them with MFA is extremely important.
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 2.4.5
-### Ensure Authentication is centrally managed 
+
+### Ensure Authentication is centrally managed
 
 Configure access for all accounts through as few centralized points of authentication as possible, including network, security, and cloud systems.
 
@@ -116,7 +121,8 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 5.1.2
 
-###  Authentication visibility 
+### Authentication visibility
+
 Provide customers with visibility on user logins including the time and IP address of the login.
 
 Applies to: All components
@@ -125,17 +131,17 @@ Method: New
 
 ## Maturity Level 3
 
-###  Enable the integration with organization authentication systems
+### Enable the integration with organization authentication systems
 
-By enabling customers to integrate their authentication system, such as Oauth and SAML, with the platform it makes it easier for them manage their users and ensure that users are maintained throughout the user life cycle. 
+By enabling customers to integrate their authentication system, such as Oauth and SAML, with the platform it makes it easier for them manage their users and ensure that users are maintained throughout the user life cycle.
 
 Applies to: Web components
 
-Method: Derived 
+Method: Derived
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 5.1.2
 
-### Provide capability to identify unassociated accounts 
+### Provide capability to identify unassociated accounts
 
 Provide the ability for customer admins to identify and disable any account that cannot be associated with a business process or business owner.
 
@@ -146,8 +152,11 @@ Applies to: Web components
 Method: Derived
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 5.1.8
+
 ### Automatically disable dormant accounts
+
 Automatically disable dormant accounts after a set period of inactivity.
+
 >This is especially helpful for critical components of the election technology and assist with the manual accounts audits that should be done on a periodic basis.
 
 Applies to: Web components
@@ -156,7 +165,7 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 5.1.9
 
-### Ensure Temporary Accounts Have An Expiration Date 
+### Ensure Temporary Accounts Have An Expiration Date
 
 Ensure that all temporary accounts have an expiration date that is monitored and enforced.
 >This best practice should be applied to contractor accounts and accounts that are meant to be temporary, such as election-specific accounts. It is OK for service accounts and employee accounts to not have an expiration date. Treat users as temporary whenever there is uncertainty
@@ -167,7 +176,8 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 5.1.10
 
-###  Require Multi-Factor Authentication 
+### Require Multi-Factor Authentication
+
 Require MFA for all user accounts, on all systems, whether managed on-site or by a third-party provider.
 
 >This is one of the best protections against social engineering attacks.
@@ -189,8 +199,3 @@ Applies to: Web components
 Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 5.1.7
-
-
-
-
-
