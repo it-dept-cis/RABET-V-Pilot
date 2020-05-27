@@ -2,7 +2,7 @@
 
 RABET-V is a flexible, risk-based, and cost-effective election system verification process that will expedite verification of election systems while providing assurances of security, reliability, and usability. The RABET-V Pilot Program is designed to evaluate the RABET-V process and the potential of the process to improve the speed, security assurances, and cost-effectiveness of non-voting election technology verification. 
 
-For more information of the Background and Motivation for RABET-V, see CIS' [How to Improve Election Technology Verification White Paper](Elections_Tech-Ver-White_Paper-2020-0121.pdf). 
+For more information of the Background and Motivation for RABET-V, see CIS' [How to Improve Election Technology Verification White Paper](resources/Elections_Tech-Ver-White_Paper-2020-0121.pdf). 
 
 In this repository, you will find three main areas:
 
@@ -57,7 +57,7 @@ The program will be administered by CIS team with assistance from [The Turnout](
 
 ## Pilot Process
 
-The RABET-V Pilot Program will first establish a detailed version of the RABET-V process called the [RABET-V Working Model](docs/source/README). This version will detail how each activity will be conducted. The Working Model will be iteratively reviewed by the program Steering Committee and modified as necessary.
+The RABET-V Pilot Program will first establish a detailed version of the RABET-V process called the [RABET-V Working Model](docs/source/README.md). This version will detail how each activity will be conducted. The Working Model will be iteratively reviewed by the program Steering Committee and modified as necessary.
 
 Using the Working Model, the Pilot Program will conduct initial reviews on real products from Pilot Program participants. Each initial review will execute all seven RABET-V activities resulting in the creation of Testing Rules and initial verification results for each product. The Architecture Review and Process Assessments will follow the architecture and process review steps detailed in the Working Model, which may be updated as necessary throughout the Pilot Program.
 
