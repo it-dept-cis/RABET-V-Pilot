@@ -6,37 +6,47 @@ Applies to: All
 
 ## 6.1.2
 
-Method: Penetration testing
+[Either way, uploading an invalid file is likely to fail, so it will be hard to distinguish whether it failed due to validation failures, or the code entering an expected state]
 
-Method Effectiveness:
+### Method 1
 
-Setup: A known bad file is uploaded. 
+Method: Custom (Web Testing + Others)
 
-Fail case: The file is successfully uploaded. This is defined as having been stored in the file system or database. 
+Method Effectiveness: Fair
 
-Method: Static Analysis
+Setup: A known bad file is uploaded.
+
+Fail case: The file is successfully uploaded. This is defined as having been stored in the file system or database.
+
+Trust: High
+
+### Method 2
+
+Method: Dynamic Analysis
+
+Method Effectiveness: Very Good
+
+Setup: A known bad file is uploaded.
 
 Fail case: Processing logic is applied on invalid file.
 
+Trust: Low
+
 ## 6.1.3
 
-Method: HTTP Header Inspection
+Method: HTTP Header Inspection (when headers are used), HTML Inspection (when meta tags are used)
 
-Applies to: All
+Trust: All
 
 ## 6.1.4
+
+[Vendor will need to specify if they support dynamic code execution]
 
 Method: Fuzzing
 
 Method Effectiveness: Fair
 
-[Cannot distingish between 6.1.4 and 6.2.1]
-
-Method: Code Analysis
-
-Method Effectiveness: Good
-
-Method Cost: High
+[Cannot distinguish between 6.1.4 and 6.2.1]
 
 ## 6.1.5
 
@@ -46,9 +56,9 @@ Method Effectiveness: Fair
 
 Required documentation: List of data types for each field, property, tag, etc.
 
-[ Hard to test on client side unless we know the data types (which we'll need code). At a minimum they should conform to data types, but likely should be constrained using other approaches]
+[Hard to test on client side unless we know the data types (which we'll need code). At a minimum they should conform to data types, but likely should be constrained using other approaches as well]
 
-[Client vs server side validation. Client is nice for usability, but I really only care about server level validation]
+[Client vs server side validation. Client is nice for usability, but I server level validation is what matters for security]
 
 Method: Code Analysis
 
@@ -56,7 +66,58 @@ Method Effectiveness: Good
 
 ## 6.2.1
 
+# Method 1
+
+[Allow vendor to attest to this?]
+[Cannot distinguish between 6.1.4 and 6.2.1, use Lattix artifacts as evidence?]
+
+Method: Fuzzing
+
+Method Effectiveness: Fair
+
+Trust: High
+
+# Method 2
+
+Method: Code Analysis
+
+Method Effectiveness: Good
+
+Method Cost: High
+
+Trust: Low
+
 ## 6.2.2, 6.2.3
+
+Method: HTTP Header Inspection
+
+Applies to: All
+
+## 6.2.4
+
+### Method 1
+
+Method: Fuzzing
+
+Method Effectiveness: Fair
+
+Trust: High
+
+### Method 2
+
+Method: Code Analysis
+
+Method Effectiveness: Good
+
+Trust: Low
+
+## 6.2.5
+
+[Could be hard to run. First you'd need to be able to put JS in an HTML context, for example, which if they are doing input sanitization, may not be possible from the UI side. The workaround would be to place "injected code" directly into the database.]
+
+Method: Custom
+
+Method Effectiveness: Good
 
 ## 6.3.1
 
