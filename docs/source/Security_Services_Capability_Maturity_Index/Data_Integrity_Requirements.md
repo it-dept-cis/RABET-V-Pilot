@@ -1,18 +1,4 @@
 # Data Integrity Requirements
-<!-- TOC -->
-
-- [Data Integrity Requirements](https://github.com/it-dept-cis/RABET-V-Pilot/blob/master/docs/source/Security_Services_Capability_Maturity_Index/Data_Integrity_Requirements.md#data-integrity-requirements)
-    - [Maturity Level 1](https://github.com/it-dept-cis/RABET-V-Pilot/blob/master/docs/source/Security_Services_Capability_Maturity_Index/Data_Integrity_Requirements.md#maturity-level-1)
-        - [Ensure Regular Automated Backups](https://github.com/it-dept-cis/RABET-V-Pilot/blob/master/docs/source/Security_Services_Capability_Maturity_Index/Data_Integrity_Requirements.md#ensure-regular-automated-backups)
-        - [Use Valid HTTPS Certificates From a Reputable Certificate Authority](https://github.com/it-dept-cis/RABET-V-Pilot/blob/master/docs/source/Security_Services_Capability_Maturity_Index/Data_Integrity_Requirements.md#use-valid-https-certificates-from-a-reputable-certificate-authority)
-        - [Use Tokens to Prevent Forged Requests](https://github.com/it-dept-cis/RABET-V-Pilot/blob/master/docs/source/Security_Services_Capability_Maturity_Index/Data_Integrity_Requirements.md#use-tokens-to-prevent-forged-requests)
-    - [Maturity Level 2](https://github.com/it-dept-cis/RABET-V-Pilot/blob/master/docs/source/Security_Services_Capability_Maturity_Index/Data_Integrity_Requirements.md#maturity-level-2)
-        - [Verify Data on Backup Media](https://github.com/it-dept-cis/RABET-V-Pilot/blob/master/docs/source/Security_Services_Capability_Maturity_Index/Data_Integrity_Requirements.md#verify-data-on-backup-media)
-        - [After Key Milestones Archive Sensitive Data and Securely Store the Hash](https://github.com/it-dept-cis/RABET-V-Pilot/blob/master/docs/source/Security_Services_Capability_Maturity_Index/Data_Integrity_Requirements.md#after-key-milestones-archive-sensitive-data-and-securely-store-the-hash)
-    - [Maturity Level 3](https://github.com/it-dept-cis/RABET-V-Pilot/blob/master/docs/source/Security_Services_Capability_Maturity_Index/Data_Integrity_Requirements.md#maturity-level-3)
-        - [Digitally Sign Sensitive Information in Transit](https://github.com/it-dept-cis/RABET-V-Pilot/blob/master/docs/source/Security_Services_Capability_Maturity_Index/Data_Integrity_Requirements.md#digitally-sign-sensitive-information-in-transit)
-
-<!-- /TOC -->
 ## Maturity Level 1
 
 ### Ensure Regular Automated Backups
