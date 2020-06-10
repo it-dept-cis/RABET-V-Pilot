@@ -32,7 +32,7 @@ The Test Plan will identify how to test the product revision using one or more o
 
 RABET-V is primarily a security verification process. However, it is critical that each product revision processed by RABET-V meet basic product requirements for its stated purpose. These basic product requirements will vary by product type and are managed separately from the RABET-V Program Description.
 
-During the initial RABET-V iteration, sanity testing (testing that is done to ensure that all the major and vital functionalities are working correctly) will be performed against this basic set of product requirements based on the product type. For subsequent RABET-V iterations, the testing rules will indicate whether sanity testing is necessary and whether it is limited or full. Limited sanity testing is focused on the changed component. Full sanity testing will perform testing on all requirements.
+During the initial RABET-V iteration, partial testing (testing that is done to ensure that all the major and vital functionalities are working correctly) will be performed against this basic set of product requirements based on the product type. For subsequent RABET-V iterations, the testing rules will indicate whether sanity testing is necessary and whether it is limited or full. Limited sanity testing is focused on the changed component. Full testing will perform testing on all requirements.
 
 ### Verification Methods
 

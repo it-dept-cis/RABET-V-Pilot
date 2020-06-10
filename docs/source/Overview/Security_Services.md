@@ -6,13 +6,13 @@ RABET-V defines ten [Security Services](../Appendices/RABET-V_Glossary) that are
 
 1.  **Authorization:** The right or a permission that is granted to a system entity to access a system resource. \[NIST SP 800-82 Rev. 2\]
 
-1.  **Injection Prevention:** The rejection or sanitization of data input and output to ensure malicious executable code is not executed.
+1.  **Injection Prevention:** The sanitization of data input and output (possibly by rejecting unacceptable inputs or outputs) to ensure malicious executable code is not executed.
 
 1.  **Key/Secret/Credentials Management:** The activities involving the handling of cryptographic keys and other related security parameters (e.g. passwords) during the entire life cycle of the keys, including their generation, storage, establishment, entry and output, and destruction. \[NIST CNSSI 4009-2015\]
 
-1.  **User Session Management:** A persistent interaction between a subscriber and an end point. \[Adapted from NIST SP 1800-17b\]
+1.  **User Session Management:** The act of establishing, protecting, and, when necessary, demolishing the persistent interaction between a subscriber and an end point. \[Adapted from NIST SP 1800-17b\]
 
-1.  **Logging/Alerting:** The systemic management and monitoring of the events occurring within an organization’s systems and networks. \[Adapted from NIST SP 800-92\]
+1.  **Logging/Alerting:** The systemic management and monitoring of the events—the discrete interactions that happen within and between systems, applications, and users—occurring within an organization’s systems and networks. \[Adapted from NIST SP 800-92\]
 
 1.  **Data integrity protection:** Assurance that the data has not been altered in an unauthorized manner. Data integrity covers data in storage, during processing, and while in transit. \[Adapted from NIST SP 800-33\]
 
@@ -20,4 +20,4 @@ RABET-V defines ten [Security Services](../Appendices/RABET-V_Glossary) that are
 
 9.  **Boundary protection:** Monitoring and control of communications at the external boundary of an information system to prevent and detect malicious and other unauthorized communications, through the use of boundary protection devices (e.g. gateways, routers, firewalls, guards, encrypted tunnels). \[NIST SP 800-53 Rev. 4\]
 
-10. **System integrity protection:** The quality that a system has when it performs its intended function in an unimpaired manner, free from unauthorized manipulation of the system, whether intentional or accidental. \[NIST SP 800-27 Rev. A\]
+10. **System integrity protection:** The activities based around protecting the quality that a system has when it performs its intended function in an unimpaired manner, free from unauthorized manipulation of the system, whether intentional or accidental. \[NIST SP 800-27 Rev. A\]

@@ -175,6 +175,8 @@ For more information of the Background and Motivation for RABET-V, see CIS’ [H
 
 ## Introduction
 
+This section introduces the program goal and scope. For a list of the definitions as they are used by the Program, see the [RABET-V Glossary](Appendices/RABET-V_Glossary).
+
 ### Program Goal
 
 The RABET-V Program is a rapid, reliable, and cost-effective approach to verifying the security of non-voting election systems. Its goal is to provide assurances of security and reliability sufficient for stakeholders to have confidence in their use in election administration. Participating organizations will have demonstrated capabilities to effectively build, test, monitor, and maintain their election technology solution through an evidence-based process.
@@ -188,10 +190,6 @@ An election technology system is an information system that supports an election
 A “voting system” is defined in the Help American Vote Act (H.R. 3295, Sec 301) as “(1) the total combination of mechanical, electromechanical, or electronic equipment (including the software, firmware, and documentation required to program, control, and support the equipment) that is used—(A) to define ballots; (B) to cast and count votes; (C) to report or display election results; and (D) to maintain and produce any audit trail information; and (2) the practices and associated documentation used—(A) to identify system components and versions of such components; (B) to test the system during its development and maintenance; (C) to maintain records of system errors and defects; (D) to determine specific system changes to be made to a system after the initial qualification of the system; and (E) to make available any materials to the voter (such as notices, instructions, forms, or paper ballots).”
 
 A non-voting system is any other information system used to administer an election. Examples include voter registration databases, electronic pollbooks, or the websites of government election authorities.
-
-### Definitions
-
-See [RABET-V Glossary](Appendices/RABET-V_Glossary)
 
 ## RABET-V Administrator
 
