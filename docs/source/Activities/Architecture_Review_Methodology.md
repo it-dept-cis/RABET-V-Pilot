@@ -1,6 +1,8 @@
 ## Architecture Review Methodology
 
-![A flow diagram of the Architecture Review Methodology](media/workflow.svg)The RABET-V Architecture Review is designed to evaluate the solution’s architectural support for the [RABET-V security services](../Overview/Security_Services). This evaluation produces an architectural maturity score for each security service and identifies the components which provide the security service. This score does not measure how well the product executes the security service (i.e., its capability level), just how mature the architecture is that supports the security service. The [Security Services Capability Maturity](../Security_Services_Capability_Maturity_Index/README.md) level is a separate metric determined in the [Security Claims Validation](Security_Claims_Validation) and it indicates how well the product provides the security services.
+![A flow diagram of the Architecture Review Methodology](media/workflow.svg)
+
+The RABET-V Architecture Review is designed to evaluate the solution’s architectural support for the [RABET-V security services](../Overview/Security_Services). This evaluation produces an architectural maturity score for each security service and identifies the components which provide the security service. This score does not measure how well the product executes the security service (i.e., its capability level), just how mature the architecture is that supports the security service. The [Security Services Capability Maturity](../Security_Services_Capability_Maturity_Index/README.md) level is a separate metric determined in the [Security Claims Validation](Security_Claims_Validation) and it indicates how well the product provides the security services.
 
 The Architectural Maturity scores and component mappings are used to help assess the risk that changes to the product will negatively impact the security services. These are used in the [Testing Rules Determination Activity](Testing_Rules_Determination) to identify how to test the product changes. The higher the architectural maturity scores, the less testing required to validate the security capability scores.
 
@@ -42,11 +44,11 @@ The output of the threat analysis is used to build out a system level architectu
 
 #### Identify required security services
 
-The security services required for a given product will depend on the results of the threat modeling exercise. A subset of security services are selected from the 10 security services identified for RABET-V. This is accomplished by reviewing the results of the threat modeling exercise and identifying the security services that mitigate one or more identified threats.
+The security services required for a given product will depend on the results of the threat analysis. A subset of security services are selected from the 10 security services identified for RABET-V. This is accomplished by reviewing the results of the threat modeling exercise and identifying the security services that mitigate one or more identified threats.
 
 #### Identify software components
 
-While the threat analysis helps identify the system level components, the software level components must be identified separately. This step will identify significant software architectural components, their boundaries, how they interface, and their dependencies with one another and 3rd party components.
+While the threat analysis helps identify the system-level components, the software-level components must be identified separately. This step will identify significant software architectural components, their boundaries, how they interface, and their dependencies with one another and 3rd party components.
 
 > Automated tools, such as [Lattix](https://www.lattix.com/), will be evaluated in the RABET-V pilot as a way to perform this step.
 

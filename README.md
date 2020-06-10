@@ -6,7 +6,7 @@ For more information of the Background and Motivation for RABET-V, see CIS' [How
 
 In this repository, you will find three main areas:
 
-* [docs](docs). This defines the RABET-V program details. Read through the program to get an idea of how RABET-V works in detail.
+* [docs](docs/source). This defines the RABET-V program details. Read through the program to get an idea of how RABET-V works in detail.
 * [Research Plan](research/Research_Plan). The Research Plan discusses how we intend on evaluating RABET-V throughout the Pilot Program. Read this to understand the pilot project.
 * [Economic Model](research/Economic_Model). The Economic Model proposes various methods of deploying and operating a RABET-V process in the United States for non-voting election technology verification.
 
