@@ -109,7 +109,7 @@ Method: Copy
 ### Disable Wireless Peripheral Access to Devices
 
 Disable wireless peripheral access of devices (such as Bluetooth and NFC), unless such access is required for a business purpose.
->Printers and other peripherals often have Bluetooth capabilities that should be disabled unless absolutely necessary.
+>Printers and other peripherals often have Bluetooth capabilities.
 
 Applies to: On-prem components
 

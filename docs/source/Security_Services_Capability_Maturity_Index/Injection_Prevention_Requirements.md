@@ -6,6 +6,8 @@ In these requirements, *interpreted* is defined as: Input that may be treated as
 
 ### Use Secure HTTP Response Headers
 
+[Public key pins is deprecated. Unclear if replacement is well supported]
+
 To protect against cross-site scripting (XSS) and man-in-the-middle (MITM) attacks, use the Content Security Policy (CSP) and Public-Key-Pins headers.
 
 Applies to: Web components

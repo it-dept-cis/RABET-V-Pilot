@@ -88,18 +88,6 @@ Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.5.10
 
-### Implement an Absolute Session Timeout
-
-During non-time-sensitive periods, users should be logged out after an extensive amount of time (e.g., 4-8 hours) has passed since they logged in, regardless of activity. This helps mitigate the risk of an attacker using a hijacked session.
-
-> Does not apply to interfaces that are used on Election Day and require instantaneous access.
-
-Applies to: Web components
-
-Method: Copy
-
-> Reference: CIS Security Best Practices for Non-Voting Election Technology A1.5.8
-
 ## Maturity Level 3
 
 ### Destroy Sessions at Any Sign of Tampering
