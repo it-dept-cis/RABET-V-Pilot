@@ -9,6 +9,7 @@ For each requirement, the provider must include:
 1.  Whether the requirement is:
 
     1. Met,
+    1. Met, User Dependent,
     1. Partially Met,
     1. Not Met, or
     1. Not Applicable
