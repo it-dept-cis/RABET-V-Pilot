@@ -84,13 +84,6 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.2.2
 
-### Ensure the Use of Dedicated Vendor Administrative Accounts
-
-Ensure that all users with administrative account access use a dedicated or secondary account for elevated activities. This account should only be used for administrative activities and day-to-day activities.
-
->Administrator account on election technology endpoints should not be used for anything but administrator level activities and only when necessary.
-
->Reference: CIS Security Best Practices for Non-Voting Election Technology 2.4.3
 
 ### Black list commonly used passwords
 

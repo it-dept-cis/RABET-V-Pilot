@@ -225,10 +225,10 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.1.7
 
-### Disable Workstation-to-Workstation Communication
+### Limit Workstation-to-Workstation Communication
 
-Using technologies such as private VLANs or micro-segmentation, disable all workstation-to-workstation communication to limit an attacker's ability to move laterally and compromise neighboring systems. 
->Whenever possible, workstations should be limited to talking only to servers.
+When not in use, limit workstation-to-workstation communication using technologies such as private VLANs or micro-segmentation. 
+>Whenever possible, workstations should be limited to talking only to servers thereby limiting lateral movement between workstations.
 
 Applies to: On-prem components
 

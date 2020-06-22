@@ -4,3 +4,8 @@
 *.sqlite
 WorkingModel/.DS_Store
 build/
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/RABET-V-Pilot.iml
+.idea/modules.xml
+.idea/misc.xml

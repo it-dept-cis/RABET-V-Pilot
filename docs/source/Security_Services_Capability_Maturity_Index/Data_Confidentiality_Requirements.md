@@ -37,17 +37,6 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.1.1
 
-### Remove or Isolate Sensitive Data or Systems Not Regularly Accessed by the Organization
-
-Remove sensitive data or systems not regularly accessed by the organization from the network. These systems should only be used as stand-alone systems (disconnected from the network) by the business unit needing to occasionally use the system or completely virtualized and powered off until needed.
-
->Disconnect systems that store or process election data that do not absolutely have to be online. Do not leave USB devices with sensitive information plugged into machines when they are not in use.
-
-Applies to: All components
-
-Method: Copy
-
->Reference: CIS Security Best Practices for Non-Voting Election Technology 4.1.2
 
 ### Follow Secure Configuration Guidance for Cloud Storage
 
@@ -232,6 +221,18 @@ Applies to: Hosted components
 Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.3.4
+
+### Remove or Isolate Sensitive Data or Systems Not Regularly Accessed by the Organization
+
+Remove sensitive data or systems not regularly accessed by the organization from the network. 
+
+>These systems should only be used as stand-alone systems (disconnected from the network) by the business unit needing to occasionally use the system or completely virtualized and powered off until needed. In addition, disconnect systems that store or process election data that do not absolutely have to be online. Do not leave USB devices with sensitive information plugged into machines when they are not in use. 
+
+Applies to: All components
+
+Method: Copy
+
+>Reference: CIS Security Best Practices for Non-Voting Election Technology 4.1.2
 
 ### Don't Use Unvalidated Forwards or Redirects
 
