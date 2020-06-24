@@ -18,6 +18,8 @@ For each requirement, the provider must include:
 
 1.  Rationale for Not Applicable (only if Not Applicable is claimed)
 
+1.  Documentation on how the security service is to be configured (if Met, User Dependent is claimed).
+
 1.  Implementation details
 
 1.  Explanation for why the requirement is only partially met or partially applied to the system. Simple explanations can be used (i.e. planned for future development, lack of resources, etc.) If the provider believes that partial implementation is sufficient, a longer explanation is necessary.

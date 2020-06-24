@@ -120,8 +120,6 @@ Method: Copy
 
 Protect web applications by deploying WAFs that inspect all traffic flowing to the web application for common web application attacks. For applications that are not web-based, specific application firewalls should be deployed if such tools are available for the given application type. If the traffic is encrypted, the device should either sit behind the encryption or be capable of decrypting the traffic prior to analysis. If neither option is appropriate, a host-based web application firewall should be deployed.
 
-> These can be very effective at protecting multiple web applications at once. This should be considered for web deployments of multiple election applications in the same hosting environment.
-
 Applies to: All
 
 Method: Copy

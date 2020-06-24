@@ -84,10 +84,9 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.2.2
 
-
 ### Black list commonly used passwords
 
-As part of the set up for credentials they are run against a list of commonly used password to ensure that users are not using passwords that are easily guessable 
+As part of the set up for credentials they are run against a list of commonly used password to ensure that users are not using passwords that are easily guessable.
 
 Applies to: Web components
 
@@ -98,6 +97,7 @@ Method: Re-interpretation
 ### Require Multifactor Authentication for All Administrative Access
 
 Use MFA via encrypted channels for all administrative account access.
+
 >Election technology administrative accounts have tremendous capabilities to do harm if taken over through a social engineering or other attack. Protecting them with MFA is extremely important.
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 2.4.5
@@ -106,11 +106,11 @@ Use MFA via encrypted channels for all administrative account access.
 
 Configure access for all accounts through as few centralized points of authentication as possible, including network, security, and cloud systems.
 
+>This makes it easier to ensure all users are being properly authenticated with the appropriate level of scrutiny and can centralize authentication logging as well.
+
 Applies to: Web components
 
 Method: Copy
-
->This makes it easier to ensure all users are being properly authenticated with the appropriate level of scrutiny and can centralize authentication logging as well.
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 5.1.2
 
@@ -161,6 +161,7 @@ Method: Copy
 ### Ensure Temporary Accounts Have An Expiration Date
 
 Ensure that all temporary accounts have an expiration date that is monitored and enforced.
+
 >This best practice should be applied to contractor accounts and accounts that are meant to be temporary, such as election-specific accounts. It is OK for service accounts and employee accounts to not have an expiration date. Treat users as temporary whenever there is uncertainty
 
 Applies to: Web components

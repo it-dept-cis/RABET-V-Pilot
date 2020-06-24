@@ -6,7 +6,7 @@
 
 Install the latest stable version of any security-related updates on all network devices. Latest refers to all updates which were available prior to the internal product testing of the product.
 
-> Ensure that you are monitoring for updates and applying them as you are able. This may require a plan to make updates prior to sensitive election dates.
+> Ensure that you are monitoring for updates.
 
 > The vendor must use the most recent security updates available at the beginning of the development cycle, or later.
 
@@ -84,8 +84,6 @@ Method: Copy
 
 Operating systems are running the latest security updates provided by the software vendor. Latest refers to all updates which were available prior to the internal product testing of the product.
 
-> Ensure all systems are updated until it is no longer appropriate to make changes to a system before an election. Beyond this point, patches should be reviewed by security personnel and a decision should be made on whether the operational risk of patching it greater than the security risk posed by the vulnerability.
-
 Applies to: Hosted components
 
 Method: Copy
@@ -95,8 +93,6 @@ Method: Copy
 ### Deploy Software Patches
 
 Third-party software on all systems is running the latest security updates provided by the software vendor. Latest refers to all updates which were available prior to the internal product testing of the product.
-
-> Ensure that software is patched until it is no longer appropriate to make changes to software prior to an election. After this date, manually review patches to determine if the operational risk of patching is greater than the security risk of the vulnerability the patch fixes.
 
 Applies to: All
 
@@ -144,7 +140,7 @@ Method: Copy
 
 For applications that rely on a database, use standard hardening configuration templates.
 
-> CIS Benchmarks are available for various database offerings such as SQL Server, MySQL, and PostgreSQL. Guidance for cloud-based databases are also available.
+> CIS Benchmarks are available for various database offerings such as MySQL, SQL Server, and PostgreSQL. Guidance for cloud-based databases are also available.
 
 Applies to: All
 
@@ -167,7 +163,7 @@ Method: Copy
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 1.5.6
 
 ### Implement Automated Configuration Monitoring Systems
-[Revisit]
+
 Utilize a Security Content Automation Protocol (SCAP) compliant or equivelent configuration monitoring system to verify all security configuration elements, catalog approved exceptions, and alert when unauthorized changes occur.
 
 > This prevents accidental misconfiguration and allows election technology providers the ability to prove the component has been properly and securely configured.
