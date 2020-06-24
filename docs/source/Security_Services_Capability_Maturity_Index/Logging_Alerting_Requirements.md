@@ -38,7 +38,7 @@ Method: Copy
 
 ### Log All Privilege Changes
 
-Log all activities or occasions where the user's privilege level changes.
+Log all activities or occasions where the user's privilege level escalates.
 
 Applies to: All
 

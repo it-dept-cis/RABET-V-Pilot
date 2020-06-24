@@ -4,8 +4,7 @@
 
 ### Install the Latest Stable Version of Any Security-Related Updates on All Network Devices
 
-
-Install the latest stable version of any security-related updates on all network devices. Latest refers to all updates which were available prior to the internal product testing of the product. 
+Install the latest stable version of any security-related updates on all network devices. Latest refers to all updates which were available prior to the internal product testing of the product.
 
 > Ensure that you are monitoring for updates and applying them as you are able. This may require a plan to make updates prior to sensitive election dates.
 
@@ -41,9 +40,9 @@ Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.5.3
 
-### Use USB Port Protectors on Unused Ports
+### Use Port Protectors on Unused Ports
 
-Cover all unused USB ports on endpoint devices with locks or tamper-evident port protectors to ensure unauthorized USB devices are not inserted into the device. This must be done prior to delivery to the customer.
+Cover all unused communication ports (e.g. USB, Thunderbolt, HDMI, etc.) on endpoint devices with locks or tamper-evident port protectors to ensure unauthorized devices are not inserted into the device. This must be done prior to delivery to the customer.
 
 Applies to: Provider supplied hardware
 
@@ -53,11 +52,9 @@ Method: Derived
 
 ### Backup and Failover capabilities
 
-Application and data storage components have fail over options in the event of a service degradation for primary component. 
-
+Application and data storage components have fail over options in the event of a service degradation for primary component.
 
 ## Maturity Level 2
-
 
 ### Perform Complete System Backups
 
@@ -85,7 +82,7 @@ Method: Copy
 
 ### Deploy Operating System Patchs
 
-Operating systems are running the latest security updates provided by the software vendor. Latest refers to all updates which were available prior to the internal product testing of the product. 
+Operating systems are running the latest security updates provided by the software vendor. Latest refers to all updates which were available prior to the internal product testing of the product.
 
 > Ensure all systems are updated until it is no longer appropriate to make changes to a system before an election. Beyond this point, patches should be reviewed by security personnel and a decision should be made on whether the operational risk of patching it greater than the security risk posed by the vulnerability.
 
@@ -95,9 +92,9 @@ Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.2.4
 
-### Deploy Software Patchs
+### Deploy Software Patches
 
-Third-party software on all systems is running the latest security updates provided by the software vendor. Latest refers to all updates which were available prior to the internal product testing of the product. 
+Third-party software on all systems is running the latest security updates provided by the software vendor. Latest refers to all updates which were available prior to the internal product testing of the product.
 
 > Ensure that software is patched until it is no longer appropriate to make changes to software prior to an election. After this date, manually review patches to determine if the operational risk of patching is greater than the security risk of the vulnerability the patch fixes.
 
@@ -155,7 +152,6 @@ Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 3.2.16
 
-
 ## Maturity Level 3
 
 ### Establish DDoS Mitigation Services With a Third-Party DDoS Mitigation Provider
@@ -171,8 +167,8 @@ Method: Copy
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 1.5.6
 
 ### Implement Automated Configuration Monitoring Systems
-
-Utilize a Security Content Automation Protocol (SCAP) compliant configuration monitoring system to verify all security configuration elements, catalog approved exceptions, and alert when unauthorized changes occur.
+[Revisit]
+Utilize a Security Content Automation Protocol (SCAP) compliant or equivelent configuration monitoring system to verify all security configuration elements, catalog approved exceptions, and alert when unauthorized changes occur.
 
 > This prevents accidental misconfiguration and allows election technology providers the ability to prove the component has been properly and securely configured.
 
@@ -204,13 +200,13 @@ Method: Copy
 
 ### Disable Access to USB Devices Where Possible
 
-Disable the use of USB devices on a system to completely remove the risk of removable USB media based attacks.
+Disable the use of USB devices (including Thunderbolt) on a system to completely remove the risk of removable USB media based attacks.
 
 > This may not be feasible for all components. It should be feasible for servers and other devices which do not use USB connected devices.
 
 Applies to: Vendor provided hardware
 
-Method: Copy
+Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.5.7
 

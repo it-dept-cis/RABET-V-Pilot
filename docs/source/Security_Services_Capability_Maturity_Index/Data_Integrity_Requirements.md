@@ -34,9 +34,9 @@ Method: Copy
 
 ## Maturity Level 2
 
-### Verify Data on Backup Media
+### Backup data should be restorable
 
-Test data integrity on backup media on a regular basis by performing a data restoration process to ensure that the backup is properly working.
+Verify backup data is restorable by performing a data restoration.
 >This is important to do once per election or more frequently for some systems.
 
 Applies to: Hosted components

@@ -84,13 +84,6 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.2.2
 
-### Ensure the Use of Dedicated Vendor Administrative Accounts
-
-Ensure that all users with administrative account access use a dedicated or secondary account for elevated activities. This account should only be used for administrative activities and day-to-day activities.
-
->Administrator account on election technology endpoints should not be used for anything but administrator level activities and only when necessary.
-
->Reference: CIS Security Best Practices for Non-Voting Election Technology 2.4.3
 
 ### Black list commonly used passwords
 
@@ -188,9 +181,9 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 5.1.3
 
-### Provide the ability for customer admins to revoke access 
+### Provide the ability for customer admins to revoke access
 
-Establish and follow an automated process for revoking system access by disabling accounts immediately upon termination or change of responsibilities of an employee or contractor. Disabling those accounts, instead of deleting accounts, allows preservation of audit trails.
+Establish and follow an automated process for revoking system access by disabling accounts immediately upon termination or change of responsibilities of an employee or contractor.
 
 >Employee new hire, termination, promotion, and demotion checklists should include the steps to setting user permissions commensurate with the employee's job responsibilities, or lack thereof. This should apply to employees and contractors.
 
