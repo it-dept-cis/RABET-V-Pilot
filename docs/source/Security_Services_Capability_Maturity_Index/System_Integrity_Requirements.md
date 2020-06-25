@@ -163,8 +163,8 @@ Method: Copy
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 1.5.6
 
 ### Implement Automated Configuration Monitoring Systems
-
-Utilize a Security Content Automation Protocol (SCAP) compliant or equivelent configuration monitoring system to verify all security configuration elements, catalog approved exceptions, and alert when unauthorized changes occur.
+[Revisit]
+Utilize a Security Content Automation Protocol (SCAP) compliant or equivalent configuration monitoring system to verify all security configuration elements, catalog approved exceptions, and alert when unauthorized changes occur.
 
 > This prevents accidental misconfiguration and allows election technology providers the ability to prove the component has been properly and securely configured.
 
