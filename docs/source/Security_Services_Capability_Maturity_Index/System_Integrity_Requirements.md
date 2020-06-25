@@ -168,7 +168,7 @@ Method: Copy
 
 ### Implement Automated Configuration Monitoring Systems
 [Revisit]
-Utilize a Security Content Automation Protocol (SCAP) compliant or equivelent configuration monitoring system to verify all security configuration elements, catalog approved exceptions, and alert when unauthorized changes occur.
+Utilize a Security Content Automation Protocol (SCAP) compliant or equivalent configuration monitoring system to verify all security configuration elements, catalog approved exceptions, and alert when unauthorized changes occur.
 
 > This prevents accidental misconfiguration and allows election technology providers the ability to prove the component has been properly and securely configured.
 
