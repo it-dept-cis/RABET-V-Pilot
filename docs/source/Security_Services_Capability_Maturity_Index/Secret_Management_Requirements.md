@@ -48,7 +48,7 @@ Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.4
 
-### Use a FIPS 140-2 Validated Modules
+### Use a FIPS 140-2 Validated Module
 
 Use a cryptographic module that meets or exceeds FIPS 140-2 validation, operating in FIPS mode, for performing cryptographic operations.
 
