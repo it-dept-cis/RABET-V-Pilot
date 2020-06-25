@@ -5,7 +5,8 @@
 ### Leverage the Advanced Encryption Standard (AES) to Encrypt Wireless Data
 
 Leverage the Advanced Encryption Standard (AES) to encrypt wireless data in transit.
->Wi-Fi, Bluetooth, and NFC all support encrypted communication. Ensure Wi-Fi uses Wi-Fi Protected Access 2 (WPA2) or better. Ensure Bluetooth uses a secure pairing option and requires personal identification numbers (PINs) to authenticate devices.
+
+>Wi-Fi, Bluetooth, and NFC all support encrypted communication. Ensure Wi-Fi uses Wi-Fi Protected Access 2 (WPA2) or better.
 
 Applies to: On-premise
 
@@ -13,9 +14,9 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.6.7
 
-### Use Only Standardized and Extensively Reviewed Encryption Algorithms 
+### Use Only Standardized and Extensively Reviewed Encryption Algorithms
 
-Use only standardized and extensively reviewed encryption algorithms that are validated by trusted third parties, such as NIST. 
+Use only standardized and extensively reviewed encryption algorithms that are validated by trusted third parties, such as NIST.
 
 >Use standard libraries available from reputable sources instead of developing your own cryptographic solutions.
 
@@ -37,10 +38,10 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.1.1
 
-
 ### Follow Secure Configuration Guidance for Cloud Storage
 
 Follow guidance from CIS Foundations Benchmarks or other secure configuration guidance to ensure all cloud storage containers with sensitive election data are properly secured.
+
 >CIS Foundations Benchmarks are available for Amazon Web Services, Microsoft Azure, Google Cloud, and Microsoft Office 365.
 
 Applies to: Hosted component
@@ -134,7 +135,6 @@ Method: Copy
 ### Display Generic Error Messages
 
 Error messages should not reveal details about the internal state of the application. For example, file system path and stack information should not be exposed to the user through error messages.
->
 
 Applies to: All components
 
@@ -157,6 +157,7 @@ Method: Copy
 ### Encrypt the Hard Drive of All Mobile Devices
 
 Utilize approved whole disk encryption software to encrypt the hard drive of all mobile devices.
+
 >Determine what sensitive information you will permit on employees' laptops and mobile devices. Ensure the hard drives of laptops and mobile devices are fully encrypted to prevent information from being stolen.
 
 Applies to: On-prem components
@@ -168,7 +169,6 @@ Method: Copy
 ### Encrypt Data on USB Storage Devices
 
 If USB storage devices are required, all data stored on such devices must be encrypted while at rest.
->Data classified as confidential should be encrypted whenever it is stored on a USB device.
 
 Applies to: On-prem components
 
@@ -179,6 +179,7 @@ Method: Copy
 ### Encrypt All Sensitive Information in Transit
 
 Encrypt all sensitive information in transit.
+
 >Consider whether the election data's confidentiality is sensitive. If you are unsure, consider it sensitive.
 
 Applies to: All components
@@ -202,6 +203,7 @@ Method: Copy
 ### Routinely Audit Cloud Storage Configuration Settings
 
 On a periodic basis, review configuration settings for all cloud storage containers and match effectiveness to the sensitivity of the data being stored in the container.
+
 >Automated routines are available for evaluation against the CIS Foundations Benchmarks. Automated routines may be necessary if you have a lot of containers.
 
 Applies to: Hosted components
@@ -214,7 +216,7 @@ Method: Copy
 
 Don't overload one container with data at various classification levels. Create separate containers with appropriate names and configuration settings for each data classification level.
 
->Follow your data classification scheme and establish containers based on sensitivity. Also, don't mix production and test data or data from different technologies and products.
+>Follow your data classification scheme and establish containers based on sensitivity. Also, don't mix production and test data.
 
 Applies to: Hosted components
 
@@ -224,9 +226,9 @@ Method: Copy
 
 ### Remove or Isolate Sensitive Data or Systems Not Regularly Accessed by the Organization
 
-Remove sensitive data or systems not regularly accessed by the organization from the network. 
+Remove sensitive data or systems not regularly accessed by the organization from the network.
 
->These systems should only be used as stand-alone systems (disconnected from the network) by the business unit needing to occasionally use the system or completely virtualized and powered off until needed. In addition, disconnect systems that store or process election data that do not absolutely have to be online. Do not leave USB devices with sensitive information plugged into machines when they are not in use. 
+>These systems should only be used as stand-alone systems (disconnected from the network) by the business unit needing to occasionally use the system or completely virtualized and powered off until needed. In addition, disconnect systems that store or process election data that do not absolutely have to be online. Do not leave USB devices with sensitive information plugged into machines when they are not in use.
 
 Applies to: All components
 
@@ -249,13 +251,15 @@ Method: Copy
 ### Monitor and Block Unauthorized Movement of Sensitive Data
 
 Deploy an automated tool on network perimeters that monitors for unauthorized transfer of sensitive information and blocks such transfers while alerting information security personnel.
->Deploy and configure Data Loss Prevention (DLP) solutions to look for election and voter-related information that should not be leaving your network boundaries. .
+
+>Deploy and configure Data Loss Prevention (DLP) solutions to look for election and voter-related information that should not be leaving your network boundaries.
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.1.3
 
 ### Utilize an Active Discovery Tool to Identify Sensitive Data
 
 Utilize an active discovery tool to identify all sensitive information stored, processed, or transmitted by the organization's technology systems, including those located on-site or at a remote service provider, and update the organization's sensitive information inventory.
+
 >This helps an organization find and secure all instances of sensitive election information.
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.8

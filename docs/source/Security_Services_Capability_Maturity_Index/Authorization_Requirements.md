@@ -10,8 +10,6 @@ Applies to: All components
 
 Method: Derived
 
->Identify the roles of individuals in managing election data before identifying the minimum privileges necessary for them to do their job. Avoid giving administrative access to more people than necessary, while also not creating single points of failure.
-
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.1
 
 ### Applications and Middleware Should Run With Minimal Privileges
@@ -34,6 +32,7 @@ Method: Copy
 >
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.4.1
+
 ### Verify object requests
 
 The product must verify each request for data that the user has authorization to the data object. This prevents authenticated users from access data above or outside of their permission set.
@@ -67,7 +66,6 @@ Method: Copy
 ### Don't Use Direct Object References for Access Control Checks
 
 Do not allow direct references to files or parameters that can be manipulated to grant excessive access. Access control decisions must be based on the authenticated user identity and trusted server-side information.
->
 
 Applies to: Web components
 
@@ -79,10 +77,10 @@ Method: Copy
 
 Use an automated tool, such as host-based Data Loss Prevention, to enforce access controls to data even when the data is copied off a system.
 
+>This will help ensure sensitive data that is not properly labeled is still protected from leaving its host system.
+
 Applies to: Web components
 
 Method: Copy
-
->This will help ensure sensitive data that is not properly labeled is still protected from leaving its host system.
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.9

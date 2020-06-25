@@ -17,6 +17,7 @@ Method: Copy
 ### Deny Communication over Unauthorized Ports
 
 Deny communication over unauthorized transportation control protocol (TCP) or user datagram protocol (UDP) ports or application traffic to ensure that only authorized protocols are allowed to cross each of the organization's network boundaries.
+
 >Election system boundaries should be configured to deny traffic on all ports except ports explicitly needed for legitimate traffic.
 
 Applies to: Hosted components
@@ -28,6 +29,7 @@ Method: Copy
 ### Deploy Network-Based IDS Sensors
 
 Deploy network-based Intrusion Detection Systems (IDS) sensors to look for unusual attack mechanisms and detect compromise of these systems at each of the organization's network boundaries.
+
 >The EI-ISAC and the Albert sensors together capture and monitor networks traffic of election jurisdictions. Election technology deployed outside of the jurisdictions' network should have a similar technology deployed and monitored.
 
 Applies to: Hosted components
@@ -39,7 +41,8 @@ Method: Copy
 ### Document Traffic Configuration Rules
 
 All configuration rules that allow traffic to flow through network devices should be documented in a configuration management system with a specific business reason for each rule, a specific individual's name responsible for that business need, and an expected duration of the need.
->This is important for production networks that host election solutions. Exceptions are normal but should be few and must be removed when no longer necessary. This is one good reason to keep general purpose workstations in a separate network segment. 
+
+>This is important for production networks that host election solutions. Exceptions are normal but should be few and must be removed when no longer necessary. This is one good reason to keep general purpose workstations in a separate network segment.
 
 Applies to: Hosted components
 
@@ -50,11 +53,10 @@ Method: Copy
 ### Use MFA for managing Network Infrastructure
 
 Manage Network Infrastructure Using Multifactor Authentication and Encrypted Sessions
->The ability to manage network devices should be limited to authorized personnel accessing the management interface locally or using MFA in encryption sessions.
 
 Applies to: Hosted components
 
-Method: Copy
+Method: Derived
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.3.5
 
@@ -122,6 +124,7 @@ Method: Copy
 ### Enable Firewall Logging
 
 Enable firewall logging of accepted and denied traffic to determine where a DDoS may be originating from.
+
 >Most election technology must be careful not to block based on IP address unless there is evidence of malicious behavior.
 
 Applies to: Hosted components
@@ -156,18 +159,18 @@ Method: Copy
 
 ### Disable Peer-to-Peer Wireless Network Capabilities on Wireless Clients
 
- Disable peer-to-peer (ad hoc) wireless network capabilities on wireless clients.
->If Bluetooth and other peer-to-peer protocols are not actively being used, they should be disabled.
+Disable peer-to-peer (ad hoc) wireless network capabilities on wireless clients.
 
 Applies to: On-prem components
 
-Method: Copy
+Method: Derived
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.6.6
 
 ### Segment the Network Based on Sensitivity
 
 Segment the network based on the label or classification level of the information stored on the servers, and locate all sensitive information on separated Virtual Local Area Networks (VLANs).
+
 >Consider establishing unique networks for each election technology and service offering.
 
 Applies to: On-prem components
@@ -178,7 +181,7 @@ Method: Copy
 
 ### Apply Upstream Port and Packet Size Filtering
 
-Have upstream network service provider or network appliance apply port and packet size filtering to limit unnecessary traffic to the product's network infrastructure. 
+Have upstream network service provider or network appliance apply port and packet size filtering to limit unnecessary traffic to the product's network infrastructure.
 
 >Work with upstream providers to filter out as much as possible that is not related to the election service being provided.
 
@@ -193,6 +196,7 @@ Method: Copy
 ### Deploy Network-Based Intrusion Prevention Systems
 
 Deploy network-based Intrusion Prevention Systems (IPS) to block malicious network traffic at each of the organization's network boundaries.
+
 >This should be applied to all network-connected election technology. It must be monitored and configured to ensure it does not prevent legitimate traffic.
 
 Applies to: Hosted components
@@ -205,29 +209,28 @@ Method: Copy
 
 Scan all vendor issued devices remotely logging into the organization's network prior to accessing the network to ensure that each of the organization's security policies has been enforced.
 
->Limit the number of devices that are connected to election technology network segments and keep standard business networks separate.
-
 Applies to: Hosted components
 
-Method: Copy
+Method: Derived
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.1.12
 
 ### Manage System's External Removable Media's Read/Write Configurations
 
 Configure systems not to write data to external removable media, if there is no business need for supporting such devices.
+
 >This prevents someone with physical access to a system storing sensitive information from extracting that information onto a USB drive.
 
 Applies to: On-prem components
 
 Method: Copy
 
-
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.1.7
 
 ### Limit Workstation-to-Workstation Communication
 
 When not in use, limit workstation-to-workstation communication using technologies such as private VLANs or micro-segmentation. 
+
 >Whenever possible, workstations should be limited to talking only to servers thereby limiting lateral movement between workstations.
 
 Applies to: On-prem components
@@ -239,6 +242,7 @@ Method: Copy
 ### Use Wireless Authentication Protocols That Require Mutual, Multifactor Authentication
 
 Ensure that wireless networks use authentication protocols such as Extensible Authentication Protocol-Transport Layer Security (EAP/TLS) that requires mutual, multifactor authentication.
+
 >Use of wireless technology in election technology demands that all parties be properly and fully authenticated.
 
 Applies to: On-prem components

@@ -130,7 +130,7 @@ Method: Copy
 
 Logs must be aggregated to a central log management system for analysis and review.
 
-> Networked election technology solutions should utilize central event logging. Central event logging is extremely beneficial for detecting events and ensuring event logs are properly protected.
+> Networked election technology solutions must utilize central event logging. Central event logging is extremely beneficial for detecting events and ensuring event logs are properly protected.
 
 Applies to: All
 

@@ -38,13 +38,11 @@ Method: Derived
 
 ### Set Up Secure Key Generation Processes
 
-
-
 When keys are generated and stored in your system, the product must use PKCS standards and provide a way for customers to securely generate those keys to provide mutual authentication and non-repudiation between components.
 
 Applies to: All
 
-Method: Derived 
+Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.4
 
