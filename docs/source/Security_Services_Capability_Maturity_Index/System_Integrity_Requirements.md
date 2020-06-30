@@ -80,7 +80,7 @@ Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.1.1
 
-### Deploy Operating System Patchs
+### Deploy Operating System Patches
 
 Operating systems are running the latest security updates provided by the software vendor. Latest refers to all updates which were available prior to the internal product testing of the product.
 
