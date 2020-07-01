@@ -34,7 +34,7 @@ Method: Copy
 
 ### Customer admins have access to an inventory of their users
 
-Maintain an inventory of all accounts organized by authentication system. Maintain an up-to-date list of accounts for each system and tie each account to an individual person wherever possible. Having this ability in the platform helps organizations manage their users. 
+Maintain an inventory of all accounts organized by authentication system. Maintain an up-to-date list of accounts for each system and tie each account to an individual person wherever possible. Having this ability in the platform helps organizations manage their users.
 
 Applies to: Web Components
 
@@ -62,7 +62,7 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.2.4
 
-### Provide Options for Multifactor Authentication 
+### Provide Options for Multifactor Authentication
 
 Allow users to protect their accounts with multifactor authentication. Allow users to choose the authenticator that works best for them, subject to meeting security requirements. Where possible, allow the issuance of multiple authenticators so that multiple combinations can still meet an MFA requirement and be used in the reissuance of lost or stolen authenticators.
 
@@ -86,7 +86,7 @@ Method: Copy
 
 ### Black list commonly used passwords
 
-As part of the set up for credentials they are run against a list of commonly used password to ensure that users are not using passwords that are easily guessable.
+As part of the set up for credentials they are run against a list of commonly used passwords to ensure that users are not using passwords that are easily guessable.
 
 Applies to: Web components
 
