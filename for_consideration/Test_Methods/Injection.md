@@ -4,6 +4,20 @@ Method: HTTP Header Inspection
 
 Applies to: All
 
+### Test Case
+
+Prerequites:
+
+Tests occurs on all valid HTTP Verbs of a given url
+
+Steps:
+
+1. Make HTTP request against application
+2. Inspect header for `Content-Security-Policy`
+3. If header does not exist, FAILS
+4. Inspect value of `Contest-Security-Policy`
+5. [Put allowed policies here]
+
 ## 6.1.2
 
 [Either way, uploading an invalid file is likely to fail, so it will be hard to distinguish whether it failed due to validation failures, or the code entering an expected state]
@@ -37,6 +51,15 @@ Trust: Low
 Method: HTTP Header Inspection (when headers are used), HTML Inspection (when meta tags are used)
 
 Trust: All
+
+### Test Script
+
+1. Make HTTP request against application
+2. Inspect header for `Content-Type`
+3. If header does not exist, FAILS
+4. Check if charset parameter is set
+
+5. If charset is set, then PASSES, otherwise FAILS
 
 ## 6.1.4
 
@@ -118,6 +141,8 @@ Trust: Low
 Method: Custom
 
 Method Effectiveness: Good
+
+Test Frequencency: Attestation with Spot Checks
 
 ## 6.3.1
 
