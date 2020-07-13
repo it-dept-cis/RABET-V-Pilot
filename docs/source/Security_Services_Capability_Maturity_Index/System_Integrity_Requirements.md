@@ -52,7 +52,7 @@ Method: Derived
 
 ### Backup and Failover capabilities
 
-Application and data storage components have fail over options in the event of a service degradation for primary component.
+Ensure application and data storage components have fail over options in the event of a service degradation for primary component.
 
 ## Maturity Level 2
 
@@ -82,7 +82,7 @@ Method: Copy
 
 ### Deploy Operating System Patches
 
-Operating systems are running the latest security updates provided by the software vendor. Latest refers to all updates which were available prior to the internal product testing of the product.
+Ensure operating systems are running the latest security updates provided by the software vendor. Latest refers to all updates which were available prior to the internal product testing of the product.
 
 Applies to: Hosted components
 
@@ -92,7 +92,9 @@ Method: Copy
 
 ### Deploy Software Patches
 
-Third-party software on all systems is running the latest security updates provided by the software vendor. Latest refers to all updates which were available prior to the internal product testing of the product.
+Ensure that third-party software on all systems is running the latest security updates provided by the software vendor.
+
+> Latest refers to all updates which were available prior to the internal product testing of the product.
 
 Applies to: All
 
@@ -164,7 +166,6 @@ Method: Copy
 
 ### Implement Automated Configuration Monitoring Systems
 
-[Revisit]
 Utilize a Security Content Automation Protocol (SCAP) compliant or equivalent configuration monitoring system to verify all security configuration elements, catalog approved exceptions, and alert when unauthorized changes occur.
 
 > This prevents accidental misconfiguration and allows election technology providers the ability to prove the component has been properly and securely configured.
@@ -187,7 +188,7 @@ Method: Copy
 
 Enable anti-exploitation features such as Data Execution Prevention (DEP) or Address Space Layout Randomization (ASLR) that are available in an operating system, or deploy appropriate toolkits that can be configured to apply protection to a broader set of applications and executables.
 
-> This should be considered for election technology servers and other sensitive endpoints.
+> This applies to servers and other sensitive endpoints.
 
 Applies to: All
 
@@ -197,7 +198,7 @@ Method: Copy
 
 ### Disable Access to USB Devices Where Possible
 
-Disable the use of USB devices (including Thunderbolt) on a system to completely remove the risk of removable USB media based attacks.
+Disable the use of USB devices (including Thunderbolt) on a system. This completely removes the risk of removable USB media based attacks.
 
 > This may not be feasible for all components. It should be feasible for servers and other devices which do not use USB connected devices.
 
@@ -209,7 +210,7 @@ Method: Derived
 
 ### Use USB Write Blocker to Transfer Data Into Sensitive Systems
 
-USB Write Blockers allow a high integrity system to read the content of a USB device while mitigating the risk of transferring any malicious payload.
+Use USB Write Blockers to allow a high integrity system to read the content of a USB device. This mitigates the risk of transferring any malicious payload.
 
 > These devices should be used when transferring data into the voting system or the voter registration system using removable USB media.
 
@@ -221,7 +222,7 @@ Method: Copy
 
 ### No Single Points of Failure
 
-Product reliability is protected against any one system component failing by providing redundancy of critical components.
+Protect product reliability against any one system component failing by providing redundancy of critical components.
 
 ### Deny application execution by default
 
