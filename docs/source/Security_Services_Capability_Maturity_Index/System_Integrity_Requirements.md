@@ -80,7 +80,7 @@ Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.1.1
 
-### Deploy Operating System Patchs
+### Deploy Operating System Patches
 
 Operating systems are running the latest security updates provided by the software vendor. Latest refers to all updates which were available prior to the internal product testing of the product.
 
@@ -163,6 +163,7 @@ Method: Copy
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 1.5.6
 
 ### Implement Automated Configuration Monitoring Systems
+
 [Revisit]
 Utilize a Security Content Automation Protocol (SCAP) compliant or equivalent configuration monitoring system to verify all security configuration elements, catalog approved exceptions, and alert when unauthorized changes occur.
 
@@ -220,4 +221,16 @@ Method: Copy
 
 ### No Single Points of Failure
 
-Product reliability is protected against any one system component failing by providing redundancy of critical components. 
+Product reliability is protected against any one system component failing by providing redundancy of critical components.
+
+### Deny application execution by default
+
+Implement default-deny technologies (such as AppLocker) to only permit applications on an allow-list to execute on the product.
+
+> An allow-list of acceptable applications should be established by the vendor based on the use-cases of the application.
+
+Applies to: Vendor provided hardware
+
+Method: Derived
+
+Reference: CIS EIAT 17
