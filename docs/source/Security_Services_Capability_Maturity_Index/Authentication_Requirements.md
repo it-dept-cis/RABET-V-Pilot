@@ -24,7 +24,7 @@ Method: Copy
 
 ### Encrypt or Hash All Authentication Credentials
 
-Ensure that local accounts and accounts with third parties use this approach to store your credentials. This will limit the impact of a third-party provider breach from impacting the election technology.
+Ensure that local accounts and accounts with third parties use this approach to store your credentials. This will limit the impact of a third-party provider breach from impacting the election technology. The encryption or hashing algorithm should be one approved for use by NIST.
 
 Applies to: All components
 
@@ -32,7 +32,7 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 5.1.4
 
-### Customer admins have access to an inventory of their users
+### Customer admins have access to an inventory of their user accounts
 
 Maintain an inventory of all accounts organized by authentication system. Maintain an up-to-date list of accounts for each system and tie each account to an individual person wherever possible. Having this ability in the platform helps organizations manage their users. 
 
@@ -84,9 +84,9 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.2.2
 
-### Black list commonly used passwords
+### Block commonly used passwords 
 
-As part of the set up for credentials they are run against a list of commonly used password to ensure that users are not using passwords that are easily guessable.
+When credentials are set up for a new account, those credentials are run against a list of commonly used password and password patterns to ensure that users are not using passwords that are easily guessable.
 
 Applies to: Web components
 
@@ -116,7 +116,7 @@ Method: Copy
 
 ### Authentication visibility
 
-Provide customers with visibility on user logins including the time and IP address of the login.
+Provide customers with visibility on user logins including the time,  IP address of the login and user agents of the browser.
 
 Applies to: All components
 

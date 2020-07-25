@@ -52,7 +52,7 @@ Method: Copy
 
 ### Use MFA for managing Network Infrastructure
 
-Manage Network Infrastructure Using Multifactor Authentication and Encrypted Sessions
+Manage Network Infrastructure Using Multifactor Authentication and encrypted sessions
 
 Applies to: Hosted components
 
@@ -145,7 +145,7 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.5.5
 
-### Limit Wireless Access on Client Devices
+### Limit Wireless Access on Client Devices to only Authorized Wireless Networks
 
 Configure wireless access only on client machines that have an essential wireless business purpose. Allow access only to authorized wireless networks, and restrict access to other wireless networks.
 
@@ -253,9 +253,9 @@ Method: Copy
 
 ### Limit Access to Trusted IP Address Ranges
 
-By applying a whitelist of known trusted IP addresses this allows organizations to greatly reduce their attack surface.
+By applying an allowlist of known trusted IP addresses this allows organizations to greatly reduce their attack surface.
 
->This can be done using a network firewall at the parameter of your election network. Preventing access from known malicious IP addresses can be done for all election applications, even public facing ones. The Election Infrastructure Information Sharing and Analysis Center (EI-ISAC) provides list of known malicious IP addresses.
+>This can be done using a network firewall at the perimeter of your election network. Preventing access from known malicious IP addresses can be done for all election applications, even public facing ones. The Election Infrastructure Information Sharing and Analysis Center (EI-ISAC) provides list of known malicious IP addresses.
 
 Applies to: Hosted components
 
