@@ -35,7 +35,7 @@ Method: Copy
 
 ### Verify object requests
 
-The product must verify each request for data that the user has authorization to the data object. This prevents authenticated users from access data above or outside of their permission set.
+The product must verify during each request for data that the user has authorization to the data object. This prevents authenticated users from accessing data above or outside of their permission set.
 
 Applies to: All components
 

@@ -6,7 +6,7 @@
 
 Deny communications with known malicious or unused Internet IP addresses. Limit access to trusted and necessary IP address ranges at each of the organization's application and network boundaries.
 
->This can be done using a network firewall at the parameter of your election network. Preventing access from known malicious IP addresses can be done for all election applications, even public facing ones. The Election Infrastructure Information Sharing and Analysis Center (EI-ISAC) provides list of known malicious IP addresses.
+>This can be done using a network firewall at the perimeter of your election network. Preventing access from known malicious IP addresses can be done for all election applications, even public facing ones. The Election Infrastructure Information Sharing and Analysis Center (EI-ISAC) provides list of known malicious IP addresses.
 
 Applies to: Hosted components
 
@@ -229,7 +229,7 @@ Method: Copy
 
 ### Limit Workstation-to-Workstation Communication
 
-When not in use, limit workstation-to-workstation communication using technologies such as private VLANs or micro-segmentation. 
+When not in use, limit workstation-to-workstation communication using technologies such as private VLANs or micro-segmentation.
 
 >Whenever possible, workstations should be limited to talking only to servers thereby limiting lateral movement between workstations.
 
