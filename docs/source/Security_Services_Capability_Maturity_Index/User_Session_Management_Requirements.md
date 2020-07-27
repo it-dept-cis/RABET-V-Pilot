@@ -16,7 +16,7 @@ Method: Derived
 
 ### Set the Cookie Expiration Time
 
-The session cookie should have a reasonable expiration time given the sensitivity of the data. Non-expiring session cookies should only be allowed for applications with no sensitive information, such as one providing basic public information that is customized for a user.
+Set the session cookie expiration time to a reasonable value given the sensitivity of the data. Non-expiring session cookies should only be allowed for applications with no sensitive information, such as one providing basic public information that is customized for a user.
 
 Applies to: Web components
 
@@ -26,7 +26,7 @@ Method: Derived
 
 ### Place a Logout Button on Every Page
 
-The logout button or logout link should be easily accessible to the user on every page after they have authenticated.
+Place the logout button or logout link in an easily accessible place for every authenticated page.
 
 Scope: Web components
 
@@ -36,7 +36,7 @@ Method: Copy
 
 ### Use Secure Cookie Attributes (i.e. HttpOnly and Secure Flags)
 
-The session cookie should be set with both the HttpOnly and Secure flags. This ensures that the session ID will not be accessible to client-side scripts and it will only be transmitted over HTTPS.
+Set the session cookie with both the HttpOnly and Secure flags. This ensures that the session ID will not be accessible to client-side scripts and it will only be transmitted over HTTPS.
 
 Applies to: Web applications
 
@@ -80,7 +80,7 @@ Method: Copy
 
 ### Regenerate Session Tokens
 
-Session tokens should be regenerated when the user authenticates to the application. Additionally, should the encryption status change, the session token should always be regenerated.
+Regenerate session tokens when the user authenticates to the application. Additionally, should the encryption status change, the session token must be regenerated.
 
 Applies to: All
 
@@ -92,7 +92,7 @@ Method: Derived
 
 ### Destroy Sessions at Any Sign of Tampering
 
-Unless the application requires multiple simultaneous sessions for a single user, implement features to detect session cloning attempts. Should any sign of session cloning be detected, the session should be destroyed, forcing the real user to reauthenticate.
+Unless the application requires multiple simultaneous sessions for a single user, implement features to detect session cloning attempts. Should any sign of session cloning be detected, the session must be destroyed, forcing the real user to reauthenticate.
 
 Applies to: Web components
 

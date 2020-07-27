@@ -154,9 +154,9 @@ Method: Copy
 
 ## Maturity Level 2
 
-### Encrypt the Hard Drive of All Mobile Devices
+### Encrypt the Hard Drive of All Vendor Issued Devices
 
-Utilize approved whole disk encryption software to encrypt the hard drive of all mobile devices.
+Utilize approved whole disk encryption software to encrypt the hard drive of all devices issued by the vendor.
 
 >Determine what sensitive information you will permit on employees' laptops and mobile devices. Ensure the hard drives of laptops and mobile devices are fully encrypted to prevent information from being stolen.
 

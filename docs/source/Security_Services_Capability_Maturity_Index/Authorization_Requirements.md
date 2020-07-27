@@ -26,7 +26,7 @@ Method: Copy
 
 Provide the customer with the ability to make all access decisions based on the principle of least privilege. Based on permission settings, access should be denied when not explicitly allowed. Additionally, after an account is created, rights must be specifically added to that account to grant access to resources. Where defaults are used, the defaults should be the minimal level of permissions.
 
-Applies to: Web components
+Applies to: All components
 
 Method: Copy
 >

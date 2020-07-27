@@ -48,7 +48,9 @@ Method: Copy
 
 ### Do Not Log Inappropriate Data
 
-While logging errors and auditing access is important, sensitive data should never be logged in an unencrypted form. For example, under HIPAA and PCI, it would be a violation to log sensitive data into the log itself unless the log is encrypted on the disk. Additionally, it can create a serious exposure point should the application itself become compromised.
+While logging errors and auditing access is important, sensitive data must never be logged in an unencrypted form.
+
+> For example, under HIPAA and PCI, it would be a violation to log sensitive data into the log itself unless the log is encrypted on the disk. Additionally, it can create a serious exposure point should the application itself become compromised.
 
 Applies to: Products that handle sensitive data
 
@@ -58,7 +60,7 @@ Method: Derived
 
 ### Store Logs Securely
 
-Logs should be stored and maintained appropriately to avoid information loss or tampering by an intruder. Log retention should also follow the retention policy set forth by the organization to meet regulatory requirements and provide enough information for forensic and incident response activities.
+Logs must be stored and maintained appropriately to avoid information loss or tampering by an intruder. Log retention should also follow the retention policy set forth by the organization to meet regulatory requirements and provide enough information for forensic and incident response activities.
 
 Applies to: All
 
@@ -108,7 +110,7 @@ Enable command-line audit logging for command shells, such as Microsoft Powershe
 
 > A large percentage of malware uses Powershell and Bash. This logging will assist in the detection of malware and a better understanding of its impact.
 
-Applies to: Appliance-based products, or other standard configurations that include a command shell 
+Applies to: Appliance-based products, or other standard configurations that include a command shell.
 
 Method: Copy
 
