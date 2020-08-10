@@ -24,12 +24,15 @@ We will add steering committee member information below as we confirm members:
 - Christina Adkins, Texas Secretary of State's Office
 - Jessica Myers, Pennsylvania Secretary of State's Office
 - Mike Moser, Pennsylvania Secretary of State's Office
+- Voting System Oversight Program (VSTOP), Indiana
+- Geoff Hale, Cybersecurity and Infrastructure Security Agency (CISA)
+- Ryan Macias, CISA
+- Amy Cohen, National Association of State Election Directors (NASED)
 
 ## Pilot Participants
 
 The following technology providers have volunteered to have their products used in the RABET-V Pilot. 
 
-- Scytl - Election Night Reporting
 - VR Systems - Electronic Pollbooks and Election Night Reporting
 - KNOWink - Electronic Pollbook
 
