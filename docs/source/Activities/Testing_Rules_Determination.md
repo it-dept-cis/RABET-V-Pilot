@@ -24,7 +24,7 @@ In our application of decision trees, product changes are the inputs to the deci
 
 Any time the testing rules need to be created or updated, start with a copy of the master decision tree. The master decision tree has all possible outcomes, even if they are not relevant for the product.
 
-The decision tree is currently implemented with [Silver Decisions](http://silverdecisions.pl/). The master decision tree is located in this repository at [master decision tree](https://github.com/it-dept-cis/RABET-V-Pilot/tree/feature/sphinx/for_consideration/Decision_Trees/decisiontree_master.json).
+The decision tree is currently implemented with [Silver Decisions](http://silverdecisions.pl/). The master decision tree is located in this repository at [master decision tree](../../../for_consideration/Decision_Trees/decisiontree_master.json).
 
 #### Simplify Master Tree
 
