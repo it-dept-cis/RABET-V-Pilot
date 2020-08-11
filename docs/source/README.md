@@ -175,7 +175,7 @@ For more information of the Background and Motivation for RABET-V, see CIS’ [H
 
 ## Introduction
 
-This section introduces the program goal and scope. For a list of the definitions as they are used by the Program, see the [RABET-V Glossary](Appendices/RABET-V_Glossary).
+This section introduces the program goal and scope. For a list of the definitions as they are used by the Program, see the [RABET-V Glossary](Appendices/RABET-V_Glossary.md).
 
 ### Program Goal
 
