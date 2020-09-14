@@ -1,4 +1,4 @@
-# Data Confidentiality Requirements
+# Data Confidentiality and Integrity Requirements
 
 ## Maturity Level 1
 
@@ -25,6 +25,16 @@ Applies to: All components
 Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 3.2.15
+
+### Use Valid HTTPS Certificates From a Reputable Certificate Authority
+
+HTTPS certificates should be signed by a reputable certificate authority (CA). The name on the certificate should match the fully qualified domain name (FQDN) of the website. The certificate itself should be valid and not expired.
+
+Applies to: Web Components
+
+Method: Copy
+
+>Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.2
 
 ### Documentation Clearly Identifies Sensitive Information Processed by the Product
 
@@ -263,6 +273,18 @@ Utilize an active discovery tool to identify all sensitive information stored, p
 >This helps an organization find and secure all instances of sensitive election information.
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.8
+
+### Digitally Sign Sensitive Information in Transit
+
+Sensitive data should be digitally signed by its originator and verified by all components which read, store, or process the data.
+
+>The integrity of election data must be maintained throughout its lifecycle.
+
+Applies to: All components
+
+Method: Copy
+
+>Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.2
 
 ### Encrypt Data Stored in Cloud Storage Containers
 

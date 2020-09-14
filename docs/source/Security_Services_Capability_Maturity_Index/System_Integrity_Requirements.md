@@ -16,6 +16,18 @@ Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 1.3.4
 
+### Perform Complete System Backups
+
+Ensure that all of the organization's key systems are backed up as a complete system, through processes such as imaging, to enable the quick recovery of an entire system. On premises products must provide this capability.
+
+> These types of backups should be done prior to each election for each type of election system used. This allows for quick recovery back to the known good version. Maintaining extra units created from these system backups is another good approach.
+
+Applies to: All
+
+Method: Copy
+
+> Reference: CIS Security Best Practices for Non-Voting Election Technology 1.4.2
+
 ### Ensure Anti-Malware Software and Signatures Are Updated
 
 For systems that support the use of anti-malware software, the product must allow an administrator to perform updates to its scanning engine and signature database.
@@ -50,23 +62,7 @@ Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.5.6
 
-### Backup and Failover capabilities
-
-Ensure application and data storage components have fail over options in the event of a service degradation for primary component.
-
 ## Maturity Level 2
-
-### Perform Complete System Backups
-
-Ensure that all of the organization's key systems are backed up as a complete system, through processes such as imaging, to enable the quick recovery of an entire system. On premises products must provide this capability.
-
-> These types of backups should be done prior to each election for each type of election system used. This allows for quick recovery back to the known good version. Maintaining extra units created from these system backups is another good approach.
-
-Applies to: All
-
-Method: Copy
-
-> Reference: CIS Security Best Practices for Non-Voting Election Technology 1.4.2
 
 ### Establish Secure Configurations
 
@@ -151,18 +147,6 @@ Method: Copy
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 3.2.16
 
 ## Maturity Level 3
-
-### Establish DDoS Mitigation Services With a Third-Party DDoS Mitigation Provider
-
-Obtain third-party DDoS mitigation services.
-
-> A number of DDoS protection services have made their offerings available to election jurisdictions. Whether free or at a cost, these services can be very helpful to protect the most critical internet-connected election functions.
-
-Applies to: Hosted components
-
-Method: Copy
-
-> Reference: CIS Security Best Practices for Non-Voting Election Technology 1.5.6
 
 ### Implement Automated Configuration Monitoring Systems
 

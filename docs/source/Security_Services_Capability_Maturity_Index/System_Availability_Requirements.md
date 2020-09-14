@@ -1,4 +1,4 @@
-# Data Integrity Requirements
+# System Availability Requirements
 
 ## Maturity Level 1
 
@@ -13,15 +13,9 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.4.1
 
-### Use Valid HTTPS Certificates From a Reputable Certificate Authority
+### Backup and Failover capabilities
 
-HTTPS certificates should be signed by a reputable certificate authority (CA). The name on the certificate should match the fully qualified domain name (FQDN) of the website. The certificate itself should be valid and not expired.
-
-Applies to: Web Components
-
-Method: Copy
-
->Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.2
+Ensure application and data storage components have fail over options in the event of a service degradation for primary component.
 
 ### Use Tokens to Prevent Forged Requests
 
@@ -59,14 +53,14 @@ Method: Derived
 
 ## Maturity Level 3
 
-### Digitally Sign Sensitive Information in Transit
+### Establish DDoS Mitigation Services With a Third-Party DDoS Mitigation Provider
 
-Sensitive data should be digitally signed by its originator and verified by all components which read, store, or process the data.
+Obtain third-party DDoS mitigation services.
 
->The integrity of election data must be maintained throughout its lifecycle. 
+> A number of DDoS protection services have made their offerings available to election jurisdictions. Whether free or at a cost, these services can be very helpful to protect the most critical internet-connected election functions.
 
-Applies to: All components
+Applies to: Hosted components
 
 Method: Copy
 
->Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.2
+> Reference: CIS Security Best Practices for Non-Voting Election Technology 1.5.6

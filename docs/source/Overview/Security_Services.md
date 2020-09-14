@@ -1,6 +1,6 @@
 # RABET-V Security Services
 
-RABET-V defines ten [Security Services](../Appendices/RABET-V_Glossary.md) that are used throughout RABET-V to help evaluate the products:
+RABET-V defines ten [Security Services](../Appendices/RABET-V_Glossary.md) that are used throughout RABET-V to help evaluate the products.
 
 1.  **Authentication:** Verifying the identity of a user, process, or device, often as a prerequisite to allowing access to resources in an information system. \[NIST FIPS 200\]
 
@@ -14,10 +14,10 @@ RABET-V defines ten [Security Services](../Appendices/RABET-V_Glossary.md) that 
 
 1.  **Logging/Alerting:** The systemic management and monitoring of the events—the discrete interactions that happen within and between systems, applications, and users—occurring within an organization’s systems and networks. \[Adapted from NIST SP 800-92\]
 
-1.  **Data integrity protection:** Assurance that the data has not been altered in an unauthorized manner. Data integrity covers data in storage, during processing, and while in transit. \[Adapted from NIST SP 800-33\]
+1.  **Data integrity protection:** Assurance that the data has not been altered in an unauthorized manner. Data integrity covers data in storage, during processing, and while in transit. \[Adapted from NIST SP 800-33\] **Data confidentiality protection:** Data Confidentiality deals with protecting against the disclosure of information by ensuring that the data is limited to those authorized or by representing the data in such a way that its semantics remain accessible only to those who possess some critical information (e.g., a key for decrypting the enciphered data). \[NIST SP 800-13\]
 
-1.  **Data confidentiality protection:** Data Confidentiality deals with protecting against the disclosure of information by ensuring that the data is limited to those authorized or by representing the data in such a way that its semantics remain accessible only to those who possess some critical information (e.g., a key for decrypting the enciphered data). \[NIST SP 800-13\]
+1.  **Boundary protection:** Monitoring and control of communications at the external boundary of an information system to prevent and detect malicious and other unauthorized communications, through the use of boundary protection devices (e.g. gateways, routers, firewalls, guards, encrypted tunnels). \[NIST SP 800-53 Rev. 4\]
 
-9.  **Boundary protection:** Monitoring and control of communications at the external boundary of an information system to prevent and detect malicious and other unauthorized communications, through the use of boundary protection devices (e.g. gateways, routers, firewalls, guards, encrypted tunnels). \[NIST SP 800-53 Rev. 4\]
+1. **System availability protection**:  The property that data or information is accessible and usable upon demand by an authorized person. \[NIST SP 800-66 Rev. 1\]
 
-10. **System integrity protection:** The activities based around protecting the quality that a system has when it performs its intended function in an unimpaired manner, free from unauthorized manipulation of the system, whether intentional or accidental. \[NIST SP 800-27 Rev. A\]
+1. **System integrity protection:** The activities based around protecting the quality that a system has when it performs its intended function in an unimpaired manner, free from unauthorized manipulation of the system, whether intentional or accidental. \[NIST SP 800-27 Rev. A\]
