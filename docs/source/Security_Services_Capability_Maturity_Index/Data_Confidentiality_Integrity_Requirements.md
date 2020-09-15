@@ -36,18 +36,6 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.2
 
-### Documentation Clearly Identifies Sensitive Information Processed by the Product
-
-Document all sensitive information stored, processed, or transmitted by the product and network infrastructure.
-
->Locate all data that has privacy concerns and election operations concerns if its confidentiality or integrity were to be compromised.
-
-Applies to: All components
-
-Method: Copy
-
->Reference: CIS Security Best Practices for Non-Voting Election Technology 4.1.1
-
 ### Follow Secure Configuration Guidance for Cloud Storage
 
 Follow guidance from CIS Foundations Benchmarks or other secure configuration guidance to ensure all cloud storage containers with sensitive election data are properly secured.
@@ -209,18 +197,6 @@ Applies to: All components
 Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.4
-
-### Routinely Audit Cloud Storage Configuration Settings
-
-On a periodic basis, review configuration settings for all cloud storage containers and match effectiveness to the sensitivity of the data being stored in the container.
-
->Automated routines are available for evaluation against the CIS Foundations Benchmarks. Automated routines may be necessary if you have a lot of containers.
-
-Applies to: Hosted components
-
-Method: Copy
-
->Reference: CIS Security Best Practices for Non-Voting Election Technology 4.3.3
 
 ### Use Separate Storage Containers for Unique Data Classifications
 

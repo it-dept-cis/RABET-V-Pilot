@@ -33,6 +33,16 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.4.1
 
+### Use Tokens to Prevent Forged Requests
+
+In order to prevent Cross-Site Request Forgery (CSRF) attacks, you must embed a random value that is not known to third parties into the HTML form. This CSRF protection token must be unique to each request. This prevents a forged CSRF request from being submitted because the attacker does not know the value of the token.
+
+Applies to: Web components
+
+Method: Copy
+
+>Reference: CIS Security Best Practices for Non-Voting Election Technology A1.3.8
+
 ### Verify object requests
 
 The product must verify during each request for data that the user has authorization to the data object. This prevents authenticated users from accessing data above or outside of their permission set.
