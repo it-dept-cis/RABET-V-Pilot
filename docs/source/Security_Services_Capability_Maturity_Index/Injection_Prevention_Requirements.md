@@ -36,9 +36,9 @@ Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.3.7
 
-### Use Whitelists On Interpreted Input
+### Use Alowlist On Interpreted Input
 
-For input that will be interpreted, whitelist acceptable inputs. Only inputs that appear on the whitelist will be accepted.
+For input that will be interpreted, allowlist acceptable inputs. Only inputs that appear on the whitelist will be accepted.
 
 Applies to: Interpreted inputs (including SQL)
 
