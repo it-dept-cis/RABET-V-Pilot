@@ -58,9 +58,7 @@ Product Security Capability Maturity: the quality of the product’s capabilitie
 
   - Logging/Alerting
 
-  - Data integrity protection
-
-  - Data confidentiality protection
+  - Data confidentiality and integrity protection
 
 Product Security Architecture Maturity: the quality and reliability of the product’s architecture to support these security services and the likelihood that product changes will impact the Product Security Capability Maturity levels:
 
@@ -76,9 +74,7 @@ Product Security Architecture Maturity: the quality and reliability of the produ
 
   - Logging/Alerting
 
-  - Data integrity protection
-
-  - Data confidentiality protection
+  - Data confidentiality and integrity protection
 
 Software Development Maturity: the quality of the provider’s processes in each of these areas:
 

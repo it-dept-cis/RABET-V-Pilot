@@ -1,4 +1,4 @@
-# Data Confidentiality Requirements
+# Data Confidentiality and Integrity Requirements
 
 ## Maturity Level 1
 
@@ -26,17 +26,15 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 3.2.15
 
-### Documentation Clearly Identifies Sensitive Information Processed by the Product
+### Use Valid HTTPS Certificates From a Reputable Certificate Authority
 
-Document all sensitive information stored, processed, or transmitted by the product and network infrastructure.
+HTTPS certificates should be signed by a reputable certificate authority (CA). The name on the certificate should match the fully qualified domain name (FQDN) of the website. The certificate itself should be valid and not expired.
 
->Locate all data that has privacy concerns and election operations concerns if its confidentiality or integrity were to be compromised.
-
-Applies to: All components
+Applies to: Web Components
 
 Method: Copy
 
->Reference: CIS Security Best Practices for Non-Voting Election Technology 4.1.1
+>Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.2
 
 ### Follow Secure Configuration Guidance for Cloud Storage
 
@@ -200,18 +198,6 @@ Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.4
 
-### Routinely Audit Cloud Storage Configuration Settings
-
-On a periodic basis, review configuration settings for all cloud storage containers and match effectiveness to the sensitivity of the data being stored in the container.
-
->Automated routines are available for evaluation against the CIS Foundations Benchmarks. Automated routines may be necessary if you have a lot of containers.
-
-Applies to: Hosted components
-
-Method: Copy
-
->Reference: CIS Security Best Practices for Non-Voting Election Technology 4.3.3
-
 ### Use Separate Storage Containers for Unique Data Classifications
 
 Don't overload one container with data at various classification levels. Create separate containers with appropriate names and configuration settings for each data classification level.
@@ -263,6 +249,18 @@ Utilize an active discovery tool to identify all sensitive information stored, p
 >This helps an organization find and secure all instances of sensitive election information.
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.8
+
+### Digitally Sign Sensitive Information in Transit
+
+Sensitive data should be digitally signed by its originator and verified by all components which read, store, or process the data.
+
+>The integrity of election data must be maintained throughout its lifecycle.
+
+Applies to: All components
+
+Method: Copy
+
+>Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.2
 
 ### Encrypt Data Stored in Cloud Storage Containers
 
