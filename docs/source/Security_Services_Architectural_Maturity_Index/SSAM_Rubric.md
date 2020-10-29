@@ -6,7 +6,7 @@
 The Component (or the substantial logic thereof) is provided by a
 reputable party and actively maintained.
 
-  - 0 –Component is unvetted
+  - 0 – Component is unvetted
 
   - 1 – Vetted component is used, but is not a current version
 
