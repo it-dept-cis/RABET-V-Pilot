@@ -44,7 +44,7 @@ Issues and deviations are detailed in the Product Provider Report.
 
 The RABET-V Results Summary provides scored outcomes for product security capabilities and security architecture maturity and for organizational software development process maturity. For Revision Submissions, it will include any change from the previous submission.
 
-Product Security Capability Maturity: the quality of the product’s capabilities of the system at providing each of these security services:
+Product Security Capability Maturity: the quality of the product’s capabilities of the system at providing safeguards under each of these security control families:
 
   - Authentication
 
@@ -60,7 +60,7 @@ Product Security Capability Maturity: the quality of the product’s capabilitie
 
   - Data confidentiality and integrity protection
 
-Product Security Architecture Maturity: the quality and reliability of the product’s architecture to support these security services and the likelihood that product changes will impact the Product Security Capability Maturity levels:
+Product Security Architecture Maturity: the quality and reliability of the product’s architecture to support security services and the likelihood that product changes will impact the Product Security Capability Maturity levels:
 
   - Authentication
 

@@ -38,7 +38,7 @@ The Expected Usage will be published in the [RABET-V Public Portal](../Appendice
 
 #### Product Security Claims – Initial Submission and On Change
 
-The Product Security Claims statement is a listing of security requirements met by the product. The security requirements are listed as a part of the Security Service Capability Maturity Model and organized by security service.
+The Product Security Claims statement is a listing of security requirements met by the product. The security requirements are listed as a part of the Security Service Capability Maturity Model and organized by security control family.
 
 For each implemented requirement, the provider will describe how they implement it and whether they believe it is Met, Partially Met, Not Met, or Not Applicable. If the provider only implements it on certain components, those should be detailed along with a reason for excluding it from other components. The provider should include well-reasoned arguments for why the implementation decisions were made and how they result in the appropriate level of security for the product. This approach allows each product to implement a unique approach to the security of their application that is specific to its goals and usage.
 

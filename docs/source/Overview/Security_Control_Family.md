@@ -1,6 +1,6 @@
-# RABET-V Security Services
+# RABET-V Security Control Families
 
-RABET-V defines ten [Security Services](../Appendices/RABET-V_Glossary.md) that are used throughout RABET-V to help evaluate the products.
+RABET-V defines ten [Security Control Families](../Appendices/RABET-V_Glossary.md) that are used throughout RABET-V to help evaluate the products.
 
 1.  **Authentication:** Verifying the identity of a user, process, or device, often as a prerequisite to allowing access to resources in an information system. \[NIST FIPS 200\]
 
