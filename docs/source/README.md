@@ -1,4 +1,4 @@
-# The RABET-V Program
+ The RABET-V Program
 
 This document is for use through the life of the RABET-V Program. This initial version will also inform the RABET-V Pilot Program which is a trial execution of the Program Description. As such, some sections have additional commentary specific to the pilot. These sections are marked in indented italics like the example below.
 
@@ -6,7 +6,7 @@ This document is for use through the life of the RABET-V Program. This initial v
 
 ## Steering Committee
 
-The RABET-V Pilot Program is guided by a steering committee comprised of election officials, election technology providers, and other election infrastructure stakeholders. We will add steering committee member information below as we confirm members:
+The RABET-V Pilot Program is guided by a steering committee comprised of election officials, election technology providers, and other election infrastructure stakeholders.
 
   - Aaron Wilson, Sr. Director of Election Security at The Center for Internet Security (CIS) - Steering Committee Chair
 
@@ -34,14 +34,11 @@ The RABET-V Pilot Program is guided by a steering committee comprised of electio
 
 The following technology providers have volunteered to have their
 products used in the RABET-V Pilot:
-
-  - Scytl - Election Night Reporting
-
+  
   - VR Systems - Electronic Pollbooks and Election Night Reporting
 
   - KNOWink - Electronic Pollbook
 
-  - Voting Works – RLA Support Software
 
 ## Technology Advisory Committee
 
@@ -79,11 +76,11 @@ The RABET-V Technology Advisory Committee is a growing group of experts in relev
 
 ## Program Administration and Research
 
-The program will be administered by CIS team with assistance from [The Turnout](https://turnout.rocks). Dr. Mike Garcia will serve as the Research Lead.
+The program will be administered by CIS team with assistance from [The Turnout](https://turnout.rocks) and [PG Security Advisors](https://www.pgsecurityadvisors.com/). Dr. Mike Garcia will serve as the Research Lead.
 
 ## Pilot Process
 
-The RABET-V Pilot will first establish a RABET-V Program Description (previously called a Working Model). The Program Description version will detail how each activity will be conducted. The Program Description will be iteratively reviewed by the program Steering Committee and modified, as necessary.
+The RABET-V Pilot will first establish a RABET-V Program Description (this document). The Program Description version will detail how each activity will be conducted. The Program Description will be iteratively reviewed by the program Steering Committee and modified, as necessary.
 
 Using the Program Description, the Pilot Program will conduct initial reviews on real products from Pilot Program technology providers. Each initial review will execute all RABET-V activities resulting in the creation of Testing Rules and initial verification results for each product. The Architecture Review and Process Assessments will be conducted according to the architecture and process review steps detailed in the Program Description, which may be updated as necessary throughout the Pilot Program.
 
