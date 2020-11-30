@@ -56,7 +56,7 @@ The requirements marked Not Applicable are reviewed to ensure that for this prod
 
 #### Review Remaining Requirements
 
-Once the list of applicable requirements has been determined in the prior step, the reviewer will go through the applicable requirements one security service at a time. Using the security service component mapping and the implementation details, the reviewer can validate if the stated implementation is fully, partially, or not meeting the requirement. Requirements are fully met when the implementation of the requirement covers all the relevant components. If the implementation is only covering a portion of the relevant components, the requirement is partially met. The determination of which components are relevant is made by the reviewer.
+Once the list of applicable requirements has been determined in the prior step, the reviewer will go through the applicable requirements one security control family at a time. Using the security service component mapping and the implementation details, the reviewer can validate if the stated implementation is fully, partially, or not meeting the requirement. Requirements are fully met when the implementation of the requirement covers all the relevant components. If the implementation is only covering a portion of the relevant components, the requirement is partially met. The determination of which components are relevant is made by the reviewer.
 
 #### Determine Claim Sufficiency
 
