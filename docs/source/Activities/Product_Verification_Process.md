@@ -131,6 +131,14 @@ Vendor Attestation
 
 If the sanity or streamlined test calls for documentation, artifact, attestation, etc that doesn't exist, the full test is used. If the full test requires documentation, artifact, attestation, etc and none exist, the full test fails. 
 
+Full test is required for any new claim.
+
+Verifiers may opt to do a full test at any time to validate documentation or artifacts.
+
+
+
+
+
 
 ### Out-of-scope Testing
 
