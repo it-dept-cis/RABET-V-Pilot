@@ -3,7 +3,7 @@
    :glob:
 
    README.md
-   Overview/Security_Services.md
+   Overview/Security_Control_Family.md
    Overview/Maturity_Indexes.md
    Activities/README.md
    Activities/Provider_Submission.md
@@ -26,8 +26,7 @@
    Security_Services_Capability_Maturity_Index/System_Integrity_Requirements.md
    Security_Services_Capability_Maturity_Index/User_Session_Management_Requirements.md
    Security_Services_Architectural_Maturity_Index/README.md
-   Security_Services_Architectural_Maturity_Index/Security_Service_Construction_Maturity.md
-   Security_Services_Architectural_Maturity_Index/Security_Service_Usage_Maturity.md
+   Security_Services_Architectural_Maturity_Index/SSAM_Rubric.md   
    Software_Development_Maturity_Index/README.md
    Software_Development_Maturity_Index/Accessibility_Maturity.md
    Software_Development_Maturity_Index/Usability_Maturity.md
