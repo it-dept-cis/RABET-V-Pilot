@@ -6,7 +6,7 @@ In order to build the RABET-V Documentation, the following components must be in
 
 - Python 3+
 - [Pipenv](https://pipenv.pypa.io/en/latest/)
-- pandoc 1.16
+- [pandoc](https://pandoc.org/installing.html) version 1.16 or greater
 - [Imagemagick](https://imagemagick.org/index.php)
 - [Inkscape](https://inkscape.org/)
 
@@ -46,5 +46,5 @@ To build the documentation into a single file in Word `.docx` format, execute th
 pipenv shell
 sphinx-build -b singlehtml . build
 cd build
-pandoc --filter=../svg_filter.py -o rabet-v.docx  --reference-doc ../WorkingModel/RABET-V\ Working\ Model\ 0.1\ 20200423.docx toctree.html
+/path/to/pandoc --filter=../../svg_filter.py -o rabet-v.docx --reference-doc ../../../resources/RABET-V\ Program\ Description\ 0.1\ Committee\ Review.docx index.html
 ```

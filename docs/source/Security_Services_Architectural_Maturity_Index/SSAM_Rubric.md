@@ -86,8 +86,41 @@ service type, at the aggregate level only.
 Table 1 - Rubric configuration per use of security service
 provider
 
-|             |             |             | MAINTAINABILITY |               |                              |
-| ----------- | ----------- | ----------- | --------------- | ------------- | ---------------------------- |
-|             | RELIABILITY | CONSISTENCY | MODULARITY      | ISOLATION     | EXAMPLE                      |
-| Transparent | x           | x           | x               |               | Firewall                     |
-| Composite   | x           | x           | Service Only    | Software Only | Azure AD integrated with App |
+<table>
+<thead>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th>MAINTAINABILITY</th>
+    <th></th>
+    <th></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td></td>
+    <td>RELIABILITY</td>
+    <td>CONSISTENCY</td>
+    <td>MODULARITY</td>
+    <td>ISOLATION</td>
+    <td>EXAMPLE</td>
+  </tr>
+  <tr>
+    <td>Transparent</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td></td>
+    <td>Firewall</td>
+  </tr>
+  <tr>
+    <td>Composite</td>
+    <td>x</td>
+    <td>x</td>
+    <td>Service Only</td>
+    <td>Software Only</td>
+    <td>Azure AD integrated with App</td>
+  </tr>
+</tbody>
+</table>
