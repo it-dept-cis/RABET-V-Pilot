@@ -15,12 +15,6 @@ components in order to provide functionality. Most composites will
 consist of a security service that surfaces at the system level (core
 service), and an adaptor that uses that service (dependent service).
 
-### Composite Service, configured as software only
-
-A service that has been identified as a composite in the reference
-architecture, but the technology provider is using a software-only
-service.
-
 ### Transparent Service
 
 A security service that is not directly or indirectly invoked by vendor
