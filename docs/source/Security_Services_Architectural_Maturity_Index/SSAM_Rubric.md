@@ -90,4 +90,4 @@ provider
 | ----------- | ----------- | ----------- | --------------- | ------------- | ---------------------------- |
 |             | RELIABILITY | CONSISTENCY | MODULARITY      | ISOLATION     | EXAMPLE                      |
 | Transparent | x           | x           | x               |               | Firewall                     |
-| Composite   | x           | x           | Service Only    | Software Only | Azure AD integrated with App |
+| Composite   | x           | x           | x               | x             | Azure AD integrated with App |
