@@ -168,7 +168,7 @@ RABET-V is a flexible, risk-based, and cost-effective approach to election syste
 
 > The RABET-V Pilot Program is designed to evaluate the RABET-V process and the potential of the process to improve the speed, security assurances, and cost-effectiveness of non-voting election technology verification.
 
-For more information of the Background and Motivation for RABET-V, see CIS’ [How to Improve Election Technology Verification White Paper](media/Elections_Tech-Ver-White_Paper-2020-0121.pdf).
+For more information of the Background and Motivation for RABET-V, see CIS’ [How to Improve Election Technology Verification White Paper](https://raw.githubusercontent.com/it-dept-cis/RABET-V-Pilot/master/docs/source/media/Elections_Tech-Ver-White_Paper-2020-0121.pdf).
 
 ## Introduction
 

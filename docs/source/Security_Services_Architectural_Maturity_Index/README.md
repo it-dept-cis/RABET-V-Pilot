@@ -4,7 +4,7 @@ The SSAM index provides scores indicate how well the product’s architecture is
 
 The SSAM Index provides a maturity score for each of ten security control families. The scores range from 0 to 3, where 3 is the best.
 
-The SSAM Index provides maturity scores across [four measures](./SSAM_Rubric.md).
+The SSAM Index provides maturity scores across [four measures](/Security_Services_Architectural_Maturity_Index/SSAM_Rubric).
 
 ## Definitions
 
