@@ -1,101 +1,91 @@
-## Architecture Review Methodology
+# Architecture Review Methodology
 
-![A flow diagram of the Architecture Review Methodology](media/workflow.svg)
+![Image of Architecture Review Methodology](Architecture_Review_Methodology_files/_19_0_3_43701b0_1585746146678_950815_14100.svg)
 
-The RABET-V Architecture Review is designed to evaluate the solution’s architectural support for the [RABET-V security control families](../Overview/Security_Control_Family.md). This evaluation produces an architectural maturity score for each security service and identifies the components which provide the security service. This score does not measure how well the product executes the security service (i.e., its capability level), just how mature the architecture is that supports the security service. The [Security Services Capability Maturity](../Security_Services_Capability_Maturity_Index/README.md) level is a separate metric determined in the [Security Claims Validation](/Activities/Security_Claims_Validation.md) and it indicates how well the product provides the security services.
+The RABET-V Architecture Review is designed to evaluate the solution’s architectural support for the [RABET-V security control families](/Overview/Security_Control_Family.md). This evaluation produces an architectural maturity score for each security control family and identifies the components which provide each [security service](/Appendices/RABET-V_Glossary.md#security-service). This score does not measure how well the [product](/Appendices/RABET-V_Glossary.md#product) executes the security service (i.e., its capability level), just how mature the architecture is that supports the security service. The [Security Services Capability Maturity](/Security_Services_Capability_Maturity_Index/README.md) level is a separate metric determined in the [Security Claims Validation](/Activities/Security_Claims_Validation.md) and it indicates how well the product provides the security services.
 
-The Architectural Maturity scores and component mappings are used to help assess the risk that changes to the product will negatively impact the security services. These are used in the [Testing Rules Determination Activity](/Activities/Testing_Rules_Determination.md) to identify how to test the product changes. The higher the architectural maturity scores, the less testing required to validate the security capability scores.
+The Architectural Maturity scores and component mappings are used to help assess the risk that changes to the product will negatively impact the security services. These are used in the [Testing Rules Determination Activity](/Activities/Testing_Rules_Determination.md) to identify how to test the product changes. Higher architectural maturity scores, in conjunction with process maturity scores; may indicate the need for less testing required to validate that changes have not created increased risk in the product.
 
-The Architecture Review is supplied with architecture diagrams, architecture descriptions, and access to a functioning version of the solution. The architecture review will use the functioning solution to validate or fill-in missing pieces from the architecture diagrams and descriptions.
+The Architecture Review activity is supplied with architecture diagrams, architecture descriptions, and interview sessions to confirm the architectural details and threat model the product.
 
-> Software code may be requested in the pilot in order to determine if it significantly improves the reliability of the architecture review.
+> Code may be requested in the pilot in order to determine if it significantly improves the reliability of the architecture review.
 
 For more information about what is expected for the architecture diagrams and description, see the [Provider Submission](/Activities/Provider_Submission.md) activity.
 
-For each security service, the Architecture Review will identify the product components at the system and software levels that *PROVIDE* and *CONFIGURE* the security service and those components that *USE* the component that provides the security service. The components which *PROVIDE* or *CONFIGURE* the security service are referred to as [1st Degree components](../Appendices/RABET-V_Glossary.md). The ones which use the 1st degree components are referred to as [2nd Degree components](../Appendices/RABET-V_Glossary.md). The 1st and 2nd degree components together comprise the Security Service Architecture.
+The Architecture Review will identify the product components at the system and software levels that expose functionality, and the security services that *protect* those functions.
 
-This activity will also complete the system, security and software architectural viewpoints. The system level diagram identifies the larger components of the environment used to host and manage the election technology software application(s). The software level diagram identifies the components a layer deeper into the election technology software application(s).
+This activity will also complete the system and software architectural viewpoints. The system level diagram identifies the larger components of the environment used to host and manage the software application(s). The software level diagrams identify the components a layer deeper into the software application(s).
 
-### Inputs
+## Inputs
 
-  - Provider Submission
+### Provider Submission
 
-### Outputs
+The Technology Provider will supply architecture diagrams, architecture descriptions, software source code, and access to a functioning version of the solution. The architecture review will use the source code and functioning solution to validate or fill-in missing pieces from the architecture diagrams and descriptions. For more information about what is expected for the architecture diagrams and description, see the [Provider Submission](/Activities/Provider_Submission.md) activity.
 
-  - SSAM Scores
+### Required Security Control Families
 
-  - Security Service Architecture
+The Ten [Security Control Families](/Overview/Security_Control_Family.md) provide guidance as to the needed controls to help protect the product and related data.
 
-  - List of unmitigated threats (if any)
+### Security Architecture Rubric
 
-### Workflow
+The rubric was created to help score the product architecture in the categories of Reliability, Manageability and Consistency, Maintainability (Modularity and Isolation), and Depth of control coverage (i.e. defense-in-depth)
 
-#### Perform threat analysis
+## Outputs
 
-Threat modeling and analysis is used to build the security architecture viewpoint. It also aids in the development of the system and software architecture diagrams.
+### Product Security Architecture Maturity Workbook
 
-Threat modeling takes the provider submitted architectural documentation as input. The services provided by the application are enumerated using the threat modeling methodology. The services are then further deconstructed into software functions and the data required to perform those functions. The data flows/functions must be annotated with sensitivity labels (data-critical, data-sensitive) and impact (low, medium, high) which will influence the severity level determination of any identified threat. Automated tooling will perform threat analysis on this system representation.
+These scores will be included in an architecture maturity workbook that will contain an executive summary tab, threat model results, and architecture scoring.
 
-> RABET-V will evaluate the use the [Microsoft Threat Modeling tool](https://www.microsoft.com/en-us/securityengineering/sdl/threatmodeling) during pilot.
+#### Product Security Architecture Maturity Scores
 
-#### Build system architecture diagram
+Based on the maturity scoring rubric, the architecture will be assigned scores at various levels for each security control family which corresponds to how well it supports the mitigations within that family. These scores are calculated at five layers, starting at the most detailed level of security service implementation per component or interface and resulting in a master architecture score. 
 
-The output of the threat analysis is used to build out a system level architecture diagram. This is done by converting the top-level services (e.g. Web Applications, Virtual Machines) and data stores (e.g. SQL Server, MySQL) into subsystem-level components.
+![Diagram of Hierarchy of Architecture Scoring](media/RABET-V_Architecture_Scoring.svg)
 
-#### Identify required security services
+#### List of issues or concerns
 
-The security services required for a given product will depend on the results of the threat analysis. A subset of security services are selected from the 10 security services identified for RABET-V. This is accomplished by reviewing the results of the threat modeling exercise and identifying the security services that mitigate one or more identified threats.
+Included in the workbook will be a list of threat modeling findings and any additional issues or concerns from the more detailed review of the software level architecture.
 
-#### Identify software components
+### Software Architecture Report
 
-While the threat analysis helps identify the system-level components, the software-level components must be identified separately. This step will identify significant software architectural components, their boundaries, how they interface, and their dependencies with one another and 3rd party components.
+The Architecture Review will identify the components of the system and how the security services are used in relation to those components.
 
-> Automated tools, such as [Lattix](https://www.lattix.com/), will be evaluated in the RABET-V pilot as a way to perform this step.
+## Workflow
 
-#### Map components to functions
+### 1 Start
 
-The threat analysis identifies the software functions that need security services and the previous step identified the software components. This step will map the security services to software components by first identifying which components offer which functionalities. This is currently a manual process but may be assisted with architectural analysis tools.
+Once the provider has completed their submission, the architecture review may start after the [process](/Appendices/RABET-V_Glossary.md#process) review or in parallel if needed and deemed feasible.
 
-#### Apply sensitivity labels
+### 2 Build system architecture
 
-Sensitivity labels are applied to parts of the architecture that provide/exchange data-critical or data-sensitive information during the threat analysis step. Using the component to functionality relationships identified in the previous step, we map and apply the sensitivity labels to components in this step. These labels are used to identify gaps in security service protection in a later step.
+[Threat](/Appendices/RABET-V_Glossary.md#threat) modeling and analysis is used to build the security architecture viewpoint. It also aids in the development of the system and software architecture diagrams. Threat modeling takes the provider submitted architectural documentation as input along with interview sessions with individuals that possess knowledge about the system and software architecture. The security control families provided by the application are enumerated using the threat modeling methodology.
 
-#### Apply security service labels
+The output of the threat analysis is to built out a system level architecture and to provide the first round of architecture maturity scoring at the system level. This information is then passed on to the software architecture review.
 
-In this step, we complete the Security Service Architecture by labeling the system and software components, for each security service, that provide or configure the security service.
+### 3 Perform threat analysis
 
-#### Perform security service architectural maturity review
+The [services](/Appendices/RABET-V_Glossary.md#services) are then further deconstructed into [functions](/Appendices/RABET-V_Glossary.md#functions) and the data required to perform those functions. The data flows/functions may be annotated with sensitivity labels (data-critical, data-sensitive) and  (low, medium, high) which will influence the severity level determination of any identified [threat](/Appendices/RABET-V_Glossary.md#threat).
 
-Apply the security service architectural maturity rubric and assign a score to each identified security service.
+### 4 Identify software components
 
-For more information please see [Security Service Architectural Maturity](../Security_Services_Architectural_Maturity_Index/README.md)
+While the [threat](/Appendices/RABET-V_Glossary.md#threat) analysis helps identify the system-level components, the software-level components must be identified separately. This step will identify significant software architectural components, their boundaries, how they interface, their dependencies with one another and 3rd party components.
 
-#### Perform security service gap analysis
+>Automated tools, such as [Lattix](https://www.lattix.com/) and [WhiteSource](https://whitesourcesoftware.com) or similar may be used to aid in this step.
 
-Analyze the architecture and identify if any sensitive interface(s) are not protected by a security service. This could be due to a missing or incorrectly configured security service.
+### 5 Identify interfaces
 
-#### Record unmitigated threats
+The [threat](/Appendices/RABET-V_Glossary.md#threat) analysis identifies the components that need [security services](/Appendices/RABET-V_Glossary.md#security-service) and the previous step identified the software components. This step identifies the interfaces that expose component functionality. These interfaces will be mapped to security services in the subsequent step.
 
-Record the unmitigated threats in the product.
+### 6 Identify protected interfaces
 
-### Data used in Process
+or each interface [port](/Appendices/RABET-V_Glossary.md#port), identify all the [security services](/Appendices/RABET-V_Glossary.md#security-service) that protect it (the security service's point of use). Each point of use will be scored separately, this is the most detailed layer of scoring.
 
-#### Threats
+### 7 Analyze results
 
-A threat is type of a situation that may lead to one or more related incidents or failures. The threat consists of the existence of zero or more threat actors together with a set of one or more vulnerabilities. Thus, the threat of theft may result in an actual theft (attack), and threats correspond to attacks that are typically classified by attacker motivation (e.g., financial, political) as opposed to technique (e.g., spoofing).
+Apply the [security service](/Appendices/RABET-V_Glossary.md#security-service) architectural maturity rubric and assign scores to each security service at its point of use.  The scores are then rolled up to security control families and ultimately to a single architecture maturity score.
 
-#### Data labels
+> For more information please see Security Service Architectural Maturity
 
-A sensitivity label applied to data. Two data labels are defined for RABET-V:
+### 8 Architecture Review Complete
 
-1.  Data Criticality - a label indicating the sensitivity of the data the component is handling. This may be thought of as a label of “integrity”. This is measured by the impact of the data being manipulated to an unknown or incorrect value. Criticality can be determined by examining a component’s exposed interfaces.
-
-1.  Data Sensitivity - a label indicating the sensitivity of the data the component is handling. This may be thought of as a label of “confidentiality”. This is measured by the impact of the data being exposed to an unauthorized party. Sensitivity can be determined by examining a component’s exposed interfaces.
-
-For more information, see the related definition for [Data Sensitivity](../Appendices/RABET-V_Glossary.md#Data-Sensitivity)
-
-#### Services
-
-A system level component that provides data processing capabilities.
-
-For more information, see the related definition for [Process](../Appendices/RABET-V_Glossary.md#Process)
+When the architecture review is completed, the outputs identified above will be distributed.
