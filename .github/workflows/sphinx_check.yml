@@ -1,0 +1,13 @@
+name: Pull Request Docs Check
+
+on: [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: ./.github/actions/sphinx-action
+      with:
+        build-command: "sphinx-build -b html . build"
+        docs-folder: "docs/source/"
