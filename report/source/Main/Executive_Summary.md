@@ -1,7 +1,5 @@
 # Executive Summary
 
-Quick recap, major findings, and major recommendations
-
 Since 2019, CIS has been working to fill gaps in the security of non-voting election technology. This began with the publication of  [Security Best Practices for Non-Voting Election Technology Guide](https://www.cisecurity.org/wp-content/uploads/2019/11/Security-Best-Practices-Non-Voting-Election-Tech-Singles-19-Nov.pdf) and continued with the development and piloting of the Rapid Architecture Based Election Technology Verification (RABET-V) process.
 
 RABET-V is a unique approach to the verification of system security. Instead of employing a thorough and lengthy approach to testing, it uses an iterative, risk-based approach that supports rapid product changes by design. The risk estimate is based heavily on the product architecture and provider's software development processes. Lower risk changes are tested using streamlined testing methods; and higher risk changes are fully tested. This approach leverages and encourages modern software development, testing, and deployment practices. This unique approach also provides incentives for technology providers to design their products with stronger organizational processes and desired architectures, as this eases the testing process by reducing the time and cost associated with verification.
