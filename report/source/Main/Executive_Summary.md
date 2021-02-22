@@ -26,8 +26,8 @@ The initial RABET-V pilot successfully demonstrated that RABET-V is a viable pro
 * First, a second round of pilots that generate the necessary data, documentation, and tools to establish the RABET-V process as a standard across any type of non-voting elections equipment.
 * Second, a developmental phase to finalize the operational and economic models that will ensure RABET-V is adopted as a standard by state election officials and technology providers.
 
-The need for RABET-V is now. The lack of consistent testing across states and the use of traditional testing processes, where testing is performed, represents a significant gap in election infrastrcture security. RABET-V helps close this gap and balances multiple - often competing - needs:
-* provides a rigor verification and testing that meets th eneeds of a critical application like the election environment.
+The need for RABET-V is now. The lack of consistent testing across states and the use of traditional testing processes, where testing is performed, represents a significant gap in election infrastructure  security. RABET-V helps close this gap and balances multiple - often competing - needs:
+* provides a rigor verification and testing that meets the needs of a critical application like the election environment.
 * provides a means to and incentives for rapid development and deployment of product updates that we see in innovative industries. 
 
 The rest of this report is organized into sections. First, in section X, we provide a detailed recap of how the pilot was executed and discuss the variations from the initial plan to final execution. Next, in section X, we present our answers to the research questions - which were identified prior to the pilot - and discuss our related findings. In section X, we define possible operational and economic models for RABET-V. Finally, we conclude the report with recommendations for follow on RABET-V work and how to transition to a stable operation.

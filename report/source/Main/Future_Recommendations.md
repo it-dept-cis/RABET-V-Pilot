@@ -7,4 +7,11 @@ Re: Lattix. We established the value of this type of tool, the concept is good. 
 Lattix
 * look at competitors
 * push the work into the vendor development
-* 
+
+
+Architecture review and process assessments can be done incrementally.
+Security claims validation can be combined with verification.
+
+Need to push out:
+Reference architectures
+Sample diagrams
