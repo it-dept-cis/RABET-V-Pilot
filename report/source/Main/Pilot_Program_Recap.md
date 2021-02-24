@@ -138,8 +138,6 @@ Due to this, we have devalued traditional documentation requirements in the RABE
 During the pilot, it became apparent that each our technologies could be configured with various levels of security controls based upon the customer's requirements or preferences. This created a challenge for expedited evaluations. We certainly could not evaluate each variation during a pilot, nor would that be ideal in an operational version of RABET-V as well. We determined the best approach was to have the technology provider define the specific configuration they wanted to present for verification. We decided to document the configuration choices and present those along with any scores. States and localities then could fully understand the context of the scores they were seeing, and make any configuration modifications with those in mind. For example, if the technology provider choose to submit a less secure variation, the scores would be lower but provide more flexibility for the state or locality to make safe and secure configuration changes. If the technology provider choose to submit a more secure variation, the scores would be higher but would force the state or locality to increase their security risk with configuration changes. 
 
 
-
-
 ### Results for Multiple Audiences
 
 During the development of RABET-V, we learned that various states want different types of results from a central testing and verification program. Some states want the output to be a decision on whether the product version is acceptable or not. Other states was more details and raw results in order to make a decision themselves on whether the product version's security is acceptable or not. Based on our interactions, the larger, better funded states want to process the raw results and the smaller states perform a decision be made by the verifier. 
@@ -151,13 +149,25 @@ RABET-V attempts to address these various needs. First, the process produces 3 m
 Apart from the challenge about testing results, there is a separate question on the visibility of the testing results. To tackle this problem, we define four audiences: public, subscribers, technology providers, and partners. 
 
 
-
-### Capture and Presentation of Testing Rules
-
-
-
+To complete.
 
 ### Converting Best Practices to Requirements
 
+RABET-V is not specific to any set of requirements. In fact, it can be used with any appropriate security requirements. We choose to start with the best practices published as the [Security Best Practices for Non-Voting Election Technology](https://www.cisecurity.org/wp-content/uploads/2019/11/Security-Best-Practices-Non-Voting-Election-Tech-Singles-19-Nov.pdf). This guide was developed by CIS with a community of election vendors, election IT staff, and other technology experts. 
 
-### Developing Testing Tiers
+As we began to further develop RABET-V, we realized that the best practices needed to be converted into requirements. As best practices, they did not have the specific, measurable details that are necessary for conformance evaluations. We also noticed that there was significant overlap with some of the requirements and the process assessment. Since the requirements were used to measure the Security Service Capability Maturity (a separate maturity index from the Software Development Maturity produced by the process assessment), we removed these process oriented requirements. We also determined the applicability of the best practices. Some were specific to web technologies and others were specific to physical devices. Finally, we mapped each requirements to one of the ten security service families and assigned each requirement a maturity level of 1, 2, and 3. The Security Service Capability Maturity index is calculated from the number of applicable requirements were verified for the product.
+
+The final set of requirements along with their assigned security service family and maturity level is found in the Supporting documents Requirements Master Workbook.
+
+
+### Developing Testing Tiers and Matrix
+
+RABET-V was developed on this concept that testing would vary based on the risk of the product changes made. This meant that we needed to define testing levels and identify exactly how they would be applied. The chosen approach had to ensure proper rigor is applied based on risk. 
+
+To start, we began by developing testing levels. We decided to do this at the requirements level and vary the level of testing by varying the testing method used. We defined three testing tiers as Full, Basic, and Streamlined. Testing methods included Functional Testing, Data Audit, Penetration Testing, Configuration Audit, Documentation Review, and Artifact Review. One or more testing method was assigned to each tier for each requirement. The definitions of the testing methods and their assignment to requirement are found in the Supporting documents Requirements Master Workbook.
+
+With the testing levels developed, we needed a consistent way to assign the testing level to the specific product revision. We decided that this needed to be done based on type of change(s) made to each security service coupled with the relevant architectural and software development maturity scores. Based on the type of change(s) to each security service component(s), a testing tier would be determined for those security service requirements. For example, if there were low risk changes made to the authentication components, the testing tier assigned would be *streamlined*. This means the streamlined testing methods would be used for each of the authentication requirements. 
+
+To capture this, we built a list of change types and a master matrix which defines a function that calculates risk from the change type, process assessment score, and the architectural maturity score then recommends a testing tier. The master matrix and examples are available in the Support documents Security Service Testing Matrix Workbook. 
+
+There are a couple of subtle things emphasized in our solution of testing tiers and testing matrix. First, the approach encourages technology providers to develop and maintain robust automated testing capabilities. This is because many of the streamlined and basic testing tiers use the Artifact Review test method with many of the acceptable artifacts produced from third party or unit test routines. If the technology provider can not produce those artifacts, the more intensive testing tier is used. Second, the approach encourages providers to submit smaller product revisions. This is accomplished with the ordered change list we developed (higher items are higher risk). RABET-V will select the change type most appropriate for each security service. If more than one change type applies, the higher one on the list is selected. This discourages bundling of changes into large releases and encourages small, more specific updates. 
