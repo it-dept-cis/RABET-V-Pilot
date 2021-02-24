@@ -55,7 +55,7 @@ Users will attempt to reduce friction in completing their desired task. A poorly
     <tr>
       <td>
 	<ul>
-	  <li>Level 3: formal accessibility testing and analysis program</li>
+	  <li>Level 3: formal usability testing and analysis program</li>
 	</ul>
       </td>
       <td>Formal research on the business processes and users’ behaviors, and conduct usability studies with users interacting with a prototype or version of the software solution.</td>

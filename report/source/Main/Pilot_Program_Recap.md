@@ -28,7 +28,7 @@ As the name indicates, RABET-V puts a significant emphasis on the product archit
 
 Our first proposal, outlined in the initial Program Description,  created two streams of effort. The first stream focused on system level analysis using threat modeling. The second stream relied on software analysis to identify and map software level components to security services. The initial approach used the system level analysis to inform the software level analysis and produced scores predominately at the software level. We ended, however, with an approach where the software level analysis informed the system level and the scores were driven primarily from the system level. This is an important distinction which made the analysis much more feasible and reliable. This is most evident in the changes we made to the Security Service Architecture Maturity rubric. The initial version of the rubric discussed the *construction* and *usage* around security services and the language was written almost entirely from a software perspective. 
 
-In fact, one key decision made in the development of the final Security Service Architecture Maturity rubric was that better architectures relied as much as possible on dedicated and isolated components distinguishable at the system level. This belief is baked into the rubric. Realizing that this is not possible for all security services, the rubric has accomodations for the security services we believed required some level of configuration or integration with the solution's custom software. We called these composite services, and the ones which could be completely isaolated we called transparent services.
+In fact, one key decision made in the development of the final Security Service Architecture Maturity rubric was that better architectures relied as much as possible on dedicated and isolated components distinguishable at the system level. This belief is baked into the rubric. Realizing that this is not possible for all security services, the rubric has accommodations for the security services we believed required some level of configuration or integration with the solution's custom software. We called these composite services, and the ones which could be completely isolated we called transparent services.
 
 The rubric also considers the complex nature of systems with components and sub-components. It does this by calculating scores at five layers, starting at the most detailed level of security service implementation per component or interface and resulting in a master architecture score. Then, the rubric has a unique category for *depth* which is intended to be top-down view over the whole architecture. In this manner, the architecture maturity score is a reflection from the bottom-up and a top-down perspectives.
 
@@ -89,27 +89,72 @@ Need
 
 ### Incorporating Usability and Accessibility
 
+RABET-V is primarily intended to be a verification of product security. However, we heard early on from stakeholders that it needed to also provide a measure of the usability and accessibility as well. We attempted to solve for this in the initial Program Description by expanding the process assessment to include usability and accessibility product development maturity. The assessment focuses on establishing feedback loops as the basic level of maturity and growing to more automated and more formal testing. Each provider in the pilot was evaluated with this assessment. 
+
+While we think this approach is good for usability, we know it is lacking for accessibility. Due to the nature of accessibility requirements, it is possible to incorporate actual evaluation of the accessibility of a product into RABET-V without changing the overall approach or timeline. 
+
+The approach to accessibility testing will use both automated and manual methods. Both are needed since even the best automated tools identify only small portion of known errors, produce false positives, and have difficulty assessing how well solutions are implemented. And functional testing with commonly used assistive technology must be required. Similar to how we approach security, the manual methods will be used for the initial evaluation and for high risk changes. The automated testing will be used for lower risk product updates.    
+
+As an alternative to a risk-based approach, a sampling approach is also viable. The sample approach will need to identify how much of a application must be reviewed for the accessibility audit. It will not be possible or reasonable to audit everything. Although some automated tools can spider an entire site and give some useful information about accessibility, a certain sample of pages must still be selected for in-depth and manual testing. It is important that this sample is representative of content throughout the application especially any interactive functionality with voters.  The RABET-V Program Description must provide direction for how the access audit must be scoped so that there is a sufficient amount of content and templates are reviewed to provide a representative sample of the overall platform and content (e.g. frequently used content like login, variety of content types, content with forms/tables/charts/graphics, interactive sites that use scripts or process user input, etc.). Most systems include both a template that holds the content and the content that is drawn from a database to populate the template and create the page. When auditing these dynamic pages, it is important that the template and content, as well as the generated page, are audited.
+
+Another important factor to accessibility testing are the requirements for the accessibility auditor. As with other specialty areas of RABET-V, the accessibility auditing should be overseen by an organization or person with the requisite expertise and experience. 
+
+EXPERIENCE
+How long has the vendor been doing accessibility audits and/or specify a minimum?  Is that their primary business or part of a larger business? Have they done audits of very large online applications and how did they approach those in terms of sampling of pages and prioritizing to ensure a valid review? Were any done within the educational/instructional area? What are examples of websites or applications for which they have completed access audits (references for their accessibility audit work with contact information)? 
+
+EXPERTISE
+Who will conduct the testing and what is the expertise of those testers (specific skills, education, and work experience)?  What specific software platforms and applications do the testers have experience evaluating accessibility? (This is usually a group of people with specific areas of expertise in accessibility rather than one person so if minimums are prescribed it would typically someone with programming expertise in accessibility, HTML, ARIA, etc. plus expertise with assistive technology and interoperability testing.)
+
+TESTING METHODS
+What are the specific automated and manual testing methods used to evaluate accessibility? How is testing done with commonly used assistive technology?  Are individuals with disabilities who use assistive technology included in the audit as testers?  
+
+We would like to thank Dr. Diane Golden for her assistance with this section.  
+ 
 
 ### Conducting a Pilot During a Pandemic and Major Election Year
 
-Lack of hands on exposure to systems
-Conducted many interviews
+As one reviews this pilot effort, it is important to recall that we conducted the pilot during a presidential election year and during a global pandemic. The challenges presented by the election were known ahead of time, and we understood that the operational demands on our participating technology providers and steering committee members would be priority over the pilot efforts. The pandemic further exacerbated these challenges by removing people from the typical work environments, forcing all interactions to be done remotely, and limiting the number of people who could physically test the devices. 
 
-This led to us cutting some of the intial scope and not getting to a second iteration
+These challenges primarily impacted the pilot timeline, and not the effectiveness or reliability of actual results. We estimate that we lost 3 months to general election between September and December, but we also saw impacts in the Spring and Summer as many states were delaying their primaries and shifting their voting models to more vote-by-mail approaches. These changes took significant efforts from our steering committee members and participating providers. In fact, we had interest from two other technology providers early on who were unable to continue to participate as the pilot got started. 
 
-### Lack of Upfront Documentation Requirements
+Perhaps the most significant impact of these challenges was that we were unable to complete our initial plan of performing both an initial iteration of RABET-V and a subsequent product revision iteration. Instead, we were only able to complete the full initial iteration for each of the three products. Performing a full initiation iteration allowed us to completely define and test the RABET-V Program Description, evaluate the effort required for testing, obtain actual process and product maturity scores, obtain preliminary cost estimates, and evaluate the risk-metrics produced. However, by not completing a follow up product revision iteration, we are able to make definitive claims about how the risk-based approach will streamline product updates, the time those updates will take, and cost of those updates. Gathering that necessary information will have to be done in subsequent RABET-V efforts. 
+
+### Documentation Challenges
+
+The initial Program Description outlined a basic of documentation requirements. However, the core team did not require the participants to develop new documentation to those requirements. This was done for three reasons: 1. we did not want to delay the start of the pilot to wait for new documentation, 2. we were looking for reasonable ways to reduce the burden on our participating providers, and 3. we were not confident we were asking for the right documentation. Instead, we took documentation they developed for other certification efforts - such as those performed by the State of New York - and we mapped the documentation to our requirements. 
+
+In truth, this effort was not effective and being more prescriptive would not have helped either. Due to the nature of our efforts, we relied heavily on interview-based data collection techniques. We interviewed management, architects, developers, and others to collect the information we needed. Reviewing their documentation while conducting these interviews revealed a few things about documentation requirements:
+1. Documentation will always be a lagging indicator of process or product maturity
+2. The time spent reviewing documentation is equal to or greater than conducting interviews
+3. Reviewers can obtain greater depth about the process and product from interviews than from documentation
+
+Due to this, we have devalued traditional documentation requirements in the RABET-V Program Description with two exceptions:
+1. User documentation - as opposed to technical documentation, user documentation is far more insightful for reviewers and its accuracy is a better indicator of product maturity. Reviewers find it helpful to provide context to product construction. We also believe it provides better ROI for technology providers that technical documentation which is difficult to keep updated, often not used for technical evaluations, and has no value beyond the technical evaluation. 
+2. Visual, annotated architecture diagrams - during the pilot, we developed a series of architecture diagrams based on the data we collected primarily through interviews. These became the basis for our system understanding and the architecture maturity scoring. We have developed guidance on how technology providers can create these diagrams themselves. If the technology providers can present quality annotated architecture diagrams to RABET-V to verification and validation, this will greatly reduce the amount of time necessary to conduct an architecture review. We know more guidance an examples are necessary to fully equip providers to do this.
 
 
 ### Handling System Configurations and Variations
 
+During the pilot, it became apparent that each our technologies could be configured with various levels of security controls based upon the customer's requirements or preferences. This created a challenge for expedited evaluations. We certainly could not evaluate each variation during a pilot, nor would that be ideal in an operational version of RABET-V as well. We determined the best approach was to have the technology provider define the specific configuration they wanted to present for verification. We decided to document the configuration choices and present those along with any scores. States and localities then could fully understand the context of the scores they were seeing, and make any configuration modifications with those in mind. For example, if the technology provider choose to submit a less secure variation, the scores would be lower but provide more flexibility for the state or locality to make safe and secure configuration changes. If the technology provider choose to submit a more secure variation, the scores would be higher but would force the state or locality to increase their security risk with configuration changes. 
+
+
+
+
+### Results for Multiple Audiences
+
+During the development of RABET-V, we learned that various states want different types of results from a central testing and verification program. Some states want the output to be a decision on whether the product version is acceptable or not. Other states was more details and raw results in order to make a decision themselves on whether the product version's security is acceptable or not. Based on our interactions, the larger, better funded states want to process the raw results and the smaller states perform a decision be made by the verifier. 
+
+RABET-V attempts to address these various needs. First, the process produces 3 maturity indexes. The first index is the Software Development Maturity Index which provides scores in 6 areas related to the providers software development processes. The second index is the Security Services Architectural Maturity Index which providers a score for each of the 10 security services defined for RABET-V. Finally, the Security Services Capability Maturity Index provides a score for each of the 10 security services. These scores provide sufficient details for states who wish to make a decision themselves. In addition, during the pilot, the RABET-V team used these scores to make a determination of verified, conditionally verified, or not verified in order to address the needs of the other states. We believe this is the right balanced approach moving forward.
 
 ### Visibility of Results
 
+Apart from the challenge about testing results, there is a separate question on the visibility of the testing results. To tackle this problem, we define four audiences: public, subscribers, technology providers, and partners. 
 
-### Presentation of Results for Multiple Audiences
 
 
 ### Capture and Presentation of Testing Rules
+
+
 
 
 ### Converting Best Practices to Requirements
