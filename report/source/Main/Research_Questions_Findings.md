@@ -1,75 +1,115 @@
 # Research Questions and Findings
 
-In this section, we discuss our findings based on the pilot program research questions. 
+In this section, we discuss our findings based on the pilot program research questions. These questions were developed prior to the start of the pilot to provide a more objective basis for assessing the pilot’s outcome. 
+
+To reach the findings in this section, we interviewed each technology provider, the steering committee, and each internal resource that took a part in developing and administering the program. Where relevant to the context of the response, we identify the role played by the respondent but do not identify the individual or organization. In cases where the response may be sensitive, we omit the role to prevent disclosure of the respondent’s identity. Most of the questions have qualitative responses, though some are informed by time and cost tracking to provide a more concrete view of the resources required to administer and participate in the RABET-V program.
+
+We made changes to the pilot as we learned throughout the process, and this resulted in some of the questions being less meaningful by the end of the pilot. Where that happened, we note why the question is no longer meaningful and discuss the implications of the changes we made.
 
 ## Time and Cost Implications
 
 1. What are the review time implications of the RABET-V approach for:
-
-      - The initial verification of a product from a new vendor?
-    
-      - The initial verification of a product from a vendor that have been through the RABET-V process?
-    
-      - The re-verification of a product?
-
+   1. The initial verification of a product from a new vendor?
+      1. Initial verification of a product from a new vendor requires the full set of services in the RABET-V process, including the process review. 
+      1. Based on data from the participating technology providers, we anticipate that the internal time requirements to for a technology provider for an initial verification of either an e-pollbook or election night reporting system will require a commitment from the technology provider of 75-150 person-hours, with most coming from mid-level resources. This includes all preparatory work, internal meetings, meetings with the Administrator, and follow up.
+      1. Based on data from Administrator tracking, we anticipate that the time requirements for the Administrator for an initial verification of either an e-pollbook or election night reporting system will require XXX person-hours, with most coming from mid-level resources.
+   1. The initial verification of a [new] product from a vendor that has previously been through the RABET-V process?
+      1. The gain from a from technology provider having been through the RABET-V process is that they have a process verification complete. We estimate this accounts for about 25% of the total hours required to complete a verification. Thus, we anticipate 55-115 hours to complete an initial verification of a new product by an existing RABET-V technology provider.
+   1. The re-verification of a product?
+      1. Changes to the pilot resulted in re-verification being moved to the second pilot. We do not currently have data on re-verification.
+      1. While the extent of testing will depend on the type of change, feedback from technology providers suggests that the testing matrix process will result in efficient re-verification for most changes as the overhead of preparing materials will decline substantially. 
+      1. While we need data from re-verifications to solidify these estimates, based on initial verification data, we believe re-verification will require about XX hours for the technology provider and XX hours for the Administrator for smaller changes such as operating system patches and about XX hours for the technology provider and XX hours for the Administrator for larger changes such as those to security services.
+   1. Other notes
+      1. In addition to the estimates above, we anticipate efficiency gains through increased experience by the Administrator in conducting verifications as well as additional investment by the Administrator to provide improved materials, videos, templates, etc., to support more efficient verifications. These efficiencies will result in a slight reduction in total time required for verifications on the scale of 10% for both technology providers and the Administrator.
+      1. Contrary to our initial expectations, we believe the two most time-intensive processes— (e.g. Process Assessment and, Architecture Review)— can be incrementally updated in re-verification efforts. We previously thought these processes would have to be conducted in full when there were process or architecture changes. This will have significant advantages in time and provide additional incentives for continual improvement among technology providers.
 1. What are the total cost implications of the RABET-V approach for:
-    
-      - The initial verification of a product from a new vendor?
-    
-      - The initial verification of a product from a vendor that have been through the RABET-V process?
-    
-      - The re-verification of a product?
+   1. The initial verification of a product from a new vendor?
+      1. Initial verification of a product from a new vendor requires the full set of services in the RABET-V process, including the process review. 
+         1. Based on data from the participating technology providers, we anticipate that the internal cost to a technology provider for an initial verification of either an e-pollbook or election night reporting system will be about $10,000, with most coming from mid-level resources. This includes all preparatory work, internal meetings, meetings with the Administrator, and follow up. Non-labor costs will be low to negligible.
+      1. Based on data from Administrator tracking, we anticipate that the cost to the Administrator for an initial verification of either an e-pollbook or election night reporting system will be about $XXX.Can we estimate Administrator cost?
+   1. The initial verification of a product from a vendor that has been through the RABET-V process?
+      1. The gain from a from technology provider having been through the RABET-V process is that they have a process verification complete. We estimate this accounts for about 25% of the total cost of completing a verification. Thus, we anticipate the internal cost for an initial verification of a new product by an existing RABET-V technology provider will be about $7,500.
+   1. The re-verification of a product?
+      1. Changes to the pilot resulted in re-verification being moved to the second pilot. We do not currently have data on re-verification.
+      1. While the extent of testing will depend on the type of change, feedback from technology providers suggests that the testing matrix process will result in efficient re-verification for most changes as the overhead of preparing materials will decline substantially. 
+      1. While we need data from re-verifications to solidify these estimates, based on initial verification data, we believe re-verification will cost about $XX for the technology provider and $XX for the Administrator for smaller changes such as operating system patches and about $XX for the technology provider and $XX for the Administrator for larger changes such as those to security services.
+   1. Other notes
+      1. In addition to the estimates above, we anticipate efficiency gains through increased experience by the Administrator in conducting verifications as well as additional investment by the Administrator to provide improved materials, videos, templates, etc., to support more efficient verifications. These efficiencies will result in a slight reduction in total cost required for verifications on the scale of 10% for both the technology provider and the Administrator.
+      1. Contrary to our initial expectations, we believe the two most time-intensive processes—Process Assessment and Architecture Review—can be incrementally updated in re-verification efforts. We previously thought these processes would have to be conducted in full when there were process or architecture changes. This will have significant advantages in cost and provide additional incentives for continual improvement among technology providers.
+1. Is there a viable economic model for the RABET-V process? If so:
+   1. Does it require a government agency to drive the program, similar to voting system certification?
+      1. There are several viable economic models, as described in the Operating and Economic Model section of this report. Feedback suggests that some feel a government agency is necessary to drive the program, while others believe that buy in from government agencies in multiple states would be sufficient to support a non-governmental Administrator.
+      1. The phrase “similar to voting system certification” had implications for some stakeholders beyond the basic ownership of the program. The Operating and Economic Model section of this report deals extensively with the different roles associated with executing the RABET-V program, but the upshot is that, even if owned and overseen by the federal government, most of the administration and execution of the program do not need to be run by a government agency. 
+      1. Carefully considering which roles are inherently governmental and which aren’t can avoid some of the perceived inefficiencies with the voting system process.
+   1. Is there a model that suppliers in the market can support?
+      1. The Operating and Economic Model section of this report provides several approaches to a market sustainable model for the RABET-V process. See that section for additional details on the points below.
+      1. Feedback suggests a range of potential options. The RABET-V process is likely inexpensive enough that many technology providers will be able to bear the expected costs for both their internal activities and the Administrator’s direct costs to execute the technology provider’s verifications. The model for suppliers, then, may be selected to meet specific market goals, such as supporting the introduction of smaller technology providers to promote a more robust market. The Administrator may adjust pricing schemes such that larger suppliers pay more as a way of subsidizing smaller suppliers.
+      1. Maintaining a market may prove less challenging than the initial development of it. The Administrator must bring in enough states and technology providers simultaneously to create value on both sides of the market—i.e., the states and the technology providers. The Operating and Economic Model section provides options for effectively seeding the market. 
+      1. For technology providers, initial options include outside funding (e.g., federal funds, private grants) to seed the Administrator so those costs do not need to be included in early technology provider submissions and seeding technology providers directly to create incentives for them to go through the RABET-V process.
+   1. Is there a model that states and localities can support?
+      1. The Operating and Economic Model section of this report provides several approaches to a market sustainable model for the RABET-V process. See that section for additional details on the points below.
+      1. Feedback suggests that a range of potential options, the most likely of which is a model in which a state or locality becomes a Subscriber to gain access to reports. Operationalizing the RABET-V process—an aspect of the second pilot—will need to determine a reasonable cost that balances budget constraints for state and local governments with achieving sustainability of the Subscriber side of the market.
+      1. Like with technology providers, maintaining a market may be less challenging than the initial development of it. The Administrator must bring in enough states and technology providers simultaneously to create value on both sides of the market. The Operating and Economic Model section provides options for effectively seeding the market. 
+      1. For states and localities, options include initially providing a free Subscriber model and providing funds or other resources (e.g., model program language, agreement templates) to assist states with creating or changing from their current model to one that leverages the RABET-V process.
+1. Will the process be efficient enough to keep costs low enough for vendors to make minor updates?
+   1. Changes to the pilot resulted in re-verification being moved to the second pilot. While we do not currently have data on the costs of the various update types, having seen the program operate through the pilot, we have feedback from technology providers on their expectations having seen the program operate through the pilot.
+   1. Feedback strongly supports that costs will be reasonable to support minor updates.
+   1. The RABET-V process defines types of changes (e.g., operating system patch, source code change to a security service) rather than size of changes (e.g., *de minimus*, minor, major). It then maps these types of changes to testing procedures. This reduces uncertainty for technology providers and creates more incentive to keep changes small.
+   1. There is room to improve. For instance, RABET-V could trigger version updates, such as by mapping the software bill of materials for verified products to the National Vulnerability Database, informing both a product’s technology provider and Subscribers when a version needs a patch.
 
-1.  Is there a viable economic model for the RABET-V process? If so:
-    
-      - Does it require a government agency to drive the program, similar to voting system certification?
-    
-      - Is there a model that suppliers in the market can support?
-    
-      - Is there a model that states and localities can support?
+**Market Maturity Implications**
 
-1.  Will the process be efficient enough to keep costs low enough for vendors to make minor updates?
-
-## Market Maturity Implications
-
-1.  Is there evidence that products are architected in a manner that is mature enough for the RABET-V process to yield benefits by reducing the extent of re-verification reviews?
-    
-      - Will vendors be willing to submit small, frequent updates?
-
-1.  Is there evidence that state and local adoption and acceptance processes can leverage the RABET-V process to yield benefits?
-
-      - Can states and localities accept RABET-V verifications quickly enough to make the process worthwhile?
-    
-      - Will states and localities be willing to adopt new versions at a rate that maintains incentives to put small, more frequent updates through the process?
+1. Is there evidence that products are architected in a manner that is mature enough for the RABET-V process to yield benefits by reducing the extent of re-verification reviews?
+   1. The CIS team hypothesized that there may be a level of architectural maturity below which there is little incentive to improve and above which there are increasing level of incentives to improve as a competitive advantage.
+   1. While a small sample, reviewed architectures show a level of maturity for which we believe maturity scores encourage improvement. In time, this should generate an overall improvement in architectural approaches across the industry.
+   1. During the pilot, we saw evidence that the providers were taking the intermediate results discussed in interviews and using them to improve their processes and systems. This has led to a potential for the Administrator to allow an additional review of the organizational processes at the end of the first iteration, providing an opportunity to improve processes, and thus scores—even before the first verification is complete.
+   1. Will vendors be willing to submit small, frequent updates?
+      1. Feedback suggests that technology providers will submit small updates so long as the time required to re-verify is reasonable given the change. A hHighly streamlined re-verification of small changes will induce frequent submission and with strategically timed larger changes.
+      1. One challenge may be the extent to which custom deployments constitute a separate release. It would be untenable if each deployment for a technology provider serving many election offices requires a separate version for each election office it serves; RABET-V versioning must be developed in a way that intelligently allows for multiple configurations while properly testing changes that could impact security.
+1. Is there evidence that state and local adoption and acceptance processes can leverage the RABET-V process to yield benefits?
+   1. Feedback indicated that most states could adopt the RABET-V process without legislative action. There was also a suggestion that even states that do if not directly adopting the RABET-V process , it will benefit 1) impact their state if it the state uses a technology provider that did adopt RABET-V and 2) , even beyond that, simply by RABET-V by setting a standard in the market for a minimally acceptable performance.
+   1. Can states and localities accept RABET-V verifications quickly enough to make the process worthwhile?
+      1. Representatives from multiple states indicated that they would be able to make determinations about smaller changes to accept RABET-V verifications will while still conducting their necessary due diligence. Key to this is that the approach to due diligence also meets scope of the change. During the feedback session, no states disagreed.
+   1. Will states and localities be willing to adopt new versions at a rate that maintains incentives to put small, more frequent updates through the process?
+      1. Representatives from multiple states indicated that with one-time changes to administrative rules they would be able to able to make the process more flexible to allow for the types of smaller changes expected through the RABET-V process. 
+      1. Representatives from the states expressed a desire to make administrative changes in such a way that could allow the RABET-V process to evolve over time without additional changes to the respective states’ programs.
 
 ## Pre-Review Assessment Implications
 
-1.  Is there a sufficient correlation between process assessment results and verification outcomes to use those assessments to expedite verification and re-verification under RABET-V?
+1. Is there a sufficient correlation between process assessment results and verification outcomes to use those assessments to expedite verification and re-verification under RABET-V?
+   1. Changes to the pilot resulted in re-verification being moved to the second pilot. Because of this and the amount of time since the verifications were complete, we currently lack data to make a clear assessment of how well the process results correlate with verification outcomes. That is, we don’t yet know how well process assessments correlate with real world security.
+   1. We did see that process assessment results do not always correlate with Security Service Capability Maturities. An organization that has a less mature process may still have a strong set of security capabilities but will be subject to more rigorous testing for re-verifications. We consider this an acceptable outcome because there are still incentives for the organization to improve its process to speed up re-verifications and reduce their cost.
+1. Should process assessments be renewed and, if so, how often or under what circumstances?
+   1. We feel confident that process assessments must be renewed but the timing and structure of renewals is unclear. A potential approach is to have a maximum age for a process assessment (e.g., 18 months) but also requires that the organization attest to any changes to its process for each product re-verification. These interim changes will be incorporated into the process assessment and reset the clock on the process assessment age. There would also be a maximum time between full process assessments (e.g., 36 months), at which point the organization would be required to undergo a full process assessment.
+1. What party is best equipped to conduct process assessments?
+   1. The Administrator should oversee the process assessments, but the execution can be outsourced to experts in organizational process. The Administrator should remain flexible allow the most qualified assessor for each portion of the RABET-V process. Portions of the process assessment can be self-assessed, but this should only feed into a more thorough, independent process.
+1. Do architecture reviews provide a sufficient understanding of a given product to determine the impact of *de minimus* system changes? Minor system changes? Major system changes?
+   1. We initially believed that we would establish this three-tiered approach to system changes. As the pilot progressed, we realized that we could instead create a more specific set of system change types and map those types to a testing matrix in which smaller, more targeted changes result in more streamlined testing. 
+   1. Existing tool-based methods can analyze software for changes to make this identification a quick and accurate process.
+   1. This increases incentives for technology providers to submit smaller changes for re-verification and to improve process and architectural maturity scores.
+1. Should architecture reviews be renewed and, if so, how often or under what circumstances?
+   1. Re-verifications should include an attestation to whether any architectural changes were made and based on the nature of the change, the Administrator can decide the extent of an architecture review, if any. 
+   1. In addition, information from submissions and the Administrator’s analysis tools should identify anything beyond a basic code change. This can serve as a backstop to the attestations.
+   1. Finally, there should be an age-based component to architecture reviews. This can follow a similar approach to that of the process review where there is a maximum age, interim reviews that can reset the clock, and a total time allowed between full reviews.
+1. What party is best equipped to conduct architecture reviews?
+   1. The Administrator should oversee the architecture reviews, but the execution can be outsourced to experts in organizational processIT architecture. Portions of the process assessment can be self-assessed, but this should only feed into a more thorough, independent process.
 
-1.  Should process assessments be renewed and, if so, how often or under what circumstances?
+## Technical Evaluation Implications
 
-1.  What party is best equipped to conduct process assessments?
+1. For which types of non-voting election technology will the process work?
+   1. Feedback from stakeholder groups confirms that the RABET-V process can apply to virtually any type of non-voting election equipment, though some details of the process may vary. Generally, the RABET-V process is a software verification process and, like software itself, can be adjusted to suit a wide variety of purposes, even beyond elections. 
+   1. Is it better suited for some types of technology over others?
+      1. For components built largely on COTS hardware with minimal customization, which includes nearly all non-voting equipment, the process should perform equally well. This includes components from physical deployments such as e-pollbooks to pure cloud services like many election night reporting systems.
+      1. The RABET-V process is, however, software focused. For components with for which customized hardware plays a significant role, it would need significant adjustments to certain sets of requirements, such as boundary protection. Such a case would likely also need to include additional reviews for hardware security. The flexibility of the RABET-V process would support this, but there would be more overhead in establishing this verification approach.
+   1. How, if at all, does the process have to be modified to make it more suitable?
+      1. The technical requirement sets for different components will vary. It’s important to recognize that the technical requirements differ greatly from business requirements. To a non-technologist, the various non-voting components appear to be very different from each other. To a technologist, they are a rearranging of well-known technologies to meet different business requirements. 
+      1. The security needs differ as some components will be physical and others cloud-based, some internet-facing and others simply internet connected. This means that the set of applicable security requirements will change for each election component.
+      1. The process reviews should be unchanged, while the architecture review should have minimal changes between different election components. This variation is accounted for the architecture maturity rubric that was developed in the pilot. 
+   1. Are vendors more likely to accept the RABET-V process for certain types of equipment?
+      1. Feedback suggests that technology providers are likely to accept the RABET-V process for a wide variety of equipment, though some election components are higher priority than others.
+      1. Both technology providers who participated in the pilot would like to continue to participate in future efforts. Other providers have expressed interest as well. 
+   1. Are states and localities more likely to accept the RABET-V process for certain types of equipment?
+      1. Feedback suggests that states and localities are likely to accept the RABET-V process for a wide variety of equipment, though some election components are higher priority than others.
+   1. Other notes
+      1. CIS has created a recommended priority order. Stakeholders have suggested that this roughly represents their priorities, which align between technology providers and representatives from states. The tentative order is e-pollbooks, election night reporting, electronic ballot delivery, online voter registration, absentee ballot request, voter registration systems, ballot on demand, polling place lookup, interactive sample ballot.
 
-1.  Do architecture reviews provide a sufficient understanding of a given product to determine the impact of:
-    
-      - De minimus system changes?
-    
-      - Minor system changes?
-    
-      - Major system changes?
-
-1.  Should architecture reviews be renewed and, if so, how often or under what circumstances?
-
-1.  What party is best equipped to conduct architecture reviews?
-
-### Technical Evaluation Implications
-
-1.  For which types of non-voting election technology will the process work?
-    
-      - Is it better suited for some types of technology over others?
-    
-      - How, if at all, does the process have to be modified to make it more suitable?
-    
-      - Are vendors more likely to accept the RABET-V process for certain types of equipment?
-    
-      - Are states and localities more likely to accept the RABET-V process for certain types of equipment?
