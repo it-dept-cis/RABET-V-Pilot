@@ -2,7 +2,7 @@
 
 Since 2019, CIS has been working to fill gaps in the security of non-voting election technology. This began with the publication of [Security Best Practices for Non-Voting Election Technology Guide](https://www.cisecurity.org/wp-content/uploads/2019/11/Security-Best-Practices-Non-Voting-Election-Tech-Singles-19-Nov.pdf) and continued with the development and piloting of the Rapid Architecture Based Election Technology Verification (RABET-V) process.
 
-This is the final report for that pilot. If you are unfamiliar with the RABET-V process, we suggest you read our [whitepaper]([How to Improve Election Technology Verification](https://www.nass.org/sites/default/files/2020-01/white-paper-cis-nass-winter20.pdf) that lays out the early framework for the program.
+This is the final report for that pilot. If you are unfamiliar with the RABET-V process, we suggest you read our [whitepaper]([How to Improve Election Technology Verification](https://www.nass.org/sites/default/files/2020-01/white-paper-cis-nass-winter20.pdf)) that lays out the early framework for the program.
 
 RABET-V is a unique approach to the verification of system security. Instead of employing a monolithic and lengthy approach to testing, it uses an iterative, risk-based approach that supports rapid product changes by design.
 
@@ -32,8 +32,8 @@ The initial RABET-V pilot successfully demonstrated that RABET-V is a viable pro
 - First, a second round of pilots that generate the necessary data, documentation, and tools to establish the RABET-V process as a standard across any type of non-voting elections equipment.
 - Second, a developmental phase to finalize the operational and economic models that will ensure RABET-V is adopted as a standard by state election officials and technology providers.
 
-The need for RABET-V is now. The lack of consistent testing across states and the use of traditional testing processes � where testing is performed � represents a significant gap in election infrastructure security. RABET-V helps close this gap and balances multiple, and often competing, needs:
-- RABET-V provides a rigorous verification and testing that meets the needs of critical application like those in the election environment.
+The need for RABET-V is now. The lack of consistent testing across states and the use of traditional testing processes — where testing is performed — represents a significant gap in election infrastructure security. RABET-V helps close this gap and balances multiple, and often competing, needs:
+- RABET-V provides a rigorous verification and testing that meets the needs of critical applications like those in the election environment.
 - RABET-V provides a means to, and incentives for, rapid development and deployment of product updates that we see in innovative industries.
 
 The rest of this report is organized into sections:
