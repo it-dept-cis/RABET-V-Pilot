@@ -14,7 +14,7 @@ To overcome this, the Administrator should create an addendum to the Program Man
 
 ## Iterations
 
-The challenges of 2020 led to an abbreviated pilot in which we were unable to test re-verifications. While we have high confidence in the time and cost efficiencies of the developed methodologies, as this is a crucial aspect of the RABET-V value proposition, we recommend additional testing to ensure the re-verification process meets expectations for security. That is, a rigorous effort should be made to validate the assumption that testing can be streamlined for smaller changes.
+The challenges of 2020 led to an abbreviated pilot in which we were unable to test re-verifications. While we have high confidence in the time and cost efficiencies of the developed methodologies, as this is a crucial aspect of the RABET-V value proposition, we recommend additional testing of the RABET-V streamlining process to ensure the proposed approach to re-verification meets expectations for security outcomes. That is, a rigorous effort should be made to validate the assumption that testing can be streamlined for smaller changes.
 
 ## Process Steps
 
