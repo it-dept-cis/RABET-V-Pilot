@@ -5,6 +5,7 @@ This section describes the roles and processes necessary for a successful, susta
 ## The Current Environment
 
 Today, a variety of models exist within states for certifying non-voting equipment.
+
 - In Ohio, testing of e-pollbooks and electronic ballot delivery systems requires a provider to use an independent testing authority to certify that the state's requirements are met. If successful, an application with a nominal fee and a variety of documentation must be submitted to the state, which is reviewed by the Ohio Board of Voting Machine Examiners. The examiners make a recommendation to the Secretary of State, who approves a certification. Changes to the systems may require this process to repeat in its entirety.
 - In California, testing of e-pollbooks and remote accessible vote by mail systems (i.e., electronic ballot delivery and marking systems) takes a different path to achieve very similar results. Applicants must open an escrow fund to cover testing costs along with other required materials. An RFP may need to be issued to test the system, followed by the development of a testing plan. After testing, a report is developed, a public hearing occurs, and the Secretary of State makes a final determination.
 - Indiana requires similar testing of e-pollbooks. After submission of an application and certification checklist, the oversight program directs the provider to choose an approved testing lab for functional, telecommunications, compliance, and other testing. If successful, the vendor must conduct a field test. If successful in all phases, the Secretary of State makes the final certification decision. Changes to the e-pollbook may require this process to repeat in its entirety.
@@ -24,8 +25,9 @@ Even if these issues are addressed sufficiently within the confines of each stat
 ## A Better Way Forward
 
 Developing a more effective approach is possible. Keeping it compatible with the needs and expectations of states is also possible, though requires more careful planning. Achieving both would require two critical changes:
-1.	Establishing a sufficiently flexible process to meet the needs of modern development by testing only what is needed when needed based on the actual changes to the technology.
-2.	Increasing reusability across state programs of as many aspects of the certification process as possible, while still respecting the sovereignty of states and the need to adjust for differences in local requirements.
+
+1. Establishing a sufficiently flexible process to meet the needs of modern development by testing only what is needed when needed based on the actual changes to the technology.
+1. Increasing reusability across state programs of as many aspects of the certification process as possible, while still respecting the sovereignty of states and the need to adjust for differences in local requirements.
 
 There is enough commonality across state programs to design a model that achieves, to a high degree of completeness, the first change. This is the RABET-V process we piloted. The RABET-V program takes a risk-based approach to verify product revisions, where the risk estimate is based heavily on the product architecture and the provider's software development processes. Other sections of this report can provide insight into the RABET-V approach.
 
@@ -33,6 +35,7 @@ Achieving the second change requires a new operating and economic model. The rem
 
 ## Roles in a National Verification Model
 There are five major roles necessary to operate the RABET-V verification model at a national level while respecting the sovereignty of the states. They are:
+
 - Technology Provider: Submits technology to the RABET-V process with the intent of having that technology adopted by one or more jurisdictions.
 - Subscriber: A state or local government entity that leverages the RABET-V Program. Subscribing enables the entity to access verification results and related information.
 - Approval Authority: A state or local government entity that makes the final determination on whether a product meets the needs of the adopting jurisdiction. Even within a given state or local jurisdiction, this entity may differ from the Subscriber, such as a review board or locality within a state its respective Secretary of State office.
