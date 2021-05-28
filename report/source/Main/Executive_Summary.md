@@ -37,6 +37,7 @@ The need for RABET-V is now. The lack of consistent testing across states and th
 - RABET-V provides a means to, and incentives for, rapid development and deployment of product updates that we see in innovative industries.
 
 The rest of this report is organized into sections:
+
 1. Program Recap: we provide a detailed recap of how the pilot was executed and discuss the variations from the initial plan to final execution.
 1. Research Question Findings: we present our answers to the research questions - which were identified prior to the pilot - and discuss our related findings.
 1. Operational and Economic Models: we define possible operational and economic models for RABET-V.
