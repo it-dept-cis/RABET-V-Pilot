@@ -6,7 +6,7 @@ The RABET-V Architecture Review is designed to evaluate the solution’s archite
 
 The Architectural Maturity scores and component mappings are used to help assess the risk that changes to the product will negatively impact the security services. These are used in the [Testing Rules Determination Activity](/Activities/Testing_Rules_Determination.md) to identify how to test the product changes. Higher architectural maturity scores, in conjunction with process maturity scores; may indicate the need for less testing required to validate that changes have not created increased risk in the product.
 
-The Architecture Review activity is supplied with architecture diagrams, architecture descriptions, and interview sessions to confirm the architectural details and threat model the product.
+The Architecture Review activity is supplied with architecture diagrams, architecture descriptions, and interview sessions to confirm the architectural details and threat model of the product.
 
 > Code may be requested in the pilot in order to determine if it significantly improves the reliability of the architecture review.
 
@@ -38,7 +38,7 @@ These scores will be included in an architecture maturity workbook that will con
 
 #### Product Security Architecture Maturity Scores
 
-Based on the maturity scoring rubric, the architecture will be assigned scores at various levels for each security control family which corresponds to how well it supports the mitigations within that family. These scores are calculated at five layers, starting at the most detailed level of security service implementation per component or interface and resulting in a master architecture score. 
+Based on the maturity scoring rubric, the architecture will be assigned scores at various levels for each security control family which corresponds to how well it supports the mitigations within that family. These scores are calculated at five layers, starting at the most detailed level of security service implementation per component or interface and resulting in a master architecture score.
 
 ![Diagram of Hierarchy of Architecture Scoring](media/RABET-V_Architecture_Scoring.svg)
 
@@ -78,7 +78,7 @@ The [threat](/Appendices/RABET-V_Glossary.md#threat) analysis identifies the com
 
 ### 6 Identify protected interfaces
 
-or each interface [port](/Appendices/RABET-V_Glossary.md#port), identify all the [security services](/Appendices/RABET-V_Glossary.md#security-service) that protect it (the security service's point of use). Each point of use will be scored separately, this is the most detailed layer of scoring.
+For each interface [port](/Appendices/RABET-V_Glossary.md#port), identify all the [security services](/Appendices/RABET-V_Glossary.md#security-service) that protect it (the security service's point of use). Each point of use will be scored separately, this is the most detailed layer of scoring.
 
 ### 7 Analyze results
 

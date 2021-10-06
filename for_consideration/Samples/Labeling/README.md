@@ -27,19 +27,19 @@ Components can be made up of subcomponents (shown as nesting inside its containi
 
 *Ports* (identified by a box on the edge of a component) describes the required or provided interfaces of a component. A port can have a name, describing its logical purpose.
 
-![Ports](./images/subcomponents.svg)
+![Ports](./images/ports.svg)
 
 ## Annotating components
 
 RABET-V extends the UML Component diagrams to describe several aspects of the architecture. These aspects include:
 
-- Component Sensitivity
+- Trust Boundaries
 - Security Services provided by Component
 - Producing Party of Component
 
 By annotating these aspects, we know which components of the architecture can or cannot change without requiring additional testing/validation.
 
-Annotations are accomplished through the use of [UML stereotypes](https://en.wikipedia.org/wiki/Stereotype_(UML)). The new stereotypes that have been developed include «protect», «Security Service», «Sensitive», and «ThirdParty».
+Annotations are accomplished through the use of [UML stereotypes](https://en.wikipedia.org/wiki/Stereotype_(UML)). The new stereotypes that have been developed include «protect», «Security Service»,  «ThirdParty», among others.
 
 ### What's sensitive
 
@@ -71,7 +71,7 @@ A component is `operations-critical` if a component's degradation of function or
 
 ### Security Services
 
-[Security services] are used to secure «Sensitive» components. While sensitivity labels identify the need for security properties (e.g. *Confidentiality*, *Integrity*, *Availability*), a security service provides them. Which services are provided by a security service is expressed by the *Services Provided* tag on the «protect» *dependency*. A security service is often provided by a «ThirdParty».
+Security services are used to secure «Sensitive» components. While sensitivity labels identify the need for security properties (e.g. *Confidentiality*, *Integrity*, *Availability*), a security service provides them. Which services are provided by a security service is expressed by the *Services Provided* tag on the «protect» *dependency*. A security service is often provided by a «ThirdParty».
 
 ![Security Service](./images/security_service.svg)
 
@@ -85,7 +85,7 @@ A third party component is a component not produced in any part by the election 
 
 In order to minimize the amount of testing, annotations should be applied to specific subcomponents.
 
-Consider Foo Election Night Reporting (ENR). The user must be authorized before they can upload a new set of election results. The component diagram does not specify a particular subcomponent as providing this security service, so the entire component (i.e. Foo Admin) must be classified as sensitive.
+Consider Foo Election Night Reporting (ENR). The user must be authorized before they can upload a new set of election results. The component diagram does not specify a particular subcomponent as requiring this security service, so the entire component (i.e. Foo Admin) must be classified as sensitive.
 
 ![Least decomposed diagram](./images/decompose_least.svg)
 

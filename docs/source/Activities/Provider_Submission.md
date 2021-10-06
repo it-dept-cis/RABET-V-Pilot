@@ -44,23 +44,23 @@ For each implemented requirement, the provider will describe how they implement 
 
 The RTP can update the Security Claims during any Revision Submission.
 
-#### Process Descriptions – Initial Submission and On Change 
+#### Process Descriptions – Initial Submission and On Change
 
-The Process Descriptions statement is about the provider’s development and operating environment processes. These should cover key aspects of software development as described in the OWASP Software Assurance Maturity Model (SAMM), which is used as the basis for the RABET-V Process Review Activity.
+The Process Descriptions statement is about the provider’s development processes and operating environment. These should cover key aspects of software development as described in the OWASP Software Assurance Maturity Model (SAMM), which is used as the basis for the RABET-V Process Review Activity.
 
 A lack of detail in the Process Description statement will not exclude a provider from participating in the program, though it may slow the pace of the review.
 
 > The pilot program will work with the provider to create the necessary descriptions.
 
-#### Architecture Documentation and Diagrams – Initial Submission and On Change 
+#### Architecture Documentation and Diagrams – Initial Submission and On Change
 
-The Architecture Documentation and Diagrams is a set of documents that describe in full the architectural design of the product. The product’s architecture can be described using diagrams, or a combination of the two.
+The Architecture Documentation and Diagrams is a set of documents that describe in full the architectural design of the product. The product’s architecture can be described using diagrams, textually, or a combination of the two.
 
 The RTP should submit documentation of the architecture at the system as well as the software level. The system architecture should describe deployable subsystems, such as web services, databases, as well as hardware components such as firewalls and tablets. The software architecture should be described in terms of software components.
 
 The term *component* is used generically within RABET-V to describe part of a product. Components can be broken down into subcomponents, as required. The architecture should be deconstructed to the level that exposed functionality (e.g. a particular web service, program API, etc.) can be identified.
 
-RABET-V does not dictate a particular notation for diagrams; however, where possible RTP’s should follow provided examples, which are based on UML Component Diagrams.
+RABET-V does not dictate a particular notation for submitted diagrams; however, where possible RTP’s should follow provided examples, which are based on UML Component Diagrams.
 
 > A lack of architecture documentation and diagrams will not exclude a pilot participant from the program. The pilot program will work with the provider to create documentation and diagrams which are missing.
 

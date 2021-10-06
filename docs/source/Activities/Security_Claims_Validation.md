@@ -52,7 +52,7 @@ This first step will review the written goals and usage from the provider. This 
 
 #### Review Requirements listed as Not Applicable
 
-The requirements marked Not Applicable are reviewed to ensure that for this product the requirement is not relevant and thus the SSCM scores should not reflect non-conformance in its numbers. This is done with the aid of the threat analysis and security service component mapping from architecture review. Using the component mapping and knowledge from the product demo and expected usage, the reviewer should be able to make a determination on whether or not the requirement is valid for this product. Often times, the decision comes down to the use of certain technologies in the system. For example, if the product disabled all wireless, the requirements on using encrypted wireless are N/A.
+The requirements marked Not Applicable are reviewed to ensure that for this product the requirements are not relevant and thus the SSCM scores should not reflect non-conformance in its numbers. This is done with the aid of the threat analysis and security service component mapping from architecture review. Using the component mapping and knowledge from the product demo and expected usage, the reviewer should be able to make a determination on whether or not the requirement is valid for this product. Often times, the decision comes down to the use of certain technologies in the system. For example, if the product disabled all wireless, the requirements on using encrypted wireless are N/A.
 
 #### Review Remaining Requirements
 

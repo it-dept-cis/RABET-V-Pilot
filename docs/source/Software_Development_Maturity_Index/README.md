@@ -1,4 +1,4 @@
-# Software Development Maturity Index 
+# Software Development Maturity Index
 
 The SDM Index score is measured by the RABET-V Process Review activity and indicates the maturity of the provider’s software development processes for security and usability. The RABET-V SDM score is based on the [OWASP Software Assurance Maturity Model (SAMM)](https://www.owaspsamm.org).
 
