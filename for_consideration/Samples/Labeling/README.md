@@ -15,7 +15,7 @@
 
 <!-- /TOC -->
 
-This document describes how an election technology architecture can be annotated to support the core testing and verification functions of RABET-V. This document assumes a UML component diagram has been provided or constructed from an election technology vendor's documentation.
+This document describes how an election technology architecture can be annotated to support the core testing and verification functions of RABET-V. This document assumes a UML component diagram has been provided to RABET-V by the RTP or constructed from an election technology vendor's documentation.
 
 ## Describing components
 
@@ -28,6 +28,8 @@ Components can be made up of subcomponents (shown as nesting inside its containi
 *Ports* (identified by a box on the edge of a component) describes the required or provided interfaces of a component. A port can have a name, describing its logical purpose.
 
 ![Ports](./images/ports.svg)
+
+**A component with a port**
 
 ## Annotating components
 
@@ -44,6 +46,9 @@ Annotations are accomplished through the use of [UML stereotypes](https://en.wik
 ### What's sensitive
 
 A sensitive component is one that meets the definition of **data criticality**, **data sensitivity** or **election operations criticality**.
+
+> [!NOTE]
+> RABET-V does not currently require sensitivity labels for RABET-V Component Diagrams.
 
 #### Data criticality
 
@@ -65,7 +70,7 @@ A component is `data-sensitive` if any required or provided interfaces contain d
 
 #### Election operations criticality
 
-A component is `operations-critical` if a component's degradation of function or ceasure of function would be disruptive to the election operations it supports. This is determined by reviewing the use-cases that the component supports.
+A component is `operations-critical` if a component's degradation or ceasure of function would be disruptive to the election operations it supports. This is determined by reviewing the use-cases that the component supports.
 
 ![Operations Criticality](./images/operation_criticality.svg)
 
