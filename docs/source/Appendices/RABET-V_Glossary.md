@@ -36,7 +36,7 @@ An election technology submitted to RABET-V.
 
 A specific version of the [product](#product) submitted to RABET-V.
 
-### RABET-V Administrator 
+### RABET-V Administrator
 
 The organization responsible for overseeing and executing the RABET-V Program. CIS is the administrator for the pilot program.
 
@@ -62,7 +62,7 @@ A group of security services that supports the security goals. RABET-V defines t
 
 ### Security Service
 
-A capability that supports one, or many, of the security goals (NIST definition). Multiple security services (or controls) are collected in a [Security Control Family] (Security-Control-Family). 
+A capability that supports one, or many, of the security goals (NIST definition). Multiple security services (or controls) are collected in a [Security Control Family] (Security-Control-Family).
 
 ### Security Service Capability Maturity (SSCM)
 
@@ -92,10 +92,10 @@ A system level component that provides data processing capabilities.
 
 A maturity score measured by the RABET-V [Process](#process) Review activity to indicate maturity of the provider’s software assurance processes. The RABET-V SDM score is based on the OWASP Software Assurance Maturity Model (SAMM) with enhancements in the areas of usability and accessibility.
 
-### testing rules
+### Testing rules
 
 A set of rules specific to the technology provider and [product](#product) which determine how changes to that product will be verified during [RABET-V iterations](#RABET-V-Iteration).
 
-### threat
+### Threat
 
 A role of a situation that my lead to one ore more related incidents or failures.

@@ -1,6 +1,6 @@
 # RABET-V Activities
 
-The RABET-V Program consists of eight discrete activities from Product Submission to Reporting. Five of these activities are conditional based on the needs of the submission, scaling or being eliminated based on risks attributed to the product changes. Risk decisions are informed by the product’s architecture, the developer’s processes, and their security claims. Each time the RABET-V process is initiated, it is called a RABET-V Iteration.
+The RABET-V Program consists of eight discrete activities from Product Submission to Reporting. Five of these activities scale or are eliminated based on risks attributed to the product changes from the previous submission. Risk decisions are informed by the product’s architecture, the developer’s processes, and their security claims. Each time the RABET-V process is initiated, it is called a RABET-V Iteration.
 
 1.  Provider Submission: A submission from an RTP begins the RABET-V iteration. This submission contains information from the RTP on both its organization and the product under review.
 

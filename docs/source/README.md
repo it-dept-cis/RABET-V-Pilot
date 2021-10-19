@@ -4,6 +4,8 @@ This document is for use through the life of the RABET-V Program. This initial v
 
 > *Example Pilot comments*
 
+Furthermore, these first sections about program construction are specific to the pilot and will only be part of the versions used during the pilot phase.
+
 ## Steering Committee
 
 The RABET-V Pilot Program is guided by a steering committee comprised of election officials, election technology providers, and other election infrastructure stakeholders.
@@ -34,7 +36,7 @@ The RABET-V Pilot Program is guided by a steering committee comprised of electio
 
 The following technology providers have volunteered to have their
 products used in the RABET-V Pilot:
-  
+
   - VR Systems - Electronic Pollbooks and Election Night Reporting
 
   - KNOWink - Electronic Pollbook
@@ -80,13 +82,15 @@ The program will be administered by CIS team with assistance from [The Turnout](
 
 ## Pilot Process
 
-The RABET-V Pilot will first establish a RABET-V Program Description (this document). The Program Description version will detail how each activity will be conducted. The Program Description will be iteratively reviewed by the program Steering Committee and modified, as necessary.
+The RABET-V Pilot will first establish a RABET-V Program Description (this document), though it will continue to evolve over time as the program matures. The Program Description version will detail how each activity will be conducted. The Program Description will be iteratively reviewed by the program Steering Committee and modified, as necessary.
 
-Using the Program Description, the Pilot Program will conduct initial reviews on real products from Pilot Program technology providers. Each initial review will execute all RABET-V activities resulting in the creation of Testing Rules and initial verification results for each product. The Architecture Review and Process Assessments will be conducted according to the architecture and process review steps detailed in the Program Description, which may be updated as necessary throughout the Pilot Program.
+Using the Program Description, the Pilot Program will conduct initial reviews on real products from Pilot Program technology providers. The Pilot Program will work with pilot participants to develop their submission package and security claims.
 
-The RABET-V process will be conducted on real products from Pilot Program technology providers that represent diverse offerings. The Pilot Program will work with pilot participants to develop their submission package and security claims. This pilot will then follow the architecture and process review technical guidance and develop risk-based product-specific testing processes. The Pilot will evaluate the value of its activities, along with the time and cost, and conclude with recommendations on the best approach.
+Each initial review will execute all RABET-V activities resulting in the creation of Testing Rules and initial verification results for each product. The Architecture Review and Process Assessments will be conducted according to the architecture and process review steps detailed in the Program Description, which may be updated as necessary throughout the Pilot Program. This will result in risk-based product-specific testing processes. The Pilot will evaluate the value of its activities, along with the time and cost, and conclude with recommendations on the best approach.
 
 The Pilot will then conduct multiple iterations of RABET-V on product revisions from the participants. Depending on the changes, RABET-V will adapt and conduct only the activities required. This exercise will highlight the effectiveness of RABET-V to create meaningful but streamlined verifications and help determine the effectiveness of the product architecture and process reviews. It will also provide useful time and cost information. After each RABET-V iteration, changes may be made to the testing process and the iteration repeated as necessary.
+
+> Due to time and budget constraints caused by COVID-19, the first pilot did not conduct iteration testing.
 
 ## Pilot Research Questions
 
@@ -95,25 +99,25 @@ The Pilot will then conduct multiple iterations of RABET-V on product revisions 
 1. What are the review time implications of the RABET-V approach for:
 
       - The initial verification of a product from a new vendor?
-    
+
       - The initial verification of a product from a vendor that have been through the RABET-V process?
-    
+
       - The re-verification of a product?
 
 1. What are the total cost implications of the RABET-V approach for:
-    
+
       - The initial verification of a product from a new vendor?
-    
+
       - The initial verification of a product from a vendor that have been through the RABET-V process?
-    
+
       - The re-verification of a product?
 
 1.  Is there a viable economic model for the RABET-V process? If so:
-    
+
       - Does it require a government agency to drive the program, similar to voting system certification?
-    
+
       - Is there a model that suppliers in the market can support?
-    
+
       - Is there a model that states and localities can support?
 
 1.  Will the process be efficient enough to keep costs low enough for vendors to make minor updates?
@@ -121,13 +125,13 @@ The Pilot will then conduct multiple iterations of RABET-V on product revisions 
 ### Market Maturity Implications
 
 1.  Is there evidence that products are architected in a manner that is mature enough for the RABET-V process to yield benefits by reducing the extent of re-verification reviews?
-    
+
       - Will vendors be willing to submit small, frequent updates?
 
 1.  Is there evidence that state and local adoption and acceptance processes can leverage the RABET-V process to yield benefits?
 
       - Can states and localities accept RABET-V verifications quickly enough to make the process worthwhile?
-    
+
       - Will states and localities be willing to adopt new versions at a rate that maintains incentives to put small, more frequent updates through the process?
 
 ### Pre-Review Assessment Implications
@@ -139,11 +143,11 @@ The Pilot will then conduct multiple iterations of RABET-V on product revisions 
 1.  What party is best equipped to conduct process assessments?
 
 1.  Do architecture reviews provide a sufficient understanding of a given product to determine the impact of:
-    
+
       - De minimus system changes?
-    
+
       - Minor system changes?
-    
+
       - Major system changes?
 
 1.  Should architecture reviews be renewed and, if so, how often or under what circumstances?
@@ -153,13 +157,13 @@ The Pilot will then conduct multiple iterations of RABET-V on product revisions 
 ### Technical Evaluation Implications
 
 1.  For which types of non-voting election technology will the process work?
-    
+
       - Is it better suited for some types of technology over others?
-    
+
       - How, if at all, does the process have to be modified to make it more suitable?
-    
+
       - Are vendors more likely to accept the RABET-V process for certain types of equipment?
-    
+
       - Are states and localities more likely to accept the RABET-V process for certain types of equipment?
 
 # RABET-V Program
@@ -168,7 +172,7 @@ RABET-V is a flexible, risk-based, and cost-effective approach to election syste
 
 > The RABET-V Pilot Program is designed to evaluate the RABET-V process and the potential of the process to improve the speed, security assurances, and cost-effectiveness of non-voting election technology verification.
 
-For more information of the Background and Motivation for RABET-V, see CIS’ [How to Improve Election Technology Verification White Paper](https://raw.githubusercontent.com/it-dept-cis/RABET-V-Pilot/master/docs/source/media/Elections_Tech-Ver-White_Paper-2020-0121.pdf).
+For more information of the Background and Motivation for RABET-V, see CIS’s [How to Improve Election Technology Verification White Paper](https://raw.githubusercontent.com/it-dept-cis/RABET-V-Pilot/master/docs/source/media/Elections_Tech-Ver-White_Paper-2020-0121.pdf).
 
 ## Introduction
 
@@ -246,9 +250,9 @@ Failure to meet the requirements of the Program Commitment can lead to deregistr
 
   - Inaccurate representation: if the vendor is found to have intentionally mislead RABET-V administrators or its customers as to the capabilities of the organization or the product.
 
-  - Lacking organization security: if the vendors fails to subscribe to an organizational security framework, like the CIS controls, and maintain regular audits.
+  - Lacking organization security: if the vendors fails to subscribe to an organizational security framework, like the CIS Controls, and maintain regular audits.
 
-  - Lacking product maintenance: if the vendor is no longer properly supporting a product with regular monitoring and maintenance.
+  - Lacking product maintenance: if the vendor is no longer properly supporting a product such as with regular monitoring and maintenance.
 
 ### Deregistration Process
 
@@ -278,10 +282,10 @@ There will be a RABET-V public portal. The public portal serves the following pu
 
 ### RABET-V Subscriber Access vs. Public
 
-In an effort to maximize transparency, documentation in the RABET-V process is made as widely available as possible. There are three broad classes of sharing for RABET-V documents and reports:
+In an effort to maximize transparency, nearly all documentation about the RABET-V process is public. In addition, there are three broad classes of sharing for RABET-V documents and reports:
 
   - Public: documents and reports that are made fully available to the public
 
-  - Shared with Subscribers: documents and reports that are made available to those Federal, State, and local election authorities that have requested access and has agreed to treat the information as sensitive
+  - Shared with Subscribers: documents and reports that are made available to those federal, state, and local election authorities that have requested access and has agreed to treat the information as sensitive
 
   - Shared with the RTP: documents and reports that are shared only with the RTP, though the RTP is free to share documentation with other entities as it sees fit.

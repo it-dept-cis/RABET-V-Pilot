@@ -4,9 +4,11 @@ Once the RTP has made a submission, the RABET-V Administrator will review the su
 
 ### Inputs
 
-  - Provider’s submission package
+  - The RTP's submission package
 
-  - Prior process review, if a revision submission
+  - The RTP's Process Assessment
+
+  - Prior reviews, if a Revision Submission
 
 ### Outputs
 
@@ -32,7 +34,7 @@ Some RABET-V activities may not be required. Complete the remainder of the steps
 The approach to validating the change list will vary based on the
 findings of the prior Process Review:
 
-1.  Reliable: change list validation can be skipped or limited to high level spot checking
+1.  Reliable: change list validation can be skipped or limited to high-level spot checking
 
 1.  Otherwise: validate the change list by manual or automated means
 

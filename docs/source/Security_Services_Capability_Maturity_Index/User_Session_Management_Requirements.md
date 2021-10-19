@@ -34,7 +34,7 @@ Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.5.3
 
-### Use Secure Cookie Attributes (i.e. HttpOnly and Secure Flags)
+### Use Secure Cookie Attributes (i.e., HttpOnly and Secure Flags)
 
 Set the session cookie with both the HttpOnly and Secure flags. This ensures that the session ID will not be accessible to client-side scripts and it will only be transmitted over HTTPS.
 

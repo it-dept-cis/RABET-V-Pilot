@@ -1,6 +1,6 @@
 ## Testing Rules Determination
 
-This activity takes the results from previous activities and builds a unique set of Testing Rules for each product. These Testing Rules stay valid as long as none of the previous activities - Architecture Review, Process Assessment, and Security Claims Validation - need to be redone. If any of those activities are performed during the current RABET-V Iteration, the Testing Rules Determination must be performed again.
+This activity takes the results from previous activities and builds a unique set of Testing Rules for each product. These Testing Rules stay valid as long as none of the previous activities - Architecture Review, Process Assessment, and Security Claims Validation - has changes. If any of those activities are performed during the current RABET-V Iteration, the Testing Rules Determination must be performed again.
 
 The Testing Rules are structured as a decision tree. A decision tree is a flowchart-like structure where each internal node is a “test” of a condition. Each branch represents an outcome of the test until a final node has been reached. The final node represents a decision.
 
@@ -28,7 +28,7 @@ The decision tree is currently implemented with [Silver Decisions](http://silver
 
 #### Simplify Master Tree
 
-The master decision tree has a number of test conditions for maturity scores which are known at this point in the process, and thus can be simplified. To simply, remove the branches of the decision tree which are irrelevant. This will be branches corresponding to maturity scores other than the score the product/provider received. This should leave a simplified decision tree.
+The master decision tree has a number of test conditions for maturity scores that are known at this point in the process. All scores other than those actually recevied during the process can be removed, simplifiying the master tree.
 
 ### Test Conditions
 
@@ -40,9 +40,9 @@ These test conditions are related to where the change was made and what kind of 
 
 Where is the change?
 
-1.  Software Application Core Component - custom application developed by technology provider
+1.  Software Application Core Component - custom application developed by the RTP
 
-1.  Software Application Supporting Component – a component used from within the provider’s software application such as a framework, library or module provided by a 3rd party
+1.  Software Application Supporting Component – a component used from within the RTP's software application such as a framework, library or module provided by a 3rd party
 
 1.  Supporting Environment - system, framework, or service provided by a 3rd party used to host or run the software application
 
@@ -54,13 +54,13 @@ What type of change is it?
 
 1.  Replace - the component was replaced
 
-1.  Interface change - the component interface was changed or changed how it interfaced with other components
+1.  Interface change - either the component interface was changed or the manner why which it interfaces with other components changed
 
 1.  Implementation/Patch -
 
-  - For internally developed components, the internal implementation of a component was changed without impacting the interface(s)
+  + For internally developed components, the internal implementation of a component was changed without impacting the interface(s)
 
-  - For 3rd party components patch - the component was patched by its provider (only applies to 3rd party components)
+  + For 3rd party components patch - the component was patched by its provider (only applies to 3rd party components)
 
 Since more than one may apply, the first one that applies should be selected.
 
@@ -132,7 +132,7 @@ This uses the SAMM streams of Security Requirements, Build Process, Software Dep
 
 ##### Environment Management Maturity
 
-How mature are the technology provider’s processes for environment management (i.e. configuration hardening, patching, and updating)?
+How mature are the technology provider’s processes for environment management (e.g., configuration hardening, patching, and updating)?
 
 This uses the SAMM Environment Management score with 3 ranges. The scores ranges below are just placeholders until more accurate score ranges can be determined.
 

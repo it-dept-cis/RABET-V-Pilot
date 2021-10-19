@@ -1,6 +1,6 @@
 ## Usability
 
-Usability testing and analysis helps bridge the gap between a solution that meets a set of requirements and a solution that meets the needs of the organization, people, and processes. Meeting usability objectives is the distinction is between a solution that people want to use—i.e. meets a set of requirements and usability needs—versus one they don’t—i.e. solely meets a set of requirements.
+Usability testing and analysis helps bridge the gap between a solution that meets a set of requirements and a solution that meets the needs of the organization, people, and processes. Meeting usability objectives is the distinction is between a solution that people want to use (i.e., meets a set of requirements and usability needs) versus one they don’t (i.e., solely meets a set of requirements).
 
 Users will attempt to reduce friction in completing their desired task. A poorly designed user experience will result in users finding workarounds, often circumventing well-intentioned security controls. For a product to achieve the risk mitigation intended by the security requirements, it must integrate usability principles with security controls and, thus, an organization's maturity in implementing usability is critical to its security outcomes.
 

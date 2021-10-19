@@ -36,7 +36,7 @@ During the initial RABET-V iteration, partial testing (testing that is done to e
 
 ### Verification Methods
 
-As indicated in the Test Plan, the RABET-V administrator, or its designee, will use one of more of the following techniques. The scope of the testing (i.e. which components to test) will also be indicated by the Test Plan.
+As indicated in the Test Plan, the RABET-V administrator, or its designee, will use one of more of the following techniques. The scope of the testing (i.e., which components to test) will also be indicated by the Test Plan.
 
 #### Artifact Review
 
@@ -50,13 +50,13 @@ This method will review an artifact provided by the technology provider. The rev
 
   - Security event audit logs
 
-  - 3rd Party security analysis results (automated or manual)
+  - 3rd party security analysis results (automated or manual)
 
 The artifacts must be evaluated as “reliable” during the Process Assessment activity in order to be used for Product Verification.
 
 #### Automated Testing
 
-Automated testing is broad type of testing relying on software to perform test routines against the product or product component. Automated testing will execute the testing software against its target and produce results which will be evaluated by the RABET-V Administrator or its agent. The type of automated test will depend on the target. The types of automated testing currently conceived for RABET-V include:
+Automated testing is a broad type of testing relying on software to perform test routines against the product or product component. Automated testing will execute the testing software against its target and produce results which will be evaluated by the RABET-V Administrator or its agent. The type of automated test will depend on the target. The types of automated testing currently conceived for RABET-V include:
 
   - Configuration Testing
 
@@ -70,7 +70,7 @@ Automated testing is broad type of testing relying on software to perform test r
 
 #### Functional Testing
 
-Functional testing is a broad type of testing which focuses on the system output (i.e. the functionality users can interact with). It is geared toward testing the functional requirements of the product and is a manual testing method. The scope and intensity of functional testing can vary, and there are sub-types of functional testing to indicate the scope and intensity. The following sub-types are used in RABET-V:
+Functional testing is a broad type of testing that focuses on the system output (i.e., the functionality users can interact with). It is geared toward testing the functional requirements of the product and is a manual testing method. The scope and intensity of functional testing can vary, and there are sub-types of functional testing to indicate the scope and intensity. The following sub-types are used in RABET-V:
 
   - Component - testing which evaluates a singular component and the requirements associated with that component
 
@@ -115,21 +115,21 @@ Limited penetration testing may be used if the changes do not warrant full penet
 #### List of Master Requirements Workbook (need to reconcile with the rest of this list)
 
 Test Method	Description
-Fuzzing	- Test of the application's ability to accept a wide variety of inputs without causing it to enter an unexpected or undefined state.
-Penetration Testing	
-Functional - Testing	Test that evaluates the functionality of a component against a design specification. Can be automated, but because the function will be implemented differently by each product, a custom test script may be required for each.
-Web Testing	- A functional test that exercises one or more parts of the web stack and verifies the expected output.
-Failover and restore testing - Test that evaluates the resiliency of a system by making components of the system inoperable and evaluating the result.
-Code analysis -	A white box test involving the use of code artifacts, such as source code or unobfuscated binaries in order to verify certain properties.
-BOM Analysis -	Analysis of the bill of materials, such as software and their versions.
+- Fuzzing	- Test of the application's ability to accept a wide variety of inputs without causing it to enter an unexpected or undefined state.
+- Penetration Testing
+- Functional - Test that evaluates the functionality of a component against a design specification. Can be automated, but because the function will be implemented differently by each product, a custom test script may be required for each.
+- Web Testing	- A functional test that exercises one or more parts of the web stack and verifies the expected output.
+- Failover and restore testing - Test that evaluates the resiliency of a system by making components of the system inoperable and evaluating the result.
+- Code analysis -	A white box test involving the use of code artifacts, such as source code or unobfuscated binaries in order to verify certain properties.
+- BOM Analysis -	Analysis of the bill of materials, such as software and their versions.
 Configuration Audit	- Test to verify that the configuration of a component is configured as required.
-Data Audit -	Test to verify the presence or absence of certain records, such as the inappriorate collecting of PII or the lack of authentication logs, can be combined with Functional Testing to provide a higher level of confidence
-Artifact Review	- Review of provider-supplied artifacts from their development, testing, integration, and deployment process or artifacts provided by a providers' hosting environment. 
-Documentation Audit - Review of the provider-supplied documentation for presence of required content or presence of poor guidance (i.e. direction to use insecure password).
-Vendor Attestation
+- Data Audit -	Test to verify the presence or absence of certain records, such as the inappropriate collecting of PII or the lack of authentication logs, can be combined with Functional Testing to provide a higher level of confidence
+- Artifact Review	- Review of provider-supplied artifacts from their development, testing, integration, and deployment process or artifacts provided by a providers' hosting environment.
+- Documentation Audit - Review of the provider-supplied documentation for presence of required content or presence of poor guidance (i.e. direction to use insecure password).
+- Vendor Attestation
 
 
-If the sanity or streamlined test calls for documentation, artifact, attestation, etc that doesn't exist, the full test is used. If the full test requires documentation, artifact, attestation, etc and none exist, the full test fails. 
+If the sanity or streamlined test calls for documentation, artifact, attestation, etc that doesn't exist, the full test is used. If the full test requires documentation, artifact, attestation, etc and none exist, the full test fails.
 
 Full test is required for any new claim.
 
@@ -142,16 +142,16 @@ Verifiers may opt to do a full test at any time to validate documentation or art
 
 ### Out-of-scope Testing
 
-There is other testing which is out of scope for RABET-V. RABET-V is chiefly concerned with verifying the security and reliability of the product revision in a rapid way. Since rapid change cycles are possible with RABET-V, other user-centered types of testing can be performed by the current or potential end users and the changes reprocessed through RABET-V without significant lag. RABET-V reports can be used by state authorities or state and local users to determine the level of this testing necessary. These other testing types include:
+There is other testing which is out of scope for RABET-V. RABET-V is chiefly concerned with verifying the security and reliability of the product revision in a rapid way. Since rapid change cycles are possible with RABET-V, other user-centered types of testing can be performed by the current or potential end users and the changes reprocessed through RABET-V without significant lag. RABET-V reports can be used by state authorities or state and local users to determine the level of this testing necessary. These other testing types include acceptance, beta, and usability testing.
 
 #### Acceptance Testing
 
-Acceptance Testing, or User Acceptance Testing (UAT), is performed by the client and verifies whether the end to end flow of the system meets their business requirements or not. The client accepts the system only when all the features and functionalities work as expected.
+Acceptance testing, or user acceptance testing (UAT), is performed by the client and verifies whether the end to end flow of the system meets their business requirements or not. The client accepts the system only when all the features and functionalities work as expected.
 
 #### Beta Testing
 
-Beta Testing is carried out by the customer or potential customer. It is performed in the real environment before releasing the product to the market for the actual end-users. Beta Testing is often used to ensure that there are no major feature gaps or bugs in the product, and it satisfies the business requirements. Usually, this testing is typically done by end-users or others. It is the final testing done before releasing an application for commercial purpose. Usually, the Beta version of the software or product released is limited to a certain number of users in a specific area.
+Beta testing is carried out by the customer or potential customer. It is performed in the real environment before releasing the product to the market for the actual end-users. Beta testing is often used to ensure that there are no major feature gaps or bugs in the product, and it satisfies the business requirements. This testing is typically done on a beta version of the software or product that is releasd to a subset of end-users. It is the final testing done before releasing an application for commercial purpose.
 
 #### Usability Testing
 
-Under Usability Testing, the user-friendliness is verified. The application flow is tested to know if a new user can understand the application easily or not and if proper help documentation is provided. RABET-V measures the provider’s usability and accessibility testing process maturity, but the ultimate usability testing should be performed by the end-users.
+Under usability testing, the user-friendliness is verified. The application flow is tested to know if a new user can understand the application easily or not and if proper help documentation is provided. RABET-V measures the RTP's usability and accessibility testing process maturity, but the ultimate usability testing should be performed by end-users.

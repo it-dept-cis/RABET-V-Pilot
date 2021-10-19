@@ -1,8 +1,6 @@
 # Architecture Review Methodology
 
-![Image of Architecture Review Methodology](Architecture_Review_Methodology_files/_19_0_3_43701b0_1585746146678_950815_14100.svg)
-
-The RABET-V Architecture Review is designed to evaluate the solution’s architectural support for the [RABET-V security control families](/Overview/Security_Control_Family.md). This evaluation produces an architectural maturity score for each security control family and identifies the components which provide each [security service](/Appendices/RABET-V_Glossary.md#security-service). This score does not measure how well the [product](/Appendices/RABET-V_Glossary.md#product) executes the security service (i.e., its capability level), just how mature the architecture is that supports the security service. The [Security Services Capability Maturity](/Security_Services_Capability_Maturity_Index/README.md) level is a separate metric determined in the [Security Claims Validation](/Activities/Security_Claims_Validation.md) and it indicates how well the product provides the security services.
+The RABET-V Architecture Review is designed to evaluate the solution’s architectural support for the [RABET-V security control families](/Overview/Security_Control_Family.md). This evaluation produces an architectural maturity score for each security control family and identifies the components that provide each [security service](/Appendices/RABET-V_Glossary.md#security-service). This score does not measure how well the [product](/Appendices/RABET-V_Glossary.md#product) executes the security service (i.e., its capability level), just how mature the architecture is that supports the security service. The [Security Services Capability Maturity](/Security_Services_Capability_Maturity_Index/README.md) level is a separate metric determined in the [Security Claims Validation](/Activities/Security_Claims_Validation.md) that indicates how well the product provides the security services.
 
 The Architectural Maturity scores and component mappings are used to help assess the risk that changes to the product will negatively impact the security services. These are used in the [Testing Rules Determination Activity](/Activities/Testing_Rules_Determination.md) to identify how to test the product changes. Higher architectural maturity scores, in conjunction with process maturity scores; may indicate the need for less testing required to validate that changes have not created increased risk in the product.
 
@@ -16,6 +14,8 @@ The Architecture Review will identify the product components at the system and s
 
 This activity will also complete the system and software architectural viewpoints. The system level diagram identifies the larger components of the environment used to host and manage the software application(s). The software level diagrams identify the components a layer deeper into the software application(s).
 
+![Image of Architecture Review Methodology](Architecture_Review_Methodology_files/_19_0_3_43701b0_1585746146678_950815_14100.svg)
+
 ## Inputs
 
 ### Provider Submission
@@ -28,7 +28,7 @@ The Ten [Security Control Families](/Overview/Security_Control_Family.md) provid
 
 ### Security Architecture Rubric
 
-The rubric was created to help score the product architecture in the categories of Reliability, Manageability and Consistency, Maintainability (Modularity and Isolation), and Depth of control coverage (i.e. defense-in-depth)
+The rubric was created to help score the product architecture in the categories of Reliability, Manageability and Consistency, Maintainability (Modularity and Isolation), and Depth of control coverage (i.e., defense-in-depth)
 
 ## Outputs
 
@@ -38,7 +38,7 @@ These scores will be included in an architecture maturity workbook that will con
 
 #### Product Security Architecture Maturity Scores
 
-Based on the maturity scoring rubric, the architecture will be assigned scores at various levels for each security control family which corresponds to how well it supports the mitigations within that family. These scores are calculated at five layers, starting at the most detailed level of security service implementation per component or interface and resulting in a master architecture score.
+Based on the maturity scoring rubric, the architecture will be assigned scores at various levels for each security control family which corresponds to how well it supports the mitigations within that family. These scores are calculated at five layers, starting at the most detailed level of security service implementation per component or interface and rolling up to result in a master architecture score.
 
 ![Diagram of Hierarchy of Architecture Scoring](media/RABET-V_Architecture_Scoring.svg)
 
@@ -54,13 +54,13 @@ The Architecture Review will identify the components of the system and how the s
 
 ### 1 Start
 
-Once the provider has completed their submission, the architecture review may start after the [process](/Appendices/RABET-V_Glossary.md#process) review or in parallel if needed and deemed feasible.
+Once the provider has completed their submission, the architecture review may start after the [process](/Appendices/RABET-V_Glossary.md#process) review or in parallel if deemed feasible.
 
 ### 2 Build system architecture
 
 [Threat](/Appendices/RABET-V_Glossary.md#threat) modeling and analysis is used to build the security architecture viewpoint. It also aids in the development of the system and software architecture diagrams. Threat modeling takes the provider submitted architectural documentation as input along with interview sessions with individuals that possess knowledge about the system and software architecture. The security control families provided by the application are enumerated using the threat modeling methodology.
 
-The output of the threat analysis is to built out a system level architecture and to provide the first round of architecture maturity scoring at the system level. This information is then passed on to the software architecture review.
+The output of the system architecture analysis is a built-out system level architecture and first round of architecture maturity scoring at the system level. This information is then passed on to the software architecture review.
 
 ### 3 Perform threat analysis
 
@@ -68,9 +68,9 @@ The [services](/Appendices/RABET-V_Glossary.md#services) are then further decons
 
 ### 4 Identify software components
 
-While the [threat](/Appendices/RABET-V_Glossary.md#threat) analysis helps identify the system-level components, the software-level components must be identified separately. This step will identify significant software architectural components, their boundaries, how they interface, their dependencies with one another and 3rd party components.
+While the [threat](/Appendices/RABET-V_Glossary.md#threat) analysis helps identify the system-level components, the software-level components must be identified separately. This step will identify significant software architectural components, their boundaries, how they interface, their dependencies with one another and third-party components.
 
->Automated tools, such as [Lattix](https://www.lattix.com/) and [WhiteSource](https://whitesourcesoftware.com) or similar may be used to aid in this step.
+Automated tools may be used to aid in this step.
 
 ### 5 Identify interfaces
 
@@ -78,13 +78,11 @@ The [threat](/Appendices/RABET-V_Glossary.md#threat) analysis identifies the com
 
 ### 6 Identify protected interfaces
 
-For each interface [port](/Appendices/RABET-V_Glossary.md#port), identify all the [security services](/Appendices/RABET-V_Glossary.md#security-service) that protect it (the security service's point of use). Each point of use will be scored separately, this is the most detailed layer of scoring.
+For each interface [port](/Appendices/RABET-V_Glossary.md#port), identify all the [security services](/Appendices/RABET-V_Glossary.md#security-service) that protect the security service's point of use. Each point of use will be scored separately. This is the most detailed layer of scoring.
 
 ### 7 Analyze results
 
-Apply the [security service](/Appendices/RABET-V_Glossary.md#security-service) architectural maturity rubric and assign scores to each security service at its point of use.  The scores are then rolled up to security control families and ultimately to a single architecture maturity score.
-
-> For more information please see Security Service Architectural Maturity
+Apply the [security service](/Appendices/RABET-V_Glossary.md#security-service) architectural maturity rubric and assign scores to each security service at its point of use. The scores are then rolled up to security control families and ultimately to a single architecture maturity score.
 
 ### 8 Architecture Review Complete
 

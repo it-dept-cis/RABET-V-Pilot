@@ -1,8 +1,8 @@
 ## Security Claims Validation
 
-This security claims validation activity reviews whether the technology provider’s statements of security are sufficient for their product’s goals and expected usage. Not all applications pose the same security risks. Even similar products can have different risk profiles based on the type of data they manage and how the product will be used. This activity reviews the particulars of the product to ensure the security claims match its specific risk profile. This validation activity determines if the provider’s claims make sense given the product environment and data sensitivity, and if the claims are sufficient for the given context.
+This security claims validation activity reviews whether the RTP's statements of security are sufficient for the product’s goals and expected usage. Not all applications pose the same security risks. Even similar products can have different risk profiles based on the type of data they manage and how the product is used. This activity reviews the particulars of the product to ensure the security claims match its specific risk profile. This validation activity determines if the RTP's claims make sense given the product environment and data sensitivity, and if the claims are sufficient for the given context.
 
-Security claims are submitted by providers in their submission package. The Initial Provider Submission must include claims for each security requirement. Subsequent Revision Submissions can add, remove, or modify a previous security claim, as necessary.
+Security claims are submitted by RTP's in their submission package. The Initial Provider Submission must include claims for each security requirement. Subsequent Revision Submissions can add, remove, or modify any previous security claim.
 
 For each requirement, the provider must include:
 
@@ -16,15 +16,15 @@ For each requirement, the provider must include:
 
 1.  Which component or sub-systems implements the requirement, and whether it is all or a sub-set of components
 
-1.  Rationale for Not Applicable (only if Not Applicable is claimed)
+1.  Rationale for any Not Applicable claims
 
-1.  Documentation on how the security service is to be configured (if Met, User Dependent is claimed).
+1.  Documentation on how the security service is to be configured for any Met, User Dependent claims
 
 1.  Implementation details
 
-1.  Explanation for why the requirement is only partially met or partially applied to the system. Simple explanations can be used (i.e. planned for future development, lack of resources, etc.) If the provider believes that partial implementation is sufficient, a longer explanation is necessary.
+1.  Explanation for why the requirement is only partially met or partially applied to the system. In some cases simple explanations will suffice (e.g., planned for future development, lack of resources). If the provider believes that partial implementation is sufficient, a longer explanation is necessary.
 
-The Product Verification activity performs the verification of these claims, based on the Testing Rules created in the Testing Rules Determination activity. The Testing Rules Determination accounts for the security claims made by the provider. For instance, the testing rules will exclude requirements which are Not Applicable.
+The Product Verification activity performs the verification of these claims, based on the Testing Rules created in the Testing Rules Determination activity. The Testing Rules Determination accounts for the security claims made by the provider. For instance, the testing rules will exclude requirements that are Not Applicable.
 
 ### Inputs
 
@@ -48,19 +48,19 @@ The Product Verification activity performs the verification of these claims, bas
 
 #### Review Product Goals, Expected Usage, and Product Functionality
 
-This first step will review the written goals and usage from the provider. This step should be augmented with a product demo or access to the product in a test environment. Reviewers should obtain a good sense of the high-level product functionality and validate the goals and usage and consistent with the product functionality. For example, if there are use cases related to product administration, the reviewer should be able to access the administration module and exercise a few use cases.
+This first step will review the written goals and usage from the provider. This step should be augmented with a product demo or access to the product in a test environment. Reviewers should obtain a good sense of the high-level product functionality and validate the goals and usage consistent with the product functionality. For example, if there are use cases related to product administration, the reviewer should be able to access the administration module and exercise a few use cases.
 
 #### Review Requirements listed as Not Applicable
 
-The requirements marked Not Applicable are reviewed to ensure that for this product the requirements are not relevant and thus the SSCM scores should not reflect non-conformance in its numbers. This is done with the aid of the threat analysis and security service component mapping from architecture review. Using the component mapping and knowledge from the product demo and expected usage, the reviewer should be able to make a determination on whether or not the requirement is valid for this product. Often times, the decision comes down to the use of certain technologies in the system. For example, if the product disabled all wireless, the requirements on using encrypted wireless are N/A.
+The requirements marked Not Applicable are reviewed to ensure that for this product the requirements are not relevant and thus the SSCM scores should not reflect a non-conformity. This is done with the aid of the threat analysis and security service component mapping from architecture review. Using the component mapping and knowledge from the product demo and expected usage, the reviewer should be able to make a determination on whether or not the requirement is valid for this product. Often times, the decision comes down to the use of certain technologies in the system. For example, if the product disabled all wireless, the requirements on using encrypted wireless are not applicable.
 
 #### Review Remaining Requirements
 
-Once the list of applicable requirements has been determined in the prior step, the reviewer will go through the applicable requirements one security control family at a time. Using the security service component mapping and the implementation details, the reviewer can validate if the stated implementation is fully, partially, or not meeting the requirement. Requirements are fully met when the implementation of the requirement covers all the relevant components. If the implementation is only covering a portion of the relevant components, the requirement is partially met. The determination of which components are relevant is made by the reviewer.
+Once the list of applicable requirements has been determined, the reviewer will go through the applicable requirements. Using the security service component mapping and the implementation details, the reviewer can validate if the stated implementation is fully, partially, or not meeting the requirement. Requirements are fully met when the implementation of the requirement covers all the relevant components. If the implementation is only covering a portion of the relevant components, the requirement is partially met. The determination of which components are relevant is made by the reviewer.
 
 #### Determine Claim Sufficiency
 
-In this final step, the reviewer will analyze the product’s use cases, the list of applicable requirements, and the provider’s validated claims. If there are sensitive use cases which are not being mitigated to a minimally acceptable level, the reviewer may determine that the claims are not sufficient.
+In this final step, the reviewer will analyze the product’s use cases, the list of applicable requirements, and the provider’s validated claims. If there are sensitive use cases that are not mitigated to a minimally acceptable level, the reviewer may determine that the claims are not sufficient.
 
 > Until more guidance can be developed on what is minimally acceptable, the guidance is that any product which claims to meet all applicable maturity level 1 requirements will pass this step.
 
@@ -70,7 +70,7 @@ When determining whether requirements are applicable and which components are re
 
 #### Data Sensitivity
 
-For this consideration, we review the data that the system processes and how critical the data is to make available (availability), keep confidential (confidentiality), or keep authoritative (integrity). The following sections review some of the most critical election data elements, identify the typical lifecycle for that data, and discuss the points where its value is the highest.
+For this consideration, we review the data that the system processes and how critical the data is to availability, confidentiality, and integrity. The following sections review some of the most critical election data elements, identify the typical lifecycle for that data, and discuss the points where its value is the highest.
 
 ##### Jurisdictional
 
@@ -80,7 +80,7 @@ Jurisdictional data is persistent and defines an election jurisdiction. This inc
 
 Voter information is persistent data that identifies eligible voters and their attributes to help the jurisdiction interact with each voter. This data is managed in the state or locality voter registration systems. Depending on the state, the data flow between state and locality voter registration systems varies with the consistent goal of keeping both systems in sync. Voter data is then consumed by various software applications that interact with voters. This includes electronic pollbooks, electronic ballot delivery systems, online voter registration portals, sample ballot lookup portals, and others. Only certain fields—not the entire voter record—are shared with these other software applications.
 
-Voter information has full, filtered, and public versions. In most states, registering to vote requires the sharing of personal information such as Social Security number (SSN) and driver’s license number. These data elements combine with the voter name, address(es), and other attributes to constitute the full version of the voter record. Most states consider voter registration records to be public, but some of the sensitive information such as SSNs are redacted. This version is known as the public version. Various other filtered formats are available for products that use voter information. For example, electronic pollbooks may require voter records with the driver’s license number but not the SSN. Distinguishing between these versions is important when discussing risks.
+Voter information has full, filtered, and public versions. In most states, registering to vote requires the sharing of personal information such as Social Security number (SSN) and driver’s license number. These data elements combine with the voter name, address(es), and other attributes to constitute the full voter record. Most states consider voter registration records public, but some of the sensitive information such as SSNs are redacted. This version is known as the public version. Various other filtered formats are available for products that use voter information. For example, electronic pollbooks may require voter records with the driver’s license number but not the SSN. Distinguishing between these versions is important when discussing risks.
 
 Full voter records are at risk throughout their lifecycle due to their value in perpetuating identity theft. They are also in danger of manipulation in the voter registration system because it is the source of voter records for all other systems. Other forms of voter records used for voter eligibility are at most risk of manipulation or deletion when they are transferred and used in electronic ballot delivery or electronic pollbooks. Even though certain sensitive data fields are removed, the data is still extremely valuable for an attacker who may wish to alter a voter’s eligibility to vote or impact for whom they can vote. While these downstream uses of voter records could always refresh themselves from the voter registration database, a well-timed attack on the local version of the voter records could be very impactful.
 
@@ -92,7 +92,7 @@ Typically, the Election Management System (EMS) creates the election by combinin
 
 In other instances, there is a component of the county voting system that is called the EMS. This is the part of the voting system that finalizes the election and builds the ballots. In all cases, the term refers to a system that contributes to the definition of the election in part or in whole. Also, consistently, the EMS is responsible for communicating the election definition with various consumers. These consumers include public communication channels, ballot marking devices, ballot tabulators, and ballot printers.
 
-Election definitions created by voting systems typically define the construction of the ballots and the rules by which poll workers and voters interact with the ballots. In some cases, the election definition may also include configuration data for election security—keys, passwords, PINs, etc.—and how to tabulate ballots. The election definition is what is used to program the various technology components of a voting system. Once the election definition is created and approved by the jurisdiction, its integrity has critical value. Modifications to the election definition can significantly alter how the election is conducted and the outcome of the process.
+Election definitions created by voting systems typically define the construction of the ballots and the rules by which poll workers and voters interact with the ballots. In some cases, the election definition may also include configuration data for election security—keys, passwords, PINs, etc., and how to tabulate ballots. The election definition is what is used to program the various technology components of a voting system. Once the election definition is created and approved by the jurisdiction, its integrity has critical value. Modifications to the election definition can significantly alter how the election is conducted and the outcome of the process.
 
 ##### Ballot (blank)
 

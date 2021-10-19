@@ -28,7 +28,7 @@ A Verified status means that the product is likely to perform as described in it
 
 A Conditional Verified status means that while the product is likely to perform as described in its Product Goals and Security Claims in the Expected Usage operating environment, the RABET-V process identified at least one non-critical issue or deviation.
 
-With a Conditional Verification, the provider is expected to remediate the issue for a re-verification. If no other changes are made to the product, the process for re-verifying is considered part of the same submission and, upon review, can result in the Verification Status being changed to Verified.
+With a Conditional Verification, the provider is expected to remediate the issue and submit for a re-verification. If no other changes are made to the product, the process for re-verifying is considered part of the same submission and, upon review, can result in the Verification Status being changed to Verified.
 
 Issues and deviations are detailed in the Product Provider Report.
 
