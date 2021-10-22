@@ -112,33 +112,28 @@ In addition to a full penetration testing option, the following web application 
 
 Limited penetration testing may be used if the changes do not warrant full penetration testing.
 
-#### List of Master Requirements Workbook (need to reconcile with the rest of this list)
+#### List of Master Requirements Workbook
 
 Test Method	Description
+
 - Fuzzing	- Test of the application's ability to accept a wide variety of inputs without causing it to enter an unexpected or undefined state.
-- Penetration Testing
+- Penetration Testing - Testing that verifies the extent to which a system, device or process resists active attempts to compromise its security. [NIST SP 800-152]
 - Functional - Test that evaluates the functionality of a component against a design specification. Can be automated, but because the function will be implemented differently by each product, a custom test script may be required for each.
 - Web Testing	- A functional test that exercises one or more parts of the web stack and verifies the expected output.
 - Failover and restore testing - Test that evaluates the resiliency of a system by making components of the system inoperable and evaluating the result.
 - Code analysis -	A white box test involving the use of code artifacts, such as source code or unobfuscated binaries in order to verify certain properties.
 - BOM Analysis -	Analysis of the bill of materials, such as software and their versions.
-Configuration Audit	- Test to verify that the configuration of a component is configured as required.
+- Configuration Audit	- Test to verify that the configuration of a component is configured as required.
 - Data Audit -	Test to verify the presence or absence of certain records, such as the inappropriate collecting of PII or the lack of authentication logs, can be combined with Functional Testing to provide a higher level of confidence
 - Artifact Review	- Review of provider-supplied artifacts from their development, testing, integration, and deployment process or artifacts provided by a providers' hosting environment.
 - Documentation Audit - Review of the provider-supplied documentation for presence of required content or presence of poor guidance (i.e. direction to use insecure password).
-- Vendor Attestation
-
+- Vendor Attestation - A statement made by the vendor indicating the existence of one or more security controls.
 
 If the sanity or streamlined test calls for documentation, artifact, attestation, etc that doesn't exist, the full test is used. If the full test requires documentation, artifact, attestation, etc and none exist, the full test fails.
 
 Full test is required for any new claim.
 
 Verifiers may opt to do a full test at any time to validate documentation or artifacts.
-
-
-
-
-
 
 ### Out-of-scope Testing
 
