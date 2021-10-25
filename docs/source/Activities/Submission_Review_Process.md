@@ -16,7 +16,7 @@ Once the RTP has made a submission, the RABET-V Administrator will review the su
 
 ### Workflow
 
-#### Review package for completion.
+#### Review package for completion
 
 See [Provider Submission](/Activities/Provider_Submission.md) for
 submission requirements.
