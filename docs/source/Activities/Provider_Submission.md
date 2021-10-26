@@ -28,7 +28,8 @@ This description will be used by the RABET-V Administrator in the Submission Rev
 
 The Product Goals will be published in the [RABET-V Public Portal](../Appendices/RABET-V_Glossary.md).
 
-Initial Submission: Always required
+Initial Submission: Always required 
+
 Revision Submission: When changed from last submission 
 
 #### Expected Usage
@@ -40,6 +41,7 @@ This description will be used by the RABET-V Administrator in the Security Claim
 The Expected Usage will be published in the [RABET-V Public Portal](../Appendices/RABET-V_Glossary.md).
 
 Initial Submission: Always required
+
 Revision Submission: When changed from last submission 
 
 #### Product Security Claims 
@@ -51,6 +53,7 @@ For each requirement, the RTP will describe the implementation approach and whet
 The RTP can update Security Claims during any Revision Submission and should always confirm whether there have been any changes.
 
 Initial Submission: Always required
+
 Revision Submission: When changed from last submission 
 
 #### Process Descriptions
@@ -60,6 +63,7 @@ The Process Descriptions statement is about the RTP's development processes and 
 A lack of detail in the Process Description statement will not exclude the RTP from participating in the program, though it may slow the pace of the review.
 
 Initial Submission: Always required
+
 Revision Submission: When changed from last submission 
 
 > The pilot program will work with the provider to create the necessary descriptions.
@@ -75,6 +79,7 @@ The term *component* is used generically within RABET-V to describe part of a pr
 RABET-V does not dictate a particular notation for submitted diagrams; however, where possible RTP’s should follow provided examples, which are based on UML Component Diagrams.
 
 Initial Submission: Always required
+
 Revision Submission: When changed from last submission 
 
 > A lack of architecture documentation and diagrams will not exclude a pilot participant from the program. The pilot program will work with the provider to create documentation and diagrams which are missing.
@@ -108,6 +113,7 @@ A change to one of these components will be treated a change to the entire compo
 The RTP should detail initial and ongoing vetting procedures for third-party providers and components (if not covered in the Process Descriptions), to include open source software and libraries. Vetting should include fit for the provider as well as security and reliability. Management of third parties includes the approach to policies, SLAs, reputation, maintenance, and past performance of third-party software and services.
 
 Initial Submission: Always required
+
 Revision Submission: When changed from last submission 
 
 > A lack of documented third-party component details will not exclude a participant from the program’s pilot phase. The pilot program will work with the provider to develop the necessary documentation.
@@ -121,6 +127,7 @@ On the initial submission, the RTP should include user documentation and be avai
 For many products, the product environment is the deployment of the web application to a sandbox hosting environment. For products like electronic pollbooks with physical devices, the product environment must include deployments of the product revision on physical devices provided to the administrator.
 
 Initial Submission: Always required
+
 Revision Submission: Always required
 
 #### Revision Submission Artifacts
@@ -140,6 +147,7 @@ All Revision Submissions require the following artifacts:
 A provider may change any of the Initial Submission items during a Revision Submission by providing updated information and alerting the Administrator. If they are not submitting updates for any given artifact, the RTP will have to attest to there being no change.
 
 Initial Submission: Not applicable 
+
 Revision Submission: Always required
 
 ### Submission
