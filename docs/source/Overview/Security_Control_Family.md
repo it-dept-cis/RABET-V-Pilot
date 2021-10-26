@@ -2,7 +2,7 @@
 
 RABET-V defines ten [Security Control Families](../Appendices/RABET-V_Glossary.md) that are used throughout the RABET-V process to help evaluate the products.
 
-1.  **Authentication:** Verifying the identity of a user, process, or device, often as a prerequisite to allowing access to resources in an information system. \[NIST FIPS 200\] (https://csrc.nist.gov/publications/detail/fips/200/final)
+1.  **Authentication:** Verifying the identity of a user, process, or device, often as a prerequisite to allowing access to resources in an information system. \[[NIST FIPS 200\](url)](https://csrc.nist.gov/publications/detail/fips/200/final)
 
 1.  **Authorization:** The right or a permission that is granted to a system entity to access a system resource. \[NIST SP 800-82 Rev. 2\]
 
