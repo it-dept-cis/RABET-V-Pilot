@@ -2,7 +2,7 @@
 
 The RABET-V Process Assessment measures the [Software Development Maturity (SDM)](../Software_Development_Maturity_Index/README.md) of the technology provider. It uses the OWASP Software Assurance Maturity Model (SAMM) as the basis for its evaluation. The SAMM  determines a maturity score for the technology provider in 5 areas across 15 principles. The RABET-V Process Assessment extends the SAMM by including principles for usability and accessibility to create the SDM. These maturity scores are used to help determine the types of testing conducted by RABET-V for product revisions.
 
-In addition to providing the maturity scores, the SAMM evaluation will determine the reliability of RTP-generated artifacts that can be used by RABET-V. By using RTP-generated artifacts, the RABET-V process will not have to reproduce these artifacts (i.e. test results). OWASP maintains a list of SAMM evaluators. Unless not practical, the SAMM evaluation should be performed by one of these evaluators. These evaluators will review documentation and perform interviews with the technology provider in order to complete the evaluation. Evidence of artifacts – such as historical version of reports – will be required.
+In addition to providing the maturity scores, the SDM evaluation will determine the reliability of RTP-generated artifacts that can be used by RABET-V. By using RTP-generated artifacts, the RABET-V process will not have to reproduce these artifacts (i.e. test results). OWASP maintains a list of SAMM evaluators. Unless not practical, the SDM evaluation should be performed by one of these evaluators. These evaluators will review documentation and perform interviews with the technology provider in order to complete the evaluation. Evidence of artifacts – such as historical version of reports – will be required.
 
 The OWASP SAMM project makes a toolkit available. This [toolkit](https://github.com/OWASP/samm/tree/master/Supporting%20Resources/v2.0/toolbox) provides an interview option for evaluating the RTP's processes according to SAMM.
 
@@ -84,11 +84,11 @@ RABET-V strongly encourages RTPs to receive regular, in-depth security audits on
 
 #### Analysis and Reporting
 
-Analysis of the provided documentation (if any) along with the captured session notes will be used to complete a SAMM assessment for the organization. At the conclusion of the analysis, the following artifacts will be delivered as part of the work product for the organization:
+Analysis of the provided documentation (if any) along with the captured session notes will be used to complete a SDM assessment for the organization. At the conclusion of the analysis, the following artifacts will be delivered as part of the work product for the organization:
 
 1.  High level executive summary of the process, findings, SDM maturity score and tailored recommendations
 
-1.  Completed SAMM Toolbox
+1.  Completed SDM Toolbox
 
 1.  Interview session notes
 
