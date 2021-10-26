@@ -28,9 +28,7 @@ This description will be used by the RABET-V Administrator in the Submission Rev
 
 The Product Goals will be published in the [RABET-V Public Portal](../Appendices/RABET-V_Glossary.md).
 
-Initial Submission: Always required 
-
-Revision Submission: When changed from last submission 
+Initial Submission: Always required. Revision Submission: When changed from last submission 
 
 #### Expected Usage
 
