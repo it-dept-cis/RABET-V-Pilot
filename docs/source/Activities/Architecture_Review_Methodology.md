@@ -62,7 +62,7 @@ Once the provider has completed their submission, the architecture review may st
 
 The output of the system architecture analysis is a built-out system level architecture and first round of architecture maturity scoring at the system level. This information is then passed on to the software architecture review.
 
-### 3 Perform threat analysis
+### 3 Perform architecture analysis
 
 The [services](/Appendices/RABET-V_Glossary.md#services) are then further deconstructed into [functions](/Appendices/RABET-V_Glossary.md#functions) and the data required to perform those functions. The data flows/functions may be annotated with sensitivity labels (data-critical, data-sensitive) and  (low, medium, high) which will influence the severity level determination of any identified [threat](/Appendices/RABET-V_Glossary.md#threat).
 
