@@ -111,13 +111,9 @@ Appendices
 Each completed Verification will have a public report that provides basic information on the verification. This information will include:
 
   - A reference number for the review
-
   - The product’s name and version number
-
   - The provider’s name
-
   - The initial Verification Status and date
-
   - The current Verification Status and date
-
   - Contact information for the provider
+  - Summary scores
