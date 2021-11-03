@@ -1,4 +1,4 @@
-## Provider Submission
+## RTP Submission
 
 The RABET-V process begins with a product submission from an RTP.
 
@@ -34,7 +34,7 @@ Revision Submission: When changed from last submission
 
 #### Expected Usage
 
-The Expected Usage statement describes how the provider expects the election office to use the product. While it can communicate this through a number of means, a good approach is through high-level use cases that list the actions and interactions between involved parties and the system to achieve the Product Goals. Usage of the product will be limited to the use cases expressed in the Expected Usage. The RTP can update the Expected Usage during any Revision Submission and should always confirm whether there have been any changes.
+The Expected Usage statement describes how the RTP expects the election office to use the product. While it can communicate this through a number of means, a good approach is through high-level use cases that list the actions and interactions between involved parties and the system to achieve the Product Goals. Usage of the product will be limited to the use cases expressed in the Expected Usage. The RTP can update the Expected Usage during any Revision Submission and should always confirm whether there have been any changes.
 
 This description will be used by the RABET-V Administrator in the Security Claims Review activity to determine if the stated security claims align with the expected usage.
 
