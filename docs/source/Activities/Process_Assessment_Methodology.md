@@ -1,8 +1,8 @@
 ## Process Assessment
 
-The RABET-V Process Assessment measures the [Software Development Maturity (SDM)](../Software_Development_Maturity_Index/README.md) of the technology provider. It uses the OWASP Software Assurance Maturity Model (SAMM) as the basis for its evaluation. The SAMM  determines a maturity score for the technology provider in 5 areas across 15 principles. The RABET-V Process Assessment extends the SAMM by including principles for usability and accessibility to create the SDM. These maturity scores are used to help determine the types of testing conducted by RABET-V for product revisions.
+The RABET-V Process Assessment measures the [Software Development Maturity (SDM)](../Software_Development_Maturity_Index/README.md) of the RTP. It uses the OWASP Software Assurance Maturity Model (SAMM) as the basis for its evaluation. The SAMM  determines a maturity score for the RTP in 5 areas across 15 principles. The RABET-V Process Assessment extends the SAMM by including principles for usability and accessibility to create the SDM. These maturity scores are used to help determine the types of testing conducted by RABET-V for product revisions.
 
-In addition to providing the maturity scores, the SDM evaluation will determine the reliability of RTP-generated artifacts that can be used by RABET-V. By using RTP-generated artifacts, the RABET-V process will not have to reproduce these artifacts (i.e. test results). OWASP maintains a list of SAMM evaluators. Unless not practical, the SDM evaluation should be performed by one of these evaluators. These evaluators will review documentation and perform interviews with the technology provider in order to complete the evaluation. Evidence of artifacts – such as historical version of reports – will be required.
+In addition to providing the maturity scores, the SDM evaluation will determine the reliability of RTP-generated artifacts that can be used by RABET-V. By using RTP-generated artifacts, the RABET-V process will not have to reproduce these artifacts (i.e. test results). OWASP maintains a list of SAMM evaluators. Unless not practical, the SDM evaluation should be performed by one of these evaluators. These evaluators will review documentation and perform interviews with the RTP in order to complete the evaluation. Evidence of artifacts – such as historical version of reports – will be required.
 
 The OWASP SAMM project makes a toolkit available. This [toolkit](https://github.com/OWASP/samm/tree/master/Supporting%20Resources/v2.0/toolbox) provides an interview option for evaluating the RTP's processes according to SAMM.
 
@@ -22,7 +22,7 @@ The OWASP SAMM project makes a toolkit available. This [toolkit](https://github.
 
 #### Review Existing Documentation
 
-The RTP submits existing documentation during the Provider Submission activity. The type of documentation requested includes:
+The RTP submits existing documentation during the RTP Submission activity. The type of documentation requested includes:
 
 1.  Policy and Compliance documents that are related to or help define efforts related to acquiring, managing, designing, developing, testing, and supporting software at the organization.
 
