@@ -48,7 +48,7 @@ A complete cycle through the RABET-V activities with a unique [product revision]
 
 A state or local jurisdiction who has requested access to sensitive RABET-V reporting
 
-### Registered Technology Provider
+### Registered Technology Provider (RTP)
 
 An organization that develops election technology and has met the minimum requirements to become a RABET-V Registered Technology Provider.
 
