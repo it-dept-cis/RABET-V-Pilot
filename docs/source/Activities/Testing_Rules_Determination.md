@@ -92,11 +92,11 @@ This uses the Security Service Architectural Maturity (SSAM) scores from the arc
 
 #### Software Development Considerations
 
-These test conditions are related to the technology providers Software Development Maturity (SDM) scores and artifacts.
+These test conditions are related to the RTP's Software Development Maturity (SDM) scores and artifacts.
 
 ##### Software Assurance Maturity
 
-How mature are the provider’s processes related to software assurance?
+How mature are the RTP’s processes related to software assurance?
 
 This uses the average score of all SAMM principles with 3 ranges. The scores ranges below are just placeholders until more accurate score ranges can be determined.
 
@@ -108,7 +108,7 @@ This uses the average score of all SAMM principles with 3 ranges. The scores ran
 
 ##### 3rd Party Component Maturity
 
-How mature is the technology provider process for vetting 3rd party components?
+How mature is the RTP's process for vetting 3rd party components?
 
 This uses the SAMM streams of Supplier Security and Software Dependencies with 3 ranges. The scores ranges below are just placeholders until more accurate score ranges can be determined.
 
@@ -120,7 +120,7 @@ This uses the SAMM streams of Supplier Security and Software Dependencies with 3
 
 ##### Internal Development and Deployment Maturity
 
-How mature are the technology providers processes for internal development and deployment?
+How mature are the RTP's processes for internal development and deployment?
 
 This uses the SAMM streams of Security Requirements, Build Process, Software Dependencies, Deployment Process, and Secret Management with 3 ranges. The scores ranges below are just placeholders until more accurate score ranges can be determined.
 
@@ -132,7 +132,7 @@ This uses the SAMM streams of Security Requirements, Build Process, Software Dep
 
 ##### Environment Management Maturity
 
-How mature are the technology provider’s processes for environment management (e.g., configuration hardening, patching, and updating)?
+How mature are the RTP’s processes for environment management (e.g., configuration hardening, patching, and updating)?
 
 This uses the SAMM Environment Management score with 3 ranges. The scores ranges below are just placeholders until more accurate score ranges can be determined.
 
