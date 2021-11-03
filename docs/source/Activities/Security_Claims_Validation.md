@@ -2,9 +2,9 @@
 
 This security claims validation activity reviews whether the RTP's statements of security are sufficient for the product’s goals and expected usage. Not all applications pose the same security risks. Even similar products can have different risk profiles based on the type of data they manage and how the product is used. This activity reviews the particulars of the product to ensure the security claims match its specific risk profile. This validation activity determines if the RTP's claims make sense given the product environment and data sensitivity, and if the claims are sufficient for the given context.
 
-Security claims are submitted by RTP's in their submission package. The Initial Provider Submission must include claims for each security requirement. Subsequent Revision Submissions can add, remove, or modify any previous security claim.
+Security claims are submitted by RTP's in their submission package. The Initial RTP Submission must include claims for each security requirement. Subsequent Revision Submissions can add, remove, or modify any previous security claim.
 
-For each requirement, the provider must include:
+For each requirement, the RTP must include:
 
 1.  Whether the requirement is:
 
@@ -22,17 +22,17 @@ For each requirement, the provider must include:
 
 1.  Implementation details
 
-1.  Explanation for why the requirement is only partially met or partially applied to the system. In some cases simple explanations will suffice (e.g., planned for future development, lack of resources). If the provider believes that partial implementation is sufficient, a longer explanation is necessary.
+1.  Explanation for why the requirement is only partially met or partially applied to the system. In some cases simple explanations will suffice (e.g., planned for future development, lack of resources). If the RTP believes that partial implementation is sufficient, a longer explanation is necessary.
 
-The Product Verification activity performs the verification of these claims, based on the Testing Rules created in the Testing Rules Determination activity. The Testing Rules Determination accounts for the security claims made by the provider. For instance, the testing rules will exclude requirements that are Not Applicable.
+The Product Verification activity performs the verification of these claims, based on the Testing Rules created in the Testing Rules Determination activity. The Testing Rules Determination accounts for the security claims made by the RTP For instance, the testing rules will exclude requirements that are Not Applicable.
 
 ### Inputs
 
-  - Product goals (included in provider’s submission package)
+  - Product goals (included in RTP's submission package)
 
-  - Product expected usage (included in provider’s submission package)
+  - Product expected usage (included in RTP’s submission package)
 
-  - Product security claims (included in provider’s submission package)
+  - Product security claims (included in RTP’s submission package)
 
   - Product demonstration or access
 
@@ -48,7 +48,7 @@ The Product Verification activity performs the verification of these claims, bas
 
 #### Review Product Goals, Expected Usage, and Product Functionality
 
-This first step will review the written goals and usage from the provider. This step should be augmented with a product demo or access to the product in a test environment. Reviewers should obtain a good sense of the high-level product functionality and validate the goals and usage consistent with the product functionality. For example, if there are use cases related to product administration, the reviewer should be able to access the administration module and exercise a few use cases.
+This first step will review the written goals and usage from the RTP. This step should be augmented with a product demo or access to the product in a test environment. Reviewers should obtain a good sense of the high-level product functionality and validate the goals and usage consistent with the product functionality. For example, if there are use cases related to product administration, the reviewer should be able to access the administration module and exercise a few use cases.
 
 #### Review Requirements listed as Not Applicable
 
@@ -60,7 +60,7 @@ Once the list of applicable requirements has been determined, the reviewer will 
 
 #### Determine Claim Sufficiency
 
-In this final step, the reviewer will analyze the product’s use cases, the list of applicable requirements, and the provider’s validated claims. If there are sensitive use cases that are not mitigated to a minimally acceptable level, the reviewer may determine that the claims are not sufficient.
+In this final step, the reviewer will analyze the product’s use cases, the list of applicable requirements, and the RTP’s validated claims. If there are sensitive use cases that are not mitigated to a minimally acceptable level, the reviewer may determine that the claims are not sufficient.
 
 > Until more guidance can be developed on what is minimally acceptable, the guidance is that any product which claims to meet all applicable maturity level 1 requirements will pass this step.
 
