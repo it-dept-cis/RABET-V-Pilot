@@ -20,7 +20,7 @@ RABET-V Program
    :caption: Activities
 
    Activities/README
-   Activities/Provider_Submission
+   Activities/RTP_Submission
    Activities/Submission_Review_Process
    Activities/Process_Assessment_Methodology
    Activities/Architecture_Review_Methodology
