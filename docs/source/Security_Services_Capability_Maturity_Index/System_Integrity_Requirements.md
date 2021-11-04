@@ -12,7 +12,6 @@ Install the latest stable version of any security-related updates on all network
 
 Applies to: Hosted components
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 1.3.4
 
@@ -24,7 +23,6 @@ Ensure that all of the organization's key systems are backed up as a complete sy
 
 Applies to: All
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 1.4.2
 
@@ -36,7 +34,6 @@ For systems that support the use of anti-malware software, the product must allo
 
 Applies to: All
 
-Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.3.2
 
@@ -48,7 +45,6 @@ Configure devices to not auto-run executable code from removable media.
 
 Applies to: Vendor supplied hardware
 
-Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.5.3
 
@@ -58,7 +54,6 @@ Cover all unused communication ports (e.g. USB, Thunderbolt, HDMI, etc.) on endp
 
 Applies to: Provider supplied hardware
 
-Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.5.6
 
@@ -72,7 +67,6 @@ Maintain documented, standard security configuration standards for all authorize
 
 Applies to: All
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.1.1
 
@@ -82,7 +76,6 @@ Ensure operating systems are running the latest security updates provided by the
 
 Applies to: Hosted components
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.2.4
 
@@ -94,7 +87,6 @@ Ensure that third-party software on all systems is running the latest security u
 
 Applies to: All
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.2.5
 
@@ -106,7 +98,6 @@ Utilize centrally managed anti-malware software to continuously monitor and defe
 
 Applies to: All
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.3.1
 
@@ -118,7 +109,6 @@ Limit access to scripting tools (such as Microsoft PowerShell and Python) to onl
 
 Applies to: All
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.4.7
 
@@ -130,7 +120,6 @@ Configure devices so that they automatically conduct an anti-malware scan of rem
 
 Applies to: Vendor supplied or controlled hardware
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.5.5
 
@@ -142,7 +131,6 @@ For applications that rely on a database, use standard hardening configuration t
 
 Applies to: All
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 3.2.16
 
@@ -164,7 +152,6 @@ Deploy system configuration management tools that will automatically enforce and
 
 Applies to: All
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.1.5
 
@@ -176,7 +163,6 @@ Enable anti-exploitation features such as Data Execution Prevention (DEP) or Add
 
 Applies to: All
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.3.3
 
@@ -188,7 +174,6 @@ Disable the use of USB devices (including Thunderbolt) on a system. This complet
 
 Applies to: Vendor provided hardware
 
-Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.5.7
 
@@ -200,7 +185,6 @@ Use USB Write Blockers to allow a high integrity system to read the content of a
 
 Applies to: Vendor supplied hardware
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.5.8
 
@@ -216,6 +200,5 @@ Implement default-deny technologies (such as AppLocker) to only permit applicati
 
 Applies to: Vendor provided hardware
 
-Method: Derived
 
 Reference: CIS EIAT 17

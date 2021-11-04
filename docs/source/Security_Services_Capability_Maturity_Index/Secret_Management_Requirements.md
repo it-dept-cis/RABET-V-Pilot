@@ -8,7 +8,6 @@ Never allow credentials to be stored directly within the application code. While
 
 Applies to: All
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.2.1
 
@@ -18,7 +17,6 @@ Modern web applications usually consist of multiple layers. The business logic t
 
 Applies to: All
 
-Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.2.6
 
@@ -28,7 +26,6 @@ If encryption keys are exchanged or preset in your application, any key establis
 
 Applies to: All
 
-Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.7
 
@@ -40,7 +37,6 @@ When keys are generated and stored in your system, the product must use PKCS sta
 
 Applies to: All
 
-Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.4
 
@@ -52,7 +48,6 @@ Use a cryptographic module that meets or exceeds FIPS 140-2 validation, operatin
 
 Applies to: All
 
-Method: Derived
 
 > Reference: NIST Voluntary Voting System Guideline Requirements Version 2.0 (Draft) 13.3-A
 
@@ -64,4 +59,3 @@ Use a Hardware Security Module (HSM) or Key Management Service (KMS) when using 
 
 Applies to: All
 
-Method: New

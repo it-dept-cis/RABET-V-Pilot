@@ -10,7 +10,6 @@ Ensure that logging has been enabled on all systems and networking devices.
 
 Applies to: All
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 5.3.1
 
@@ -22,7 +21,6 @@ The product must provide a mechanism to maintain the storage of logs over a cert
 
 Applies to: All
 
-Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 5.3.2
 
@@ -32,7 +30,6 @@ Log all authentication activities, whether successful or not.
 
 Applies to: All
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.6.4
 
@@ -42,7 +39,6 @@ Log all activities or occasions where the user's privilege level escalates.
 
 Applies to: All
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.6.5
 
@@ -54,7 +50,6 @@ While logging errors and auditing access is important, sensitive data must never
 
 Applies to: Products that handle sensitive data
 
-Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.6.8
 
@@ -64,7 +59,6 @@ Logs must be stored and maintained appropriately to avoid information loss or ta
 
 Applies to: All
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.6.9
 
@@ -78,7 +72,6 @@ Provide a mechanism to alert responsible parties to the occurrence of certain lo
 
 Applies to: All
 
-Method: New
 
 ### Centralize Anti-Malware Logging
 
@@ -88,7 +81,6 @@ The product must allow all malware detection events to be sent to enterprise ant
 
 Applies to: All
 
-Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.3.4
 
@@ -100,7 +92,6 @@ Enable Domain Name System (DNS) query logging to detect hostname lookups for kno
 
 Applies to: All
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.3.5
 
@@ -112,7 +103,6 @@ Enable command-line audit logging for command shells, such as Microsoft Powershe
 
 Applies to: Appliance-based products, or other standard configurations that include a command shell.
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.3.6
 
@@ -124,7 +114,6 @@ Configure systems to issue a log entry and alert when an account is added to or 
 
 Applies to: All
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.4.8
 
@@ -136,7 +125,6 @@ Logs must be aggregated to a central log management system for analysis and revi
 
 Applies to: All
 
-Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 5.3.5
 
@@ -148,7 +136,6 @@ Enable system logging to include detailed information such as an event source, d
 
 Applies to: All
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 5.3.6
 
@@ -160,7 +147,6 @@ Log relevant use activity, at a minimum login times, pages/screens viewed. Take 
 
 Applies to: All
 
-Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.6.10
 
@@ -170,7 +156,6 @@ Log all administrative activities on the application or any of its components.
 
 Applies to: All
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.6.6
 
@@ -180,7 +165,6 @@ Log all access to sensitive data. This is particularly important for corporation
 
 Applies to: All
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.6.7
 
@@ -194,7 +178,6 @@ Configure systems to issue a log entry and alert on unsuccessful logins to an ad
 
 Applies to: All
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 2.4.9
 
@@ -206,7 +189,6 @@ Enforce detailed audit logging for access to sensitive data or changes to sensit
 
 Applies to: All
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.10
 
@@ -218,7 +200,6 @@ Monitor attempts to access deactivated accounts through audit logging.
 
 Applies to: All
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 5.1.12
 
@@ -230,7 +211,6 @@ Alert when users deviate from normal login behavior, such as time-of-day, workst
 
 Applies to: All
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 5.1.13
 
@@ -242,6 +222,5 @@ Support the use of Security Information and Event Management (SIEM) or log analy
 
 Applies to: All
 
-Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 5.3.4
