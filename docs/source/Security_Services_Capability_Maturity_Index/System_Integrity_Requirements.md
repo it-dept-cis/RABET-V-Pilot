@@ -199,6 +199,3 @@ Implement default-deny technologies (such as AppLocker) to only permit applicati
 > An allow-list of acceptable applications should be established by the vendor based on the use-cases of the application.
 
 Applies to: Vendor provided hardware
-
-
-Reference: CIS EIAT 17
