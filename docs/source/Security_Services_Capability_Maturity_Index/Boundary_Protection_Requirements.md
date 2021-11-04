@@ -10,7 +10,6 @@ Deny communications with known malicious or unused Internet IP addresses. Limit 
 
 Applies to: Hosted components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.1.3
 
@@ -22,7 +21,6 @@ Deny communication over unauthorized transportation control protocol (TCP) or us
 
 Applies to: Hosted components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.1.4
 
@@ -34,7 +32,6 @@ Deploy network-based Intrusion Detection Systems (IDS) sensors to look for unusu
 
 Applies to: Hosted components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.1.6
 
@@ -46,7 +43,6 @@ All configuration rules that allow traffic to flow through network devices shoul
 
 Applies to: Hosted components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.3.2
 
@@ -56,7 +52,6 @@ Manage Network Infrastructure Using Multifactor Authentication and encrypted ses
 
 Applies to: Hosted components
 
-Method: Derived
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.3.5
 
@@ -68,7 +63,6 @@ Define strict "TCP keepalive" and "maximum connection" on all perimeter devices,
 
 Applies to: Hosted components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.5.4
 
@@ -80,7 +74,6 @@ Disable wireless access on devices that do not have a business purpose for wirel
 
 Applies to: On-prem components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.6.4
 
@@ -92,7 +85,6 @@ Product documentation clearly defines any required wireless capability associate
 
 Applies to: On-prem components
 
-Method: Derived
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.6.1
 
@@ -104,7 +96,6 @@ Create a separate wireless network for each separate use. Access from the wirele
 
 Applies to: On-prem components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.6.10
 
@@ -115,7 +106,6 @@ Disable wireless peripheral access of devices (such as Bluetooth and NFC), unles
 
 Applies to: On-prem components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.6.9
 
@@ -129,7 +119,6 @@ Enable firewall logging of accepted and denied traffic to determine where a DDoS
 
 Applies to: Hosted components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.5.3
 
@@ -141,7 +130,6 @@ Configure firewalls and intrusion detection/prevention devices to alarm on traff
 
 Applies to: Hosted components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.5.5
 
@@ -153,7 +141,6 @@ Configure wireless access only on client machines that have an essential wireles
 
 Applies to: On-prem components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.6.5
 
@@ -163,7 +150,6 @@ Disable peer-to-peer (ad hoc) wireless network capabilities on wireless clients.
 
 Applies to: On-prem components
 
-Method: Derived
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.6.6
 
@@ -175,7 +161,6 @@ Segment the network based on the label or classification level of the informatio
 
 Applies to: On-prem components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.5
 
@@ -187,7 +172,6 @@ Have upstream network service provider or network appliance apply port and packe
 
 Applies to: Hosted Components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.5.2
 
@@ -201,7 +185,6 @@ Deploy network-based Intrusion Prevention Systems (IPS) to block malicious netwo
 
 Applies to: Hosted components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.1.7
 
@@ -211,7 +194,6 @@ Scan all vendor issued devices remotely logging into the organization's network 
 
 Applies to: Hosted components
 
-Method: Derived
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.1.12
 
@@ -223,7 +205,6 @@ Configure systems not to write data to external removable media, if there is no 
 
 Applies to: On-prem components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.1.7
 
@@ -235,7 +216,6 @@ When not in use, limit workstation-to-workstation communication using technologi
 
 Applies to: On-prem components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.7
 
@@ -247,7 +227,6 @@ Ensure that wireless networks use authentication protocols such as Extensible Au
 
 Applies to: On-prem components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.6.8
 
@@ -259,6 +238,5 @@ By applying an allowlist of known trusted IP addresses this allows organizations
 
 Applies to: Hosted components
 
-Method: Derived
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.1.3
