@@ -18,4 +18,4 @@ The RABET-V Program consists of eight discrete activities from RTP Submission to
 
 1.  Reporting: Produces reports and provides results to stakeholders.
 
-![A flow diagram of the RABET-V Workflow](media/election_verification_proc_model-2020-0115.png)
+![A flow diagram of the RABET-V Workflow](media/RABET-V-Election-Verification-Process-Diagram-v21.11.png)
