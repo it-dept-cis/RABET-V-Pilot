@@ -6,7 +6,7 @@ The RABET-V Program consists of eight discrete activities from RTP Submission to
 
 1.  Submission Review: The submission is reviewed for completeness and to determine which of the remaining activities are necessary for the submission type.
 
-1.  Process Assessment: Assessment of the RTP’s approach to developing software to determine its maturity, which will be used throughout the RABET-V process and subsequent submissions by the RTP. A demonstrably high level of maturity can reduce the burden of review across all activities. One can think of this as assessing the general trustworthiness of an RTP to reliably implement any given product feature or capability.
+1.  Process Assessment: Assessment of the RTP’s approach to developing software to determine its maturity, which will be used throughout the RABET-V process and subsequent submissions by the RTP. A demonstrably high level of maturity can reduce the burden of review across all activities. One can think of this as assessing the general trustworthiness of an RTP to reliably implement any given product feature or capability. **_Note: The Process Assessment score is considered tentative until the Architecture Review is performed as discrepancies between the declared process and the developed product can be exposed._**
 
 1.  Architecture Review: Assessment of the product’s architectural approach to determine its maturity with regard to various security services. A demonstrably high level of maturity can reduce the burden of review for a specific change. One can think of this as assessing the trustworthiness of the product that changes to one product feature or service will not have security implications for other aspects of the product.
 
