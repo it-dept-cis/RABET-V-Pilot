@@ -12,14 +12,13 @@ Once the RTP has made a submission, the RABET-V Administrator will review the su
 
 ### Outputs
 
-  - Submission Review Checklist indicating submission type, change list, and which RABET-V activities should be performed in this iteration
+  - Submission Review Checklist indicating submission type, change type (for a revision submission), and which RABET-V activities should be performed in this iteration
 
 ### Workflow
 
 #### Review package for completion
 
-See [Provider Submission](/Activities/Provider_Submission.md) for
-submission requirements.
+See [Provider Submission](/Activities/Provider_Submission.md) for submission requirements.
 
 ##### Initial submission
 
@@ -31,14 +30,33 @@ Some RABET-V activities may not be required. Complete the remainder of the steps
 
 #### Validate change list
 
-The approach to validating the change list will vary based on the
-findings of the prior Process Review:
+The approach to validating the change list will vary based on the findings of the prior Process Review:
 
 1.  Reliable: change list validation can be skipped or limited to high-level spot checking
 
 1.  Otherwise: validate the change list by manual or automated means
 
 Record the result in the Submission Review Checklist.
+
+#### Determine change type
+
+(For revision submissions only)
+
+Given the validated change list, determine which change types apply to the revision. Change types are listed below:
+
+| Change Type Number | Change Type Description                                            |
+|--------------------|--------------------------------------------------------------------|
+| 1                  | Other major or multiple change(s) to security service component(s) |
+| 2                  | Source code change to security service component(s)                |
+| 3                  | Major configuration change to security service component(s)        |
+| 4                  | Security patch of security service component(s)                    |
+| 5                  | Dependency updates for security service component(s)               |
+| 6                  | Minor configuration change to security service component(s)        |
+| 7                  | Source code change interfacing with security service component(s)  |
+| 8                  | Source code change unrelated to security service component(s)      |
+| 9                  | 3rd party software patch to a non-security service component(s)    |
+| 10                 | Operating system patch                                             |
+| 11                 | Other software or configuration change                             |
 
 #### Determine if Process Assessment activity is necessary
 

@@ -32,7 +32,7 @@ The scores for each Security Control Family in SSAM form one dimension of the ta
 
  Each numeric score is converted to a test method based on a predefined set of thresholds associated with the Change Type. These thresholds determine how high a score must be to receive a certain level of testing. For example, a product with an *Operating system patch* change type and a combined Process + Architecture Score of 2.5 or greater will receive `streamlined` testing. However, a change of *Security patch of security service component(s)* with the same score would receive `Full` testing. The testing matrix is given below:
 
-| Change Type |                                                                    | Process Assessment Score Type | > 5         | 5 - 4.5     | 4.49 - 4.0  | 3.99 - 3.5  | 3.49 - 3.0  | 2.99 - 2.5  | 2.49 - 2.0 | < 2.0 |
+| Type | Change Description                                                 | Process Assessment Score Type | > 5         | 5 - 4.5     | 4.49 - 4.0  | 3.99 - 3.5  | 3.49 - 3.0  | 2.99 - 2.5  | 2.49 - 2.0 | < 2.0 |
 |-------------|--------------------------------------------------------------------|-------------------------------|-------------|-------------|-------------|-------------|-------------|-------------|------------|-------|
 | 1           | Other major or multiple change(s) to security service component(s) | Total                         | Full        | Full        | Full        | Full        | Full        | Full        | Full       | Full  |
 | 2           | Source code change to security service component(s)                | InternalDev                   | Basic       | Full        | Full        | Full        | Full        | Full        | Full       | Full  |
