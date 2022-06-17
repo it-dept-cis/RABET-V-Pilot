@@ -8,7 +8,6 @@ Platform provides an authorization system, such as RBAC, that restricts access t
 
 Applies to: All components
 
-Method: Derived
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.1
 
@@ -18,7 +17,6 @@ If an application becomes compromised, it is important that the application itse
 
 Applies to: Web components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.2.7
 
@@ -28,7 +26,6 @@ Provide the customer with the ability to make all access decisions based on the 
 
 Applies to: All components
 
-Method: Copy
 >
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.4.1
@@ -39,7 +36,6 @@ In order to prevent Cross-Site Request Forgery (CSRF) attacks, you must embed a 
 
 Applies to: Web components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.3.8
 
@@ -57,7 +53,6 @@ Always apply the principle of complete mediation, forcing all requests through a
 
 Applies to: Web components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.4.2
 
@@ -67,7 +62,6 @@ The cookie domain and path scope should be set to the most restrictive settings 
 
 Applies to: Web components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.5.1
 
@@ -79,7 +73,6 @@ Do not allow direct references to files or parameters that can be manipulated to
 
 Applies to: Web components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.4.4
 
@@ -91,6 +84,5 @@ Use an automated tool, such as host-based Data Loss Prevention, to enforce acces
 
 Applies to: Web components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.9

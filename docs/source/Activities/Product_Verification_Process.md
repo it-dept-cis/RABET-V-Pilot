@@ -40,7 +40,7 @@ As indicated in the Test Plan, the RABET-V administrator, or its designee, will 
 
 #### Artifact Review
 
-This method will review an artifact provided by the technology provider. The review will look for gaps or concerns in relevant security controls based on the information provided. Each type of artifact will have various indicators of acceptability. Types of provider artifacts include:
+This method will review an artifact provided by the RTP. The review will look for gaps or concerns in relevant security controls based on the information provided. Each type of artifact will have various indicators of acceptability. Types of RTP artifacts include:
 
   - Automated source code unit test results
 
@@ -125,8 +125,8 @@ Test Method	Description
 - BOM Analysis -	Analysis of the bill of materials, such as software and their versions.
 - Configuration Audit	- Test to verify that the configuration of a component is configured as required.
 - Data Audit -	Test to verify the presence or absence of certain records, such as the inappropriate collecting of PII or the lack of authentication logs, can be combined with Functional Testing to provide a higher level of confidence
-- Artifact Review	- Review of provider-supplied artifacts from their development, testing, integration, and deployment process or artifacts provided by a providers' hosting environment.
-- Documentation Audit - Review of the provider-supplied documentation for presence of required content or presence of poor guidance (i.e. direction to use insecure password).
+- Artifact Review	- Review of RTP-supplied artifacts from their development, testing, integration, and deployment process or artifacts provided by the RTP'S hosting environment.
+- Documentation Audit - Review of the RTP-supplied documentation for presence of required content or presence of poor guidance (i.e. direction to use insecure password).
 - Vendor Attestation - A statement made by the vendor indicating the existence of one or more security controls.
 
 If the sanity or streamlined test calls for documentation, artifact, attestation, etc that doesn't exist, the full test is used. If the full test requires documentation, artifact, attestation, etc and none exist, the full test fails.

@@ -1,5 +1,5 @@
 # Program Description
-*Last updated on 2021-10-26*
+*Last updated on 2021-11-05*
 
 This document is for use through the life of the RABET-V Program. This initial version will also inform the RABET-V Pilot Program which is a trial execution of the Program Description. As such, some sections have additional commentary specific to the pilot. These sections are marked in indented italics like the example below.
 
@@ -11,27 +11,41 @@ Furthermore, these first sections about program construction are specific to the
 
 The RABET-V Pilot Program is guided by a steering committee comprised of election officials, election technology providers, and other election infrastructure stakeholders.
 
-  - Aaron Wilson, Sr. Director of Election Security at The Center for Internet Security (CIS) - Steering Committee Chair
+  - Aaron Wilson, Sr. Director of Election Security, The Center for Internet Security (CIS) - Steering Committee Chair
 
-  - Jerome Lovato, Testing and Certification Director at The Election Assistance Commission (EAC)
+  - David Beirne, Director, Federal Voting Assistance Program (FVAP)
+  
+  - Don Palmer, Commissioner, Election Assistance Commission (EAC)
 
-  - Don Palmer, EAC Commissioner
+  - Jerome Lovato, Director of Testing and Certification at The Election Assistance Commission (EAC)
 
-  - David Beirne, Federal Voting Assistance Program (FVAP)
+  - Nikki Charlson, Deputy Administrator, Maryland State Board of Elections
 
-  - Nikki Charlson, Maryland State Board of Elections
+  - Spencer Wood, Chief Information Officer, Office of the Ohio Secretary of State
 
-  - Spencer Wood, Ohio Secretary of State’s Office
+  - Richard Rydecki, Deputy Administrator, Wisconsin Elections Commission
 
-  - Richard Rydecki, Wisconsin Elections Commission Staff
+  - Christina Adkins, Legal Director, Elections Division, Office of the Texas Secretary of State
 
-  - Christina Adkins, Texas Secretary of State’s Office
+  - Jessica Myers, Director of Policy, Office of the Secretary, Pennsylvania Department of State
 
-  - Jessica Myers, Pennsylvania Secretary of State’s Office
+  - Mike Moser, Director, Bureau of Security and Technology, Pennsylvania Department of State
 
-  - Mike Moser, Pennsylvania Secretary of State’s Office
+  - Dr. Jay Bagga, Co-Director, Voting System Technical Oversight Program (VSTOP), Indiana State University 
 
-  - Voting System Technical Oversight Program (VSTOP), Indiana Secretary of State
+  - Dr. Bryan Byers, Co-Director, VSTOP, Indiana State University 
+
+  - Molly Timperman, Project Specialist, VSTOP, Indiana State University 
+  
+  - Manikantesh Kilaru, IT Specialist, VSTOP, Indiana State University
+
+  - Jordan Jarnigan, Certification Specialist, VSTOP, Indiana State University
+
+  - Geoff Hale, Lead, Election Security Initiative, Cybersecurity and Infrastructure Security Agency (CISA), U.S. Department of Homeland Security
+
+  - Ryan Macias, Election Security Consultant, CISA
+
+  - Amy Cohen, Executive Director, National Association of State Election Directors (NASED)
 
 ## Pilot Participants
 
@@ -47,25 +61,25 @@ products used in the RABET-V Pilot:
 
 The RABET-V Technology Advisory Committee is a growing group of experts in relevant subject matter that are volunteering their time to assist in the refinement of the RABET-V process.
 
-  - Jono Spring, SEI CERT Division
+  - Jonathan Spring, Senior Member of the Technical Staff, CERT/CC, Software Engineering 	Institute, Carnegie Mellon University
 
-  - Lauren Cooper, SEI CERT Division
+  - Lauren A. Cooper, Cybersecurity Engineer, Software Engineering Institute, Carnegie Mellon University
 
-  - Brian Glas, OWASP SAMM
+  - Brian Glas, Open Web Application Security Project (OWASP), Software Assurance Maturity Model (SAMM)
 
   - Beau Woods, Atlantic Council
 
-  - Mary M Shaw, Carnegie Melon
+  - Mary M Shaw, Carnegie Melon University 
 
-  - David Garlan, Carnegie Melon
+  - David Garlan, Carnegie Melon University
 
-  - Ryan Wagner, Carnegie Melon
+  - Ryan Wagner, Carnegie Melon University
 
-  - Joshua Bloch, Carnegie Melon
+  - Joshua Bloch, Carnegie Melon University 
 
-  - Daniel Plakosh, SEI
+  - Daniel Plakosh, Carnegia Melon University 
 
-  - Gema Howell, NIST
+  - Gema Howell, National Institute of Science and Technology (NIST)
 
   - Mary Brady, NIST
 
@@ -75,7 +89,7 @@ The RABET-V Technology Advisory Committee is a growing group of experts in relev
 
   - Peter A. Bloniarz, New York State Cyber Security Advisory Board
 
-  - Rob Gordon
+  - Rob Gordon, Principal Technical Constultant Akamai
 
 ## Program Administration and Research
 

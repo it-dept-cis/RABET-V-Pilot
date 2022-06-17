@@ -9,7 +9,6 @@ Ensure that all system data is automatically backed up on a regular basis.
 
 Applies to: Hosted components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.4.1
 
@@ -27,7 +26,6 @@ Verify backup data is restorable by performing a data restoration.
 
 Applies to: Hosted components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.4.3
 
@@ -41,6 +39,5 @@ Obtain third-party DDoS mitigation services.
 
 Applies to: Hosted components
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 1.5.6

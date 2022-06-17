@@ -8,7 +8,7 @@ The Architecture Review activity is supplied with architecture diagrams, archite
 
 > Code may be requested in the pilot in order to determine if it significantly improves the reliability of the architecture review.
 
-For more information about what is expected for the architecture diagrams and description, see the [Provider Submission](/Activities/Provider_Submission.md) activity.
+For more information about what is expected for the architecture diagrams and description, see the [RTP Submission](/Activities/RTP_Submission.md) activity.
 
 The Architecture Review will identify the product components at the system and software levels that expose functionality, and the security services that *protect* those functions.
 
@@ -18,9 +18,9 @@ This activity will also complete the system and software architectural viewpoint
 
 ## Inputs
 
-### Provider Submission
+### RTP Submission
 
-The Technology Provider will supply architecture diagrams, architecture descriptions, software source code, and access to a functioning version of the solution. The architecture review will use the source code and functioning solution to validate or fill-in missing pieces from the architecture diagrams and descriptions. For more information about what is expected for the architecture diagrams and description, see the [Provider Submission](/Activities/Provider_Submission.md) activity.
+The RTP will supply architecture diagrams, architecture descriptions, software source code, and access to a functioning version of the solution. The architecture review will use the source code and functioning solution to validate or fill-in missing pieces from the architecture diagrams and descriptions. For more information about what is expected for the architecture diagrams and description, see the [RTP Submission](/Activities/RTP_Submission.md) activity.
 
 ### Required Security Control Families
 

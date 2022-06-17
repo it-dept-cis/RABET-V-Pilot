@@ -12,7 +12,6 @@ To protect against cross-site scripting (XSS) and man-in-the-middle (MITM) attac
 
 Applies to: Web components
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.3.2
 
@@ -22,7 +21,6 @@ When accepting file uploads from the user, make sure to validate the size of the
 
 Applies to: Components that accept file input
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.3.6
 
@@ -32,7 +30,6 @@ For every page in your application, set the encoding using HTTP headers or meta 
 
 Applies to: Web components
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.3.7
 
@@ -42,7 +39,6 @@ For input that will be interpreted, allowlist acceptable inputs. Only inputs tha
 
 Applies to: Interpreted inputs (including SQL)
 
-Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.3.10
 
@@ -54,7 +50,6 @@ For each user input field, there should be validation on the input content.
 
 Applies to: All
 
-Method: Derived
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.3.10
 
@@ -66,7 +61,6 @@ Input to an interpreter (e.g. an SQL Engine) should be passed using parameterize
 
 Applies to: Interpreted inputs
 
-Method: Derived
 
 Satisfies: Prefer Whitelists Over Blacklists for Input Validation
 
@@ -80,7 +74,6 @@ Use the X-Frame-Options header to prevent content from being loaded by a foreign
 
 Applies to: Web components
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.3.1
 
@@ -90,7 +83,6 @@ When hosting user uploaded content that can be viewed by other users, use the X-
 
 Applies to: Web components
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.3.3
 
@@ -100,7 +92,6 @@ The HTTP method used to make a request must be validated. For example, if input 
 
 Applies to: Web components
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.3.4
 
@@ -110,7 +101,6 @@ All output functions must contextually encode data before sending it to the user
 
 Applies to: Web components
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology A1.3.5
 
@@ -122,6 +112,5 @@ Protect web applications by deploying WAFs that inspect all traffic flowing to t
 
 Applies to: All
 
-Method: Copy
 
 > Reference: CIS Security Best Practices for Non-Voting Election Technology 3.2.14

@@ -18,7 +18,9 @@ Once the RTP has made a submission, the RABET-V Administrator will review the su
 
 #### Review package for completion
 
+
 See [Provider Submission](/Activities/Provider_Submission.md) for submission requirements.
+
 
 ##### Initial submission
 
@@ -64,11 +66,11 @@ The Process Assessment is required when one of the following conditions is true:
 
 1.  The submission is an Initial Submission
 
-1.  The provider has requested a new Process Assessment in order to generate a new set of Testing Rules or update Software Development Maturity (SDM) scores
+1.  The RTP has requested a new Process Assessment in order to generate a new set of Testing Rules or update Software Development Maturity (SDM) scores
 
 1.  It has been more than 18 months since the last Process Assessment was performed
 
-1.  Artifacts provided by provider indicate a significant process change has occurred within provider
+1.  Artifacts provided by the RTP indicate a significant process change has occurred.
 
 Record the result in the Submission Review Checklist.
 
@@ -78,7 +80,7 @@ The Architecture Review is required when one of the following conditions is true
 
 1.  The submission is an Initial Submission
 
-1.  The provider has requested a new Architecture Review in order to generate a new set of Testing Rules or update Security Services Architectural Maturity (SSAM) scores
+1.  The RTP has requested a new Architecture Review in order to generate a new set of Testing Rules or update Security Services Architectural Maturity (SSAM) scores
 
 1.  The change list indicates the addition, removal, or modification of major architectural components since the last Architecture Review
 
@@ -90,9 +92,9 @@ The Security Claims Validation activity is required when one of the following co
 
 1.  The submission is an Initial Submission
 
-1.  The provider has updated the product goals, expected usage, or security claims.
+1.  The RTP has updated the product goals, expected usage, or security claims.
 
-1.  The provider has requested a new Security Claims Validation in order to generate a new set of Testing Rules or update Security Services Capability Maturity (SSCM) scores
+1.  The RTP has requested a new Security Claims Validation in order to generate a new set of Testing Rules or update Security Services Capability Maturity (SSCM) scores
 
 4.  The change list indicates that prior Security Claims Validation findings need to be reviewed
 

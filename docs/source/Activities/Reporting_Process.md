@@ -8,7 +8,7 @@
 
   - Decision (see Decision Types)
 
-  - RABET-V Product Provider Report
+  - RABET-V Product Report
 
   - RABET-V Product Public Report
 
@@ -28,17 +28,17 @@ A Verified status means that the product is likely to perform as described in it
 
 A Conditional Verified status means that while the product is likely to perform as described in its Product Goals and Security Claims in the Expected Usage operating environment, the RABET-V process identified at least one non-critical issue or deviation.
 
-With a Conditional Verification, the provider is expected to remediate the issue and submit for a re-verification. If no other changes are made to the product, the process for re-verifying is considered part of the same submission and, upon review, can result in the Verification Status being changed to Verified.
+With a Conditional Verification, the RTP is expected to remediate the issue and submit for a re-verification. If no other changes are made to the product, the process for re-verifying is considered part of the same submission and, upon review, can result in the Verification Status being changed to Verified.
 
-Issues and deviations are detailed in the Product Provider Report.
+Issues and deviations are detailed in the Product Report.
 
 ##### Returned
 
 A Returned status means that the product does not perform as described in in its Product Goals and Security Claims. It has critical issues or deviations that are unlikely to be addressed through minor fixes. The RABET-V process identified at least one critical issue or deviation, severe enough that additional review will require a new submission.
 
-Issues and deviations are detailed in the Product Provider Report.
+Issues and deviations are detailed in the Product Report.
 
-#### Product Provider Report Generation
+#### Product Report Generation
 
 ##### Report Template
 
@@ -76,7 +76,7 @@ Product Security Architecture Maturity: the quality and reliability of the produ
 
   - Data confidentiality and integrity protection
 
-Software Development Maturity: the quality of the provider’s processes in each of these areas:
+Software Development Maturity: the quality of the RTP's processes in each of these areas:
 
   - Governance
 
@@ -104,7 +104,7 @@ Maturity Trends
 
 Appendices
 
-  - Requirements Scores: a list of all individual requirements and whether the provider is meeting them
+  - Requirements Scores: a list of all individual requirements and whether the RTP is meeting them
 
 #### Product Public Report Generation
 
@@ -112,8 +112,8 @@ Each completed Verification will have a public report that provides basic inform
 
   - A reference number for the review
   - The product’s name and version number
-  - The provider’s name
+  - The RTP’s name
   - The initial Verification Status and date
   - The current Verification Status and date
-  - Contact information for the provider
+  - Contact information for the RTP
   - Summary scores

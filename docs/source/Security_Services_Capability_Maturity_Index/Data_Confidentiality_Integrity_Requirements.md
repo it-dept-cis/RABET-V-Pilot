@@ -10,7 +10,6 @@ Leverage the Advanced Encryption Standard (AES) to encrypt wireless data in tran
 
 Applies to: On-premise
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 1.6.7
 
@@ -22,7 +21,6 @@ Use only standardized and extensively reviewed encryption algorithms that are va
 
 Applies to: All components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 3.2.15
 
@@ -32,7 +30,6 @@ HTTPS certificates should be signed by a reputable certificate authority (CA). T
 
 Applies to: Web Components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.2
 
@@ -44,7 +41,6 @@ Follow guidance from CIS Foundations Benchmarks or other secure configuration gu
 
 Applies to: Hosted component
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.3.1
 
@@ -56,7 +52,6 @@ Ensure that all account usernames and authentication credentials are transmitted
 
 Applies to: All components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 5.1.5
 
@@ -66,7 +61,6 @@ Product ensures that sensitive data is not being unnecessarily transported or st
 
 Applies to: All components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.1
 
@@ -76,7 +70,6 @@ The Strict-Transport-Security header ensures that the browser does not talk to t
 
 Applies to: Web components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.10
 
@@ -86,7 +79,6 @@ Browser data caching should be disabled using the cache control HTTP headers or 
 
 Applies to: Web components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.3
 
@@ -96,7 +88,6 @@ Weak ciphers must be disabled on all servers. For example, SSL v2, SSL v3, and T
 
 Applies to: Web components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.5
 
@@ -106,7 +97,6 @@ TLS should be used whenever data is transferred over a network. TLS must be appl
 
 Applies to: Web components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.6
 
@@ -116,7 +106,6 @@ For all pages requiring protection by TLS, the same URL should not be accessible
 
 Applies to: Web components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.9
 
@@ -126,7 +115,6 @@ Messages for authentication errors must be clear and, at the same time, must be 
 
 Applies to: All components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.2.5
 
@@ -136,7 +124,6 @@ Error messages should not reveal details about the internal state of the applica
 
 Applies to: All components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.6.1
 
@@ -146,7 +133,6 @@ User passwords must be stored using secure hashing techniques with strong algori
 
 Applies to: All components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.1.8
 
@@ -160,7 +146,6 @@ Utilize approved whole disk encryption software to encrypt the hard drive of all
 
 Applies to: On-prem components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.1.5
 
@@ -170,7 +155,6 @@ If USB storage devices are required, all data stored on such devices must be enc
 
 Applies to: On-prem components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.1.8
 
@@ -182,7 +166,6 @@ Encrypt all sensitive information in transit.
 
 Applies to: All components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.3
 
@@ -194,8 +177,6 @@ Encrypt all sensitive information at rest.
 
 Applies to: All components
 
-Method: Copy
-
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.4
 
 ### Use Separate Storage Containers for Unique Data Classifications
@@ -206,7 +187,6 @@ Don't overload one container with data at various classification levels. Create 
 
 Applies to: Hosted components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.3.4
 
@@ -218,7 +198,6 @@ Remove sensitive data or systems not regularly accessed by the organization from
 
 Applies to: All components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.1.2
 
@@ -228,7 +207,6 @@ An unvalidated forward can allow an attacker to access private content without a
 
 Applies to: Web Components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology A1.4.3
 
@@ -258,7 +236,6 @@ Sensitive data should be digitally signed by its originator and verified by all 
 
 Applies to: All components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.2.2
 
@@ -270,6 +247,5 @@ Use application encryption with secret keys only known to the data owner(s) to p
 
 Applies to: Hosted components
 
-Method: Copy
 
 >Reference: CIS Security Best Practices for Non-Voting Election Technology 4.3.2
