@@ -1,6 +1,6 @@
 ## Product Verification Activity
 
-The purpose of the product verification activity is to finalize the Security Services Capability Maturity (SSCM) scores for this product revision. For some product changes, this activity will be streamlined because the changes were determined to pose a low risk to the current security capability scores. For other changes, this activity will be extensive in order to determine, or redetermine, the proper maturity scores. The risk is determined in the Testing Rules which produces a Test Plan commensurate with the risk.
+The purpose of the product verification activity is to establish the Security Services Capability Maturity (SSCM) scores for this product revision. For some product changes, this activity will be streamlined because the changes were determined to pose a low risk to the current security capability scores. For other changes, this activity will be extensive in order to determine, or redetermine, the proper maturity scores. The risk is determined in the Testing Rules which produces a Test Plan commensurate with the risk.
 
 ### Inputs
 
@@ -20,9 +20,9 @@ The purpose of the product verification activity is to finalize the Security Ser
 
 The Test Plan for the Product Verification activity is generated from the product’s Testing Rules. The Testing Rules are built in the Testing Rules Determination activity and may be recently created or be existing rules from prior RABET-V iterations.
 
-The Testing Rules are a decision tree where each change is processed by the tree and the end result is a verification method(s) to use. This must be done for all changes and the Test Plan is the aggregation of all verification methods.
+The Testing Rules are a decision table where each change is processed by the table and the end result is a verification method(s) to use. This must be done for all changes and the Test Plan is the aggregation of all verification methods.
 
-For initial submissions, a full system test is performed. A full system test is will review automated test results, perform a system wide functional test and penetration test.
+For initial submissions, a full system test is performed. A full system test will review automated test results, perform a system wide functional test and penetration test.
 
 #### Execute Test Plan for Security Requirements
 
