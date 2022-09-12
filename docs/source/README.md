@@ -1,95 +1,9 @@
 # Program Description
-*Last updated on 2021-11-05*
+*Last updated on 2022-9-12*
 
 This document is for use through the life of the RABET-V Program. This initial version will also inform the RABET-V Pilot Program which is a trial execution of the Program Description. As such, some sections have additional commentary specific to the pilot. These sections are marked in indented italics like the example below.
 
 > Example Pilot comments
-
-Furthermore, these first sections about program construction are specific to the pilot and will only be part of the versions used during the pilot phase.
-
-## Steering Committee
-
-The RABET-V Pilot Program is guided by a steering committee comprised of election officials, election technology providers, and other election infrastructure stakeholders.
-
-  - Aaron Wilson, Sr. Director of Election Security, The Center for Internet Security (CIS) - Steering Committee Chair
-
-  - David Beirne, Director, Federal Voting Assistance Program (FVAP)
-  
-  - Don Palmer, Commissioner, Election Assistance Commission (EAC)
-
-  - Jerome Lovato, Director of Testing and Certification at The Election Assistance Commission (EAC)
-
-  - Nikki Charlson, Deputy Administrator, Maryland State Board of Elections
-
-  - Spencer Wood, Chief Information Officer, Office of the Ohio Secretary of State
-
-  - Richard Rydecki, Deputy Administrator, Wisconsin Elections Commission
-
-  - Christina Adkins, Legal Director, Elections Division, Office of the Texas Secretary of State
-
-  - Jessica Myers, Director of Policy, Office of the Secretary, Pennsylvania Department of State
-
-  - Mike Moser, Director, Bureau of Security and Technology, Pennsylvania Department of State
-
-  - Dr. Jay Bagga, Co-Director, Voting System Technical Oversight Program (VSTOP), Indiana State University 
-
-  - Dr. Bryan Byers, Co-Director, VSTOP, Indiana State University 
-
-  - Molly Timperman, Project Specialist, VSTOP, Indiana State University 
-  
-  - Manikantesh Kilaru, IT Specialist, VSTOP, Indiana State University
-
-  - Jordan Jarnigan, Certification Specialist, VSTOP, Indiana State University
-
-  - Geoff Hale, Lead, Election Security Initiative, Cybersecurity and Infrastructure Security Agency (CISA), U.S. Department of Homeland Security
-
-  - Ryan Macias, Election Security Consultant, CISA
-
-  - Amy Cohen, Executive Director, National Association of State Election Directors (NASED)
-
-## Pilot Participants
-
-The following technology providers have volunteered to have their
-products used in the RABET-V Pilot:
-
-  - VR Systems - Electronic Pollbooks and Election Night Reporting
-
-  - KNOWink - Electronic Pollbook
-
-
-## Technology Advisory Committee
-
-The RABET-V Technology Advisory Committee is a growing group of experts in relevant subject matter that are volunteering their time to assist in the refinement of the RABET-V process.
-
-  - Jonathan Spring, Senior Member of the Technical Staff, CERT/CC, Software Engineering 	Institute, Carnegie Mellon University
-
-  - Lauren A. Cooper, Cybersecurity Engineer, Software Engineering Institute, Carnegie Mellon University
-
-  - Brian Glas, Open Web Application Security Project (OWASP), Software Assurance Maturity Model (SAMM)
-
-  - Beau Woods, Atlantic Council
-
-  - Mary M Shaw, Carnegie Melon University 
-
-  - David Garlan, Carnegie Melon University
-
-  - Ryan Wagner, Carnegie Melon University
-
-  - Joshua Bloch, Carnegie Melon University 
-
-  - Daniel Plakosh, Carnegia Melon University 
-
-  - Gema Howell, National Institute of Science and Technology (NIST)
-
-  - Mary Brady, NIST
-
-  - Gordon Gillerman, NIST
-
-  - Lisa Carnahan, NIST
-
-  - Peter A. Bloniarz, New York State Cyber Security Advisory Board
-
-  - Rob Gordon, Principal Technical Constultant Akamai
 
 ## Program Administration and Research
 
@@ -97,7 +11,7 @@ The program will be administered by CIS team with assistance from [The Turnout](
 
 ## Pilot Process
 
-The RABET-V Pilot will first establish a RABET-V Program Description (this document), though it will continue to evolve over time as the program matures. The Program Description version will detail how each activity will be conducted. The Program Description will be iteratively reviewed by the program Steering Committee and modified, as necessary.
+The RABET-V Pilot will first establish a RABET-V Program Description (this document), though it will continue to evolve over time as the program matures. The Program Description version will detail how each activity will be conducted. The Program Description will be iteratively reviewed and modified as necessary.
 
 Using the Program Description, the Pilot Program will conduct initial reviews on real products from Pilot Program technology providers. The Pilot Program will work with pilot participants to develop their submission package and security claims.
 
@@ -105,7 +19,6 @@ Each initial review will execute all RABET-V activities resulting in the creatio
 
 The Pilot will then conduct multiple iterations of RABET-V on product revisions from the participants. Depending on the changes, RABET-V will adapt and conduct only the activities required. This exercise will highlight the effectiveness of RABET-V to create meaningful but streamlined verifications and help determine the effectiveness of the product architecture and process reviews. It will also provide useful time and cost information. After each RABET-V iteration, changes may be made to the testing process and the iteration repeated as necessary.
 
-> Due to time and budget constraints caused by COVID-19, the first pilot did not conduct iteration testing.
 
 ## Pilot Research Questions
 
