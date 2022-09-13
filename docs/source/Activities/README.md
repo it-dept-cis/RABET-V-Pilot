@@ -14,7 +14,7 @@ Throughout the process, certain activities produce scores that are shared with t
 
 1.  Security Claims Validation: Assessment of whether the RTP’s stated security approach are appropriate given the goals and expected use of the product. This assessment results in a set of security requirements that will used in producing the Testing Rules.
 
-1.  Testing Rules Determination: Produces a decision tree for testing based on the outputs from the prior activities.
+1.  Testing Rules Determination: Produces a first-hit, crosstab decision table based on the outputs from the prior activities.
 
 1.  Product Verification: Executes the test plan.
 
