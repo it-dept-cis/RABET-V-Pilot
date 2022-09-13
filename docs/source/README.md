@@ -184,11 +184,11 @@ Failure to meet the requirements of the Program Commitment can lead to deregistr
 
 ### Deregistration Process
 
-TBD
+The RTP will be notified of the reason for deregistration and given 90 days to remedy, with a reminder sent at 60 and 30 days. If the breach of Program Commitment has not been remedied within 90 days, the RTP will be deregistered. 
 
 ### Delisting Process
 
-TBD
+If a product has not been resubmitted to the RABET-V Program in the last three years, the RTP will be notified that the product may be delisted if it is not resubmitted within 90 days. Reminders will be sent to the RTP at 60 and 30 days. 
 
 ## Subscribers
 
