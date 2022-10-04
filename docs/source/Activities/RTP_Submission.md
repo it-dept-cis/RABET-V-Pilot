@@ -68,7 +68,7 @@ Revision Submission: When changed from last submission
 
 > The pilot program will work with the provider to create the necessary descriptions.
 
-#### Architecture Documentation and Diagrams
+#### Architecture Documentation, Diagrams, and Related Representations
 
 The Architecture Documentation and Diagrams is a set of documents that fully describe the architectural design of the product. The product’s architecture can be described using diagrams, narrative, or, ideally, a combination of the two.
 
@@ -78,9 +78,11 @@ The term *component* is used generically within RABET-V to describe part of a pr
 
 RABET-V does not dictate a particular notation for submitted diagrams; however, where possible RTP’s should follow provided examples, which are based on UML Component Diagrams.
 
+RABET-V uses automated analysis tools to evaluate software architecture without direct access to source code. RTPs will be required to process their source code through such tools in order to make further software level analysis possible.
+
 Initial Submission: Always required
 
-Revision Submission: When changed from last submission 
+Revision Submission: When changed from last submission
 
 > A lack of architecture documentation and diagrams will not exclude a pilot participant from the program. The pilot program will work with the provider to create documentation and diagrams which are missing.
 
@@ -111,6 +113,8 @@ When considering parts of the overall solution that are not developed internally
 A change to one of these components will be treated a change to the entire component and the version number and change list will describe the entire component.
 
 The RTP should detail initial and ongoing vetting procedures for third-party providers and components (if not covered in the Process Descriptions), to include open source software and libraries. Vetting should include fit for the provider as well as security and reliability. Management of third parties includes the approach to policies, SLAs, reputation, maintenance, and past performance of third-party software and services.
+
+3rd Party Libraries will be processed through automated software bill of material (SBOM) tools. RTPs are required to facilitate the ingestion of software libraries through designated tooling.
 
 Initial Submission: Always required
 

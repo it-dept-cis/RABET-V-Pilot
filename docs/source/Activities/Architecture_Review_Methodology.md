@@ -6,7 +6,7 @@ The Architectural Maturity scores and component mappings are used to help assess
 
 The Architecture Review activity is supplied with architecture diagrams, architecture descriptions, and interview sessions to confirm the architectural details and threat model of the product.
 
-For more information about what is expected for the architecture diagrams and description, see the [Provider Submission](/Activities/Provider_Submission.md) activity.
+For more information about what is expected for the architecture diagrams and description, see the [Provider Submission](/Activities/RTP_Submission.md) activity.
 
 The Architecture Review will identify the product components at the system and software levels that expose functionality, and the security services that *protect* those functions.
 
@@ -16,7 +16,7 @@ This activity will also complete the system and software architectural viewpoint
 
 ### RTP Submission
 
-The Technology Provider will supply architecture diagrams, architecture descriptions, and access to a functioning version of the solution. The Technology Provider process their source code through designated SBOM and software architecture analysis tools (currently [Mend](https://www.mend.io/) and [Lattix](https://www.lattix.com/)). The architecture review will use the architecture tools and functioning solution to validate or fill-in missing pieces from the architecture diagrams and descriptions. For more information about what is expected for the architecture diagrams and description, see the [Provider Submission](/Activities/Provider_Submission.md) activity.
+The Technology Provider will supply architecture diagrams, architecture descriptions, and access to a functioning version of the solution. The Technology Provider process their source code through designated SBOM and software architecture analysis tools (currently [Mend](https://www.mend.io/) and [Lattix](https://www.lattix.com/)). The architecture review will use the architecture tools and functioning solution to validate or fill-in missing pieces from the architecture diagrams and descriptions. For more information about what is expected for the architecture diagrams and description, see the [Provider Submission](/Activities/RTP_Submission.md) activity.
 
 ### Required Security Control Families
 
