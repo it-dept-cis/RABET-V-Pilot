@@ -1,30 +1,32 @@
+-i https://pypi.org/simple
 alabaster==0.7.12
-Babel==2.9.1
-certifi==2021.10.8
-chardet==4.0.0
-charset-normalizer==2.0.7
-commonmark==0.9.1
-docutils==0.17.1
-idna==3.3
-imagesize==1.2.0
-Jinja2==3.0.2
-Markdown==3.3.4
-MarkupSafe==2.0.1
-packaging==21.0
+babel==2.10.3; python_version >= '3.6'
+certifi==2022.9.24; python_version >= '3.6'
+charset-normalizer==2.1.1; python_version >= '3.6'
+docutils==0.17.1; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
+idna==3.4; python_version >= '3.5'
+imagesize==1.4.1; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
+jinja2==3.1.2; python_version >= '3.7'
+markdown-it-py==2.1.0; python_version >= '3.7'
+markupsafe==2.1.1; python_version >= '3.7'
+mdit-py-plugins==0.3.1; python_version >= '3.7'
+mdurl==0.1.2; python_version >= '3.7'
+myst-parser==0.18.1
+packaging==21.3; python_version >= '3.6'
 pandocfilters==1.5.0
-Pygments==2.10.0
-pyparsing==3.0.1
-pytz==2021.3
-recommonmark==0.7.1
-requests==2.26.0
-snowballstemmer==2.1.0
-Sphinx==4.2.0
-sphinx-markdown-tables==0.0.15
+pygments==2.13.0; python_version >= '3.6'
+pyparsing==3.0.9; python_full_version >= '3.6.8'
+pytz==2022.4
+pyyaml==6.0; python_version >= '3.6'
+requests==2.28.1; python_version >= '3.7' and python_version < '4'
+snowballstemmer==2.2.0
+sphinx==5.2.3
 sphinx-rtd-theme==1.0.0
-sphinxcontrib-applehelp==1.0.2
-sphinxcontrib-devhelp==1.0.2
-sphinxcontrib-htmlhelp==2.0.0
-sphinxcontrib-jsmath==1.0.1
-sphinxcontrib-qthelp==1.0.3
-sphinxcontrib-serializinghtml==1.1.5
-urllib3==1.26.7
+sphinxcontrib-applehelp==1.0.2; python_version >= '3.5'
+sphinxcontrib-devhelp==1.0.2; python_version >= '3.5'
+sphinxcontrib-htmlhelp==2.0.0; python_version >= '3.6'
+sphinxcontrib-jsmath==1.0.1; python_version >= '3.5'
+sphinxcontrib-qthelp==1.0.3; python_version >= '3.5'
+sphinxcontrib-serializinghtml==1.1.5; python_version >= '3.5'
+typing-extensions==4.4.0; python_version >= '3.7'
+urllib3==1.26.12; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5' and python_version < '4'

@@ -45,9 +45,10 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
+    'myst_parser',
     #'sphinx.ext.imgconverter',
-    'recommonmark',
-    'sphinx_markdown_tables',
+    #'recommonmark',
+    #'sphinx_markdown_tables',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -88,7 +89,7 @@ release = '0.1.0'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'en'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -265,6 +266,13 @@ html_extra_path = ['media']
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'RABETVdoc'
+
+# -- Options for MyST ----------------------------------------
+
+myst_enable_extensions = [
+    'colon_fence',
+]
+myst_heading_anchors = 4
 
 # -- Options for LaTeX output ---------------------------------------------
 
