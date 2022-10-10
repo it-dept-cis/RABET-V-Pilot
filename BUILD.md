@@ -28,7 +28,7 @@ First, install the required libraries, change directory to `docs`, and then buil
 pipenv install
 pipenv shell
 cd docs
-sphinx-build -b html . build
+sphinx-build -b html source build
 ```
 
 To view the html files, run a simple http server with python inside the build directory:
@@ -44,7 +44,7 @@ To build the documentation into a single file in Word `.docx` format, execute th
 
 ```sh
 pipenv shell
-sphinx-build -b singlehtml . build
+sphinx-build -b singlehtml source build
 cd build
 /path/to/pandoc --filter=../../svg_filter.py -o rabet-v.docx --reference-doc ../../../resources/RABET-V\ Program\ Description\ 0.1\ Committee\ Review.docx index.html
 ```
