@@ -1,5 +1,4 @@
 # Program Description
-*Last updated on 2022-9-12*
 
 This document is for use through the life of the RABET-V Program. This initial version will also inform the RABET-V Pilot Program which is a trial execution of the Program Description. As such, some sections have additional commentary specific to the pilot. These sections are marked in indented italics like the example below.
 

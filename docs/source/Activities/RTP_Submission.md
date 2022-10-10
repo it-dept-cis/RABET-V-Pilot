@@ -1,16 +1,16 @@
-## RTP Submission
+# RTP Submission
 
 The RABET-V process begins with a product submission from an RTP.
 
-### Submission Types
+## Submission Types
 
 All product submissions are either an Initial Submission or a Revision Submission.
 
-#### Initial Submission
+### Initial Submission
 
 The Initial Submission is a first-time submission of product information. It includes statements about the product and the RTP that will be used throughout the RABET-V process. An Initial Submission is required for each unique product an RTP would market and sell independently to an election jurisdiction.
 
-#### Revision Submission
+### Revision Submission
 
 A Revision Submission is for changes being made to a product that has already been through the RABET-V process. It includes information about changes to the product since the last submission.
 
@@ -18,33 +18,33 @@ An RTP can make a Revision Submission at any time after that product has been ve
 
 A Revision Submission requires only the version change list, artifacts, desired deployment date, and version numbers, as well as any other meaningful changes, such as to the organizational process.
 
-### Submission Items
+## Submission Items
 
-#### Product Goals
+### Product Goals
 
 The Product Goals statement is a description of the product’s purpose in non-technical language. It should be brief: a one or two paragraph summary of what the product is designed to do. The RTP can update the Product Goals during any Revision Submission and should always confirm whether there have been any changes.
 
 This description will be used by the RABET-V Administrator in the Submission Review and Security Claims Review activities to determine if the stated security claims align with the product goals. For example, if the Product Goals include managing sensitive voter information, the RABET-V Administrator will expect to see security claims designed to protect sensitive voter information.
 
-The Product Goals will be published in the [RABET-V Public Portal](../Appendices/RABET-V_Glossary.md).
+The Product Goals will be published in the {term}`RABET-V Public Portal`.
 
 Initial Submission: Always required 
 
 Revision Submission: When changed from last submission 
 
-#### Expected Usage
+### Expected Usage
 
 The Expected Usage statement describes how the RTP expects the election office to use the product. While it can communicate this through a number of means, a good approach is through high-level use cases that list the actions and interactions between involved parties and the system to achieve the Product Goals. Usage of the product will be limited to the use cases expressed in the Expected Usage. The RTP can update the Expected Usage during any Revision Submission and should always confirm whether there have been any changes.
 
 This description will be used by the RABET-V Administrator in the Security Claims Review activity to determine if the stated security claims align with the expected usage.
 
-The Expected Usage will be published in the [RABET-V Public Portal](../Appendices/RABET-V_Glossary.md).
+The Expected Usage will be published in the {term}`RABET-V Public Portal`.
 
 Initial Submission: Always required
 
 Revision Submission: When changed from last submission 
 
-#### Product Security Claims 
+### Product Security Claims 
 
 The Product Security Claims statement is a listing of security requirements met by the product. The security requirements are listed as a part of the Security Service Capability Maturity Model and organized by security control family.
 
@@ -56,7 +56,7 @@ Initial Submission: Always required
 
 Revision Submission: When changed from last submission 
 
-#### Process Descriptions
+### Process Descriptions
 
 The Process Descriptions statement is about the RTP's development processes and operating environment. These should cover key aspects of software development as described in the OWASP Software Assurance Maturity Model (SAMM), which is used as the basis for the RABET-V Process Review Activity.
 
@@ -68,7 +68,7 @@ Revision Submission: When changed from last submission
 
 > The pilot program will work with the provider to create the necessary descriptions.
 
-#### Architecture Documentation, Diagrams, and Related Representations
+### Architecture Documentation, Diagrams, and Related Representations
 
 The Architecture Documentation and Diagrams is a set of documents that fully describe the architectural design of the product. The product’s architecture can be described using diagrams, narrative, or, ideally, a combination of the two.
 
@@ -86,28 +86,20 @@ Revision Submission: When changed from last submission
 
 > A lack of architecture documentation and diagrams will not exclude a pilot participant from the program. The pilot program will work with the provider to create documentation and diagrams which are missing.
 
-#### Third-Party Component Details
+### Third-Party Component Details
 
 The Third-party Component Details describe the RTP's approach to managing supply chain risk. This includes whether the organization has selected third-party software components with a history of known vulnerabilities, and how the organization maintains traceability and assurance of third-party and open source software throughout the lifetime of the software.
 
 When considering parts of the overall solution that are not developed internally, each unique version of the following will be considered an individual component of the system:
 
 1.  Operating System
-
 1.  Framework
-
 1.  3rd party API
-
 1.  Embedded 3rd Party Library
-
 1.  Hosting Software/Service (e.g., IIS, Docker, Elastic Beanstalk, Azure App Service)
-
 1.  Database (database stored functions and procedures will be treated as a part of the software application)
-
 1.  File Storage System/Service
-
 1.  Network Appliance (virtual or real)
-
 1.  External Device Driver/Firmware
 
 A change to one of these components will be treated a change to the entire component and the version number and change list will describe the entire component.
@@ -122,7 +114,7 @@ Revision Submission: When changed from last submission
 
 > A lack of documented third-party component details will not exclude a participant from the program’s pilot phase. The pilot program will work with the provider to develop the necessary documentation.
 
-#### Product Environment and User Documentation
+### Product Environment and User Documentation
 
 The RTP must provide access to a product environment that can be used by the administrator to conduct the RABET-V iteration. This should be a dedicated environment running the new product version. The administrator must provision user accounts and test data consistent with the Expected Usage statement. Test data should not include sensitive information, but may include data from real elections that is sanitized as necessary to remove personal information, product passwords, etc.
 
@@ -134,18 +126,15 @@ Initial Submission: Always required
 
 Revision Submission: Always required
 
-#### Revision Submission Artifacts
+### Revision Submission Artifacts
 
 The RTP can submit a product revision to RABET-V at any time. Engaging the Administrator about upcoming changes and consulting the existing Testing Rules will help the RTP better prepare their submission.
 
 All Revision Submissions require the following artifacts:
 
 1.  Change list - Indicates which components have changed and what level of change was made. It should reference the components identified in the architecture review.
-
 1.  Artifacts - The product development artifacts identified in the existing Process Review. These artifacts provide the necessary information on product changes to conduct a review of the changes in the Change List
-
 1.  Desired Deployment Date - Target date for deploying the product revision in a production environment.
-
 1.  Version number - The version number of the current product revision. It must indicate and correspond to code branches and change size (i.e. minor version number changes must correspond to minor changes).
 
 A provider may change any of the Initial Submission items during a Revision Submission by providing updated information and alerting the Administrator. If they are not submitting updates for any given artifact, the RTP will have to attest to there being no change.
@@ -154,7 +143,7 @@ Initial Submission: Not applicable
 
 Revision Submission: Always required
 
-### Submission
+## Submission
 
 Once the Initial Submission or Revision Submission package is complete, it should be submitted electronically to the RABET-V Administrator.
 
