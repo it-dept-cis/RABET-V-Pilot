@@ -47,12 +47,9 @@ Included in the workbook will be a list of threat modeling findings and any addi
 The Architecture Review will identify the components of the system and how the security services are used in relation to those components.
 
 :::{figure-md} perform-architecture-review-process
-:class: processmodelimgs
+:class: process-model-imgs
 
 ![Perform architecture review process model](https://app-us.signavio.com/p/model/e48646e1b67a475f8034a987705280da/png?inline&authkey=fa5a8736f5b82de163588c8383998e9983ba84dd9dce98265abf36b4984582)
 
 A {term}`BPMN` process model of the architecture review process
 :::
-
-```{include} /_static/embed/perform_architecture_review_diagram.html
-```
