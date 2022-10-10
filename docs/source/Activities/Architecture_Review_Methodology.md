@@ -1,6 +1,6 @@
 # Architecture Review Methodology
 
-The RABET-V Architecture Review is designed to evaluate the solution’s architectural support for the [RABET-V security control families](/Overview/Security_Control_Family.md). This evaluation produces an architectural maturity score for each security control family and identifies the components that provide each [security service](/Appendices/RABET-V_Glossary.md#security-service). This score does not measure how well the [product](/Appendices/RABET-V_Glossary.md#product) executes the security service (i.e., its capability level), just how mature the architecture is that supports the security service. The [Security Services Capability Maturity](/Security_Services_Capability_Maturity_Index/README.md) level is a separate metric determined in the [Security Claims Validation](/Activities/Security_Claims_Validation.md) that indicates how well the product provides the security services.
+The RABET-V Architecture Review is designed to evaluate the solution’s architectural support for the [RABET-V security control families](/Overview/Security_Control_Family.md). This evaluation produces an architectural maturity score for each security control family and identifies the components that provide each {term}`security service`. This score does not measure how well the {term}`product` executes the security service (i.e., its capability level), just how mature the architecture is that supports the security service. The [Security Services Capability Maturity](/Security_Services_Capability_Maturity_Index/README.md) level is a separate metric determined in the [Security Claims Validation](/Activities/Security_Claims_Validation.md) that indicates how well the product provides the security services.
 
 The Architectural Maturity scores and component mappings are used to help assess the risk that changes to the product will negatively impact the security services. These are used in the [Testing Rules Determination Activity](/Activities/Testing_Rules_Determination.md) to identify how to test the product changes. Higher architectural maturity scores, in conjunction with process maturity scores; may indicate the need for less testing required to validate that changes have not created increased risk in the product.
 
@@ -45,3 +45,14 @@ Included in the workbook will be a list of threat modeling findings and any addi
 ### Software Architecture Report
 
 The Architecture Review will identify the components of the system and how the security services are used in relation to those components.
+
+:::{figure-md} perform-architecture-review-process
+:class: processmodelimgs
+
+![Perform architecture review process model](https://app-us.signavio.com/p/model/e48646e1b67a475f8034a987705280da/png?inline&authkey=fa5a8736f5b82de163588c8383998e9983ba84dd9dce98265abf36b4984582)
+
+A {term}`BPMN` process model of the architecture review process
+:::
+
+```{include} /_static/embed/perform_architecture_review_diagram.html
+```
