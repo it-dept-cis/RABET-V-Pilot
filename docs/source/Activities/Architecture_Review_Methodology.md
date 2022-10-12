@@ -58,11 +58,11 @@ A {term}`BPMN` process model of the architecture review process
 
 **Perform Threat Modeling**
 
-*Threat modeling takes the provider submitted architectural
+Threat modeling takes the provider submitted architectural
 documentation as input along with interview sessions with individuals
 that possess knowledge about the system and software architecture. The
 security control families provided by the application are enumerated
-using the threat modeling methodology.*
+using the threat modeling methodology.
 
 Outputs:
 
@@ -73,8 +73,8 @@ Outputs:
 
 **Bill of Material Analysis**
 
-*Analyze the third party libraries used by the product, including
-licenses, maintainers, and known vulnerabilities.*
+Analyze the third party libraries used by the product, including
+licenses, maintainers, and known vulnerabilities.
 
 Outputs:
 
@@ -83,7 +83,7 @@ Outputs:
 
 **Perform Software Architecture Analysis**
 
-*Analyze the software architecture using tools and interviews.*
+Analyze the software architecture using tools and interviews.
 
 Inputs:  Software BOM
 
@@ -95,8 +95,8 @@ Outputs:  Depth Score
 
 **Build architectural model**
 
-*Create an architectural model containing the components, trust
-boundaries, and interfaces.*
+Create an architectural model containing the components, trust
+boundaries, and interfaces.
 
 Inputs:
 
