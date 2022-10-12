@@ -9,14 +9,6 @@ RABET-V Program
 
 .. toctree::
    :maxdepth: 2
-   :caption: Overview
-
-   Overview/Security_Control_Family
-   Overview/Maturity_Indexes
-
-   
-.. toctree::
-   :maxdepth: 2
    :caption: Activities
 
    Activities/README
@@ -29,6 +21,14 @@ RABET-V Program
    Activities/Product_Verification_Process
    Activities/Reporting_Process
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Supporting Concepts
+
+   Overview/Security_Control_Family
+   Overview/Maturity_Indexes
+
+   
 .. toctree::
    :maxdepth: 2
    :caption: SSCM
