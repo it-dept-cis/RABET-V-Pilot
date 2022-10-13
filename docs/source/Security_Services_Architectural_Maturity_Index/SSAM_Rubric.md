@@ -40,7 +40,7 @@ dedicated to providing its security service
 
   - 3 – separate unit of deployment (cloud service, or physically)
 
-## **Maintainability: Isolation** (Composite Services Only)
+## Maintainability: Isolation (Composite Services Only)
 
 Access to the security service component is mediated through a central
 software component.
