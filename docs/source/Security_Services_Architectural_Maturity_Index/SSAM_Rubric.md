@@ -8,11 +8,11 @@ reputable party and actively maintained.
 
   - 0 – Written in-house with minimal documentation or third-party component that is uncommon and/or not actively supported
 
-  - 1 – Vetted component is used, but is not a current versionThird-party component is used, but may not be a current version or actively supported 
+  - 1 – Third-party component is used, but may not be a current version or actively supported 
 
-  - 2 – Mature, vetted component with multiple active contributorsMature, third-party component with multiple active contributors; configured by secure best practices/guidelines
+  - 2 – Mature, third-party component with multiple active contributors; configured by secure best practices/guidelines
 
-  - 3 – Using a mature, third-party component, actively supported by a professional community/organization, and is enforced by technical or procedural controls
+  - 3 – Using a mature, third-party component, that is actively supported by a professional community/organization, and is enforced by technical or procedural controls
 
 ## Manageability and Consistency
 
@@ -59,7 +59,7 @@ software component.
 
 ## Depth
 
-Component is segregated from other components and reusable inside other components. Components are complimentary to provide a consistent, layered defense for the overall system. There should are not be multiple versions or flavors variations of the security service component unless absolutely necessary.  
+Component is segregated from other components and reusable inside other components. Components are complimentary to provide a consistent, layered defense for the overall system. There should not be multiple versions or flavors variations of the security service component unless absolutely necessary.  
 
   - 0 – Components coverage is lacking and/or haphazardly applied
 
