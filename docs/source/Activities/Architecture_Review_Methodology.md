@@ -53,3 +53,69 @@ The Architecture Review will identify the components of the system and how the s
 
 A {term}`BPMN` process model of the architecture review process
 :::
+
+**Tasks**
+
+**Perform Threat Modeling**
+
+Threat modeling takes the provider submitted architectural
+documentation as input along with interview sessions with individuals
+that possess knowledge about the system and software architecture. The
+security control families provided by the application are enumerated
+using the threat modeling methodology.
+
+Outputs:
+
+- SAMM Presentation
+- Security Service Listing
+- System Level Scores
+- Threat Model
+
+**Bill of Material Analysis**
+
+Analyze the third party libraries used by the product, including
+licenses, maintainers, and known vulnerabilities.
+
+Outputs:
+
+- Reliability Scores
+- Software BOM
+
+**Perform Software Architecture Analysis**
+
+Analyze the software architecture using tools and interviews.
+
+Inputs:  Software BOM
+
+Outputs:  Software Level Scores
+
+**Perform Depth Scoring**
+
+Outputs:  Depth Score
+
+**Build architectural model**
+
+Create an architectural model containing the components, trust
+boundaries, and interfaces.
+
+Inputs:
+
+- Reliability Scores
+- Security Service
+- Software BOM
+- Software Level Scores
+- System Level Scores
+
+Outputs:
+
+- Architecture Review Report
+- Point of Use Score
+
+**Generate Scoring Spreadsheets**
+
+Inputs:
+
+- Depth Score
+- Point of Use Score
+
+Outputs:  Consolidated Architecture Scores
