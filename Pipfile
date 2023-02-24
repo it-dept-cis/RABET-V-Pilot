@@ -6,7 +6,6 @@ name = "pypi"
 [packages]
 sphinx = "*"
 pandocfilters = "*"
-sphinx-rtd-theme = "*"
 myst-parser = "*"
 furo = "*"
 sphinx-last-updated-by-git = "*"
